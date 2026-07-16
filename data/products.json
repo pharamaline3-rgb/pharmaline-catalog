@@ -52,5 +52,29 @@
     "pallet_qty": 72,
     "images": [],
     "sale": true
+  },
+  {
+    "sku": "1004",
+    "category": "beauty",
+    "name_en": "Dove hair therapy Damage Solutions Conditioner 300 ml",
+    "name_fr": "Conditionneur Dove Hair Therapy Damage Solutions 300 ml",
+    "description_en": "Dove Hair Therapy Damage Solutions Conditioner",
+    "description_fr": "Conditionneur Dove Hair Therapy Solutions contre les dommages",
+    "unit_size": "300",
+    "unit_type": "ml",
+    "case_qty": 10,
+    "pallet_qty": 50,
+    "sale": false,
+    "images": [
+      "static/images/products/1004_1784234216689_0.jpg"
+    ],
+    "name": {
+      "en": "Dove hair therapy Damage Solutions Conditioner 300 ml",
+      "fr": "Conditionneur Dove Hair Therapy Damage Solutions 300 ml"
+    },
+    "description": {
+      "en": "Dove Hair Therapy Damage Solutions Conditioner",
+      "fr": "Conditionneur Dove Hair Therapy Solutions contre les dommages"
+    }
   }
 ]
