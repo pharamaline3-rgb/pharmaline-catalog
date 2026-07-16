@@ -176,5 +176,30 @@
       "en": "Dove Hair Therapy Damage Solutions Conditioner Smooth & Moist",
       "fr": "Après-Shampooing Dove Hair Therapy Solutions Réparation pour Cheveux Abîmés Douceur et Hydratation"
     }
+  },
+  {
+    "sku": "1006",
+    "barcode": "",
+    "category": "beauty",
+    "name_en": "Dove Hair Therapy Damage Solutions Cocoon Comfort Conditioner",
+    "name_fr": "Après-shampooing Dove Hair Therapy Solutions Dommages Confort Cocon",
+    "description_en": "Dove Hair Therapy Damage Solutions Cocoon Comfort Conditioner 200ml",
+    "description_fr": "Après-shampooing Dove Hair Therapy Solutions Dommages Confort Cocon 200 ml",
+    "unit_size": "200",
+    "unit_type": "ml",
+    "case_qty": 12,
+    "pallet_qty": 12,
+    "sale": false,
+    "images": [
+      "static/images/products/1006_1784235879984_0.jpg"
+    ],
+    "name": {
+      "en": "Dove Hair Therapy Damage Solutions Cocoon Comfort Conditioner",
+      "fr": "Après-shampooing Dove Hair Therapy Solutions Dommages Confort Cocon"
+    },
+    "description": {
+      "en": "Dove Hair Therapy Damage Solutions Cocoon Comfort Conditioner 200ml",
+      "fr": "Après-shampooing Dove Hair Therapy Solutions Dommages Confort Cocon 200 ml"
+    }
   }
 ]
