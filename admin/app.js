@@ -362,6 +362,25 @@ function openProductModal(existing) {
           <label><input type="checkbox" id="f_sale" style="width:auto;"> Mark as Special / On Sale</label>
         </div>
 
+        <div class="form-row" style="background:#F7F9FB; border:1px solid #DCE4EC; border-radius:10px; padding:16px;">
+          <label style="margin-bottom:10px;">🔒 Private Info (never shown to customers)</label>
+          <label style="font-weight:400;"><input type="checkbox" id="f_in_stock" style="width:auto;" checked> In Stock</label>
+          <div class="two-col" style="margin-top:12px;">
+            <div class="form-row">
+              <label>Cases in Stock</label>
+              <input type="number" id="f_stock_cases" placeholder="e.g. 40">
+            </div>
+            <div class="form-row">
+              <label>Pallets in Stock</label>
+              <input type="number" id="f_stock_pallets" placeholder="e.g. 3">
+            </div>
+          </div>
+          <div class="form-row">
+            <label>Cost Price (per unit)</label>
+            <input type="text" id="f_cost_price" placeholder="e.g. 4.25">
+          </div>
+        </div>
+
         <p class="status-msg" id="modalStatus"></p>
 
         <div class="modal-actions">
@@ -582,6 +601,42 @@ function stopBarcodeScanner() {
   if (box) box.style.display = "none";
 }
 
+async function loadPrivateData(sku) {
+  try {
+    const res = await fetch(WORKER_URL + "/private-get", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${ghToken()}` },
+      body: JSON.stringify({ skus: [sku] }),
+    });
+    const data = await res.json();
+    const info = data[sku] || {};
+    document.getElementById("f_in_stock").checked = info.in_stock !== false;
+    document.getElementById("f_stock_cases").value = info.stock_cases || "";
+    document.getElementById("f_stock_pallets").value = info.stock_pallets || "";
+    document.getElementById("f_cost_price").value = info.cost_price || "";
+  } catch {
+    // if this fails, fields just stay at their defaults
+  }
+}
+
+async function savePrivateData(sku) {
+  try {
+    await fetch(WORKER_URL + "/private-set", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${ghToken()}` },
+      body: JSON.stringify({
+        sku,
+        in_stock: document.getElementById("f_in_stock").checked,
+        stock_cases: document.getElementById("f_stock_cases").value.trim(),
+        stock_pallets: document.getElementById("f_stock_pallets").value.trim(),
+        cost_price: document.getElementById("f_cost_price").value.trim(),
+      }),
+    });
+  } catch {
+    alert("Product saved, but the private stock/cost info failed to save — please try again from the product's edit screen.");
+  }
+}
+
 async function saveProduct(sku, isEdit) {
   const statusEl = document.getElementById("modalStatus");
   statusEl.className = "status-msg";
@@ -638,6 +693,7 @@ async function saveProduct(sku, isEdit) {
     // Save a clean copy (without our local-only preview field) to GitHub
     const cleanProducts = state.products.map(({ _localPreview, ...rest }) => rest);
     await saveProductsFile(cleanProducts, `${isEdit ? "Update" : "Add"} product ${sku}`);
+    await savePrivateData(sku);
 
     statusEl.className = "status-msg success";
     statusEl.textContent = "Saved!";
