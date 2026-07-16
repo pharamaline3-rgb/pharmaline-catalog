@@ -1,0 +1,47 @@
+[
+  {
+    "sku": "1001",
+    "name": { "en": "Multivitamin Daily Tablets 90ct", "fr": "Comprimés multivitaminés quotidiens 90ct" },
+    "category": "health",
+    "description": {
+      "en": "A complete daily multivitamin formulated with essential vitamins and minerals to support overall health and energy. Suitable for adults. Non-GMO, gluten-free formula.",
+      "fr": "Un multivitamine quotidien complet formulé avec des vitamines et minéraux essentiels pour soutenir la santé globale et l'énergie. Convient aux adultes. Formule sans OGM et sans gluten."
+    },
+    "unit_size": "90",
+    "unit_type": "capsules",
+    "case_qty": 24,
+    "pallet_qty": 48,
+    "images": [],
+    "sale": true
+  },
+  {
+    "sku": "1002",
+    "name": { "en": "Hydrating Facial Moisturizer 250ml", "fr": "Hydratant facial hydratant 250ml" },
+    "category": "beauty",
+    "description": {
+      "en": "A lightweight, fast-absorbing facial moisturizer with hyaluronic acid for 24-hour hydration. Suitable for all skin types. Dermatologist tested.",
+      "fr": "Un hydratant facial léger à absorption rapide contenant de l'acide hyaluronique pour une hydratation de 24 heures. Convient à tous les types de peau. Testé par un dermatologue."
+    },
+    "unit_size": "250",
+    "unit_type": "ml",
+    "case_qty": 12,
+    "pallet_qty": 60,
+    "images": [],
+    "sale": false
+  },
+  {
+    "sku": "1003",
+    "name": { "en": "Sea Salt Kettle Chips 200g", "fr": "Croustilles à l'ancienne au sel de mer 200g" },
+    "category": "food",
+    "description": {
+      "en": "Small-batch kettle-cooked potato chips seasoned with sea salt. Made with non-GMO sunflower oil. No artificial preservatives.",
+      "fr": "Croustilles de pommes de terre cuites à l'ancienne en petits lots, assaisonnées de sel de mer. Fabriquées avec de l'huile de tournesol sans OGM. Sans agents de conservation artificiels."
+    },
+    "unit_size": "200",
+    "unit_type": "g",
+    "case_qty": 18,
+    "pallet_qty": 72,
+    "images": [],
+    "sale": true
+  }
+]

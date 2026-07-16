@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
+  <rect x="0" y="14" width="32" height="32" rx="8" fill="#0F2E4C"/>
+  <path d="M10 30 L16 22 L22 34 L28 26" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="42" y="38" font-family="Poppins, Segoe UI, sans-serif" font-size="26" font-weight="700" fill="#0F2E4C">Pharmaline</text>
+</svg>
