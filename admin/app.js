@@ -513,9 +513,27 @@ async function runBarcodeLookup() {
       if (data.category) document.getElementById("f_category").value = data.category;
       if (data.unit_size) document.getElementById("f_unit_size").value = data.unit_size;
       if (data.unit_type) document.getElementById("f_unit_type").value = data.unit_type;
-      alert("Found it! Details filled in — please double check them.");
+
+      if (data.image_url) {
+        btn.textContent = "Fetching photo...";
+        try {
+          const imgRes = await fetch(WORKER_URL + "/fetch-image", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ image_url: data.image_url }),
+          });
+          const imgData = await imgRes.json();
+          if (imgData.base64) {
+            state.pendingImages.push({ base64: imgData.base64, mime: imgData.mime });
+            renderPendingImagePreviews();
+            document.getElementById("autofillBtn").style.display = "block";
+          }
+        } catch {}
+      }
+
+      alert("Found it! Details and photo filled in — please double check them, then click Auto-fill for descriptions in both languages.");
     } else {
-      alert("Not found in the free product database. Try uploading a photo instead and use Auto-fill.");
+      alert("Not found in the free product databases. Try uploading a photo instead and use Auto-fill.");
     }
   } catch {
     alert("Lookup failed — check your connection and try again.");
