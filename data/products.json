@@ -126,5 +126,30 @@
       "en": "Dove argan oil & repair shampoo",
       "fr": "Dove shampoo réparateur à l'huile d'argan"
     }
+  },
+  {
+    "sku": "1008",
+    "barcode": "010486007011",
+    "category": "beauty",
+    "name_en": "Grandpa Soap Co. Pine Tar",
+    "name_fr": "Grandpa Soap Co. Goudron de Pin",
+    "description_en": "Pine Tar Soap - 100% Plant-Based Pine Tar. No phthalates, sulfates, parabens, edta, glutens, fragrances or colorants. Proudly since 1878 in America.",
+    "description_fr": "Savon au goudron de pin - 100 % de goudron de pin issu de plantes. Sans phtalates, sulfates, parabènes, EDTA, glutens, arômes ni colorants. Fièrement fabriqué aux États-Unis depuis 1878.",
+    "unit_size": "4.25",
+    "unit_type": "oz",
+    "case_qty": 12,
+    "pallet_qty": 12,
+    "sale": false,
+    "images": [
+      "static/images/products/1008_1784237654802_0.jpg"
+    ],
+    "name": {
+      "en": "Grandpa Soap Co. Pine Tar",
+      "fr": "Grandpa Soap Co. Goudron de Pin"
+    },
+    "description": {
+      "en": "Pine Tar Soap - 100% Plant-Based Pine Tar. No phthalates, sulfates, parabens, edta, glutens, fragrances or colorants. Proudly since 1878 in America.",
+      "fr": "Savon au goudron de pin - 100 % de goudron de pin issu de plantes. Sans phtalates, sulfates, parabènes, EDTA, glutens, arômes ni colorants. Fièrement fabriqué aux États-Unis depuis 1878."
+    }
   }
 ]
