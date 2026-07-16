@@ -37,21 +37,26 @@
   },
   {
     "sku": "1003",
-    "name": {
-      "en": "Sea Salt Kettle Chips 200g",
-      "fr": "Croustilles à l'ancienne au sel de mer 200g"
-    },
+    "barcode": "",
     "category": "food",
-    "description": {
-      "en": "Small-batch kettle-cooked potato chips seasoned with sea salt. Made with non-GMO sunflower oil. No artificial preservatives.",
-      "fr": "Croustilles de pommes de terre cuites à l'ancienne en petits lots, assaisonnées de sel de mer. Fabriquées avec de l'huile de tournesol sans OGM. Sans agents de conservation artificiels."
-    },
+    "name_en": "",
+    "name_fr": "",
+    "description_en": "",
+    "description_fr": "",
     "unit_size": "200",
     "unit_type": "g",
     "case_qty": 18,
     "pallet_qty": 72,
+    "sale": true,
     "images": [],
-    "sale": true
+    "name": {
+      "en": "",
+      "fr": ""
+    },
+    "description": {
+      "en": "",
+      "fr": ""
+    }
   },
   {
     "sku": "1004",
