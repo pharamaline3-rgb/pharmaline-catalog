@@ -182,5 +182,30 @@
       "en": "All-One Pure-Castile Magic Bar Soap Almond. Made with regenerative organic certified oils. For body, face, hands. Certified Fair Trade.",
       "fr": "Savon de Marseille Pure-Castile Multi-Usages Amande. Fabriqué avec des huiles certifiées biologiques et régénératives. Pour le corps, le visage et les mains. Commerce équitable certifié."
     }
+  },
+  {
+    "sku": "1010",
+    "barcode": "036000533590",
+    "category": "food",
+    "name_en": "Goodnites Boys' Nighttime Bedwetting Disposable Underwear - Size L - 34ct: Hypoallergenic, Odor Control, Latex-Free Design",
+    "name_fr": "",
+    "description_en": "",
+    "description_fr": "",
+    "unit_size": "",
+    "unit_type": "ml",
+    "case_qty": 0,
+    "pallet_qty": 0,
+    "sale": false,
+    "images": [
+      "static/images/products/1010_1784244782798_0.jpg"
+    ],
+    "name": {
+      "en": "Goodnites Boys' Nighttime Bedwetting Disposable Underwear - Size L - 34ct: Hypoallergenic, Odor Control, Latex-Free Design",
+      "fr": ""
+    },
+    "description": {
+      "en": "",
+      "fr": ""
+    }
   }
 ]
