@@ -24,7 +24,7 @@
   --max-width: 1200px;
   --radius: 10px;
   --shadow: 0 2px 10px rgba(15, 46, 76, 0.08);
-  --ticker-height: 40px;
+  --ticker-height: 52px;
   --header-height: 84px;
 }
 
@@ -108,9 +108,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .ticker__track:hover { animation-play-state: paused; }
 
 .ticker__item {
-  padding: 0 28px;
-  font-size: 0.85rem;
-  font-weight: 500;
+  padding: 0 32px;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .ticker__item a { color: #fff; text-decoration: underline; }
@@ -126,9 +126,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   opacity: 0.85;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .ticker__track { animation: none; overflow-x: auto; }
-}
+
 
 /* ==========================================================================
    Header
