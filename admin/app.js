@@ -530,4 +530,108 @@ function startBarcodeScanner() {
   state.scanner = reader;
   reader
     .start(
-      { facingMode:
+      { facingMode: "environment" },
+      { fps: 10, qrbox: { width: 250, height: 150 } },
+      (decodedText) => {
+        document.getElementById("f_barcode").value = decodedText;
+        stopBarcodeScanner();
+        runBarcodeLookup();
+      },
+      () => {}
+    )
+    .catch(() => {
+      alert("Could not access the camera. You can still type the barcode number manually.");
+      document.getElementById("scannerBox").style.display = "none";
+    });
+}
+
+function stopBarcodeScanner() {
+  if (state.scanner) {
+    state.scanner.stop().catch(() => {});
+    state.scanner = null;
+  }
+  const box = document.getElementById("scannerBox");
+  if (box) box.style.display = "none";
+}
+
+async function saveProduct(sku, isEdit) {
+  const statusEl = document.getElementById("modalStatus");
+  statusEl.className = "status-msg";
+  statusEl.textContent = "Saving...";
+  setBusy(true);
+  try {
+    const existingProduct = isEdit ? state.products.find((p) => String(p.sku) === String(sku)) : null;
+    let images = existingProduct ? existingProduct.images || [] : [];
+
+    for (let i = 0; i < state.pendingImages.length; i++) {
+      const img = state.pendingImages[i];
+      const ext = (img.mime.split("/")[1] || "jpg").replace("jpeg", "jpg");
+      const filename = `${sku}_${Date.now()}_${i}.${ext}`;
+      const path = await uploadImage(filename, img.base64, `Add image for product ${sku}`);
+      images.push(path);
+    }
+
+    const updatedProduct = {
+      sku: sku,
+      barcode: document.getElementById("f_barcode").value.trim(),
+      category: document.getElementById("f_category").value,
+      name_en: document.getElementById("f_name_en").value.trim(),
+      name_fr: document.getElementById("f_name_fr").value.trim(),
+      description_en: document.getElementById("f_description_en").value.trim(),
+      description_fr: document.getElementById("f_description_fr").value.trim(),
+      unit_size: document.getElementById("f_unit_size").value.trim(),
+      unit_type: document.getElementById("f_unit_type").value,
+      case_qty: parseInt(document.getElementById("f_case_qty").value, 10) || 0,
+      pallet_qty: parseInt(document.getElementById("f_pallet_qty").value, 10) || 0,
+      sale: document.getElementById("f_sale").checked,
+      images: images,
+      name: {
+        en: document.getElementById("f_name_en").value.trim(),
+        fr: document.getElementById("f_name_fr").value.trim(),
+      },
+      description: {
+        en: document.getElementById("f_description_en").value.trim(),
+        fr: document.getElementById("f_description_fr").value.trim(),
+      },
+    };
+
+    if (isEdit) {
+      const idx = state.products.findIndex((p) => String(p.sku) === String(sku));
+      state.products[idx] = updatedProduct;
+    } else {
+      state.products.push(updatedProduct);
+    }
+
+    await saveProductsFile(state.products, `${isEdit ? "Update" : "Add"} product ${sku}`);
+
+    statusEl.className = "status-msg success";
+    statusEl.textContent = "Saved!";
+    setTimeout(() => {
+      closeModal();
+      renderStats();
+      renderGrid();
+    }, 500);
+  } catch (err) {
+    statusEl.className = "status-msg error";
+    statusEl.textContent = "Error: " + err.message;
+  }
+  setBusy(false);
+}
+
+async function deleteProduct(sku) {
+  if (!confirm("Delete this product? This cannot be undone.")) return;
+  setBusy(true);
+  try {
+    state.products = state.products.filter((p) => String(p.sku) !== String(sku));
+    await saveProductsFile(state.products, `Delete product ${sku}`);
+    closeModal();
+    renderStats();
+    renderGrid();
+  } catch (err) {
+    alert("Error deleting product: " + err.message);
+  }
+  setBusy(false);
+}
+
+/* ---------------- Init ---------------- */
+verifyAndInit();
