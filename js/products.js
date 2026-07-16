@@ -69,7 +69,7 @@
             <span class="product-card__name">${escapeHtml(productName(p))}</span>
             <span class="product-card__sku">${escapeHtml(t("products.sku"))} #${escapeHtml(p.sku)}</span>
           </div>
-          <a class="stretched" href="/product.html?sku=${encodeURIComponent(p.sku)}" aria-label="${escapeHtml(productName(p))}"></a>
+          <a class="stretched" href="product.html?sku=${encodeURIComponent(p.sku)}" aria-label="${escapeHtml(productName(p))}"></a>
         </div>`;
       })
       .join("");

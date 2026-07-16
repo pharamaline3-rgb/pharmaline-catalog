@@ -2,8 +2,8 @@
    Shared site logic used on every page
    ========================================================================== */
 
-const PRODUCTS_URL = "/data/products.json";
-const SETTINGS_URL = "/data/settings.json";
+const PRODUCTS_URL = "data/products.json";
+const SETTINGS_URL = "data/settings.json";
 
 function initMobileNav() {
   const toggle = document.querySelector(".nav-toggle");
@@ -104,7 +104,7 @@ async function initTicker() {
     const itemsHtml = saleItems
       .map(
         (p) =>
-          `<span class="ticker__item"><a href="/product.html?sku=${encodeURIComponent(p.sku)}">${escapeHtml(productName(p))} — ${escapeHtml(t("product.sale.badge"))} #${escapeHtml(p.sku)}</a></span>`
+          `<span class="ticker__item"><a href="product.html?sku=${encodeURIComponent(p.sku)}">${escapeHtml(productName(p))} — ${escapeHtml(t("product.sale.badge"))} #${escapeHtml(p.sku)}</a></span>`
       )
       .join("");
     // duplicate content so the marquee loop is seamless

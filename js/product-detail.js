@@ -59,7 +59,7 @@
                 : ""
             }
           </table>
-          <a class="btn btn--primary" href="/contact.html">${escapeHtml(t("nav.contact"))}</a>
+          <a class="btn btn--primary" href="contact.html">${escapeHtml(t("nav.contact"))}</a>
         </div>
       </div>
     `;
