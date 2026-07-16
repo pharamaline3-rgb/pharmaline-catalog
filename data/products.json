@@ -151,5 +151,30 @@
       "en": "Pine Tar Soap - 100% Plant-Based Pine Tar. No phthalates, sulfates, parabens, edta, glutens, fragrances or colorants. Proudly since 1878 in America.",
       "fr": "Savon au goudron de pin - 100 % de goudron de pin issu de plantes. Sans phtalates, sulfates, parabènes, EDTA, glutens, arômes ni colorants. Fièrement fabriqué aux États-Unis depuis 1878."
     }
+  },
+  {
+    "sku": "1009",
+    "barcode": "018787781050",
+    "category": "beauty",
+    "name_en": "Dr. Bronner's Magic Bar Soap Almond",
+    "name_fr": "Dr. Bronner's Savon en Pain Magique Amande",
+    "description_en": "All-One Pure-Castile Magic Bar Soap Almond. Made with regenerative organic certified oils. For body, face, hands. Certified Fair Trade.",
+    "description_fr": "Savon de Marseille Pure-Castile Multi-Usages Amande. Fabriqué avec des huiles certifiées biologiques et régénératives. Pour le corps, le visage et les mains. Commerce équitable certifié.",
+    "unit_size": "5",
+    "unit_type": "oz",
+    "case_qty": 12,
+    "pallet_qty": 12,
+    "sale": false,
+    "images": [
+      "static/images/products/1009_1784237813954_0.jpg"
+    ],
+    "name": {
+      "en": "Dr. Bronner's Magic Bar Soap Almond",
+      "fr": "Dr. Bronner's Savon en Pain Magique Amande"
+    },
+    "description": {
+      "en": "All-One Pure-Castile Magic Bar Soap Almond. Made with regenerative organic certified oils. For body, face, hands. Certified Fair Trade.",
+      "fr": "Savon de Marseille Pure-Castile Multi-Usages Amande. Fabriqué avec des huiles certifiées biologiques et régénératives. Pour le corps, le visage et les mains. Commerce équitable certifié."
+    }
   }
 ]
