@@ -13,7 +13,7 @@ let state = {
   sha: null,
   activeCategory: "all",
   searchTerm: "",
-  pendingImages: [], // {file, base64, mime}
+  pendingImages: [],
   scanner: null,
 };
 
@@ -136,6 +136,14 @@ async function refreshProducts() {
   setBusy(true);
   try {
     const { products, sha } = await getProductsFile();
+    // keep any local-only preview images we already had in memory
+    const previewMap = {};
+    state.products.forEach((p) => {
+      if (p._localPreview) previewMap[p.sku] = p._localPreview;
+    });
+    products.forEach((p) => {
+      if (previewMap[p.sku]) p._localPreview = previewMap[p.sku];
+    });
     state.products = products;
     state.sha = sha;
     renderStats();
@@ -206,7 +214,7 @@ function renderGrid() {
 
   grid.innerHTML = filtered
     .map((p) => {
-      const img = p.images && p.images[0] ? "../" + p.images[0] : "";
+      const img = p._localPreview || (p.images && p.images[0] ? "../" + p.images[0] + "?t=" + Date.now() : "");
       return `
       <div class="admin-product-card" data-sku="${p.sku}">
         <div class="admin-product-card__img">
@@ -568,9 +576,7 @@ function stopBarcodeScanner() {
     if (state.scanner) {
       state.scanner.stop().then(() => {}).catch(() => {});
     }
-  } catch (e) {
-    // scanner wasn't actually running — safe to ignore
-  }
+  } catch (e) {}
   state.scanner = null;
   const box = document.getElementById("scannerBox");
   if (box) box.style.display = "none";
@@ -593,8 +599,13 @@ async function saveProduct(sku, isEdit) {
       images.push(path);
     }
 
+    const localPreview = state.pendingImages[0]
+      ? `data:${state.pendingImages[0].mime};base64,${state.pendingImages[0].base64}`
+      : existingProduct && existingProduct._localPreview;
+
     const updatedProduct = {
       sku: sku,
+      _localPreview: localPreview,
       barcode: document.getElementById("f_barcode").value.trim(),
       category: document.getElementById("f_category").value,
       name_en: document.getElementById("f_name_en").value.trim(),
@@ -624,14 +635,16 @@ async function saveProduct(sku, isEdit) {
       state.products.push(updatedProduct);
     }
 
-    await saveProductsFile(state.products, `${isEdit ? "Update" : "Add"} product ${sku}`);
+    // Save a clean copy (without our local-only preview field) to GitHub
+    const cleanProducts = state.products.map(({ _localPreview, ...rest }) => rest);
+    await saveProductsFile(cleanProducts, `${isEdit ? "Update" : "Add"} product ${sku}`);
 
     statusEl.className = "status-msg success";
     statusEl.textContent = "Saved!";
+    renderStats();
+    renderGrid();
     setTimeout(() => {
       closeModal();
-      renderStats();
-      renderGrid();
     }, 500);
   } catch (err) {
     statusEl.className = "status-msg error";
@@ -645,7 +658,8 @@ async function deleteProduct(sku) {
   setBusy(true);
   try {
     state.products = state.products.filter((p) => String(p.sku) !== String(sku));
-    await saveProductsFile(state.products, `Delete product ${sku}`);
+    const cleanProducts = state.products.map(({ _localPreview, ...rest }) => rest);
+    await saveProductsFile(cleanProducts, `Delete product ${sku}`);
     closeModal();
     renderStats();
     renderGrid();
