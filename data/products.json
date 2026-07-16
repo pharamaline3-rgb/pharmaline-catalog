@@ -176,30 +176,5 @@
       "en": "All-One Pure-Castile Magic Bar Soap Almond. Made with regenerative organic certified oils. For body, face, hands. Certified Fair Trade.",
       "fr": "Savon de Marseille Pure-Castile Multi-Usages Amande. Fabriqué avec des huiles certifiées biologiques et régénératives. Pour le corps, le visage et les mains. Commerce équitable certifié."
     }
-  },
-  {
-    "sku": "1010",
-    "barcode": "018787781050",
-    "category": "beauty",
-    "name_en": "Dr. Bronner's Almond Pure-Castile Magic Bar Soap",
-    "name_fr": "Dr. Bronner's Almond Pure-Castile Magic Bar Soap",
-    "description_en": "All-One Pure-Castile Magic Bar Soap, Almond scent. Made with regenerative organic certified oils. For body, face, and hands. Certified Fair Trade.",
-    "description_fr": "Savon en barre magique Pure-Castile All-One à l'amande. Fabriqué à partir d'huiles certifiées biologiques régénératives. Pour le corps, le visage et les mains. Commerce équitable certifié.",
-    "unit_size": "140",
-    "unit_type": "g",
-    "case_qty": 2,
-    "pallet_qty": 6,
-    "sale": false,
-    "images": [
-      "static/images/products/1010_1784238164244_0.jpg"
-    ],
-    "name": {
-      "en": "Dr. Bronner's Almond Pure-Castile Magic Bar Soap",
-      "fr": "Dr. Bronner's Almond Pure-Castile Magic Bar Soap"
-    },
-    "description": {
-      "en": "All-One Pure-Castile Magic Bar Soap, Almond scent. Made with regenerative organic certified oils. For body, face, and hands. Certified Fair Trade.",
-      "fr": "Savon en barre magique Pure-Castile All-One à l'amande. Fabriqué à partir d'huiles certifiées biologiques régénératives. Pour le corps, le visage et les mains. Commerce équitable certifié."
-    }
   }
 ]
