@@ -76,5 +76,30 @@
       "en": "Dove Hair Therapy Damage Solutions Conditioner",
       "fr": "Conditionneur Dove Hair Therapy Solutions contre les dommages"
     }
+  },
+  {
+    "sku": "1005",
+    "barcode": "",
+    "category": "beauty",
+    "name_en": "Dove Damage Solutions Conditioner Smooth & Moist",
+    "name_fr": "Dove Après-Shampooing Solutions Réparation Douceur et Hydratation",
+    "description_en": "Dove Hair Therapy Damage Solutions Conditioner Smooth & Moist",
+    "description_fr": "Après-Shampooing Dove Hair Therapy Solutions Réparation pour Cheveux Abîmés Douceur et Hydratation",
+    "unit_size": "473",
+    "unit_type": "ml",
+    "case_qty": 12,
+    "pallet_qty": 12222,
+    "sale": false,
+    "images": [
+      "static/images/products/1005_1784235324669_0.jpg"
+    ],
+    "name": {
+      "en": "Dove Damage Solutions Conditioner Smooth & Moist",
+      "fr": "Dove Après-Shampooing Solutions Réparation Douceur et Hydratation"
+    },
+    "description": {
+      "en": "Dove Hair Therapy Damage Solutions Conditioner Smooth & Moist",
+      "fr": "Après-Shampooing Dove Hair Therapy Solutions Réparation pour Cheveux Abîmés Douceur et Hydratation"
+    }
   }
 ]
