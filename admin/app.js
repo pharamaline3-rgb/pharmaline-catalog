@@ -546,10 +546,14 @@ function startBarcodeScanner() {
 }
 
 function stopBarcodeScanner() {
-  if (state.scanner) {
-    state.scanner.stop().catch(() => {});
-    state.scanner = null;
+  try {
+    if (state.scanner) {
+      state.scanner.stop().then(() => {}).catch(() => {});
+    }
+  } catch (e) {
+    // scanner wasn't actually running — safe to ignore
   }
+  state.scanner = null;
   const box = document.getElementById("scannerBox");
   if (box) box.style.display = "none";
 }
