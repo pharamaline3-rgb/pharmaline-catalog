@@ -1,7 +1,10 @@
 [
   {
     "sku": "1001",
-    "name": { "en": "Multivitamin Daily Tablets 90ct", "fr": "Comprimés multivitaminés quotidiens 90ct" },
+    "name": {
+      "en": "Multivitamin Daily Tablets 90ct",
+      "fr": "Comprimés multivitaminés quotidiens 90ct"
+    },
     "category": "health",
     "description": {
       "en": "A complete daily multivitamin formulated with essential vitamins and minerals to support overall health and energy. Suitable for adults. Non-GMO, gluten-free formula.",
@@ -16,7 +19,10 @@
   },
   {
     "sku": "1002",
-    "name": { "en": "Hydrating Facial Moisturizer 250ml", "fr": "Hydratant facial hydratant 250ml" },
+    "name": {
+      "en": "Hydrating Facial Moisturizer 250ml",
+      "fr": "Hydratant facial hydratant 250ml"
+    },
     "category": "beauty",
     "description": {
       "en": "A lightweight, fast-absorbing facial moisturizer with hyaluronic acid for 24-hour hydration. Suitable for all skin types. Dermatologist tested.",
@@ -31,7 +37,10 @@
   },
   {
     "sku": "1003",
-    "name": { "en": "Sea Salt Kettle Chips 200g", "fr": "Croustilles à l'ancienne au sel de mer 200g" },
+    "name": {
+      "en": "Sea Salt Kettle Chips 200g",
+      "fr": "Croustilles à l'ancienne au sel de mer 200g"
+    },
     "category": "food",
     "description": {
       "en": "Small-batch kettle-cooked potato chips seasoned with sea salt. Made with non-GMO sunflower oil. No artificial preservatives.",
@@ -43,5 +52,29 @@
     "pallet_qty": 72,
     "images": [],
     "sale": true
+  },
+  {
+    "sku": "1004",
+    "category": "health",
+    "name_en": "ggdfdrwr",
+    "name_fr": "jghfd",
+    "description_en": "ljkhgfd",
+    "description_fr": "jyrfgeds",
+    "unit_size": "edcf",
+    "unit_type": "capsules",
+    "case_qty": 6,
+    "pallet_qty": 0,
+    "sale": false,
+    "images": [
+      "static/images/products/1004_1784226291141_0.jpg"
+    ],
+    "name": {
+      "en": "ggdfdrwr",
+      "fr": "jghfd"
+    },
+    "description": {
+      "en": "ljkhgfd",
+      "fr": "jyrfgeds"
+    }
   }
 ]
