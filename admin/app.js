@@ -109,17 +109,17 @@ async function verifyAndInit() {
 }
 
 document.getElementById("loginBtn").addEventListener("click", () => {
-  document.getElementById("loginStatus").textContent = "Waiting for login...";
-  const popup = window.open(WORKER_URL + "/auth", "ghlogin", "width=600,height=700");
-  function handler(e) {
-    if (e.data && e.data.pharmalineAuth) {
-      sessionStorage.setItem("gh_token", e.data.token);
-      window.removeEventListener("message", handler);
-      verifyAndInit();
-    }
-  }
-  window.addEventListener("message", handler);
+  window.location.href = WORKER_URL + "/auth";
 });
+
+// Catch the token when we're redirected back here after logging in
+(function checkForTokenInUrl() {
+  if (window.location.hash.startsWith("#gh_token=")) {
+    const token = window.location.hash.replace("#gh_token=", "");
+    sessionStorage.setItem("gh_token", token);
+    history.replaceState(null, "", window.location.pathname);
+  }
+})();
 
 document.getElementById("logoutBtn").addEventListener("click", () => {
   sessionStorage.removeItem("gh_token");
