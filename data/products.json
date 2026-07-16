@@ -101,5 +101,30 @@
       "en": "Dove Hair Therapy Damage Solutions Cocoon Comfort Conditioner 200ml",
       "fr": "Après-shampooing Dove Hair Therapy Solutions Dommages Confort Cocon 200 ml"
     }
+  },
+  {
+    "sku": "1007",
+    "barcode": "079400490179",
+    "category": "beauty",
+    "name_en": "Dove argan oil & repair shampoo",
+    "name_fr": "Dove shampoo réparateur à l'huile d'argan",
+    "description_en": "Dove argan oil & repair shampoo",
+    "description_fr": "Dove shampoo réparateur à l'huile d'argan",
+    "unit_size": "355",
+    "unit_type": "ml",
+    "case_qty": 12,
+    "pallet_qty": 12,
+    "sale": false,
+    "images": [
+      "static/images/products/1007_1784237190352_0.jpg"
+    ],
+    "name": {
+      "en": "Dove argan oil & repair shampoo",
+      "fr": "Dove shampoo réparateur à l'huile d'argan"
+    },
+    "description": {
+      "en": "Dove argan oil & repair shampoo",
+      "fr": "Dove shampoo réparateur à l'huile d'argan"
+    }
   }
 ]
