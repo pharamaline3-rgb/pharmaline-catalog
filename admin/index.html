@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pharmaline Admin</title>
-  <link rel="icon" href="../static/images/logo.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pharmaline Admin</title>
+<link rel="icon" href="../static/images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
 </head>
 <body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+<div id="loginScreen" class="login-screen">
+  <img src="../static/images/logo.svg" alt="Pharmaline">
+  <h1>Pharmaline Admin</h1>
+  <p>Sign in with your GitHub account to add products, upload images, and manage your catalog.</p>
+  <button class="btn-login" id="loginBtn">Login with GitHub</button>
+  <p class="status-msg" id="loginStatus"></p>
+</div>
+
+<div id="app" style="display:none;">
+  <header class="admin-header">
+    <div class="admin-header__brand">
+      <img src="../static/images/logo.svg" alt="">
+      Pharmaline Admin
+    </div>
+    <button id="logoutBtn">Log Out</button>
+  </header>
+
+  <div class="dashboard">
+    <div class="stats-row" id="statsRow"></div>
+
+    <div class="toolbar-row">
+      <div class="filter-tabs" id="filterTabs"></div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <button class="btn-primary" id="addProductBtn">+ Add Product</button>
+      </div>
+    </div>
+
+    <div class="admin-product-grid" id="productGrid"></div>
+  </div>
+</div>
+
+<div id="modalRoot"></div>
+<div id="spinner" class="spinner-overlay" style="display:none;">Working...</div>
+
+<script src="app.js"></script>
 </body>
 </html>
