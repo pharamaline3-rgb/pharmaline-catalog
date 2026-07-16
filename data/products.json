@@ -52,29 +52,5 @@
     "pallet_qty": 72,
     "images": [],
     "sale": true
-  },
-  {
-    "sku": "1004",
-    "category": "health",
-    "name_en": "ggdfdrwr",
-    "name_fr": "jghfd",
-    "description_en": "ljkhgfd",
-    "description_fr": "jyrfgeds",
-    "unit_size": "edcf",
-    "unit_type": "capsules",
-    "case_qty": 6,
-    "pallet_qty": 0,
-    "sale": false,
-    "images": [
-      "static/images/products/1004_1784226291141_0.jpg"
-    ],
-    "name": {
-      "en": "ggdfdrwr",
-      "fr": "jghfd"
-    },
-    "description": {
-      "en": "ljkhgfd",
-      "fr": "jyrfgeds"
-    }
   }
 ]
