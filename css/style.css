@@ -24,7 +24,7 @@
   --max-width: 1200px;
   --radius: 10px;
   --shadow: 0 2px 10px rgba(15, 46, 76, 0.08);
-  --ticker-height: 52px;
+  --ticker-height: 64px;
   --header-height: 84px;
 }
 
@@ -113,7 +113,21 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   font-weight: 600;
 }
 
-.ticker__item a { color: #fff; text-decoration: underline; }
+.ticker__item a {
+  color: #fff;
+  text-decoration: underline;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ticker__item img {
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
 
 @keyframes ticker-scroll {
   0%   { transform: translateX(0); }

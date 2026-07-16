@@ -104,7 +104,7 @@ async function initTicker() {
     const itemsHtml = saleItems
       .map(
         (p) =>
-          `<span class="ticker__item"><a href="product.html?sku=${encodeURIComponent(p.sku)}">${escapeHtml(productName(p))} — ${escapeHtml(t("product.sale.badge"))} #${escapeHtml(p.sku)}</a></span>`
+          `<span class="ticker__item"><a href="product.html?sku=${encodeURIComponent(p.sku)}"><img src="${escapeHtml(firstImage(p))}" alt=""> ${escapeHtml(productName(p))} — ${escapeHtml(t("product.sale.badge"))} #${escapeHtml(p.sku)}</a></span>`
       )
       .join("");
     // duplicate content so the marquee loop is seamless
