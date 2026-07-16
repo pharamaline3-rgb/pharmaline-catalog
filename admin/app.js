@@ -13,10 +13,11 @@ let state = {
   sha: null,
   activeCategory: "all",
   searchTerm: "",
-  pendingImages: [], // {file, base64, mime} for the currently open form
+  pendingImages: [], // {file, base64, mime}
+  scanner: null,
 };
 
-/* ---------------- Unicode-safe base64 helpers (needed for French accents) ---------------- */
+/* ---------------- Unicode-safe base64 helpers ---------------- */
 function b64EncodeUnicode(str) {
   const bytes = new TextEncoder().encode(str);
   let binary = "";
@@ -112,7 +113,6 @@ document.getElementById("loginBtn").addEventListener("click", () => {
   window.location.href = WORKER_URL + "/auth";
 });
 
-// Catch the token when we're redirected back here after logging in
 (function checkForTokenInUrl() {
   if (window.location.hash.startsWith("#gh_token=")) {
     const token = window.location.hash.replace("#gh_token=", "");
@@ -194,7 +194,8 @@ function renderGrid() {
     if (!term) return true;
     return (
       (p.name_en || "").toLowerCase().includes(term) ||
-      String(p.sku || "").toLowerCase().includes(term)
+      String(p.sku || "").toLowerCase().includes(term) ||
+      String(p.barcode || "").toLowerCase().includes(term)
     );
   });
 
@@ -239,9 +240,7 @@ document.getElementById("addProductBtn").addEventListener("click", () => openPro
 
 /* ---------------- Add / Edit modal ---------------- */
 function nextSku() {
-  const nums = state.products
-    .map((p) => parseInt(p.sku, 10))
-    .filter((n) => !isNaN(n));
+  const nums = state.products.map((p) => parseInt(p.sku, 10)).filter((n) => !isNaN(n));
   if (!nums.length) return "1001";
   return String(Math.max(...nums) + 1);
 }
@@ -261,6 +260,7 @@ function openProductModal(existing) {
     pallet_qty: "",
     sale: false,
     images: [],
+    barcode: "",
   };
 
   state.pendingImages = [];
@@ -272,11 +272,24 @@ function openProductModal(existing) {
         <h2>${isEdit ? "Edit Product" : "Add Product"} — SKU #${product.sku}</h2>
 
         <div class="form-row">
-          <label>Product Photos</label>
-          <div class="image-drop" id="imageDrop">Click to choose photos from your computer</div>
+          <label>Barcode Number</label>
+          <div style="display:flex; gap:8px;">
+            <input type="text" id="f_barcode" placeholder="Scan or type barcode number" style="flex:1;">
+            <button class="btn-secondary" id="scanBarcodeBtn" type="button">📷 Scan</button>
+            <button class="btn-secondary" id="lookupBarcodeBtn" type="button">Look Up</button>
+          </div>
+          <div id="scannerBox" style="display:none; margin-top:10px;">
+            <div id="scannerReader" style="width:100%; max-width:400px;"></div>
+            <button class="btn-secondary" id="stopScanBtn" type="button" style="margin-top:8px;">Stop Scanning</button>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label>Product Photos (front and back of package)</label>
+          <div class="image-drop" id="imageDrop">Click to choose front + back photos from your computer</div>
           <input type="file" id="imageInput" accept="image/*" multiple style="display:none;">
           <div class="image-preview-row" id="imagePreviewRow"></div>
-          <button class="btn-autofill" id="autofillBtn" style="display:none;">✨ Auto-fill details from photo</button>
+          <button class="btn-autofill" id="autofillBtn" style="display:none;">✨ Auto-fill details from photos</button>
         </div>
 
         <div class="form-row">
@@ -356,7 +369,7 @@ function openProductModal(existing) {
     </div>
   `;
 
-  // Fill in existing values
+  document.getElementById("f_barcode").value = product.barcode || "";
   document.getElementById("f_category").value = product.category;
   document.getElementById("f_name_en").value = product.name_en || "";
   document.getElementById("f_name_fr").value = product.name_fr || "";
@@ -372,7 +385,6 @@ function openProductModal(existing) {
     renderExistingImagePreviews(product.images);
   }
 
-  // Image picking
   document.getElementById("imageDrop").addEventListener("click", () => {
     document.getElementById("imageInput").click();
   });
@@ -386,7 +398,6 @@ function openProductModal(existing) {
     document.getElementById("autofillBtn").style.display = state.pendingImages.length ? "block" : "none";
   });
 
-  // Translate buttons
   document.getElementById("translateNameBtn").addEventListener("click", () =>
     translateField("f_name_en", "f_name_fr", "translateNameBtn")
   );
@@ -394,25 +405,25 @@ function openProductModal(existing) {
     translateField("f_description_en", "f_description_fr", "translateDescBtn")
   );
 
-  // Autofill
   document.getElementById("autofillBtn").addEventListener("click", runAutofill);
+  document.getElementById("lookupBarcodeBtn").addEventListener("click", runBarcodeLookup);
+  document.getElementById("scanBarcodeBtn").addEventListener("click", startBarcodeScanner);
+  document.getElementById("stopScanBtn").addEventListener("click", stopBarcodeScanner);
 
-  // Cancel / close
   document.getElementById("cancelBtn").addEventListener("click", closeModal);
   document.getElementById("modalOverlay").addEventListener("click", (e) => {
     if (e.target.id === "modalOverlay") closeModal();
   });
 
-  // Delete
   if (isEdit) {
     document.getElementById("deleteBtn").addEventListener("click", () => deleteProduct(product.sku));
   }
 
-  // Save
   document.getElementById("saveBtn").addEventListener("click", () => saveProduct(product.sku, isEdit));
 }
 
 function closeModal() {
+  stopBarcodeScanner();
   document.getElementById("modalRoot").innerHTML = "";
 }
 
@@ -427,9 +438,7 @@ function fileToBase64(file) {
 
 function renderPendingImagePreviews() {
   const row = document.getElementById("imagePreviewRow");
-  row.innerHTML = state.pendingImages
-    .map((img) => `<img src="data:${img.mime};base64,${img.base64}">`)
-    .join("");
+  row.innerHTML = state.pendingImages.map((img) => `<img src="data:${img.mime};base64,${img.base64}">`).join("");
 }
 
 function renderExistingImagePreviews(paths) {
@@ -462,106 +471,63 @@ async function runAutofill() {
   const btn = document.getElementById("autofillBtn");
   if (!state.pendingImages.length) return;
   btn.disabled = true;
-  btn.textContent = "Reading photo...";
+  btn.textContent = "Reading photos...";
   try {
-    const img = state.pendingImages[0];
+    const images = state.pendingImages.map((img) => ({ data: img.base64, mime: img.mime }));
     const res = await fetch(WORKER_URL + "/autofill", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ image_base64: img.base64, mime_type: img.mime }),
+      body: JSON.stringify({ images }),
     });
     const data = await res.json();
     if (data.name_en) document.getElementById("f_name_en").value = data.name_en;
+    if (data.name_fr) document.getElementById("f_name_fr").value = data.name_fr;
     if (data.description_en) document.getElementById("f_description_en").value = data.description_en;
+    if (data.description_fr) document.getElementById("f_description_fr").value = data.description_fr;
     if (data.category) document.getElementById("f_category").value = data.category;
     if (data.unit_size) document.getElementById("f_unit_size").value = data.unit_size;
     if (data.unit_type) document.getElementById("f_unit_type").value = data.unit_type;
+    if (data.barcode) document.getElementById("f_barcode").value = data.barcode;
   } catch {
     alert("Auto-fill failed — you can still fill the form in manually.");
   }
   btn.disabled = false;
-  btn.textContent = "✨ Auto-fill details from photo";
+  btn.textContent = "✨ Auto-fill details from photos";
 }
 
-async function saveProduct(sku, isEdit) {
-  const statusEl = document.getElementById("modalStatus");
-  statusEl.className = "status-msg";
-  statusEl.textContent = "Saving...";
-  setBusy(true);
+async function runBarcodeLookup() {
+  const barcode = document.getElementById("f_barcode").value.trim();
+  if (!barcode) return alert("Type or scan a barcode number first.");
+  const btn = document.getElementById("lookupBarcodeBtn");
+  btn.disabled = true;
+  btn.textContent = "Looking up...";
   try {
-    const existingProduct = isEdit ? state.products.find((p) => String(p.sku) === String(sku)) : null;
-    let images = existingProduct ? existingProduct.images || [] : [];
-
-    // Upload any newly added images
-    for (let i = 0; i < state.pendingImages.length; i++) {
-      const img = state.pendingImages[i];
-      const ext = (img.mime.split("/")[1] || "jpg").replace("jpeg", "jpg");
-      const filename = `${sku}_${Date.now()}_${i}.${ext}`;
-      const path = await uploadImage(filename, img.base64, `Add image for product ${sku}`);
-      images.push(path);
-    }
-
-    const updatedProduct = {
-      sku: sku,
-      category: document.getElementById("f_category").value,
-      name_en: document.getElementById("f_name_en").value.trim(),
-      name_fr: document.getElementById("f_name_fr").value.trim(),
-      description_en: document.getElementById("f_description_en").value.trim(),
-      description_fr: document.getElementById("f_description_fr").value.trim(),
-      unit_size: document.getElementById("f_unit_size").value.trim(),
-      unit_type: document.getElementById("f_unit_type").value,
-      case_qty: parseInt(document.getElementById("f_case_qty").value, 10) || 0,
-      pallet_qty: parseInt(document.getElementById("f_pallet_qty").value, 10) || 0,
-      sale: document.getElementById("f_sale").checked,
-      images: images,
-      // keep the site's expected {en, fr} shape too, built from the same fields
-      name: {
-        en: document.getElementById("f_name_en").value.trim(),
-        fr: document.getElementById("f_name_fr").value.trim(),
-      },
-      description: {
-        en: document.getElementById("f_description_en").value.trim(),
-        fr: document.getElementById("f_description_fr").value.trim(),
-      },
-    };
-
-    if (isEdit) {
-      const idx = state.products.findIndex((p) => String(p.sku) === String(sku));
-      state.products[idx] = updatedProduct;
+    const res = await fetch(WORKER_URL + "/barcode-lookup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ barcode }),
+    });
+    const data = await res.json();
+    if (data.found) {
+      if (data.name_en) document.getElementById("f_name_en").value = data.name_en;
+      if (data.category) document.getElementById("f_category").value = data.category;
+      if (data.unit_size) document.getElementById("f_unit_size").value = data.unit_size;
+      if (data.unit_type) document.getElementById("f_unit_type").value = data.unit_type;
+      alert("Found it! Details filled in — please double check them.");
     } else {
-      state.products.push(updatedProduct);
+      alert("Not found in the free product database. Try uploading a photo instead and use Auto-fill.");
     }
-
-    await saveProductsFile(state.products, `${isEdit ? "Update" : "Add"} product ${sku}`);
-
-    statusEl.className = "status-msg success";
-    statusEl.textContent = "Saved!";
-    setTimeout(() => {
-      closeModal();
-      renderStats();
-      renderGrid();
-    }, 500);
-  } catch (err) {
-    statusEl.className = "status-msg error";
-    statusEl.textContent = "Error: " + err.message;
+  } catch {
+    alert("Lookup failed — check your connection and try again.");
   }
-  setBusy(false);
+  btn.disabled = false;
+  btn.textContent = "Look Up";
 }
 
-async function deleteProduct(sku) {
-  if (!confirm("Delete this product? This cannot be undone.")) return;
-  setBusy(true);
-  try {
-    state.products = state.products.filter((p) => String(p.sku) !== String(sku));
-    await saveProductsFile(state.products, `Delete product ${sku}`);
-    closeModal();
-    renderStats();
-    renderGrid();
-  } catch (err) {
-    alert("Error deleting product: " + err.message);
-  }
-  setBusy(false);
-}
-
-/* ---------------- Init ---------------- */
-verifyAndInit();
+function startBarcodeScanner() {
+  document.getElementById("scannerBox").style.display = "block";
+  const reader = new Html5Qrcode("scannerReader");
+  state.scanner = reader;
+  reader
+    .start(
+      { facingMode:
