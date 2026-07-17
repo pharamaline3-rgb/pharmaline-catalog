@@ -1,12 +1,8 @@
 /* ==========================================================================
-   Pharmaline Admin Dashboard
+   Pharmaline Admin Dashboard — with email/password login
    ========================================================================== */
 
 const WORKER_URL = "https://pharmaline-oauth.pharamaline3.workers.dev";
-const REPO = "pharamaline3-rgb/pharmaline-catalog";
-const BRANCH = "main";
-const PRODUCTS_PATH = "data/products.json";
-const IMAGES_PATH = "static/images/products";
 
 let state = {
   products: [],
@@ -16,21 +12,8 @@ let state = {
   pendingImages: [],
   removedImages: [],
   scanner: null,
+  isOwner: false,
 };
-
-/* ---------------- Unicode-safe base64 helpers ---------------- */
-function b64EncodeUnicode(str) {
-  const bytes = new TextEncoder().encode(str);
-  let binary = "";
-  bytes.forEach((b) => (binary += String.fromCharCode(b)));
-  return btoa(binary);
-}
-function b64DecodeUnicode(str) {
-  const binary = atob(str.replace(/\n/g, ""));
-  const bytes = new Uint8Array(binary.length);
-  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
-  return new TextDecoder("utf-8").decode(bytes);
-}
 
 function escapeHtml(str) {
   return String(str)
@@ -40,61 +23,29 @@ function escapeHtml(str) {
     .replace(/"/g, "&quot;");
 }
 
-/* ---------------- GitHub API ---------------- */
-function ghToken() {
-  return sessionStorage.getItem("gh_token");
+function sessionToken() {
+  return sessionStorage.getItem("session_token");
 }
 
-async function ghApi(path, opts = {}) {
-  return fetch(`https://api.github.com/repos/${REPO}/${path}`, {
-    ...opts,
+async function api(path, body) {
+  const res = await fetch(WORKER_URL + path, {
+    method: "POST",
     headers: {
-      Authorization: `token ${ghToken()}`,
-      Accept: "application/vnd.github.v3+json",
-      ...(opts.headers || {}),
+      "Content-Type": "application/json",
+      ...(sessionToken() ? { Authorization: `Bearer ${sessionToken()}` } : {}),
     },
+    body: JSON.stringify(body || {}),
   });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || "Request failed");
+  return data;
 }
 
-async function getProductsFile() {
-  const res = await ghApi(`contents/${PRODUCTS_PATH}?ref=${BRANCH}`);
-  if (!res.ok) throw new Error("Could not load products.json (status " + res.status + ")");
-  const data = await res.json();
-  const content = b64DecodeUnicode(data.content);
-  return { products: JSON.parse(content), sha: data.sha };
-}
-
-async function saveProductsFile(products, message) {
-  const content = b64EncodeUnicode(JSON.stringify(products, null, 2));
-  const res = await ghApi(`contents/${PRODUCTS_PATH}`, {
-    method: "PUT",
-    body: JSON.stringify({ message, content, sha: state.sha, branch: BRANCH }),
-  });
-  if (!res.ok) {
-    const e = await res.json().catch(() => ({}));
-    throw new Error(e.message || "Failed to save products.json");
-  }
-  const data = await res.json();
-  state.sha = data.content.sha;
-}
-
-async function uploadImage(filename, base64Data, message) {
-  const res = await ghApi(`contents/${IMAGES_PATH}/${filename}`, {
-    method: "PUT",
-    body: JSON.stringify({ message, content: base64Data, branch: BRANCH }),
-  });
-  if (!res.ok) {
-    const e = await res.json().catch(() => ({}));
-    throw new Error(e.message || "Failed to upload image");
-  }
-  const data = await res.json();
-  return data.content.path;
-}
-
-/* ---------------- Auth ---------------- */
+/* ---------------- Auth / Login screen ---------------- */
 function showApp() {
   document.getElementById("loginScreen").style.display = "none";
   document.getElementById("app").style.display = "block";
+  document.getElementById("manageUsersBtn").style.display = state.isOwner ? "inline-block" : "none";
 }
 function showLogin(message) {
   document.getElementById("loginScreen").style.display = "flex";
@@ -102,38 +53,159 @@ function showLogin(message) {
   if (message) document.getElementById("loginStatus").textContent = message;
 }
 
-async function verifyAndInit() {
-  const token = ghToken();
-  if (!token) return showLogin();
+let isSignupMode = false;
+
+async function checkAuthStatus() {
   try {
-    const res = await fetch("https://api.github.com/user", {
-      headers: { Authorization: `token ${token}` },
-    });
-    if (!res.ok) throw new Error();
+    const data = await api("/auth-status");
+    isSignupMode = !data.hasOwner;
+    if (isSignupMode) {
+      document.getElementById("loginTitle").textContent = "Create Your Admin Account";
+      document.getElementById("loginSubtitle").textContent = "This will be the owner account — you can add more logins later.";
+      document.getElementById("loginSubmitBtn").textContent = "Create Account";
+    } else {
+      document.getElementById("loginTitle").textContent = "Pharmaline Admin";
+      document.getElementById("loginSubtitle").textContent = "Sign in to manage your catalog.";
+      document.getElementById("loginSubmitBtn").textContent = "Log In";
+    }
+  } catch {}
+}
+
+document.getElementById("loginForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const email = document.getElementById("loginEmail").value.trim();
+  const password = document.getElementById("loginPassword").value;
+  const statusEl = document.getElementById("loginStatus");
+  statusEl.textContent = "Please wait...";
+  try {
+    if (isSignupMode) {
+      await api("/auth-signup-owner", { email, password });
+    }
+    const data = await api("/auth-login", { email, password });
+    sessionStorage.setItem("session_token", data.token);
+    state.isOwner = data.isOwner;
+    statusEl.textContent = "";
+    showApp();
+    await refreshProducts();
+  } catch (err) {
+    statusEl.textContent = err.message;
+  }
+});
+
+async function verifyAndInit() {
+  const token = sessionToken();
+  if (!token) {
+    await checkAuthStatus();
+    return showLogin();
+  }
+  try {
+    const data = await api("/auth-verify");
+    state.isOwner = data.isOwner;
     showApp();
     await refreshProducts();
   } catch {
-    sessionStorage.removeItem("gh_token");
+    sessionStorage.removeItem("session_token");
+    await checkAuthStatus();
     showLogin("Your session expired — please log in again.");
   }
 }
 
-document.getElementById("loginBtn").addEventListener("click", () => {
-  window.location.href = WORKER_URL + "/auth";
-});
-
-(function checkForTokenInUrl() {
-  if (window.location.hash.startsWith("#gh_token=")) {
-    const token = window.location.hash.replace("#gh_token=", "");
-    sessionStorage.setItem("gh_token", token);
-    history.replaceState(null, "", window.location.pathname);
-  }
-})();
-
 document.getElementById("logoutBtn").addEventListener("click", () => {
-  sessionStorage.removeItem("gh_token");
-  showLogin();
+  sessionStorage.removeItem("session_token");
+  checkAuthStatus().then(() => showLogin());
 });
+
+/* ---------------- Manage Users ---------------- */
+document.getElementById("manageUsersBtn").addEventListener("click", openUsersModal);
+
+async function openUsersModal() {
+  const root = document.getElementById("modalRoot");
+  root.innerHTML = `
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-box">
+        <h2>Manage Users</h2>
+        <div id="usersList" style="margin-bottom:20px;">Loading...</div>
+        <div class="form-row">
+          <label>Add New User</label>
+          <div class="two-col">
+            <input type="email" id="newUserEmail" placeholder="Email address">
+            <input type="text" id="newUserPassword" placeholder="Temporary password">
+          </div>
+          <button class="btn-primary" id="addUserBtn" style="margin-top:10px;">Add User</button>
+        </div>
+        <p class="status-msg" id="usersStatus"></p>
+        <div class="modal-actions">
+          <div></div>
+          <button class="btn-secondary" id="closeUsersBtn">Close</button>
+        </div>
+      </div>
+    </div>
+  `;
+  document.getElementById("closeUsersBtn").addEventListener("click", closeModal);
+  document.getElementById("modalOverlay").addEventListener("click", (e) => {
+    if (e.target.id === "modalOverlay") closeModal();
+  });
+  document.getElementById("addUserBtn").addEventListener("click", async () => {
+    const email = document.getElementById("newUserEmail").value.trim();
+    const password = document.getElementById("newUserPassword").value;
+    const statusEl = document.getElementById("usersStatus");
+    try {
+      await api("/users-add", { email, password });
+      statusEl.className = "status-msg success";
+      statusEl.textContent = "User added!";
+      loadUsersList();
+    } catch (err) {
+      statusEl.className = "status-msg error";
+      statusEl.textContent = err.message;
+    }
+  });
+  loadUsersList();
+}
+
+async function loadUsersList() {
+  const listEl = document.getElementById("usersList");
+  try {
+    const data = await api("/users-list");
+    listEl.innerHTML = data.users
+      .map(
+        (u) => `
+      <div style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid #DCE4EC;">
+        <span>${escapeHtml(u.email)} ${u.isOwner ? "<strong>(Owner)</strong>" : ""}</span>
+        ${
+          !u.isOwner
+            ? `<div style="display:flex; gap:8px;">
+                <button class="btn-secondary" data-action="reset" data-email="${escapeHtml(u.email)}">Reset Password</button>
+                <button class="btn-secondary" data-action="remove" data-email="${escapeHtml(u.email)}" style="border-color:#C0392B;color:#C0392B;">Remove</button>
+              </div>`
+            : ""
+        }
+      </div>`
+      )
+      .join("");
+
+    listEl.querySelectorAll('[data-action="remove"]').forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        if (!confirm(`Remove access for ${btn.dataset.email}?`)) return;
+        await api("/users-remove", { email: btn.dataset.email });
+        loadUsersList();
+      });
+    });
+    listEl.querySelectorAll('[data-action="reset"]').forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        const newPassword = prompt(`New temporary password for ${btn.dataset.email}:`);
+        if (!newPassword) return;
+        try {
+          await api("/users-change-password", { email: btn.dataset.email, newPassword });
+          alert("Password updated.");
+        } catch (err) {
+          alert(err.message);
+        }
+      });
+    });
+  } catch (err) {
+    listEl.textContent = "Error loading users: " + err.message;
+  }
+}
 
 /* ---------------- Spinner ---------------- */
 function setBusy(isBusy) {
@@ -158,16 +230,16 @@ const ADMIN_CATEGORIES = [
 async function refreshProducts() {
   setBusy(true);
   try {
-    const { products, sha } = await getProductsFile();
+    const data = await api("/products-get");
     const previewMap = {};
     state.products.forEach((p) => {
       if (p._localPreview) previewMap[p.sku] = p._localPreview;
     });
-    products.forEach((p) => {
+    data.products.forEach((p) => {
       if (previewMap[p.sku]) p._localPreview = previewMap[p.sku];
     });
-    state.products = products;
-    state.sha = sha;
+    state.products = data.products;
+    state.sha = data.sha;
     renderStats();
     renderFilterTabs();
     renderGrid();
@@ -279,10 +351,6 @@ function openProductModal(existing) {
     sale: false,
     images: [],
     barcode: "",
-    in_stock: true,
-    stock_cases: "",
-    stock_pallets: "",
-    cost_price: "",
   };
 
   state.pendingImages = [];
@@ -502,8 +570,7 @@ function renderExistingImagePreviews(paths) {
 
   row.querySelectorAll(".image-remove-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
-      const path = btn.dataset.path;
-      state.removedImages.push(path);
+      state.removedImages.push(btn.dataset.path);
       btn.closest(".image-thumb-wrap").remove();
     });
   });
@@ -516,12 +583,7 @@ async function translateField(fromId, toId, btnId) {
   btn.disabled = true;
   btn.textContent = "Translating...";
   try {
-    const res = await fetch(WORKER_URL + "/translate", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text }),
-    });
-    const data = await res.json();
+    const data = await api("/translate", { text });
     document.getElementById(toId).value = data.translated || "";
   } catch {
     alert("Translation failed — check your connection and try again.");
@@ -537,12 +599,7 @@ async function runAutofill() {
   btn.textContent = "Reading photos...";
   try {
     const images = state.pendingImages.map((img) => ({ data: img.base64, mime: img.mime }));
-    const res = await fetch(WORKER_URL + "/autofill", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ images }),
-    });
-    const data = await res.json();
+    const data = await api("/autofill", { images });
     if (data.name_en) document.getElementById("f_name_en").value = data.name_en;
     if (data.name_fr) document.getElementById("f_name_fr").value = data.name_fr;
     if (data.description_en) document.getElementById("f_description_en").value = data.description_en;
@@ -564,26 +621,15 @@ async function runBarcodeLookup() {
   btn.disabled = true;
   btn.textContent = "Looking up...";
   try {
-    const res = await fetch(WORKER_URL + "/barcode-lookup", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ barcode }),
-    });
-    const data = await res.json();
+    const data = await api("/barcode-lookup", { barcode });
     if (data.found) {
       if (data.name_en) document.getElementById("f_name_en").value = data.name_en;
       if (data.unit_size) document.getElementById("f_unit_size").value = data.unit_size;
       if (data.unit_type) document.getElementById("f_unit_type").value = data.unit_type;
-
       if (data.image_url) {
         btn.textContent = "Fetching photo...";
         try {
-          const imgRes = await fetch(WORKER_URL + "/fetch-image", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ image_url: data.image_url }),
-          });
-          const imgData = await imgRes.json();
+          const imgData = await api("/fetch-image", { image_url: data.image_url });
           if (imgData.base64) {
             state.pendingImages.push({ base64: imgData.base64, mime: imgData.mime });
             renderPendingImagePreviews();
@@ -591,69 +637,15 @@ async function runBarcodeLookup() {
           }
         } catch {}
       }
-
       alert("Found it! Details filled in — please double check them, then click Auto-fill for descriptions.");
     } else {
-      alert("Not found in the free product databases. Take a photo of the product instead, then click the green Auto-fill button — that works great even without a barcode match.");
+      alert("Not found in the free product databases. Take a photo of the product instead, then click the green Auto-fill button.");
     }
   } catch {
     alert("Lookup failed — check your connection and try again.");
   }
   btn.disabled = false;
   btn.textContent = "Look Up";
-}
-
-async function showImageSearchResults(query) {
-  const box = document.getElementById("scannerBox");
-  box.style.display = "block";
-  box.innerHTML = `<p class="status-msg">Searching Google Images for "${escapeHtml(query)}"...</p>`;
-  try {
-    const res = await fetch(WORKER_URL + "/image-search", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ query }),
-    });
-    const data = await res.json();
-    if (!data.images || !data.images.length) {
-      box.innerHTML = `<p class="status-msg">No image results found either — try uploading a photo manually.</p><button class="btn-secondary" id="stopScanBtn" type="button">Close</button>`;
-      document.getElementById("stopScanBtn").addEventListener("click", stopBarcodeScanner);
-      return;
-    }
-    box.innerHTML = `
-      <p class="status-msg">Click the photo that matches your product:</p>
-      <div class="image-preview-row" id="googleImageResults"></div>
-      <button class="btn-secondary" id="stopScanBtn" type="button" style="margin-top:10px;">Close</button>
-    `;
-    const resultsRow = document.getElementById("googleImageResults");
-    data.images.forEach((img) => {
-      const thumb = document.createElement("img");
-      thumb.src = img.thumbnail;
-      thumb.style.cursor = "pointer";
-      thumb.style.width = "90px";
-      thumb.style.height = "90px";
-      thumb.addEventListener("click", async () => {
-        box.innerHTML = `<p class="status-msg">Downloading photo...</p>`;
-        try {
-          const imgRes = await fetch(WORKER_URL + "/fetch-image", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ image_url: img.fullsize }),
-          });
-          const imgData = await imgRes.json();
-          if (imgData.base64) {
-            state.pendingImages.push({ base64: imgData.base64, mime: imgData.mime });
-            renderPendingImagePreviews();
-            document.getElementById("autofillBtn").style.display = "block";
-          }
-        } catch {}
-        stopBarcodeScanner();
-      });
-      resultsRow.appendChild(thumb);
-    });
-    document.getElementById("stopScanBtn").addEventListener("click", stopBarcodeScanner);
-  } catch {
-    box.innerHTML = `<p class="status-msg error">Image search failed — try uploading a photo manually.</p>`;
-  }
 }
 
 function startBarcodeScanner() {
@@ -679,9 +671,7 @@ function startBarcodeScanner() {
 
 function stopBarcodeScanner() {
   try {
-    if (state.scanner) {
-      state.scanner.stop().then(() => {}).catch(() => {});
-    }
+    if (state.scanner) state.scanner.stop().then(() => {}).catch(() => {});
   } catch (e) {}
   state.scanner = null;
   const box = document.getElementById("scannerBox");
@@ -691,12 +681,7 @@ function stopBarcodeScanner() {
 /* ---------------- Private (stock/cost) data ---------------- */
 async function loadPrivateData(sku) {
   try {
-    const res = await fetch(WORKER_URL + "/private-get", {
-      method: "POST",
-      headers: { "Content-Type": "application/json", Authorization: `Bearer ${ghToken()}` },
-      body: JSON.stringify({ skus: [sku] }),
-    });
-    const data = await res.json();
+    const data = await api("/private-get", { skus: [sku] });
     const info = data[sku] || {};
     document.getElementById("f_in_stock").checked = info.in_stock !== false;
     document.getElementById("f_stock_cases").value = info.stock_cases || "";
@@ -707,16 +692,12 @@ async function loadPrivateData(sku) {
 
 async function savePrivateData(sku) {
   try {
-    await fetch(WORKER_URL + "/private-set", {
-      method: "POST",
-      headers: { "Content-Type": "application/json", Authorization: `Bearer ${ghToken()}` },
-      body: JSON.stringify({
-        sku,
-        in_stock: document.getElementById("f_in_stock").checked,
-        stock_cases: document.getElementById("f_stock_cases").value.trim(),
-        stock_pallets: document.getElementById("f_stock_pallets").value.trim(),
-        cost_price: document.getElementById("f_cost_price").value.trim(),
-      }),
+    await api("/private-set", {
+      sku,
+      in_stock: document.getElementById("f_in_stock").checked,
+      stock_cases: document.getElementById("f_stock_cases").value.trim(),
+      stock_pallets: document.getElementById("f_stock_pallets").value.trim(),
+      cost_price: document.getElementById("f_cost_price").value.trim(),
     });
   } catch {
     alert("Product saved, but the private stock/cost info failed to save — try again from the edit screen.");
@@ -739,8 +720,8 @@ async function saveProduct(sku, isEdit) {
       const img = state.pendingImages[i];
       const ext = (img.mime.split("/")[1] || "jpg").replace("jpeg", "jpg");
       const filename = `${sku}_${Date.now()}_${i}.${ext}`;
-      const path = await uploadImage(filename, img.base64, `Add image for product ${sku}`);
-      images.push(path);
+      const data = await api("/image-upload", { filename, content: img.base64, message: `Add image for product ${sku}` });
+      images.push(data.path);
     }
 
     const localPreview = state.pendingImages[0]
@@ -764,10 +745,7 @@ async function saveProduct(sku, isEdit) {
       pallet_qty: parseInt(document.getElementById("f_pallet_qty").value, 10) || 0,
       sale: document.getElementById("f_sale").checked,
       images: images,
-      name: {
-        en: document.getElementById("f_name_en").value.trim(),
-        fr: document.getElementById("f_name_fr").value.trim(),
-      },
+      name: { en: document.getElementById("f_name_en").value.trim(), fr: document.getElementById("f_name_fr").value.trim() },
       description: {
         en: document.getElementById("f_description_en").value.trim(),
         fr: document.getElementById("f_description_fr").value.trim(),
@@ -782,16 +760,19 @@ async function saveProduct(sku, isEdit) {
     }
 
     const cleanProducts = state.products.map(({ _localPreview, ...rest }) => rest);
-    await saveProductsFile(cleanProducts, `${isEdit ? "Update" : "Add"} product ${sku}`);
+    const saveRes = await api("/products-save", {
+      products: cleanProducts,
+      sha: state.sha,
+      message: `${isEdit ? "Update" : "Add"} product ${sku}`,
+    });
+    state.sha = saveRes.sha;
     await savePrivateData(sku);
 
     statusEl.className = "status-msg success";
     statusEl.textContent = "Saved!";
     renderStats();
     renderGrid();
-    setTimeout(() => {
-      closeModal();
-    }, 500);
+    setTimeout(() => closeModal(), 500);
   } catch (err) {
     statusEl.className = "status-msg error";
     statusEl.textContent = "Error: " + err.message;
@@ -805,7 +786,8 @@ async function deleteProduct(sku) {
   try {
     state.products = state.products.filter((p) => String(p.sku) !== String(sku));
     const cleanProducts = state.products.map(({ _localPreview, ...rest }) => rest);
-    await saveProductsFile(cleanProducts, `Delete product ${sku}`);
+    const saveRes = await api("/products-save", { products: cleanProducts, sha: state.sha, message: `Delete product ${sku}` });
+    state.sha = saveRes.sha;
     closeModal();
     renderStats();
     renderGrid();
