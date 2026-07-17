@@ -86,7 +86,7 @@
     "unit_type": "units",
     "case_qty": 1,
     "pallet_qty": 144,
-    "sale": false,
+    "sale": true,
     "images": [
       "static/images/products/1004_1784250899451_0.jpg"
     ],
