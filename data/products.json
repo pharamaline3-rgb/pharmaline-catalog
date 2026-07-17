@@ -83,13 +83,11 @@
     "description_en": "Goodnites Girls' Nighttime Bedwetting Underwear, Size S/M, 44 Ct",
     "description_fr": "Goodnites sous-vêtements nocturnes d'incontinence pour filles, taille S/M, 44 pièces",
     "unit_size": "44",
-    "unit_type": "",
+    "unit_type": "ml",
     "case_qty": 1,
     "pallet_qty": 144,
     "sale": false,
-    "images": [
-      "static/images/products/1004_1784250467807_0.jpg"
-    ],
+    "images": [],
     "name": {
       "en": "Goodnites Girls' Nighttime Bedwetting Underwear, Size S/M, 44 Ct",
       "fr": "Goodnites Culottes Anti-adrénaline de Nuit pour Filles, Taille S/M, 44 pièces"
