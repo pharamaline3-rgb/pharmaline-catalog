@@ -27,24 +27,26 @@
   {
     "sku": "1002",
     "barcode": "3600053361",
-    "category": "baby",
-    "name_en": "Goodnites Boys' Nighttime Bedwetting Underwear, Size L, 34 Ct",
-    "name_fr": "",
-    "description_en": "Goodnites Boys' Nighttime Bedwetting Underwear, Size L, 34 Ct",
-    "description_fr": "",
-    "unit_size": "34",
-    "unit_type": "Ct",
+    "category": "",
+    "name_en": "Goodnites Nighttime Underwear",
+    "name_fr": "Goodnites Habillement de Nuit",
+    "description_en": "Goodnites Boys' Nighttime Underwear 100% Leak Free",
+    "description_fr": "Habillement de Nuit Goodnites 100 % Protection Antifuie",
+    "unit_size": "L | 34",
+    "unit_type": "units",
     "case_qty": 1,
     "pallet_qty": 192,
     "sale": false,
-    "images": [],
+    "images": [
+      "static/images/products/1002_1784249466596_0.jpg"
+    ],
     "name": {
-      "en": "Goodnites Boys' Nighttime Bedwetting Underwear, Size L, 34 Ct",
-      "fr": ""
+      "en": "Goodnites Nighttime Underwear",
+      "fr": "Goodnites Habillement de Nuit"
     },
     "description": {
-      "en": "Goodnites Boys' Nighttime Bedwetting Underwear, Size L, 34 Ct",
-      "fr": ""
+      "en": "Goodnites Boys' Nighttime Underwear 100% Leak Free",
+      "fr": "Habillement de Nuit Goodnites 100 % Protection Antifuie"
     }
   },
   {
