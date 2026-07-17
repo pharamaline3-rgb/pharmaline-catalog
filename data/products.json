@@ -4356,7 +4356,7 @@
     "unit_type": "L",
     "case_qty": 4,
     "pallet_qty": 36,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Palmolive Grapefruit & Pomegranate Dish Liquid, 4.27l /145oz, 4/CS",
@@ -4540,7 +4540,7 @@
     "unit_type": "L",
     "case_qty": 4,
     "pallet_qty": 36,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Palmolive Original, 4.27l / 145oz",
@@ -4632,7 +4632,7 @@
     "unit_type": "L",
     "case_qty": 4,
     "pallet_qty": 36,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Palmolive Salt and Citrus, 4.27l",
@@ -5069,7 +5069,7 @@
     "unit_type": "g",
     "case_qty": 12,
     "pallet_qty": 78,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Pink Stuff Miracle Cleaning Paste 850g, 12/cs",
@@ -5115,7 +5115,7 @@
     "unit_type": "mL",
     "case_qty": 12,
     "pallet_qty": 78,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Pink Stuff Miracle Floor Cleaner 750 mL, 12/cs",
@@ -5138,7 +5138,7 @@
     "unit_type": "mL",
     "case_qty": 8,
     "pallet_qty": 125,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Pink Stuff Miracle Foaming Carpet Stain Remover Spray, 500mL 8/cs",
@@ -5161,7 +5161,7 @@
     "unit_type": "mL",
     "case_qty": 10,
     "pallet_qty": 112,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Pink Stuff Miracle Wash Up Spray 500mL",
@@ -6656,7 +6656,7 @@
     "unit_type": "L",
     "case_qty": 6,
     "pallet_qty": 72,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Tide Liquid Laundry Detergent Original HE, 25 loads, 1L / 34 oz, 6/CS",
@@ -6702,7 +6702,7 @@
     "unit_type": "L",
     "case_qty": 4,
     "pallet_qty": 65,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Tide Liquid Laundry Detergent Original HE, 64 loads, 2.48L / 84 oz",
@@ -6748,7 +6748,7 @@
     "unit_type": "L",
     "case_qty": 4,
     "pallet_qty": 65,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Tide Liquid Laundry Detergent Original, 64 loads, 2.48L / 84 oz, 4/cs",
@@ -6771,7 +6771,7 @@
     "unit_type": "L",
     "case_qty": 4,
     "pallet_qty": 65,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Tide Liquid Laundry Detergent, Febreze HE Turbo Clean, 2.48L / 84 oz, 4/cs",
@@ -6794,7 +6794,7 @@
     "unit_type": "units",
     "case_qty": 6,
     "pallet_qty": 75,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Tide Liquid Laundry Detergent, Original Scent, 23 fl oz, 17 Loads, 6/CS",
@@ -7001,7 +7001,7 @@
     "unit_type": "kg",
     "case_qty": 4,
     "pallet_qty": 75,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Tide Powder Laundry Detergent, Original Scent, 44 Loads, 1.4 kg/49oz, 4/cs",
@@ -7323,7 +7323,7 @@
     "unit_type": "g",
     "case_qty": 6,
     "pallet_qty": 180,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Febreze Air Freshener Spray, Cherry Blossom, 230 g, 6/cs",
@@ -7346,7 +7346,7 @@
     "unit_type": "g",
     "case_qty": 6,
     "pallet_qty": 180,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Febreze Air Freshener Spray, Gain Original, 230 g, 6/cs",
@@ -7369,7 +7369,7 @@
     "unit_type": "g",
     "case_qty": 6,
     "pallet_qty": 180,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Febreze Air Freshener Spray, Lavender Dreams, 230 g, 6/cs",
@@ -7415,7 +7415,7 @@
     "unit_type": "g",
     "case_qty": 6,
     "pallet_qty": 180,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Febreze Air Freshener Spray, Vanilla Suede, 230 g, 6/cs",
@@ -8291,7 +8291,7 @@
     "unit_type": "L",
     "case_qty": 6,
     "pallet_qty": 45,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Mazola 100% Pure Canola Oil, 2.8 L",
@@ -8360,7 +8360,7 @@
     "unit_type": "L",
     "case_qty": 6,
     "pallet_qty": 45,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Mazola 100% Pure Corn Oil, 2.8 L",
@@ -9280,7 +9280,7 @@
     "unit_type": "ml",
     "case_qty": 6,
     "pallet_qty": 240,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Dial Body Wash, 473ml/16oz, Coconut Water, 6/cs",
@@ -9303,7 +9303,7 @@
     "unit_type": "ml",
     "case_qty": 6,
     "pallet_qty": 240,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Dial Body Wash, 473ml/16oz, Gold, 6/cs",
@@ -9372,7 +9372,7 @@
     "unit_type": "ml",
     "case_qty": 6,
     "pallet_qty": 240,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Dial Body Wash, 473ml/16oz, Orange Peel Cocoa Butter, 6/cs",
@@ -9395,7 +9395,7 @@
     "unit_type": "ml",
     "case_qty": 6,
     "pallet_qty": 240,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Dial Body Wash, 473ml/16oz, Silk & Seaberry, 6/cs",
@@ -9418,7 +9418,7 @@
     "unit_type": "ml",
     "case_qty": 6,
     "pallet_qty": 240,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Dial Body Wash, 473ml/16oz, Soy & Almond Milk, 6/cs",
@@ -9441,7 +9441,7 @@
     "unit_type": "ml",
     "case_qty": 6,
     "pallet_qty": 240,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Dial Body Wash, 473ml/16oz, Spring Water, 6/cs",
@@ -9464,7 +9464,7 @@
     "unit_type": "ml",
     "case_qty": 6,
     "pallet_qty": 240,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Dial Mens 3in1 Wash Ultimate Clean, 473ml/16oz, Amber Wood, 6/cs",
@@ -9487,7 +9487,7 @@
     "unit_type": "ml",
     "case_qty": 6,
     "pallet_qty": 240,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Dial Mens 3in1 Wash, 473ml/16oz, Recharge Cedar Leaf, 6/cs",
@@ -9510,7 +9510,7 @@
     "unit_type": "ml",
     "case_qty": 6,
     "pallet_qty": 240,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Dial Mens 3in1 Wash, 473ml/16oz, Refresh Blue Sage, 6/cs",
@@ -9533,7 +9533,7 @@
     "unit_type": "ml",
     "case_qty": 6,
     "pallet_qty": 240,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Dial Mens Body Wash, 473ml/16oz, Soothe Infinite Fresh, 6/cs",
@@ -10087,7 +10087,7 @@
     "unit_type": "units",
     "case_qty": 4,
     "pallet_qty": 136,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Irish Spring 5-In-1 Body Wash Pump For Men, 887 ML",
@@ -10271,7 +10271,7 @@
     "unit_type": "ml",
     "case_qty": 4,
     "pallet_qty": 200,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Irish Spring Bw, 5 In 1, 591ml",
@@ -10294,7 +10294,7 @@
     "unit_type": "ml",
     "case_qty": 4,
     "pallet_qty": 200,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Irish Spring Bw, Aloe, 591ml/20oz",
@@ -10363,7 +10363,7 @@
     "unit_type": "ml",
     "case_qty": 4,
     "pallet_qty": 200,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Irish Spring Bw, Mountain Chill, 591ml/20oz",
@@ -10386,7 +10386,7 @@
     "unit_type": "ml",
     "case_qty": 4,
     "pallet_qty": 200,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Irish Spring Bw, Original Clean, 591ml/20oz",
@@ -10432,7 +10432,7 @@
     "unit_type": "ml",
     "case_qty": 4,
     "pallet_qty": 200,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Irish Spring Bw, Ultimate Wake Up Tea Tree, 591ml/20oz",
@@ -10570,7 +10570,7 @@
     "unit_type": "mL",
     "case_qty": 6,
     "pallet_qty": 250,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "L'Oreal Men Expert Shower Gel, Magnesium Sensitive, 300 mL, 6/cs",
@@ -10593,7 +10593,7 @@
     "unit_type": "mL",
     "case_qty": 6,
     "pallet_qty": 250,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "L'Oreal Men Expert Shower Gel, Stress Resist, 300 mL, 6/cs",
@@ -10616,7 +10616,7 @@
     "unit_type": "g",
     "case_qty": 18,
     "pallet_qty": 20,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Old Spice High Endurance Deodorant, Pure Sport, 85g, 5 Pack, 18/cs",
@@ -11651,7 +11651,7 @@
     "unit_type": "units",
     "case_qty": 12,
     "pallet_qty": 30,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Cashmere Ultra Bathroom Tissue, 8=16 143 sheets 3ply 12/cs",
@@ -12617,7 +12617,7 @@
     "unit_type": "units",
     "case_qty": 16,
     "pallet_qty": 24,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "SpongeTowels Ultra Pro Paper Towels, 1=3 Regular Rolls, 147 sheets, 16/cs",
@@ -12824,7 +12824,7 @@
     "unit_type": "g",
     "case_qty": 6,
     "pallet_qty": 180,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Febreze Air Freshener Spray, Hawaiian Aloha, 230 g, 6/cs",
@@ -12870,7 +12870,7 @@
     "unit_type": "mL",
     "case_qty": 4,
     "pallet_qty": 200,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Irish Spring Bw - Cedarwood & Sea Salt, 591 mL, 4/cs",
@@ -12939,7 +12939,7 @@
     "unit_type": "mL",
     "case_qty": 6,
     "pallet_qty": 0,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Johnson's Baby Baby Shampoo, 500 mL, 6/cs",
@@ -12962,7 +12962,7 @@
     "unit_type": "mL",
     "case_qty": 4,
     "pallet_qty": 250,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Olay Fresh Outlast Body Wash - Birch Water & Lavender, 650 mL, 4/cs",
@@ -12985,7 +12985,7 @@
     "unit_type": "mL",
     "case_qty": 4,
     "pallet_qty": 250,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Olay Fresh Outlast Body Wash - Notes of Peach & Cherry Blossom 650 mL, 4/cs",
@@ -13008,7 +13008,7 @@
     "unit_type": "mL",
     "case_qty": 4,
     "pallet_qty": 250,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Olay Fresh Outlast Body Wash - White Strawberry & Mint, 650 mL, 4/cs",
@@ -13031,7 +13031,7 @@
     "unit_type": "mL",
     "case_qty": 4,
     "pallet_qty": 120,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Olay Fresh Radiance Body Wash - Rose Water & Sweet Nectar , 975 mL 4/cs",
@@ -13054,7 +13054,7 @@
     "unit_type": "mL",
     "case_qty": 4,
     "pallet_qty": 120,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Olay Ultra Moisture Body Wash - Coconut Oil, 975 mL, 4/cs",
@@ -13100,7 +13100,7 @@
     "unit_type": "ct",
     "case_qty": 12,
     "pallet_qty": 128,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Tampax Tampons, Super Plus, 20 ct, 12/cs",
@@ -13123,7 +13123,7 @@
     "unit_type": "mL",
     "case_qty": 3,
     "pallet_qty": 112,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Febreze Odor-Fighting Fabric Refresher, Downy April Fresh, 700 mL Spray, 4/cs",
@@ -13146,7 +13146,7 @@
     "unit_type": "mL",
     "case_qty": 3,
     "pallet_qty": 112,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Febreze Odor-Fighting Fabric Refresher, Spring & Renewal, 700 mL Spray, 4/cs",
@@ -13652,7 +13652,7 @@
     "unit_type": "L",
     "case_qty": 4,
     "pallet_qty": 120,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Mr. Clean Meadows And Rain Scent All Purpose Cleaner, 1.2 L, 4/cs",
@@ -13675,7 +13675,7 @@
     "unit_type": "L",
     "case_qty": 4,
     "pallet_qty": 120,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Mr. Clean Multi-Surface Cleaner with Febreze Lavender Vanilla Scent, 1.2 L, 4/cs",
@@ -13698,7 +13698,7 @@
     "unit_type": "L",
     "case_qty": 4,
     "pallet_qty": 120,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Mr. Clean Multi-Surface Cleaner with Unstopables Fresh Scent , 1.2 L, 4/cs",
@@ -13721,7 +13721,7 @@
     "unit_type": "L",
     "case_qty": 4,
     "pallet_qty": 80,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Mr. Clean Multi-Surface Cleaner, Gain Original Fresh Platinum, 1.89 L, 4/cs",
