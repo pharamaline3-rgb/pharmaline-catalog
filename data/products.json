@@ -360,23 +360,25 @@
     "sku": "1016",
     "barcode": "36000546439",
     "category": "baby",
-    "name_en": "Huggies Little Snugglers Giga Nb, 76ct",
-    "name_fr": "",
-    "description_en": "Huggies Little Snugglers Giga Nb, 76ct",
-    "description_fr": "",
+    "name_en": "Huggies Little Snugglers",
+    "name_fr": "Huggies Little Snugglers",
+    "description_en": "Baby diapers, newborn size, 76 count, Disney 100 Limited Edition",
+    "description_fr": "Couches pour bébé, taille nouveau-né, forfait de 76 pièces, Édition Limitée Disney 100",
     "unit_size": "76",
-    "unit_type": "ct",
+    "unit_type": "units",
     "case_qty": 1,
     "pallet_qty": 180,
     "sale": false,
-    "images": [],
+    "images": [
+      "static/images/products/1016_1784255880507_0.jpg"
+    ],
     "name": {
-      "en": "Huggies Little Snugglers Giga Nb, 76ct",
-      "fr": ""
+      "en": "Huggies Little Snugglers",
+      "fr": "Huggies Little Snugglers"
     },
     "description": {
-      "en": "Huggies Little Snugglers Giga Nb, 76ct",
-      "fr": ""
+      "en": "Baby diapers, newborn size, 76 count, Disney 100 Limited Edition",
+      "fr": "Couches pour bébé, taille nouveau-né, forfait de 76 pièces, Édition Limitée Disney 100"
     }
   },
   {
