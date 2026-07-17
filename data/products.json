@@ -27,7 +27,7 @@
   {
     "sku": "1002",
     "barcode": "3600053361",
-    "category": "",
+    "category": "baby",
     "name_en": "Goodnites Nighttime Underwear",
     "name_fr": "Goodnites Habillement de Nuit",
     "description_en": "Goodnites Boys' Nighttime Underwear 100% Leak Free",
@@ -37,7 +37,9 @@
     "case_qty": 1,
     "pallet_qty": 192,
     "sale": false,
-    "images": [],
+    "images": [
+      "static/images/products/1002_1784250355717_0.jpg"
+    ],
     "name": {
       "en": "Goodnites Nighttime Underwear",
       "fr": "Goodnites Habillement de Nuit"
