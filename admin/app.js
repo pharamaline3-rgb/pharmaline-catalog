@@ -259,7 +259,7 @@ function renderStats() {
 }
 
 function renderFilterTabs() {
-  const tabs = [{ key: "all", label: "All" }, ...ADMIN_CATEGORIES];
+  const tabs = [{ key: "all", label: "All" }, { key: "__sale__", label: "🔥 On Sale" }, ...ADMIN_CATEGORIES];
   const wrap = document.getElementById("filterTabs");
   wrap.innerHTML = "";
   tabs.forEach((tab) => {
@@ -279,7 +279,9 @@ function renderGrid() {
   const grid = document.getElementById("productGrid");
   const term = state.searchTerm.toLowerCase();
   const filtered = state.products.filter((p) => {
-    const catOk = state.activeCategory === "all" || p.category === state.activeCategory;
+    const catOk =
+      state.activeCategory === "all" ||
+      (state.activeCategory === "__sale__" ? p.sale === true : p.category === state.activeCategory);
     if (!catOk) return false;
     if (!term) return true;
     return (
