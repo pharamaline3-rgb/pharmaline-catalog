@@ -110,9 +110,7 @@
     "case_qty": 1,
     "pallet_qty": 260,
     "sale": false,
-    "images": [
-      "static/images/products/1005_1784250566713_0.jpg"
-    ],
+    "images": [],
     "name": {
       "en": "Huggies Little Movers Diapers",
       "fr": "Couches Bébé Huggies Little Movers"
