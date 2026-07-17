@@ -7522,23 +7522,25 @@
     "sku": "1327",
     "barcode": "6563327943",
     "category": "grocery",
-    "name_en": "French Toast Crunch, 380g",
-    "name_fr": "",
-    "description_en": "French Toast Crunch, 380g",
-    "description_fr": "",
+    "name_en": "French Toast Crunch",
+    "name_fr": "French Toast Crunch",
+    "description_en": "bursting with syrup & cinnamon taste",
+    "description_fr": "explosion de saveur sirop et cannelle",
     "unit_size": "380",
     "unit_type": "g",
     "case_qty": 12,
     "pallet_qty": 36,
     "sale": false,
-    "images": [],
+    "images": [
+      "static/images/products/1327_1784259225658_0.png"
+    ],
     "name": {
-      "en": "French Toast Crunch, 380g",
-      "fr": ""
+      "en": "French Toast Crunch",
+      "fr": "French Toast Crunch"
     },
     "description": {
-      "en": "French Toast Crunch, 380g",
-      "fr": ""
+      "en": "bursting with syrup & cinnamon taste",
+      "fr": "explosion de saveur sirop et cannelle"
     }
   },
   {
