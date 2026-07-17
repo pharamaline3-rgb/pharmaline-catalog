@@ -799,5 +799,147 @@ async function deleteProduct(sku) {
   setBusy(false);
 }
 
+/* ---------------- Customers ---------------- */
+state.customers = [];
+state.customerSearchTerm = "";
+
+async function refreshCustomers() {
+  setBusy(true);
+  try {
+    const data = await api("/customers-list");
+    state.customers = data.customers || [];
+    renderCustomerList();
+  } catch (err) {
+    document.getElementById("customerList").innerHTML = `<div class="empty-note">Error loading customers: ${escapeHtml(err.message)}</div>`;
+  }
+  setBusy(false);
+}
+
+function renderCustomerList() {
+  const wrap = document.getElementById("customerList");
+  const term = state.customerSearchTerm;
+  const filtered = state.customers.filter((c) => {
+    if (!term) return true;
+    return (
+      (c.name || "").toLowerCase().includes(term) ||
+      (c.business_name || "").toLowerCase().includes(term) ||
+      (c.email || "").toLowerCase().includes(term) ||
+      (c.phone || "").toLowerCase().includes(term)
+    );
+  });
+
+  if (!filtered.length) {
+    wrap.innerHTML = `<div class="empty-note">No customers yet. Click "+ Add Customer" to create your first one.</div>`;
+    return;
+  }
+
+  wrap.innerHTML = filtered
+    .map(
+      (c) => `
+    <div class="admin-product-card" data-id="${escapeHtml(c.id)}" style="cursor:pointer; padding:16px; display:block;">
+      <div class="admin-product-card__name" style="font-size:1.05rem;">${escapeHtml(c.name || "(no name)")}</div>
+      ${c.business_name ? `<div style="color:#5B6672; font-size:0.9rem;">${escapeHtml(c.business_name)}</div>` : ""}
+      <div style="margin-top:8px; font-size:0.85rem; color:#5B6672;">
+        ${c.phone ? `📞 ${escapeHtml(c.phone)}<br>` : ""}
+        ${c.email ? `✉️ ${escapeHtml(c.email)}<br>` : ""}
+        ${c.address ? `📍 ${escapeHtml(c.address)}` : ""}
+      </div>
+    </div>`
+    )
+    .join("");
+
+  wrap.querySelectorAll(".admin-product-card").forEach((card) => {
+    card.addEventListener("click", () => {
+      const customer = state.customers.find((c) => c.id === card.dataset.id);
+      openCustomerModal(customer);
+    });
+  });
+}
+
+function openCustomerModal(existing) {
+  const isEdit = !!existing;
+  const c = existing || { id: "", name: "", business_name: "", phone: "", email: "", address: "", notes: "" };
+
+  const root = document.getElementById("modalRoot");
+  root.innerHTML = `
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-box">
+        <h2>${isEdit ? "Edit Customer" : "Add Customer"}</h2>
+        <div class="form-row"><label>Full Name</label><input type="text" id="c_name"></div>
+        <div class="form-row"><label>Business Name</label><input type="text" id="c_business"></div>
+        <div class="two-col">
+          <div class="form-row"><label>Phone</label><input type="text" id="c_phone"></div>
+          <div class="form-row"><label>Email</label><input type="email" id="c_email"></div>
+        </div>
+        <div class="form-row"><label>Address</label><input type="text" id="c_address"></div>
+        <div class="form-row"><label>Notes</label><textarea id="c_notes" placeholder="Anything else — delivery preferences, order history notes, etc."></textarea></div>
+        <p class="status-msg" id="customerModalStatus"></p>
+        <div class="modal-actions">
+          <div>${isEdit ? `<button class="btn-secondary" id="deleteCustomerBtn" style="border-color:#C0392B;color:#C0392B;">Delete Customer</button>` : ""}</div>
+          <div style="display:flex; gap:10px;">
+            <button class="btn-secondary" id="cancelCustomerBtn">Cancel</button>
+            <button class="btn-primary" id="saveCustomerBtn">Save Customer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.getElementById("c_name").value = c.name || "";
+  document.getElementById("c_business").value = c.business_name || "";
+  document.getElementById("c_phone").value = c.phone || "";
+  document.getElementById("c_email").value = c.email || "";
+  document.getElementById("c_address").value = c.address || "";
+  document.getElementById("c_notes").value = c.notes || "";
+
+  document.getElementById("cancelCustomerBtn").addEventListener("click", closeModal);
+  document.getElementById("modalOverlay").addEventListener("click", (e) => {
+    if (e.target.id === "modalOverlay") closeModal();
+  });
+
+  if (isEdit) {
+    document.getElementById("deleteCustomerBtn").addEventListener("click", async () => {
+      if (!confirm("Delete this customer? This cannot be undone.")) return;
+      setBusy(true);
+      try {
+        await api("/customers-delete", { id: c.id });
+        closeModal();
+        refreshCustomers();
+      } catch (err) {
+        alert("Error: " + err.message);
+      }
+      setBusy(false);
+    });
+  }
+
+  document.getElementById("saveCustomerBtn").addEventListener("click", async () => {
+    const statusEl = document.getElementById("customerModalStatus");
+    statusEl.className = "status-msg";
+    statusEl.textContent = "Saving...";
+    setBusy(true);
+    try {
+      await api("/customers-save", {
+        id: c.id,
+        name: document.getElementById("c_name").value.trim(),
+        business_name: document.getElementById("c_business").value.trim(),
+        phone: document.getElementById("c_phone").value.trim(),
+        email: document.getElementById("c_email").value.trim(),
+        address: document.getElementById("c_address").value.trim(),
+        notes: document.getElementById("c_notes").value.trim(),
+      });
+      statusEl.className = "status-msg success";
+      statusEl.textContent = "Saved!";
+      setTimeout(() => {
+        closeModal();
+        refreshCustomers();
+      }, 400);
+    } catch (err) {
+      statusEl.className = "status-msg error";
+      statusEl.textContent = "Error: " + err.message;
+    }
+    setBusy(false);
+  });
+}
+
 /* ---------------- Init ---------------- */
 verifyAndInit();

@@ -37,17 +37,33 @@
   </header>
 
   <div class="dashboard">
-    <div class="stats-row" id="statsRow"></div>
-
-    <div class="toolbar-row">
-      <div class="filter-tabs" id="filterTabs"></div>
-      <div style="display:flex; gap:10px; flex-wrap:wrap;">
-        <input type="text" id="searchInput" placeholder="Search products...">
-        <button class="btn-primary" id="addProductBtn">+ Add Product</button>
-      </div>
+    <div class="filter-tabs" style="margin-bottom:24px;">
+      <button id="viewProductsBtn" class="active">📦 Products</button>
+      <button id="viewCustomersBtn">👤 Customers</button>
     </div>
 
-    <div class="admin-product-grid" id="productGrid"></div>
+    <div id="productsView">
+      <div class="stats-row" id="statsRow"></div>
+      <div class="toolbar-row">
+        <div class="filter-tabs" id="filterTabs"></div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <input type="text" id="searchInput" placeholder="Search products...">
+          <button class="btn-primary" id="addProductBtn">+ Add Product</button>
+        </div>
+      </div>
+      <div class="admin-product-grid" id="productGrid"></div>
+    </div>
+
+    <div id="customersView" style="display:none;">
+      <div class="toolbar-row">
+        <div></div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <input type="text" id="customerSearchInput" placeholder="Search customers...">
+          <button class="btn-primary" id="addCustomerBtn">+ Add Customer</button>
+        </div>
+      </div>
+      <div id="customerList"></div>
+    </div>
   </div>
 </div>
 
