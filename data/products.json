@@ -3505,7 +3505,7 @@
     "unit_type": "ml",
     "case_qty": 10,
     "pallet_qty": 80,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Dawn Ultra Dish Soap, 502ml, Original, 10/cs",
