@@ -4425,7 +4425,7 @@
     "unit_type": "L",
     "case_qty": 4,
     "pallet_qty": 36,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Palmolive Lemon Zest, 4.27L / 145oz, 4/cs",
