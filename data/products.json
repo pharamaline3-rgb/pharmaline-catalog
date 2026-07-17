@@ -8450,7 +8450,7 @@
     "unit_type": "L",
     "case_qty": 6,
     "pallet_qty": 45,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Mazola Pure Vegetable Oil, 2.8 L",
