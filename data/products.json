@@ -1313,7 +1313,7 @@
     "unit_type": "ct",
     "case_qty": 12,
     "pallet_qty": 140,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Pampers Baby Wipes, Sensitive, 52 ct, 12/cs",
