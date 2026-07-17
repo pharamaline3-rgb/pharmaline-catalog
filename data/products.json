@@ -9347,7 +9347,7 @@
     "unit_type": "ml",
     "case_qty": 6,
     "pallet_qty": 240,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Dial Body Wash, 473ml/16oz, Miracle Oil Marula, 6/cs",
