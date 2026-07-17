@@ -37,9 +37,7 @@
     "case_qty": 1,
     "pallet_qty": 192,
     "sale": false,
-    "images": [
-      "static/images/products/1002_1784249466596_0.jpg"
-    ],
+    "images": [],
     "name": {
       "en": "Goodnites Nighttime Underwear",
       "fr": "Goodnites Habillement de Nuit"
