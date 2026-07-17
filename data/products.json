@@ -6423,10 +6423,10 @@
     "description_en": "Irish Spring Bw - Honey & Vetiver, 591 mL, 4/cs",
     "description_fr": "",
     "unit_size": "591",
-    "unit_type": "mL",
+    "unit_type": "",
     "case_qty": 4,
     "pallet_qty": 200,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Irish Spring Bw - Honey & Vetiver, 591 mL, 4/cs",
