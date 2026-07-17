@@ -128,23 +128,25 @@
     "sku": "1006",
     "barcode": "36000535884",
     "category": "baby",
-    "name_en": "Huggies Little Movers Baby Diapers - Size 4 - 66ct",
-    "name_fr": "",
-    "description_en": "Huggies Little Movers Baby Diapers - Size 4 - 66ct",
-    "description_fr": "",
+    "name_en": "Huggies Little Movers",
+    "name_fr": "Huggies Little Movers",
+    "description_en": "Huggies Little Movers diapers, Size 4, 66 count, hypoallergenic and free of parabens, fragrance, and phthalates.",
+    "description_fr": "Couches Huggies Little Movers, taille 4, 66 pièces, hypoallergéniques et sans parabén, parfum ni phtalate.",
     "unit_size": "66",
-    "unit_type": "ct",
+    "unit_type": "units",
     "case_qty": 1,
     "pallet_qty": 120,
     "sale": false,
-    "images": [],
+    "images": [
+      "static/images/products/1006_1784251093923_0.jpg"
+    ],
     "name": {
-      "en": "Huggies Little Movers Baby Diapers - Size 4 - 66ct",
-      "fr": ""
+      "en": "Huggies Little Movers",
+      "fr": "Huggies Little Movers"
     },
     "description": {
-      "en": "Huggies Little Movers Baby Diapers - Size 4 - 66ct",
-      "fr": ""
+      "en": "Huggies Little Movers diapers, Size 4, 66 count, hypoallergenic and free of parabens, fragrance, and phthalates.",
+      "fr": "Couches Huggies Little Movers, taille 4, 66 pièces, hypoallergéniques et sans parabén, parfum ni phtalate."
     }
   },
   {
