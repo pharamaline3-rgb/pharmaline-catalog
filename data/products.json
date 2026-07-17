@@ -9845,23 +9845,25 @@
     "sku": "1428",
     "barcode": "7590002031636",
     "category": "health_beauty",
-    "name_en": "Head & Shoulders 2in1 Shampoo w/ Pump, 1L, Smooth & Silky, 9/cs",
-    "name_fr": "",
+    "name_en": "7590002031636 1 ltr Shampoo for Men Old Spice with Pump",
+    "name_fr": "7590002031636 1 L Shampooing pour hommes Old Spice avec pompe",
     "description_en": "Head & Shoulders 2in1 Shampoo w/ Pump, 1L, Smooth & Silky, 9/cs",
-    "description_fr": "",
+    "description_fr": "Shampoo Head & Shoulders 2 en 1 avec pompe, 1 L, lisse et soyeux, 9 par caisse",
     "unit_size": "1",
     "unit_type": "L",
     "case_qty": 9,
     "pallet_qty": 75,
     "sale": false,
-    "images": [],
+    "images": [
+      "static/images/products/1428_1784258516898_0.jpg"
+    ],
     "name": {
-      "en": "Head & Shoulders 2in1 Shampoo w/ Pump, 1L, Smooth & Silky, 9/cs",
-      "fr": ""
+      "en": "7590002031636 1 ltr Shampoo for Men Old Spice with Pump",
+      "fr": "7590002031636 1 L Shampooing pour hommes Old Spice avec pompe"
     },
     "description": {
       "en": "Head & Shoulders 2in1 Shampoo w/ Pump, 1L, Smooth & Silky, 9/cs",
-      "fr": ""
+      "fr": "Shampoo Head & Shoulders 2 en 1 avec pompe, 1 L, lisse et soyeux, 9 par caisse"
     }
   },
   {
