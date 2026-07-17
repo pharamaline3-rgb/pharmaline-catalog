@@ -3410,10 +3410,10 @@
     "description_en": "Dawn Ultra Dish Soap Apple Blossom A/B 473 mL, 10/cs",
     "description_fr": "",
     "unit_size": "473",
-    "unit_type": "mL",
+    "unit_type": "",
     "case_qty": 10,
     "pallet_qty": 80,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Dawn Ultra Dish Soap Apple Blossom A/B 473 mL, 10/cs",
