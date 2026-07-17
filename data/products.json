@@ -2455,23 +2455,25 @@
     "sku": "1107",
     "barcode": "12587781623",
     "category": "bags_wraps",
-    "name_en": "Glad Compostable Small 10 liter Lemon Fz, 12/20ct",
-    "name_fr": "",
+    "name_en": "Glad Kitchen Compost Bags - OdorShield 2.6 Gallon 100% Compostable Green Trash Bag, Febreze Fresh Lemon - 20 Count",
+    "name_fr": "Sacs de compost Glad Kitchen - OdorShield 2,6 gallon 100 % compostable sac poubelle vert, Febreze Fresh Lemon - 20 pièces",
     "description_en": "Glad Compostable Small 10 liter Lemon Fz, 12/20ct",
-    "description_fr": "",
+    "description_fr": "Glad Compostable Petite 10 litres Citron Fz, 12/20ct",
     "unit_size": "20",
     "unit_type": "ct",
     "case_qty": 12,
     "pallet_qty": 0,
     "sale": false,
-    "images": [],
+    "images": [
+      "static/images/products/1107_1784256350861_0.jpg"
+    ],
     "name": {
-      "en": "Glad Compostable Small 10 liter Lemon Fz, 12/20ct",
-      "fr": ""
+      "en": "Glad Kitchen Compost Bags - OdorShield 2.6 Gallon 100% Compostable Green Trash Bag, Febreze Fresh Lemon - 20 Count",
+      "fr": "Sacs de compost Glad Kitchen - OdorShield 2,6 gallon 100 % compostable sac poubelle vert, Febreze Fresh Lemon - 20 pièces"
     },
     "description": {
       "en": "Glad Compostable Small 10 liter Lemon Fz, 12/20ct",
-      "fr": ""
+      "fr": "Glad Compostable Petite 10 litres Citron Fz, 12/20ct"
     }
   },
   {
