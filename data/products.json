@@ -5805,7 +5805,7 @@
     "unit_type": "L",
     "case_qty": 6,
     "pallet_qty": 50,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Arm & Hammer Original Laundry Detergent Clean Fresh Scent, 55 Loads, 1.63L",
