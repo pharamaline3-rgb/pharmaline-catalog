@@ -2501,7 +2501,7 @@
     "sku": "1109",
     "barcode": "12587781630",
     "category": "bags_wraps",
-    "name_en": "Glad Compostable Tall 49 liter Lemon Fz, 12/10ct",
+    "name_en": "Glad Certified Compostable Bags - Tall 49 Litres -",
     "name_fr": "",
     "description_en": "Glad Compostable Tall 49 liter Lemon Fz, 12/10ct",
     "description_fr": "",
@@ -2510,9 +2510,11 @@
     "case_qty": 12,
     "pallet_qty": 0,
     "sale": false,
-    "images": [],
+    "images": [
+      "static/images/products/1109_1784256274813_0.jpg"
+    ],
     "name": {
-      "en": "Glad Compostable Tall 49 liter Lemon Fz, 12/10ct",
+      "en": "Glad Certified Compostable Bags - Tall 49 Litres -",
       "fr": ""
     },
     "description": {
