@@ -76,25 +76,27 @@
   },
   {
     "sku": "1004",
-    "barcode": "3600040532",
+    "barcode": "4053210",
     "category": "baby",
-    "name_en": "Goodnites Girls' Nighttime Bedwetting Underwear, Size S/M, 44 Ct",
-    "name_fr": "Goodnites Culottes Anti-adrénaline de Nuit pour Filles, Taille S/M, 44 pièces",
-    "description_en": "Goodnites Girls' Nighttime Bedwetting Underwear, Size S/M, 44 Ct",
-    "description_fr": "Goodnites sous-vêtements nocturnes d'incontinence pour filles, taille S/M, 44 pièces",
+    "name_en": "goodnites with Disney Encanto",
+    "name_fr": "goodnites avec Disney Encanto",
+    "description_en": "goodnites #1 Nighttime Underwear for girls featuring Disney Encanto, size S/M, 43-68 lbs, 44 count. Features Quicksorb Protection for up to 100% leak free protection and is clinically proven.",
+    "description_fr": "goodnites, les sous-vêtements de nuit n° 1 pour filles avec Disney Encanto, taille S/M, 20-31 kg, 44 unités. Comprend une protection Quicksorb pour jusqu'à 100 % sans fuites et est prouvé en clinique.",
     "unit_size": "44",
-    "unit_type": "ml",
+    "unit_type": "units",
     "case_qty": 1,
     "pallet_qty": 144,
     "sale": false,
-    "images": [],
+    "images": [
+      "static/images/products/1004_1784250899451_0.jpg"
+    ],
     "name": {
-      "en": "Goodnites Girls' Nighttime Bedwetting Underwear, Size S/M, 44 Ct",
-      "fr": "Goodnites Culottes Anti-adrénaline de Nuit pour Filles, Taille S/M, 44 pièces"
+      "en": "goodnites with Disney Encanto",
+      "fr": "goodnites avec Disney Encanto"
     },
     "description": {
-      "en": "Goodnites Girls' Nighttime Bedwetting Underwear, Size S/M, 44 Ct",
-      "fr": "Goodnites sous-vêtements nocturnes d'incontinence pour filles, taille S/M, 44 pièces"
+      "en": "goodnites #1 Nighttime Underwear for girls featuring Disney Encanto, size S/M, 43-68 lbs, 44 count. Features Quicksorb Protection for up to 100% leak free protection and is clinically proven.",
+      "fr": "goodnites, les sous-vêtements de nuit n° 1 pour filles avec Disney Encanto, taille S/M, 20-31 kg, 44 unités. Comprend une protection Quicksorb pour jusqu'à 100 % sans fuites et est prouvé en clinique."
     }
   },
   {
