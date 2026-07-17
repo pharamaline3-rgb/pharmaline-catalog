@@ -6,20 +6,22 @@
     "name_en": "Goodnites Boys' Nighttime Bedwetting Underwear, Size L, 34 Ct",
     "name_fr": "",
     "description_en": "Goodnites Boys' Nighttime Bedwetting Underwear, Size L, 34 Ct",
-    "description_fr": "",
+    "description_fr": "Goodnites Sous-vêtements anti-rouille de nuit pour garçons, Taille L, 34 Ct",
     "unit_size": "34",
-    "unit_type": "Ct",
+    "unit_type": "",
     "case_qty": 1,
     "pallet_qty": 192,
     "sale": false,
-    "images": [],
+    "images": [
+      "static/images/products/1001_1784249337154_0.avif"
+    ],
     "name": {
       "en": "Goodnites Boys' Nighttime Bedwetting Underwear, Size L, 34 Ct",
       "fr": ""
     },
     "description": {
       "en": "Goodnites Boys' Nighttime Bedwetting Underwear, Size L, 34 Ct",
-      "fr": ""
+      "fr": "Goodnites Sous-vêtements anti-rouille de nuit pour garçons, Taille L, 34 Ct"
     }
   },
   {
