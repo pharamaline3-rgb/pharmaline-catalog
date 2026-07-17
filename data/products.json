@@ -3390,7 +3390,7 @@
     "unit_type": "L",
     "case_qty": 6,
     "pallet_qty": 40,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Dawn Ultra Antibacterial Dishwashing Liquid Dish Soap, Apple Blossom Scent, 2.64L",
