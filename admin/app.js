@@ -594,7 +594,7 @@ async function runBarcodeLookup() {
 
       alert("Found it! Details filled in — please double check them, then click Auto-fill for descriptions.");
     } else {
-      await showImageSearchResults(barcode);
+      alert("Not found in the free product databases. Take a photo of the product instead, then click the green Auto-fill button — that works great even without a barcode match.");
     }
   } catch {
     alert("Lookup failed — check your connection and try again.");
