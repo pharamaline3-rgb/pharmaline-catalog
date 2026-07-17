@@ -330,6 +330,25 @@ document.getElementById("searchInput").addEventListener("input", (e) => {
 
 document.getElementById("addProductBtn").addEventListener("click", () => openProductModal(null));
 
+document.getElementById("viewProductsBtn").addEventListener("click", () => {
+  document.getElementById("viewProductsBtn").classList.add("active");
+  document.getElementById("viewCustomersBtn").classList.remove("active");
+  document.getElementById("productsView").style.display = "block";
+  document.getElementById("customersView").style.display = "none";
+});
+document.getElementById("viewCustomersBtn").addEventListener("click", () => {
+  document.getElementById("viewCustomersBtn").classList.add("active");
+  document.getElementById("viewProductsBtn").classList.remove("active");
+  document.getElementById("productsView").style.display = "none";
+  document.getElementById("customersView").style.display = "block";
+  refreshCustomers();
+});
+document.getElementById("addCustomerBtn").addEventListener("click", () => openCustomerModal(null));
+document.getElementById("customerSearchInput").addEventListener("input", (e) => {
+  state.customerSearchTerm = e.target.value.trim().toLowerCase();
+  renderCustomerList();
+});
+
 /* ---------------- Add / Edit modal ---------------- */
 function nextSku() {
   const nums = state.products.map((p) => parseInt(p.sku, 10)).filter((n) => !isNaN(n));
