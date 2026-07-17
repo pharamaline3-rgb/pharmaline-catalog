@@ -2,8 +2,8 @@
    Shared site logic used on every page
    ========================================================================== */
 
-const PRODUCTS_URL = "/data/products.json";
-const SETTINGS_URL = "/data/settings.json";
+const PRODUCTS_URL = "data/products.json";
+const SETTINGS_URL = "data/settings.json";
 
 /* Single source of truth for categories — add more here later if needed */
 const CATEGORIES = [
