@@ -330,6 +330,30 @@ document.getElementById("searchInput").addEventListener("input", (e) => {
 
 document.getElementById("addProductBtn").addEventListener("click", () => openProductModal(null));
 
+document.getElementById("clearSalesBtn").addEventListener("click", async () => {
+  const saleCount = state.products.filter((p) => p.sale).length;
+  if (!saleCount) return alert("No products are currently marked as Special.");
+  if (!confirm(`Remove the Special/Sale flag from all ${saleCount} products? This cannot be undone.`)) return;
+  setBusy(true);
+  try {
+    const updated = state.products.map((p) => ({ ...p, sale: false }));
+    const cleanProducts = updated.map(({ _localPreview, ...rest }) => rest);
+    const saveRes = await api("/products-save", {
+      products: cleanProducts,
+      sha: state.sha,
+      message: "Clear all sale flags",
+    });
+    state.sha = saveRes.sha;
+    state.products = updated;
+    renderStats();
+    renderGrid();
+    alert("Done! All Specials have been cleared.");
+  } catch (err) {
+    alert("Error: " + err.message);
+  }
+  setBusy(false);
+});
+
 document.getElementById("viewProductsBtn").addEventListener("click", () => {
   document.getElementById("viewProductsBtn").classList.add("active");
   document.getElementById("viewCustomersBtn").classList.remove("active");
