@@ -157,26 +157,26 @@ async function refreshProducts() {
 
 function renderStats() {
   const p = state.products;
-  const counts = {
-    total: p.length,
-    health: p.filter((x) => x.category === "health").length,
-    beauty: p.filter((x) => x.category === "beauty").length,
-    food: p.filter((x) => x.category === "food").length,
-  };
   document.getElementById("statsRow").innerHTML = `
-    <div class="stat-card"><div class="num">${counts.total}</div><div class="label">Total Products</div></div>
-    <div class="stat-card"><div class="num">${counts.health}</div><div class="label">Health</div></div>
-    <div class="stat-card"><div class="num">${counts.beauty}</div><div class="label">Beauty</div></div>
-    <div class="stat-card"><div class="num">${counts.food}</div><div class="label">Food</div></div>
+    <div class="stat-card"><div class="num">${p.length}</div><div class="label">Total Products</div></div>
+    <div class="stat-card"><div class="num">${p.filter((x) => x.sale).length}</div><div class="label">On Sale</div></div>
+    <div class="stat-card"><div class="num">${new Set(p.map((x) => x.category)).size}</div><div class="label">Categories</div></div>
   `;
 }
 
 function renderFilterTabs() {
   const tabs = [
     { key: "all", label: "All" },
-    { key: "health", label: "Health" },
-    { key: "beauty", label: "Beauty" },
-    { key: "food", label: "Food" },
+    { key: "baby", label: "Baby" },
+    { key: "health_beauty", label: "Health & Beauty" },
+    { key: "grocery", label: "Grocery" },
+    { key: "drinks", label: "Drinks" },
+    { key: "cleaning", label: "Cleaning" },
+    { key: "household", label: "Household" },
+    { key: "laundry_fabric", label: "Laundry & Fabric" },
+    { key: "paper", label: "Paper" },
+    { key: "bags_wraps", label: "Bags & Wraps" },
+    { key: "air_freshener", label: "Air Freshener" },
   ];
   const wrap = document.getElementById("filterTabs");
   wrap.innerHTML = "";
@@ -303,9 +303,16 @@ function openProductModal(existing) {
         <div class="form-row">
           <label>Category</label>
           <select id="f_category">
-            <option value="health">Health</option>
-            <option value="beauty">Beauty</option>
-            <option value="food">Food</option>
+            <option value="baby">Baby</option>
+            <option value="health_beauty">Health & Beauty</option>
+            <option value="grocery">Grocery</option>
+            <option value="drinks">Drinks</option>
+            <option value="cleaning">Cleaning</option>
+            <option value="household">Household</option>
+            <option value="laundry_fabric">Laundry & Fabric Care</option>
+            <option value="paper">Paper Products</option>
+            <option value="bags_wraps">Bags & Wraps</option>
+            <option value="air_freshener">Air Freshener</option>
           </select>
         </div>
 
