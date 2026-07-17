@@ -14,6 +14,7 @@ let state = {
   activeCategory: "all",
   searchTerm: "",
   pendingImages: [],
+  removedImages: [],
   scanner: null,
 };
 
@@ -29,6 +30,14 @@ function b64DecodeUnicode(str) {
   const bytes = new Uint8Array(binary.length);
   for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
   return new TextDecoder("utf-8").decode(bytes);
+}
+
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 }
 
 /* ---------------- GitHub API ---------------- */
@@ -131,12 +140,25 @@ function setBusy(isBusy) {
   document.getElementById("spinner").style.display = isBusy ? "flex" : "none";
 }
 
+/* ---------------- Categories ---------------- */
+const ADMIN_CATEGORIES = [
+  { key: "baby", label: "Baby" },
+  { key: "health_beauty", label: "Health & Beauty" },
+  { key: "grocery", label: "Grocery" },
+  { key: "drinks", label: "Drinks" },
+  { key: "cleaning", label: "Cleaning" },
+  { key: "household", label: "Household" },
+  { key: "laundry_fabric", label: "Laundry & Fabric Care" },
+  { key: "paper", label: "Paper Products" },
+  { key: "bags_wraps", label: "Bags & Wraps" },
+  { key: "air_freshener", label: "Air Freshener" },
+];
+
 /* ---------------- Load + render dashboard ---------------- */
 async function refreshProducts() {
   setBusy(true);
   try {
     const { products, sha } = await getProductsFile();
-    // keep any local-only preview images we already had in memory
     const previewMap = {};
     state.products.forEach((p) => {
       if (p._localPreview) previewMap[p.sku] = p._localPreview;
@@ -165,19 +187,7 @@ function renderStats() {
 }
 
 function renderFilterTabs() {
-  const tabs = [
-    { key: "all", label: "All" },
-    { key: "baby", label: "Baby" },
-    { key: "health_beauty", label: "Health & Beauty" },
-    { key: "grocery", label: "Grocery" },
-    { key: "drinks", label: "Drinks" },
-    { key: "cleaning", label: "Cleaning" },
-    { key: "household", label: "Household" },
-    { key: "laundry_fabric", label: "Laundry & Fabric" },
-    { key: "paper", label: "Paper" },
-    { key: "bags_wraps", label: "Bags & Wraps" },
-    { key: "air_freshener", label: "Air Freshener" },
-  ];
+  const tabs = [{ key: "all", label: "All" }, ...ADMIN_CATEGORIES];
   const wrap = document.getElementById("filterTabs");
   wrap.innerHTML = "";
   tabs.forEach((tab) => {
@@ -257,7 +267,7 @@ function openProductModal(existing) {
   const isEdit = !!existing;
   const product = existing || {
     sku: nextSku(),
-    category: "health",
+    category: "baby",
     name_en: "",
     name_fr: "",
     description_en: "",
@@ -269,9 +279,16 @@ function openProductModal(existing) {
     sale: false,
     images: [],
     barcode: "",
+    in_stock: true,
+    stock_cases: "",
+    stock_pallets: "",
+    cost_price: "",
   };
 
   state.pendingImages = [];
+  state.removedImages = [];
+
+  const catOptions = ADMIN_CATEGORIES.map((c) => `<option value="${c.key}">${c.label}</option>`).join("");
 
   const root = document.getElementById("modalRoot");
   root.innerHTML = `
@@ -302,18 +319,7 @@ function openProductModal(existing) {
 
         <div class="form-row">
           <label>Category</label>
-          <select id="f_category">
-            <option value="baby">Baby</option>
-            <option value="health_beauty">Health & Beauty</option>
-            <option value="grocery">Grocery</option>
-            <option value="drinks">Drinks</option>
-            <option value="cleaning">Cleaning</option>
-            <option value="household">Household</option>
-            <option value="laundry_fabric">Laundry & Fabric Care</option>
-            <option value="paper">Paper Products</option>
-            <option value="bags_wraps">Bags & Wraps</option>
-            <option value="air_freshener">Air Freshener</option>
-          </select>
+          <select id="f_category">${catOptions}</select>
         </div>
 
         <div class="form-row">
@@ -347,6 +353,7 @@ function openProductModal(existing) {
               <option value="g">g</option>
               <option value="kg">kg</option>
               <option value="oz">oz</option>
+              <option value="ct">ct</option>
               <option value="capsules">capsules</option>
               <option value="tablets">tablets</option>
               <option value="units">units</option>
@@ -415,6 +422,12 @@ function openProductModal(existing) {
   document.getElementById("f_pallet_qty").value = product.pallet_qty || "";
   document.getElementById("f_sale").checked = !!product.sale;
 
+  document.getElementById("f_in_stock").checked = true;
+  document.getElementById("f_stock_cases").value = "";
+  document.getElementById("f_stock_pallets").value = "";
+  document.getElementById("f_cost_price").value = "";
+  if (isEdit) loadPrivateData(product.sku);
+
   if (product.images && product.images.length) {
     renderExistingImagePreviews(product.images);
   }
@@ -477,7 +490,23 @@ function renderPendingImagePreviews() {
 
 function renderExistingImagePreviews(paths) {
   const row = document.getElementById("imagePreviewRow");
-  row.innerHTML = paths.map((p) => `<img src="../${p}">`).join("");
+  row.innerHTML = paths
+    .map(
+      (p) => `
+    <div class="image-thumb-wrap" data-path="${escapeHtml(p)}">
+      <img src="../${escapeHtml(p)}">
+      <button type="button" class="image-remove-btn" data-path="${escapeHtml(p)}">×</button>
+    </div>`
+    )
+    .join("");
+
+  row.querySelectorAll(".image-remove-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const path = btn.dataset.path;
+      state.removedImages.push(path);
+      btn.closest(".image-thumb-wrap").remove();
+    });
+  });
 }
 
 async function translateField(fromId, toId, btnId) {
@@ -518,7 +547,6 @@ async function runAutofill() {
     if (data.name_fr) document.getElementById("f_name_fr").value = data.name_fr;
     if (data.description_en) document.getElementById("f_description_en").value = data.description_en;
     if (data.description_fr) document.getElementById("f_description_fr").value = data.description_fr;
-    if (data.category) document.getElementById("f_category").value = data.category;
     if (data.unit_size) document.getElementById("f_unit_size").value = data.unit_size;
     if (data.unit_type) document.getElementById("f_unit_type").value = data.unit_type;
     if (data.barcode) document.getElementById("f_barcode").value = data.barcode;
@@ -544,7 +572,6 @@ async function runBarcodeLookup() {
     const data = await res.json();
     if (data.found) {
       if (data.name_en) document.getElementById("f_name_en").value = data.name_en;
-      if (data.category) document.getElementById("f_category").value = data.category;
       if (data.unit_size) document.getElementById("f_unit_size").value = data.unit_size;
       if (data.unit_type) document.getElementById("f_unit_type").value = data.unit_type;
 
@@ -565,7 +592,7 @@ async function runBarcodeLookup() {
         } catch {}
       }
 
-      alert("Found it! Details and photo filled in — please double check them, then click Auto-fill for descriptions in both languages.");
+      alert("Found it! Details filled in — please double check them, then click Auto-fill for descriptions.");
     } else {
       alert("Not found in the free product databases. Try uploading a photo instead and use Auto-fill.");
     }
@@ -608,6 +635,7 @@ function stopBarcodeScanner() {
   if (box) box.style.display = "none";
 }
 
+/* ---------------- Private (stock/cost) data ---------------- */
 async function loadPrivateData(sku) {
   try {
     const res = await fetch(WORKER_URL + "/private-get", {
@@ -621,9 +649,7 @@ async function loadPrivateData(sku) {
     document.getElementById("f_stock_cases").value = info.stock_cases || "";
     document.getElementById("f_stock_pallets").value = info.stock_pallets || "";
     document.getElementById("f_cost_price").value = info.cost_price || "";
-  } catch {
-    // if this fails, fields just stay at their defaults
-  }
+  } catch {}
 }
 
 async function savePrivateData(sku) {
@@ -640,10 +666,11 @@ async function savePrivateData(sku) {
       }),
     });
   } catch {
-    alert("Product saved, but the private stock/cost info failed to save — please try again from the product's edit screen.");
+    alert("Product saved, but the private stock/cost info failed to save — try again from the edit screen.");
   }
 }
 
+/* ---------------- Save / Delete product ---------------- */
 async function saveProduct(sku, isEdit) {
   const statusEl = document.getElementById("modalStatus");
   statusEl.className = "status-msg";
@@ -651,7 +678,9 @@ async function saveProduct(sku, isEdit) {
   setBusy(true);
   try {
     const existingProduct = isEdit ? state.products.find((p) => String(p.sku) === String(sku)) : null;
-    let images = existingProduct ? existingProduct.images || [] : [];
+    let images = existingProduct
+      ? (existingProduct.images || []).filter((p) => !state.removedImages.includes(p))
+      : [];
 
     for (let i = 0; i < state.pendingImages.length; i++) {
       const img = state.pendingImages[i];
@@ -663,7 +692,9 @@ async function saveProduct(sku, isEdit) {
 
     const localPreview = state.pendingImages[0]
       ? `data:${state.pendingImages[0].mime};base64,${state.pendingImages[0].base64}`
-      : existingProduct && existingProduct._localPreview;
+      : images[0]
+      ? "../" + images[0]
+      : null;
 
     const updatedProduct = {
       sku: sku,
@@ -697,7 +728,6 @@ async function saveProduct(sku, isEdit) {
       state.products.push(updatedProduct);
     }
 
-    // Save a clean copy (without our local-only preview field) to GitHub
     const cleanProducts = state.products.map(({ _localPreview, ...rest }) => rest);
     await saveProductsFile(cleanProducts, `${isEdit ? "Update" : "Add"} product ${sku}`);
     await savePrivateData(sku);
