@@ -9317,18 +9317,18 @@
     "barcode": "1700007191",
     "category": "health_beauty",
     "name_en": "Dial Body Wash, 473ml/16oz, Lavender & Twilight Jasmine, 6/cs",
-    "name_fr": "",
+    "name_fr": "Gel douche Dial, 473 ml / 16 oz, Lavande & Jasmin Crépusculaire, 6/carton",
     "description_en": "Dial Body Wash, 473ml/16oz, Lavender & Twilight Jasmine, 6/cs",
     "description_fr": "",
     "unit_size": "473",
     "unit_type": "ml",
     "case_qty": 6,
     "pallet_qty": 240,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Dial Body Wash, 473ml/16oz, Lavender & Twilight Jasmine, 6/cs",
-      "fr": ""
+      "fr": "Gel douche Dial, 473 ml / 16 oz, Lavande & Jasmin Crépusculaire, 6/carton"
     },
     "description": {
       "en": "Dial Body Wash, 473ml/16oz, Lavender & Twilight Jasmine, 6/cs",
