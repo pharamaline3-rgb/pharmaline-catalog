@@ -7392,7 +7392,7 @@
     "unit_type": "g",
     "case_qty": 6,
     "pallet_qty": 180,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Febreze Air Freshener Spray, Mango, 230 g, 6/cs",
