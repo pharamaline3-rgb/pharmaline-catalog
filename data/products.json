@@ -5230,7 +5230,7 @@
     "unit_type": "units",
     "case_qty": 1,
     "pallet_qty": 80,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Swiffer Sweeper Wet Mopping Cloths 2 packs of 32 1/cs",
