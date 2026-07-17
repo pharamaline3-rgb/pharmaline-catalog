@@ -2,8 +2,22 @@
    Shared site logic used on every page
    ========================================================================== */
 
-const PRODUCTS_URL = "data/products.json";
-const SETTINGS_URL = "data/settings.json";
+const PRODUCTS_URL = "/data/products.json";
+const SETTINGS_URL = "/data/settings.json";
+
+/* Single source of truth for categories — add more here later if needed */
+const CATEGORIES = [
+  { key: "baby", color: "var(--color-plum)" },
+  { key: "health_beauty", color: "var(--color-teal)" },
+  { key: "grocery", color: "var(--color-amber)" },
+  { key: "drinks", color: "var(--color-blue)" },
+  { key: "cleaning", color: "var(--color-rose)" },
+  { key: "household", color: "var(--color-slate)" },
+  { key: "laundry_fabric", color: "var(--color-plum)" },
+  { key: "paper", color: "var(--color-teal)" },
+  { key: "bags_wraps", color: "var(--color-amber)" },
+  { key: "air_freshener", color: "var(--color-blue)" },
+];
 
 function initMobileNav() {
   const toggle = document.querySelector(".nav-toggle");
@@ -70,18 +84,33 @@ function productDescription(p) {
 }
 
 function categoryLabel(cat) {
-  const map = { health: "cat.health.name", beauty: "cat.beauty.name", food: "cat.food.name" };
-  return t(map[cat] || "cat.health.name");
+  return t("cat." + cat + ".name");
 }
 
 function categoryColorVar(cat) {
-  const map = { health: "var(--color-teal)", beauty: "var(--color-plum)", food: "var(--color-amber)" };
-  return map[cat] || "var(--color-blue)";
+  const found = CATEGORIES.find((c) => c.key === cat);
+  return found ? found.color : "var(--color-blue)";
 }
 
 function firstImage(p) {
   if (p.images && p.images.length) return p.images[0];
   return "https://placehold.co/400x400/E8F1F8/2E6FA3?text=Pharmaline";
+}
+
+/* ---------------------------------------------------------------------
+   Homepage category cards (renders into #categoryGridHome if present)
+   --------------------------------------------------------------------- */
+function renderHomeCategories() {
+  const grid = document.getElementById("categoryGridHome");
+  if (!grid) return;
+  grid.innerHTML = CATEGORIES.map(
+    (c) => `
+    <div class="category-card" style="--cat-color:${c.color}">
+      <h3>${escapeHtml(t("cat." + c.key + ".name"))}</h3>
+      <p>${escapeHtml(t("cat." + c.key + ".desc"))}</p>
+      <a class="btn btn--outline" href="products.html?category=${c.key}" data-i18n="cat.view">View Products</a>
+    </div>`
+  ).join("");
 }
 
 /* ---------------------------------------------------------------------
@@ -107,7 +136,6 @@ async function initTicker() {
           `<span class="ticker__item"><a href="product.html?sku=${encodeURIComponent(p.sku)}"><img src="${escapeHtml(firstImage(p))}" alt=""> ${escapeHtml(productName(p))} — ${escapeHtml(t("product.sale.badge"))} #${escapeHtml(p.sku)}</a></span>`
       )
       .join("");
-    // duplicate content so the marquee loop is seamless
     track.innerHTML = itemsHtml + itemsHtml;
   }
 
@@ -127,4 +155,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initMobileNav();
   initTicker();
   applySettings();
+  renderHomeCategories();
 });

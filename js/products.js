@@ -30,9 +30,9 @@
     if (!wrap) return;
     wrap.innerHTML = "";
     wrap.appendChild(renderPill("all", t("products.filter.all")));
-    wrap.appendChild(renderPill("health", t("cat.health.name")));
-    wrap.appendChild(renderPill("beauty", t("cat.beauty.name")));
-    wrap.appendChild(renderPill("food", t("cat.food.name")));
+    CATEGORIES.forEach((c) => {
+      wrap.appendChild(renderPill(c.key, t("cat." + c.key + ".name")));
+    });
   }
 
   function matches(p) {
@@ -42,7 +42,8 @@
     const term = searchTerm.toLowerCase();
     const name = productName(p).toLowerCase();
     const sku = String(p.sku || "").toLowerCase();
-    return name.includes(term) || sku.includes(term);
+    const barcode = String(p.barcode || "").toLowerCase();
+    return name.includes(term) || sku.includes(term) || barcode.includes(term);
   }
 
   function renderGrid() {

@@ -8,7 +8,9 @@
   --color-blue-light: #E8F1F8; /* tints, hovers, card backgrounds */
   --color-teal: #2F8F76;       /* Health category accent */
   --color-plum: #8B4B6B;       /* Beauty category accent */
-  --color-amber: #C97A2B;      /* Food category accent */
+  --color-amber: #C97A2B;      /* accent */
+  --color-rose: #B5495B;       /* accent */
+  --color-slate: #55688A;      /* accent */
   --color-sale: #C0392B;       /* Specials / sale ticker */
   --color-bg: #F7F9FB;
   --color-surface: #FFFFFF;
@@ -334,7 +336,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 24px;
 }
 
