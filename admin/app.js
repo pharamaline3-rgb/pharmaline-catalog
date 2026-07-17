@@ -594,13 +594,66 @@ async function runBarcodeLookup() {
 
       alert("Found it! Details filled in — please double check them, then click Auto-fill for descriptions.");
     } else {
-      alert("Not found in the free product databases. Try uploading a photo instead and use Auto-fill.");
+      await showImageSearchResults(barcode);
     }
   } catch {
     alert("Lookup failed — check your connection and try again.");
   }
   btn.disabled = false;
   btn.textContent = "Look Up";
+}
+
+async function showImageSearchResults(query) {
+  const box = document.getElementById("scannerBox");
+  box.style.display = "block";
+  box.innerHTML = `<p class="status-msg">Searching Google Images for "${escapeHtml(query)}"...</p>`;
+  try {
+    const res = await fetch(WORKER_URL + "/image-search", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query }),
+    });
+    const data = await res.json();
+    if (!data.images || !data.images.length) {
+      box.innerHTML = `<p class="status-msg">No image results found either — try uploading a photo manually.</p><button class="btn-secondary" id="stopScanBtn" type="button">Close</button>`;
+      document.getElementById("stopScanBtn").addEventListener("click", stopBarcodeScanner);
+      return;
+    }
+    box.innerHTML = `
+      <p class="status-msg">Click the photo that matches your product:</p>
+      <div class="image-preview-row" id="googleImageResults"></div>
+      <button class="btn-secondary" id="stopScanBtn" type="button" style="margin-top:10px;">Close</button>
+    `;
+    const resultsRow = document.getElementById("googleImageResults");
+    data.images.forEach((img) => {
+      const thumb = document.createElement("img");
+      thumb.src = img.thumbnail;
+      thumb.style.cursor = "pointer";
+      thumb.style.width = "90px";
+      thumb.style.height = "90px";
+      thumb.addEventListener("click", async () => {
+        box.innerHTML = `<p class="status-msg">Downloading photo...</p>`;
+        try {
+          const imgRes = await fetch(WORKER_URL + "/fetch-image", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ image_url: img.fullsize }),
+          });
+          const imgData = await imgRes.json();
+          if (imgData.base64) {
+            state.pendingImages.push({ base64: imgData.base64, mime: imgData.mime });
+            renderPendingImagePreviews();
+            document.getElementById("autofillBtn").style.display = "block";
+          }
+        } catch {}
+        stopBarcodeScanner();
+      });
+      resultsRow.appendChild(thumb);
+    });
+    document.getElementById("stopScanBtn").addEventListener("click", stopBarcodeScanner);
+  } catch {
+    box.innerHTML = `<p class="status-msg error">Image search failed — try uploading a photo manually.</p>`;
+  }
 }
 
 function startBarcodeScanner() {
