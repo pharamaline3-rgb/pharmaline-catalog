@@ -5016,18 +5016,18 @@
     "barcode": "5060033822142",
     "category": "cleaning",
     "name_en": "Pink Stuff Disinfectant Spray 850mL, 12/cs",
-    "name_fr": "",
+    "name_fr": "Spray désinfectant Pink Stuff 850 ml, 12 pièces",
     "description_en": "Pink Stuff Disinfectant Spray 850mL, 12/cs",
     "description_fr": "",
     "unit_size": "850",
-    "unit_type": "mL",
+    "unit_type": "",
     "case_qty": 12,
     "pallet_qty": 75,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Pink Stuff Disinfectant Spray 850mL, 12/cs",
-      "fr": ""
+      "fr": "Spray désinfectant Pink Stuff 850 ml, 12 pièces"
     },
     "description": {
       "en": "Pink Stuff Disinfectant Spray 850mL, 12/cs",
