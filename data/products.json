@@ -2961,23 +2961,25 @@
     "sku": "1129",
     "barcode": "67489302995",
     "category": "bags_wraps",
-    "name_en": "Glad White Tall 45 liter Easy tie Unscented, 6/60ct",
-    "name_fr": "",
+    "name_en": "Glad White Garbage Bags - Tall 45 Litres - Unscented, 60 Trash Bags",
+    "name_fr": "Sacs poubelles Glad blancs – Format long 45 litres – Sans parfum, 60 sacs poubelles",
     "description_en": "Glad White Tall 45 liter Easy tie Unscented, 6/60ct",
-    "description_fr": "",
+    "description_fr": "Glad Blanc Tall 45 L Easy tie sans parfum, 6/60 ct",
     "unit_size": "60",
     "unit_type": "ct",
     "case_qty": 6,
     "pallet_qty": 0,
     "sale": false,
-    "images": [],
+    "images": [
+      "static/images/products/1129_1784255983610_0.jpg"
+    ],
     "name": {
-      "en": "Glad White Tall 45 liter Easy tie Unscented, 6/60ct",
-      "fr": ""
+      "en": "Glad White Garbage Bags - Tall 45 Litres - Unscented, 60 Trash Bags",
+      "fr": "Sacs poubelles Glad blancs – Format long 45 litres – Sans parfum, 60 sacs poubelles"
     },
     "description": {
       "en": "Glad White Tall 45 liter Easy tie Unscented, 6/60ct",
-      "fr": ""
+      "fr": "Glad Blanc Tall 45 L Easy tie sans parfum, 6/60 ct"
     }
   },
   {
