@@ -103,23 +103,25 @@
     "sku": "1005",
     "barcode": "36000546729",
     "category": "baby",
-    "name_en": "Huggies Little Movers Giga S7, 36ct",
-    "name_fr": "",
-    "description_en": "Huggies Little Movers Giga S7, 36ct",
-    "description_fr": "",
-    "unit_size": "36",
-    "unit_type": "ct",
+    "name_en": "Huggies Little Movers Diapers",
+    "name_fr": "Couches Bébé Huggies Little Movers",
+    "description_en": "A box of 66 Huggies Little Movers diapers in size 4. The packaging highlights an outstanding active fit, 12 hours of leak protection, and hypoallergenic properties without parabens or phthalates.",
+    "description_fr": "Une boîte de 66 couches Huggies Little Movers en taille 4. L'emballage met en avant un ajustement actif exceptionnel, 12 heures de protection anti-fuites et des propriétés hypoallergéniques sans paraben ni phtalates.",
+    "unit_size": "66",
+    "unit_type": "units",
     "case_qty": 1,
     "pallet_qty": 260,
     "sale": false,
-    "images": [],
+    "images": [
+      "static/images/products/1005_1784250566713_0.jpg"
+    ],
     "name": {
-      "en": "Huggies Little Movers Giga S7, 36ct",
-      "fr": ""
+      "en": "Huggies Little Movers Diapers",
+      "fr": "Couches Bébé Huggies Little Movers"
     },
     "description": {
-      "en": "Huggies Little Movers Giga S7, 36ct",
-      "fr": ""
+      "en": "A box of 66 Huggies Little Movers diapers in size 4. The packaging highlights an outstanding active fit, 12 hours of leak protection, and hypoallergenic properties without parabens or phthalates.",
+      "fr": "Une boîte de 66 couches Huggies Little Movers en taille 4. L'emballage met en avant un ajustement actif exceptionnel, 12 heures de protection anti-fuites et des propriétés hypoallergéniques sans paraben ni phtalates."
     }
   },
   {
