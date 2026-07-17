@@ -3344,7 +3344,7 @@
     "unit_type": "ml",
     "case_qty": 10,
     "pallet_qty": 100,
-    "sale": true,
+    "sale": false,
     "images": [],
     "name": {
       "en": "Dawn Platinum Refresh Rain 431ml",
