@@ -48,17 +48,19 @@
   {
     "sku": "1003",
     "barcode": "3600040531",
-    "category": "baby",
+    "category": "",
     "name_en": "Goodnites Boys' Nighttime Bedwetting Underwear, Size S/M, 44 Ct",
     "name_fr": "",
     "description_en": "Goodnites Boys' Nighttime Bedwetting Underwear, Size S/M, 44 Ct",
     "description_fr": "",
     "unit_size": "44",
-    "unit_type": "Ct",
+    "unit_type": "",
     "case_qty": 1,
     "pallet_qty": 144,
     "sale": false,
-    "images": [],
+    "images": [
+      "static/images/products/1003_1784247153789_0.avif"
+    ],
     "name": {
       "en": "Goodnites Boys' Nighttime Bedwetting Underwear, Size S/M, 44 Ct",
       "fr": ""
