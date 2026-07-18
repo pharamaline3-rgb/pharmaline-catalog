@@ -151,9 +151,52 @@ function escapeHtml(str) {
     .replace(/"/g, "&quot;");
 }
 
+/* ---------------------------------------------------------------------
+   Wishlist (stored in the visitor's own browser)
+   --------------------------------------------------------------------- */
+const WISHLIST_KEY = "pharmaline_wishlist";
+
+function getWishlist() {
+  try {
+    return JSON.parse(localStorage.getItem(WISHLIST_KEY)) || [];
+  } catch {
+    return [];
+  }
+}
+
+function saveWishlist(list) {
+  localStorage.setItem(WISHLIST_KEY, JSON.stringify(list));
+  updateWishlistBadge();
+}
+
+function isInWishlist(sku) {
+  return getWishlist().includes(String(sku));
+}
+
+function toggleWishlist(sku) {
+  let list = getWishlist();
+  sku = String(sku);
+  if (list.includes(sku)) {
+    list = list.filter((s) => s !== sku);
+  } else {
+    list.push(sku);
+  }
+  saveWishlist(list);
+  return list.includes(sku);
+}
+
+function updateWishlistBadge() {
+  const badge = document.getElementById("wishlistBadge");
+  if (!badge) return;
+  const count = getWishlist().length;
+  badge.textContent = count;
+  badge.style.display = count > 0 ? "flex" : "none";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initMobileNav();
   initTicker();
   applySettings();
   renderHomeCategories();
+  updateWishlistBadge();
 });
