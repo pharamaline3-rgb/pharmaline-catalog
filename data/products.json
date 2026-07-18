@@ -10401,27 +10401,28 @@
   },
   {
     "sku": "1417",
-    "barcode": "4740018808",
+    "barcode": "98793114",
     "category": "health_beauty",
-    "name_en": "Gillette After Shave Gel for Men, Calms, Soothes and Refreshes Sensitive Skin, Light Fragrance, 2.5 oz, 6/cs",
-    "name_fr": "",
-    "description_en": "Gillette After Shave Gel for Men, Calms, Soothes and Refreshes Sensitive Skin, Light Fragrance, 2.5 oz, 6/cs",
-    "description_fr": "",
-    "unit_size": "2.5",
-    "unit_type": "oz",
+    "name_en": "Gillette After Shave Gel",
+    "name_fr": "Gillette Gel Après-Rasage",
+    "description_en": "Sensitive Skin",
+    "description_fr": "Peau Sensible",
+    "unit_size": "75 ml",
+    "unit_type": "ml",
     "case_qty": 6,
     "pallet_qty": 592,
     "sale": false,
     "images": [
-      "static/images/products/1417.png"
+      "static/images/products/1417.png",
+      "static/images/products/1417_1784411770249_0.jpg"
     ],
     "name": {
-      "en": "Gillette After Shave Gel for Men, Calms, Soothes and Refreshes Sensitive Skin, Light Fragrance, 2.5 oz, 6/cs",
-      "fr": ""
+      "en": "Gillette After Shave Gel",
+      "fr": "Gillette Gel Après-Rasage"
     },
     "description": {
-      "en": "Gillette After Shave Gel for Men, Calms, Soothes and Refreshes Sensitive Skin, Light Fragrance, 2.5 oz, 6/cs",
-      "fr": ""
+      "en": "Sensitive Skin",
+      "fr": "Peau Sensible"
     }
   },
   {
