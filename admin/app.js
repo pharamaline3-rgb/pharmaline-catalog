@@ -1308,5 +1308,54 @@ function renderQuotesList(quotes) {
   });
 }
 
+/* ---------------- Messages ---------------- */
+async function refreshMessages() {
+  const wrap = document.getElementById("messagesList");
+  wrap.innerHTML = "Loading...";
+  try {
+    const data = await api("/messages-list");
+    renderMessagesList(data.messages || []);
+  } catch (err) {
+    wrap.innerHTML = `<div class="empty-note">Error loading messages: ${escapeHtml(err.message)}</div>`;
+  }
+}
+
+function renderMessagesList(messages) {
+  const wrap = document.getElementById("messagesList");
+  if (!messages.length) {
+    wrap.innerHTML = `<div class="empty-note">No messages yet. Anything submitted through your Contact page will show up here.</div>`;
+    return;
+  }
+
+  wrap.innerHTML = messages
+    .map((m) => {
+      const date = new Date(m.created_at).toLocaleString();
+      return `
+      <div class="admin-product-card" style="cursor:default; padding:20px; display:block; margin-bottom:16px;">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px;">
+          <div>
+            <div style="font-weight:700; font-size:1.05rem;">${escapeHtml(m.name || "(no name)")}</div>
+            <div style="font-size:0.85rem; color:#5B6672; margin-top:4px;">
+              ${m.email ? `✉️ ${escapeHtml(m.email)} &nbsp; ` : ""}${m.phone ? `📞 ${escapeHtml(m.phone)}` : ""}
+            </div>
+            ${m.subject ? `<div style="font-weight:600; margin-top:8px;">Subject: ${escapeHtml(m.subject)}</div>` : ""}
+            <div style="font-size:0.75rem; color:#999; margin-top:4px;">${escapeHtml(date)}</div>
+          </div>
+          <button class="btn-secondary delete-message-btn" data-id="${escapeHtml(m.id)}" style="border-color:#C0392B; color:#C0392B;">Delete</button>
+        </div>
+        <div style="margin-top:12px; padding:12px; background:#F7F9FB; border-radius:8px; font-size:0.9rem;">${escapeHtml(m.message || "")}</div>
+      </div>`;
+    })
+    .join("");
+
+  wrap.querySelectorAll(".delete-message-btn").forEach((btn) => {
+    btn.addEventListener("click", async () => {
+      if (!confirm("Delete this message?")) return;
+      await api("/messages-delete", { id: btn.dataset.id });
+      refreshMessages();
+    });
+  });
+}
+
 /* ---------------- Init ---------------- */
 verifyAndInit();
