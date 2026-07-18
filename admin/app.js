@@ -353,10 +353,12 @@ function openEnrichModal() {
           <span style="color:#2F8F76;">Updated: <strong id="enrichUpdated">0</strong></span>
           <span style="color:#5B6672;">Skipped: <strong id="enrichSkipped">0</strong></span>
         </div>
-        <div id="enrichLog" style="height:260px; overflow-y:auto; background:#F7F9FB; border:1px solid #DCE4EC; border-radius:8px; padding:12px; font-size:0.82rem; font-family:monospace;"></div>
+        <div id="enrichLog" style="height:200px; overflow-y:auto; background:#F7F9FB; border:1px solid #DCE4EC; border-radius:8px; padding:12px; font-size:0.82rem; font-family:monospace;"></div>
+        <div id="enrichPreview" style="display:none; margin-top:16px; border:1px solid #DCE4EC; border-radius:8px; padding:14px;"></div>
         <div class="modal-actions">
           <div><button class="btn-secondary" id="enrichStopBtn" style="border-color:#C0392B;color:#C0392B;">Stop</button></div>
           <div style="display:flex; gap:10px;">
+            <button class="btn-secondary" id="enrichPreviewBtn" style="display:none;">See Example (Before / After)</button>
             <button class="btn-secondary" id="enrichCloseBtn">Close</button>
             <button class="btn-primary" id="enrichApplyBtn" disabled>Apply All Changes</button>
           </div>
@@ -370,6 +372,7 @@ function openEnrichModal() {
     closeModal();
   });
   document.getElementById("enrichApplyBtn").addEventListener("click", applyEnrichChanges);
+  document.getElementById("enrichPreviewBtn").addEventListener("click", showEnrichExample);
   runEnrichment();
 }
 
@@ -446,6 +449,43 @@ async function runEnrichment() {
 
   enrichLog(`<strong>Done. ${Object.keys(enrichStagedUpdates).length} products have suggested updates ready.</strong>`);
   document.getElementById("enrichApplyBtn").disabled = Object.keys(enrichStagedUpdates).length === 0;
+  document.getElementById("enrichPreviewBtn").style.display = Object.keys(enrichStagedUpdates).length ? "inline-block" : "none";
+}
+
+let enrichExampleIndex = 0;
+function showEnrichExample() {
+  const skus = Object.keys(enrichStagedUpdates);
+  if (!skus.length) return;
+  const sku = skus[enrichExampleIndex % skus.length];
+  enrichExampleIndex++;
+  const p = state.products.find((x) => String(x.sku) === String(sku));
+  const changes = enrichStagedUpdates[sku];
+
+  const rows = Object.keys(changes)
+    .map((field) => {
+      const before = p[field] || "(empty)";
+      const after = changes[field];
+      const label = { description_en: "Description (EN)", description_fr: "Description (FR)", name_fr: "Name (FR)", unit_size: "Size", unit_type: "Unit" }[field] || field;
+      return `
+        <div style="margin-bottom:12px;">
+          <div style="font-weight:700; font-size:0.85rem; color:#0F2E4C;">${escapeHtml(label)}</div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:4px;">
+            <div style="background:#F9E4E1; padding:8px 10px; border-radius:6px; font-size:0.85rem;"><strong>Before:</strong> ${escapeHtml(String(before))}</div>
+            <div style="background:#E1F5EA; padding:8px 10px; border-radius:6px; font-size:0.85rem;"><strong>After:</strong> ${escapeHtml(String(after))}</div>
+          </div>
+        </div>`;
+    })
+    .join("");
+
+  const preview = document.getElementById("enrichPreview");
+  preview.style.display = "block";
+  preview.innerHTML = `
+    <div style="font-weight:700; margin-bottom:10px;">Example: SKU #${escapeHtml(sku)} — ${escapeHtml(p.name_en)}</div>
+    ${rows}
+    <div style="text-align:right; margin-top:8px;">
+      <button class="btn-secondary" onclick="document.getElementById('enrichPreviewBtn').click()">Show Another Example</button>
+    </div>
+  `;
 }
 
 async function applyEnrichChanges() {
