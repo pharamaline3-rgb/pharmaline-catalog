@@ -400,6 +400,7 @@ function openProductModal(existing) {
 
   state.pendingImages = [];
   state.removedImages = [];
+  state.currentProductImages = product.images || [];
 
   const catOptions = ADMIN_CATEGORIES.map((c) => `<option value="${c.key}">${c.label}</option>`).join("");
 
@@ -543,6 +544,7 @@ function openProductModal(existing) {
 
   if (product.images && product.images.length) {
     renderExistingImagePreviews(product.images);
+    document.getElementById("autofillBtn").style.display = "block";
   }
 
   document.getElementById("imageDrop").addEventListener("click", () => {
@@ -639,11 +641,29 @@ async function translateField(fromId, toId, btnId) {
 
 async function runAutofill() {
   const btn = document.getElementById("autofillBtn");
-  if (!state.pendingImages.length) return;
   btn.disabled = true;
   btn.textContent = "Reading photos...";
   try {
-    const images = state.pendingImages.map((img) => ({ data: img.base64, mime: img.mime }));
+    let images = state.pendingImages.map((img) => ({ data: img.base64, mime: img.mime }));
+    if (!images.length && state.currentProductImages && state.currentProductImages.length) {
+      for (const path of state.currentProductImages.slice(0, 2)) {
+        try {
+          const res = await fetch("../" + path);
+          const blob = await res.blob();
+          const base64 = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(reader.result.split(",")[1]);
+            reader.readAsDataURL(blob);
+          });
+          images.push({ data: base64, mime: blob.type || "image/jpeg" });
+        } catch {}
+      }
+    }
+    if (!images.length) {
+      btn.disabled = false;
+      btn.textContent = "✨ Auto-fill details from photos";
+      return alert("No photo available to read yet — upload one first.");
+    }
     const data = await api("/autofill", { images });
     if (data.name_en) document.getElementById("f_name_en").value = data.name_en;
     if (data.name_fr) document.getElementById("f_name_fr").value = data.name_fr;
