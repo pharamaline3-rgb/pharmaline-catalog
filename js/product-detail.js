@@ -49,6 +49,7 @@
           <p>${escapeHtml(productDescription(product))}</p>
           <table class="spec-table">
             <tr><th>${escapeHtml(t("product.spec.sku"))}</th><td>${escapeHtml(product.sku)}</td></tr>
+            ${product.barcode ? `<tr><th>UPC / Barcode</th><td>${escapeHtml(product.barcode)}</td></tr>` : ""}
             <tr><th>${escapeHtml(t("product.spec.category"))}</th><td>${escapeHtml(categoryLabel(product.category))}</td></tr>
             ${unitLabel(product) ? `<tr><th>${escapeHtml(t("product.spec.size"))}</th><td>${escapeHtml(unitLabel(product))}</td></tr>` : ""}
             ${product.case_qty ? `<tr><th>${escapeHtml(t("product.spec.case"))}</th><td>${escapeHtml(product.case_qty)}</td></tr>` : ""}
