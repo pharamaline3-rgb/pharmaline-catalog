@@ -656,7 +656,7 @@
     "name_en": "Huggies Plus Little Snugglers Size 4, 180ct Art# 1914460",
     "name_fr": "Huggies Plus Little Snugglers Taille 4, 180 pièces, Art# 1914460",
     "description_en": "Huggies Plus Little Snugglers Size 4, 180ct Art# 1914460",
-    "description_fr": "",
+    "description_fr": "Huggies Plus Little Snugglers Taille 4, 180 pièces Art# 1914460",
     "unit_size": "180",
     "unit_type": "ct",
     "case_qty": 1,
@@ -671,7 +671,7 @@
     },
     "description": {
       "en": "Huggies Plus Little Snugglers Size 4, 180ct Art# 1914460",
-      "fr": ""
+      "fr": "Huggies Plus Little Snugglers Taille 4, 180 pièces Art# 1914460"
     }
   },
   {
@@ -681,7 +681,7 @@
     "name_en": "Huggies Plus Little Snugglers Size 5, 156ct Art# 1914461",
     "name_fr": "Huggies Plus Little Snugglers Taille 5, 156 pièces Art # 1914461",
     "description_en": "Huggies Plus Little Snugglers Size 5, 156ct Art# 1914461",
-    "description_fr": "",
+    "description_fr": "Huggies Plus Little Snugglers Taille 5, 156 pièces Art# 1914461",
     "unit_size": "156",
     "unit_type": "ct",
     "case_qty": 1,
@@ -696,7 +696,7 @@
     },
     "description": {
       "en": "Huggies Plus Little Snugglers Size 5, 156ct Art# 1914461",
-      "fr": ""
+      "fr": "Huggies Plus Little Snugglers Taille 5, 156 pièces Art# 1914461"
     }
   },
   {
@@ -706,7 +706,7 @@
     "name_en": "Huggies Plus Little Snugglers Size 6, 126ct Art# 1914462",
     "name_fr": "Huggies Plus Little Snugglers Taille 6, 126 pièces Art# 1914462",
     "description_en": "Huggies Plus Little Snugglers Size 6, 126ct Art# 1914462",
-    "description_fr": "",
+    "description_fr": "Huggies Plus Little Snugglers Taille 6, 126 pièces Art# 1914462",
     "unit_size": "126",
     "unit_type": "ct",
     "case_qty": 1,
@@ -721,7 +721,7 @@
     },
     "description": {
       "en": "Huggies Plus Little Snugglers Size 6, 126ct Art# 1914462",
-      "fr": ""
+      "fr": "Huggies Plus Little Snugglers Taille 6, 126 pièces Art# 1914462"
     }
   },
   {
@@ -729,9 +729,9 @@
     "barcode": "3600055228",
     "category": "baby",
     "name_en": "Huggies Pull-Ups Boy's Potty Training Pants, Size 5T-6T, 48ct",
-    "name_fr": "",
+    "name_fr": "Huggies Pull‑Ups Pantalons d'entraînement à la couche pour garçons, taille 5T‑6T, 48 pièces",
     "description_en": "Huggies Pull-Ups Boy's Potty Training Pants, Size 5T-6T, 48ct",
-    "description_fr": "",
+    "description_fr": "Huggies Pull-Ups pantalons d'entraînement à la toilette pour garçons, taille 5T-6T, 48 pièces",
     "unit_size": "48",
     "unit_type": "ct",
     "case_qty": 1,
@@ -742,11 +742,11 @@
     ],
     "name": {
       "en": "Huggies Pull-Ups Boy's Potty Training Pants, Size 5T-6T, 48ct",
-      "fr": ""
+      "fr": "Huggies Pull‑Ups Pantalons d'entraînement à la couche pour garçons, taille 5T‑6T, 48 pièces"
     },
     "description": {
       "en": "Huggies Pull-Ups Boy's Potty Training Pants, Size 5T-6T, 48ct",
-      "fr": ""
+      "fr": "Huggies Pull-Ups pantalons d'entraînement à la toilette pour garçons, taille 5T-6T, 48 pièces"
     }
   },
   {
@@ -781,7 +781,7 @@
     "name_en": "Huggies Pull-ups Boys' Potty Training Pants, Disney, Size 3t-4t, 66ct",
     "name_fr": "Huggies Pull-ups Pantalons d'entraînement à la propreté pour garçons, Disney, Taille 3t-4t, 66 pièces",
     "description_en": "Huggies Pull-ups Boys' Potty Training Pants, Disney, Size 3t-4t, 66ct",
-    "description_fr": "",
+    "description_fr": "Huggies Pull‑ups Pantalons d'entraînement à la toilette pour garçons, Disney, Taille 3t-4t, 66 pièces",
     "unit_size": "66",
     "unit_type": "ct",
     "case_qty": 1,
@@ -796,7 +796,7 @@
     },
     "description": {
       "en": "Huggies Pull-ups Boys' Potty Training Pants, Disney, Size 3t-4t, 66ct",
-      "fr": ""
+      "fr": "Huggies Pull‑ups Pantalons d'entraînement à la toilette pour garçons, Disney, Taille 3t-4t, 66 pièces"
     }
   },
   {
