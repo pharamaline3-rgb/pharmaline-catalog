@@ -344,9 +344,9 @@ function openEnrichModal() {
       <div class="modal-box" style="max-width:700px;">
         <h2>✨ AI Enrich All Products</h2>
         <p style="color:#5B6672; font-size:0.9rem;">
-          This goes through every product that has a photo, reads it with AI, and writes a proper description
-          (in English and French). It takes a while for ${state.products.length} products — you can stop anytime
-          and apply whatever's been found so far.
+          This organizes every product: it never deletes anything — it copies your full original product text into
+          the description if that's empty, pulls out size/unit info from the name, and translates anything still
+          missing into French. Existing data is never overwritten. You can stop anytime and apply whatever's ready.
         </p>
         <div id="enrichCounters" style="display:flex; gap:16px; margin:16px 0; font-size:0.9rem;">
           <span>Processed: <strong id="enrichProcessed">0</strong> / ${state.products.length}</span>
@@ -380,6 +380,17 @@ function enrichLog(msg) {
   log.scrollTop = log.scrollHeight;
 }
 
+const UNIT_PATTERN = /(\d+(?:\.\d+)?)\s?(ml|mL|L|l|kg|g|oz|ct|Ct|CT|count|Count)\b/;
+
+function extractUnitFromName(name) {
+  const m = name.match(UNIT_PATTERN);
+  if (!m) return null;
+  let unit = m[2].toLowerCase();
+  if (unit === "l") unit = "L";
+  if (unit === "count" || unit === "ct") unit = "ct";
+  return { size: m[1], unit };
+}
+
 async function runEnrichment() {
   let processed = 0;
   let updated = 0;
@@ -393,44 +404,44 @@ async function runEnrichment() {
     processed++;
     document.getElementById("enrichProcessed").textContent = processed;
 
-    if (!p.images || !p.images.length) {
-      skipped++;
-      document.getElementById("enrichSkipped").textContent = skipped;
-      continue;
+    const changed = {};
+
+    if (!p.description_en || !p.description_en.trim()) {
+      changed.description_en = p.name_en;
+    }
+
+    if (!p.unit_size || !p.unit_type) {
+      const found = extractUnitFromName(p.name_en || "");
+      if (found) {
+        if (!p.unit_size) changed.unit_size = found.size;
+        if (!p.unit_type) changed.unit_type = found.unit;
+      }
     }
 
     try {
-      const res = await fetch("../" + p.images[0]);
-      const blob = await res.blob();
-      const base64 = await new Promise((resolve) => {
-        const reader = new FileReader();
-        reader.onload = () => resolve(reader.result.split(",")[1]);
-        reader.readAsDataURL(blob);
-      });
-      const data = await api("/autofill", { images: [{ data: base64, mime: blob.type || "image/jpeg" }] });
-
-      const changed = {};
-      if (data.description_en && data.description_en !== p.description_en) changed.description_en = data.description_en;
-      if (data.description_fr && data.description_fr !== p.description_fr) changed.description_fr = data.description_fr;
-      if (data.name_fr && data.name_fr !== p.name_fr) changed.name_fr = data.name_fr;
-
-      if (Object.keys(changed).length) {
-        enrichStagedUpdates[p.sku] = changed;
-        updated++;
-        document.getElementById("enrichUpdated").textContent = updated;
-        enrichLog(`✅ #${escapeHtml(p.sku)} ${escapeHtml(p.name_en.slice(0, 40))} — updated`);
-      } else {
-        skipped++;
-        document.getElementById("enrichSkipped").textContent = skipped;
-        enrichLog(`— #${escapeHtml(p.sku)} nothing new`);
+      if (!p.name_fr || !p.name_fr.trim()) {
+        const res = await api("/translate", { text: p.name_en });
+        if (res.translated) changed.name_fr = res.translated;
       }
-    } catch (err) {
+      const descForTranslation = changed.description_en || p.description_en;
+      if (descForTranslation && (!p.description_fr || !p.description_fr.trim())) {
+        const res2 = await api("/translate", { text: descForTranslation });
+        if (res2.translated) changed.description_fr = res2.translated;
+      }
+    } catch {}
+
+    if (Object.keys(changed).length) {
+      enrichStagedUpdates[p.sku] = changed;
+      updated++;
+      document.getElementById("enrichUpdated").textContent = updated;
+      enrichLog(`✅ #${escapeHtml(p.sku)} ${escapeHtml((p.name_en || "").slice(0, 40))} — organized`);
+    } else {
       skipped++;
       document.getElementById("enrichSkipped").textContent = skipped;
-      enrichLog(`⚠️ #${escapeHtml(p.sku)} error — skipped`);
+      enrichLog(`— #${escapeHtml(p.sku)} already complete`);
     }
 
-    await new Promise((r) => setTimeout(r, 900)); // pace requests so we don't get rate-limited
+    await new Promise((r) => setTimeout(r, 500));
   }
 
   enrichLog(`<strong>Done. ${Object.keys(enrichStagedUpdates).length} products have suggested updates ready.</strong>`);
