@@ -9904,11 +9904,11 @@
     "barcode": "8151919055",
     "category": "health_beauty",
     "name_en": "Aussie Miracle Repairer, Shampoo, 26.2 fl oz/778 mL, 4/cs",
-    "name_fr": "",
+    "name_fr": "Aussie Miracle Repairer, Shampooing, 26,2 fl oz / 778 mL, 4/cs",
     "description_en": "Aussie Miracle Repairer, Shampoo, 26.2 fl oz/778 mL, 4/cs",
-    "description_fr": "",
+    "description_fr": "Réparateur Miracle Aussie, Shampooing, 26,2 fl oz / 778 mL, 4/pieces",
     "unit_size": "778",
-    "unit_type": "mL",
+    "unit_type": "",
     "case_qty": 4,
     "pallet_qty": 152,
     "sale": false,
@@ -9917,11 +9917,11 @@
     ],
     "name": {
       "en": "Aussie Miracle Repairer, Shampoo, 26.2 fl oz/778 mL, 4/cs",
-      "fr": ""
+      "fr": "Aussie Miracle Repairer, Shampooing, 26,2 fl oz / 778 mL, 4/cs"
     },
     "description": {
       "en": "Aussie Miracle Repairer, Shampoo, 26.2 fl oz/778 mL, 4/cs",
-      "fr": ""
+      "fr": "Réparateur Miracle Aussie, Shampooing, 26,2 fl oz / 778 mL, 4/pieces"
     }
   },
   {
