@@ -542,15 +542,28 @@ document.getElementById("clearSalesBtn").addEventListener("click", async () => {
 document.getElementById("viewProductsBtn").addEventListener("click", () => {
   document.getElementById("viewProductsBtn").classList.add("active");
   document.getElementById("viewCustomersBtn").classList.remove("active");
+  document.getElementById("viewQuotesBtn").classList.remove("active");
   document.getElementById("productsView").style.display = "block";
   document.getElementById("customersView").style.display = "none";
+  document.getElementById("quotesView").style.display = "none";
 });
 document.getElementById("viewCustomersBtn").addEventListener("click", () => {
   document.getElementById("viewCustomersBtn").classList.add("active");
   document.getElementById("viewProductsBtn").classList.remove("active");
+  document.getElementById("viewQuotesBtn").classList.remove("active");
   document.getElementById("productsView").style.display = "none";
   document.getElementById("customersView").style.display = "block";
+  document.getElementById("quotesView").style.display = "none";
   refreshCustomers();
+});
+document.getElementById("viewQuotesBtn").addEventListener("click", () => {
+  document.getElementById("viewQuotesBtn").classList.add("active");
+  document.getElementById("viewProductsBtn").classList.remove("active");
+  document.getElementById("viewCustomersBtn").classList.remove("active");
+  document.getElementById("productsView").style.display = "none";
+  document.getElementById("customersView").style.display = "none";
+  document.getElementById("quotesView").style.display = "block";
+  refreshQuotes();
 });
 document.getElementById("addCustomerBtn").addEventListener("click", () => openCustomerModal(null));
 document.getElementById("customerSearchInput").addEventListener("input", (e) => {
@@ -1186,6 +1199,95 @@ function openCustomerModal(existing) {
       statusEl.textContent = "Error: " + err.message;
     }
     setBusy(false);
+  });
+}
+
+/* ---------------- Quote Requests ---------------- */
+async function refreshQuotes() {
+  const wrap = document.getElementById("quotesList");
+  wrap.innerHTML = "Loading...";
+  try {
+    const data = await api("/quotes-list");
+    renderQuotesList(data.quotes || []);
+  } catch (err) {
+    wrap.innerHTML = `<div class="empty-note">Error loading requests: ${escapeHtml(err.message)}</div>`;
+  }
+}
+
+function renderQuotesList(quotes) {
+  const wrap = document.getElementById("quotesList");
+  if (!quotes.length) {
+    wrap.innerHTML = `<div class="empty-note">No quote requests yet. Once a customer submits their wishlist, it'll show up here.</div>`;
+    return;
+  }
+
+  wrap.innerHTML = quotes
+    .map((q) => {
+      const date = new Date(q.created_at).toLocaleString();
+      const c = q.customer_info || {};
+      const isReturning = !!q.matched_customer;
+      return `
+      <div class="admin-product-card" style="cursor:default; padding:20px; display:block; margin-bottom:16px;">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px;">
+          <div>
+            <div style="font-weight:700; font-size:1.05rem;">
+              ${escapeHtml(c.name || "(no name)")}
+              ${isReturning ? `<span class="admin-product-card__tag" style="background:#E1F5EA; color:#2F8F76;">Returning Customer</span>` : `<span class="admin-product-card__tag" style="background:#FDF3E3; color:#C97A2B;">New Contact</span>`}
+            </div>
+            ${c.business_name ? `<div style="color:#5B6672;">${escapeHtml(c.business_name)}</div>` : ""}
+            <div style="font-size:0.85rem; color:#5B6672; margin-top:6px;">
+              ${c.phone ? `📞 ${escapeHtml(c.phone)} &nbsp; ` : ""}${c.email ? `✉️ ${escapeHtml(c.email)}` : ""}
+            </div>
+            <div style="font-size:0.75rem; color:#999; margin-top:4px;">${escapeHtml(date)}</div>
+          </div>
+          <button class="btn-secondary delete-quote-btn" data-id="${escapeHtml(q.id)}" style="border-color:#C0392B; color:#C0392B;">Delete</button>
+        </div>
+
+        ${c.message ? `<div style="margin-top:10px; padding:10px; background:#F7F9FB; border-radius:8px; font-size:0.9rem;">"${escapeHtml(c.message)}"</div>` : ""}
+
+        <div style="margin-top:14px;">
+          <div style="font-weight:600; font-size:0.85rem; margin-bottom:6px;">Requested Products (${q.items.length}):</div>
+          <ul style="margin:0; padding-left:20px; font-size:0.88rem;">
+            ${q.items.map((item) => `<li>${escapeHtml(item.name)} — SKU #${escapeHtml(item.sku)}</li>`).join("")}
+          </ul>
+        </div>
+
+        ${
+          !isReturning
+            ? `<button class="btn-primary add-as-customer-btn" data-id="${escapeHtml(q.id)}" style="margin-top:14px;">+ Add as Customer</button>`
+            : ""
+        }
+      </div>`;
+    })
+    .join("");
+
+  wrap.querySelectorAll(".delete-quote-btn").forEach((btn) => {
+    btn.addEventListener("click", async () => {
+      if (!confirm("Delete this request?")) return;
+      await api("/quotes-delete", { id: btn.dataset.id });
+      refreshQuotes();
+    });
+  });
+
+  wrap.querySelectorAll(".add-as-customer-btn").forEach((btn) => {
+    btn.addEventListener("click", async () => {
+      const quote = quotes.find((q) => q.id === btn.dataset.id);
+      const c = quote.customer_info;
+      try {
+        await api("/customers-save", {
+          name: c.name || "",
+          business_name: c.business_name || "",
+          phone: c.phone || "",
+          email: c.email || "",
+          address: "",
+          notes: "Added from a quote request.",
+        });
+        alert("Added to your Customers list!");
+        refreshQuotes();
+      } catch (err) {
+        alert("Error: " + err.message);
+      }
+    });
   });
 }
 
