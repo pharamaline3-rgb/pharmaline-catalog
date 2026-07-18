@@ -59,10 +59,20 @@
                 : ""
             }
           </table>
-          <a class="btn btn--primary" href="contact.html">${escapeHtml(t("nav.contact"))}</a>
+          <div style="display:flex; gap:12px; margin-top:16px;">
+            <a class="btn btn--primary" href="contact.html">${escapeHtml(t("nav.contact"))}</a>
+            <button class="btn btn--outline" id="wishlistDetailBtn" data-sku="${product.sku}">
+              ${isInWishlist(product.sku) ? "❤️ In Wishlist" : "🤍 Add to Wishlist"}
+            </button>
+          </div>
         </div>
       </div>
     `;
+
+    document.getElementById("wishlistDetailBtn").addEventListener("click", () => {
+      const nowIn = toggleWishlist(product.sku);
+      document.getElementById("wishlistDetailBtn").innerHTML = nowIn ? "❤️ In Wishlist" : "🤍 Add to Wishlist";
+    });
 
     wrap.querySelectorAll(".product-detail__thumbs img").forEach((thumb) => {
       thumb.addEventListener("click", () => {

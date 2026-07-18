@@ -70,10 +70,20 @@
             <span class="product-card__name">${escapeHtml(productName(p))}</span>
             <span class="product-card__sku">${escapeHtml(t("products.sku"))} #${escapeHtml(p.sku)}</span>
           </div>
+          <button class="wishlist-toggle-btn" data-sku="${p.sku}" style="position:absolute; top:10px; right:10px; z-index:2; background:#fff; border:1px solid #DCE4EC; border-radius:999px; width:32px; height:32px; font-size:1rem; cursor:pointer;">${isInWishlist(p.sku) ? "❤️" : "🤍"}</button>
           <a class="stretched" href="product.html?sku=${encodeURIComponent(p.sku)}" aria-label="${escapeHtml(productName(p))}"></a>
         </div>`;
       })
       .join("");
+
+    grid.querySelectorAll(".wishlist-toggle-btn").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const nowIn = toggleWishlist(btn.dataset.sku);
+        btn.textContent = nowIn ? "❤️" : "🤍";
+      });
+    });
   }
 
   async function init() {
