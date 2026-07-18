@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Wishlist — Pharmaline</title>
+<link rel="icon" href="static/images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="ticker" id="ticker">
+  <span class="ticker__label" data-i18n="ticker.label">Specials</span>
+  <div class="ticker__track"></div>
+</div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="index.html" class="brand">
+      <img src="static/images/logo.svg" alt="Pharmaline logo">
+    </a>
+    <nav class="main-nav">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About Us</a>
+      <a href="products.html" data-i18n="nav.products">Products</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="wishlist.html" style="position:relative; font-size:1.3rem; margin-right:6px;" aria-label="Wishlist">
+        ❤️
+        <span id="wishlistBadge" style="display:none; position:absolute; top:-6px; right:-10px; background:#C0392B; color:#fff; font-size:0.65rem; font-weight:700; padding:2px 6px; border-radius:999px;">0</span>
+      </a>
+      <div class="lang-toggle">
+        <button data-lang="en">EN</button>
+        <button data-lang="fr">FR</button>
+      </div>
+      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container" style="max-width:800px;">
+    <h1>Your Wishlist</h1>
+    <p style="color:var(--color-text-muted);">Select the products you're interested in, then send us a request for our best pricing.</p>
+
+    <div id="wishlistItems" style="margin:24px 0;"></div>
+
+    <div id="quoteFormWrap" style="display:none;">
+      <div class="contact-card">
+        <h3>Request a Quote</h3>
+        <form id="quoteForm" class="contact-form">
+          <div>
+            <label>Full Name</label>
+            <input type="text" id="q_name" required>
+          </div>
+          <div>
+            <label>Business Name</label>
+            <input type="text" id="q_business">
+          </div>
+          <div>
+            <label>Email Address</label>
+            <input type="email" id="q_email" required>
+          </div>
+          <div>
+            <label>Phone Number</label>
+            <input type="tel" id="q_phone" required>
+          </div>
+          <div>
+            <label>Anything else you'd like us to know?</label>
+            <textarea id="q_message" placeholder="Quantities needed, delivery area, timing, etc."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Request</button>
+        </form>
+        <p class="status-msg" id="quoteStatus"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="static/images/logo.svg" alt="Pharmaline" style="height:40px;filter:brightness(0) invert(1);margin-bottom:12px;">
+        <p data-i18n="footer.tagline">Wholesale distribution across Canada.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.links">Quick Links</h4>
+        <ul>
+          <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+          <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <ul>
+          <li><a href="tel:+15145550123" class="js-phone">(514) 555-0123</a></li>
+          <li><a href="mailto:info@pharmaline.ca" class="js-email">info@pharmaline.ca</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Pharmaline. <span data-i18n="footer.rights">All Rights Reserved.</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script src="js/wishlist-page.js"></script>
+</body>
+</html>
