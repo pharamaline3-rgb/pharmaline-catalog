@@ -330,6 +330,140 @@ document.getElementById("searchInput").addEventListener("input", (e) => {
 
 document.getElementById("addProductBtn").addEventListener("click", () => openProductModal(null));
 
+document.getElementById("enrichAllBtn").addEventListener("click", openEnrichModal);
+
+let enrichShouldStop = false;
+let enrichStagedUpdates = {};
+
+function openEnrichModal() {
+  enrichShouldStop = false;
+  enrichStagedUpdates = {};
+  const root = document.getElementById("modalRoot");
+  root.innerHTML = `
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-box" style="max-width:700px;">
+        <h2>✨ AI Enrich All Products</h2>
+        <p style="color:#5B6672; font-size:0.9rem;">
+          This goes through every product that has a photo, reads it with AI, and writes a proper description
+          (in English and French). It takes a while for ${state.products.length} products — you can stop anytime
+          and apply whatever's been found so far.
+        </p>
+        <div id="enrichCounters" style="display:flex; gap:16px; margin:16px 0; font-size:0.9rem;">
+          <span>Processed: <strong id="enrichProcessed">0</strong> / ${state.products.length}</span>
+          <span style="color:#2F8F76;">Updated: <strong id="enrichUpdated">0</strong></span>
+          <span style="color:#5B6672;">Skipped: <strong id="enrichSkipped">0</strong></span>
+        </div>
+        <div id="enrichLog" style="height:260px; overflow-y:auto; background:#F7F9FB; border:1px solid #DCE4EC; border-radius:8px; padding:12px; font-size:0.82rem; font-family:monospace;"></div>
+        <div class="modal-actions">
+          <div><button class="btn-secondary" id="enrichStopBtn" style="border-color:#C0392B;color:#C0392B;">Stop</button></div>
+          <div style="display:flex; gap:10px;">
+            <button class="btn-secondary" id="enrichCloseBtn">Close</button>
+            <button class="btn-primary" id="enrichApplyBtn" disabled>Apply All Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+  document.getElementById("enrichStopBtn").addEventListener("click", () => (enrichShouldStop = true));
+  document.getElementById("enrichCloseBtn").addEventListener("click", () => {
+    enrichShouldStop = true;
+    closeModal();
+  });
+  document.getElementById("enrichApplyBtn").addEventListener("click", applyEnrichChanges);
+  runEnrichment();
+}
+
+function enrichLog(msg) {
+  const log = document.getElementById("enrichLog");
+  if (!log) return;
+  log.innerHTML += msg + "<br>";
+  log.scrollTop = log.scrollHeight;
+}
+
+async function runEnrichment() {
+  let processed = 0;
+  let updated = 0;
+  let skipped = 0;
+
+  for (const p of state.products) {
+    if (enrichShouldStop) {
+      enrichLog(`<span style="color:#C0392B;">Stopped by user.</span>`);
+      break;
+    }
+    processed++;
+    document.getElementById("enrichProcessed").textContent = processed;
+
+    if (!p.images || !p.images.length) {
+      skipped++;
+      document.getElementById("enrichSkipped").textContent = skipped;
+      continue;
+    }
+
+    try {
+      const res = await fetch("../" + p.images[0]);
+      const blob = await res.blob();
+      const base64 = await new Promise((resolve) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result.split(",")[1]);
+        reader.readAsDataURL(blob);
+      });
+      const data = await api("/autofill", { images: [{ data: base64, mime: blob.type || "image/jpeg" }] });
+
+      const changed = {};
+      if (data.description_en && data.description_en !== p.description_en) changed.description_en = data.description_en;
+      if (data.description_fr && data.description_fr !== p.description_fr) changed.description_fr = data.description_fr;
+      if (data.name_fr && data.name_fr !== p.name_fr) changed.name_fr = data.name_fr;
+
+      if (Object.keys(changed).length) {
+        enrichStagedUpdates[p.sku] = changed;
+        updated++;
+        document.getElementById("enrichUpdated").textContent = updated;
+        enrichLog(`✅ #${escapeHtml(p.sku)} ${escapeHtml(p.name_en.slice(0, 40))} — updated`);
+      } else {
+        skipped++;
+        document.getElementById("enrichSkipped").textContent = skipped;
+        enrichLog(`— #${escapeHtml(p.sku)} nothing new`);
+      }
+    } catch (err) {
+      skipped++;
+      document.getElementById("enrichSkipped").textContent = skipped;
+      enrichLog(`⚠️ #${escapeHtml(p.sku)} error — skipped`);
+    }
+
+    await new Promise((r) => setTimeout(r, 900)); // pace requests so we don't get rate-limited
+  }
+
+  enrichLog(`<strong>Done. ${Object.keys(enrichStagedUpdates).length} products have suggested updates ready.</strong>`);
+  document.getElementById("enrichApplyBtn").disabled = Object.keys(enrichStagedUpdates).length === 0;
+}
+
+async function applyEnrichChanges() {
+  setBusy(true);
+  try {
+    state.products = state.products.map((p) => {
+      const changes = enrichStagedUpdates[p.sku];
+      if (!changes) return p;
+      const updated = { ...p, ...changes };
+      updated.name = { en: updated.name_en, fr: updated.name_fr };
+      updated.description = { en: updated.description_en, fr: updated.description_fr };
+      return updated;
+    });
+    const cleanProducts = state.products.map(({ _localPreview, ...rest }) => rest);
+    const saveRes = await api("/products-save", {
+      products: cleanProducts,
+      sha: state.sha,
+      message: `AI-enrich ${Object.keys(enrichStagedUpdates).length} products`,
+    });
+    state.sha = saveRes.sha;
+    renderGrid();
+    alert(`Applied! ${Object.keys(enrichStagedUpdates).length} products updated in one save.`);
+    closeModal();
+  } catch (err) {
+    alert("Error saving changes: " + err.message);
+  }
+  setBusy(false);
+}
+
 document.getElementById("clearSalesBtn").addEventListener("click", async () => {
   const saleCount = state.products.filter((p) => p.sale).length;
   if (!saleCount) return alert("No products are currently marked as Special.");
