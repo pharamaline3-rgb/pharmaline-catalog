@@ -15154,9 +15154,9 @@
     "barcode": "6210000243",
     "category": "drinks",
     "name_en": "Canada Dry Club Soda, 355 ml cans, 12 pk",
-    "name_fr": "",
+    "name_fr": "Canada Dry Club Soda, canettes de 355 ml, 12 paquets",
     "description_en": "Canada Dry Club Soda, 355 ml cans, 12 pk",
-    "description_fr": "",
+    "description_fr": "Canada Dry Club Soda, canettes de 355 ml, 12 paquets",
     "unit_size": "355",
     "unit_type": "ml",
     "case_qty": 12,
@@ -15167,11 +15167,11 @@
     ],
     "name": {
       "en": "Canada Dry Club Soda, 355 ml cans, 12 pk",
-      "fr": ""
+      "fr": "Canada Dry Club Soda, canettes de 355 ml, 12 paquets"
     },
     "description": {
       "en": "Canada Dry Club Soda, 355 ml cans, 12 pk",
-      "fr": ""
+      "fr": "Canada Dry Club Soda, canettes de 355 ml, 12 paquets"
     }
   },
   {
