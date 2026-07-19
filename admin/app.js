@@ -1117,6 +1117,7 @@ async function saveProduct(sku, isEdit) {
     });
     state.sha = saveRes.sha;
     await savePrivateData(sku);
+    await checkLowStock();
 
     statusEl.className = "status-msg success";
     statusEl.textContent = "Saved!";
