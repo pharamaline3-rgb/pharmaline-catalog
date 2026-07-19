@@ -370,6 +370,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .search-box {
   flex: 1 1 260px;
   position: relative;
+  min-height: 0;
 }
 
 .search-box input {
