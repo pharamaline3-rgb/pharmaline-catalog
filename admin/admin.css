@@ -382,6 +382,42 @@ body {
     gap: 8px;
     padding: 12px 0 !important;
   }
+
+  .modal-box h2 { font-size: 1.1rem; }
+  .form-row { margin-bottom: 12px; }
+  .form-row label { font-size: 0.8rem; }
+  .form-row input,
+  .form-row select,
+  .form-row textarea {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+
+  #f_barcode { width: 100%; }
+  .form-row > div[style*="flex"] {
+    flex-wrap: wrap !important;
+  }
+  .form-row > div[style*="flex"] input {
+    flex: 1 1 100% !important;
+    margin-bottom: 6px;
+  }
+  .form-row > div[style*="flex"] button {
+    flex: 1 1 auto !important;
+    font-size: 0.75rem;
+    padding: 8px;
+  }
+
+  .btn-translate {
+    display: block;
+    margin-top: 6px;
+    width: fit-content;
+  }
+
+  .image-preview-row img,
+  .image-thumb-wrap img { width: 56px; height: 56px; }
+
+  .invoice-line-item { grid-template-columns: 36px 1fr; }
+}
   #usersList button {
     font-size: 0.75rem;
     padding: 6px 10px;
