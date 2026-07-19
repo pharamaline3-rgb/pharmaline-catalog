@@ -1160,9 +1160,17 @@ function renderCustomerList() {
   });
 }
 
-function openCustomerModal(existing) {
+async function openCustomerModal(existing) {
   const isEdit = !!existing;
   const c = existing || { id: "", name: "", business_name: "", phone: "", email: "", address: "", notes: "" };
+
+  let customerInvoices = [];
+  if (isEdit) {
+    try {
+      const data = await api("/invoices-list");
+      customerInvoices = (data.invoices || []).filter((inv) => inv.customer_name === c.name);
+    } catch {}
+  }
 
   const root = document.getElementById("modalRoot");
   root.innerHTML = `
@@ -1177,6 +1185,26 @@ function openCustomerModal(existing) {
         </div>
         <div class="form-row"><label>Address</label><input type="text" id="c_address"></div>
         <div class="form-row"><label>Notes</label><textarea id="c_notes" placeholder="Anything else — delivery preferences, order history notes, etc."></textarea></div>
+
+        ${
+          isEdit && customerInvoices.length
+            ? `
+          <div class="form-row" style="background:#F7F9FB; border:1px solid #DCE4EC; border-radius:10px; padding:16px;">
+            <label style="margin-bottom:10px;">📋 Invoice History (${customerInvoices.length})</label>
+            ${customerInvoices
+              .map((inv) => {
+                const total = (inv.items || []).reduce((sum, i) => sum + i.qty * (parseFloat(i.price) || 0), 0);
+                return `
+              <div class="customer-invoice-row" data-id="${escapeHtml(inv.id)}" style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid #DCE4EC; cursor:pointer;">
+                <span>Invoice #${escapeHtml(inv.number)} — ${new Date(inv.updated_at).toLocaleDateString()}</span>
+                <span style="font-weight:700;">$${total.toFixed(2)}</span>
+              </div>`;
+              })
+              .join("")}
+          </div>`
+            : ""
+        }
+
         <p class="status-msg" id="customerModalStatus"></p>
         <div class="modal-actions">
           <div>${isEdit ? `<button class="btn-secondary" id="deleteCustomerBtn" style="border-color:#C0392B;color:#C0392B;">Delete Customer</button>` : ""}</div>
@@ -1195,6 +1223,13 @@ function openCustomerModal(existing) {
   document.getElementById("c_email").value = c.email || "";
   document.getElementById("c_address").value = c.address || "";
   document.getElementById("c_notes").value = c.notes || "";
+
+  document.querySelectorAll(".customer-invoice-row").forEach((row) => {
+    row.addEventListener("click", () => {
+      const inv = customerInvoices.find((i) => i.id === row.dataset.id);
+      openInvoiceBuilder(inv);
+    });
+  });
 
   document.getElementById("cancelCustomerBtn").addEventListener("click", closeModal);
   document.getElementById("modalOverlay").addEventListener("click", (e) => {
