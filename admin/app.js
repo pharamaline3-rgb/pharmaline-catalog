@@ -1446,7 +1446,10 @@ function renderInvoicesList(invoices) {
       <div class="admin-product-card" data-id="${escapeHtml(inv.id)}" style="cursor:pointer; padding:16px; display:block; margin-bottom:12px;">
         <div style="display:flex; justify-content:space-between; align-items:center;">
           <div>
-            <div style="font-weight:700;">Invoice #${escapeHtml(inv.number)} — ${escapeHtml(inv.customer_name || "No customer")}</div>
+            <div style="font-weight:700;">
+              Invoice #${escapeHtml(inv.number)} — ${escapeHtml(inv.customer_name || "No customer")}
+              <span class="admin-product-card__tag" style="${inv.status === "paid" ? "background:#E1F5EA;color:#2F8F76;" : inv.status === "sent" ? "background:#FDF3E3;color:#C97A2B;" : "background:#EEE;color:#666;"}">${escapeHtml(inv.status || "draft")}</span>
+            </div>
             <div style="font-size:0.8rem; color:#5B6672;">${new Date(inv.updated_at).toLocaleDateString()} · ${(inv.items || []).length} items</div>
           </div>
           <div style="font-weight:700; font-size:1.1rem;">$${total.toFixed(2)}</div>
@@ -1522,6 +1525,15 @@ async function openInvoiceBuilder(existing) {
         <div id="invoiceLineItems" style="margin:16px 0;"></div>
         <div class="invoice-totals" id="invoiceTotal">Total: $0.00</div>
 
+        <div class="form-row">
+          <label>Status</label>
+          <select id="inv_status">
+            <option value="draft">Draft</option>
+            <option value="sent">Sent</option>
+            <option value="paid">Paid</option>
+          </select>
+        </div>
+
         <div class="form-row"><label>Notes</label><textarea id="inv_notes" placeholder="Payment terms, delivery details, etc."></textarea></div>
 
         <p class="status-msg" id="invoiceStatus"></p>
@@ -1565,6 +1577,7 @@ async function openInvoiceBuilder(existing) {
   document.getElementById("inv_customer_email").value = currentInvoice.customer_email || "";
   document.getElementById("inv_customer_address").value = currentInvoice.customer_address || "";
   document.getElementById("inv_notes").value = currentInvoice.notes || "";
+  document.getElementById("inv_status").value = currentInvoice.status || "draft";
 
   renderInvoiceLineItems();
 
@@ -1686,6 +1699,7 @@ async function saveInvoice() {
   currentInvoice.customer_email = document.getElementById("inv_customer_email").value.trim();
   currentInvoice.customer_address = document.getElementById("inv_customer_address").value.trim();
   currentInvoice.notes = document.getElementById("inv_notes").value.trim();
+  currentInvoice.status = document.getElementById("inv_status").value;
 
   try {
     const res = await api("/invoices-save", currentInvoice);
@@ -1715,7 +1729,13 @@ async function loadSettingsForInvoice() {
 function invoiceHtml(invoice, settings) {
   const items = invoice.items || [];
   const total = items.reduce((sum, i) => sum + i.qty * (parseFloat(i.price) || 0), 0);
+  const paidStamp =
+    invoice.status === "paid"
+      ? `<div style="position:absolute; top:40%; left:50%; transform:translate(-50%,-50%) rotate(-25deg); font-size:4rem; font-weight:900; color:#C0392B; border:6px solid #C0392B; padding:6px 30px; border-radius:12px; opacity:0.75; letter-spacing:0.1em; pointer-events:none; z-index:10;">PAID</div>`
+      : "";
   return `
+    <div style="position:relative;">
+    ${paidStamp}
     <div class="print-header">
       <div>
         <img src="../static/images/logo.svg" style="height:50px;">
@@ -1754,6 +1774,7 @@ function invoiceHtml(invoice, settings) {
     </table>
     <div style="text-align:right; margin-top:20px; font-size:1.1rem; font-weight:700;">Total: $${total.toFixed(2)}</div>
     ${invoice.notes ? `<p style="margin-top:20px;">${escapeHtml(invoice.notes)}</p>` : ""}
+    </div>
   `;
 }
 
