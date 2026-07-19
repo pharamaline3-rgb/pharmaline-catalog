@@ -15,6 +15,11 @@ let state = {
   isOwner: false,
 };
 
+function firstImage(p) {
+  if (p.images && p.images.length) return "../" + p.images[0];
+  return "https://placehold.co/100x100/E8F1F8/2E6FA3?text=No+Photo";
+}
+
 function escapeHtml(str) {
   return String(str)
     .replace(/&/g, "&amp;")
