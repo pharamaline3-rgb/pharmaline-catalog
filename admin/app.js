@@ -1807,49 +1807,8 @@ function openInvoicePreview(invoice, settings) {
 }
 
 function printInvoice(settings) {
-  const items = currentInvoice.items || [];
-  const total = items.reduce((sum, i) => sum + i.qty * (parseFloat(i.price) || 0), 0);
-  const area = document.getElementById("printInvoiceArea");
-  area.innerHTML = `
-    <div class="print-header">
-      <div>
-        <img src="../static/images/logo.svg">
-        <p>${escapeHtml(settings.address || "")}<br>${escapeHtml(settings.phone_display || "")} · ${escapeHtml(settings.email || "")}</p>
-      </div>
-      <div style="text-align:right;">
-        <h2>INVOICE #${escapeHtml(currentInvoice.number)}</h2>
-        <p>${new Date().toLocaleDateString()}</p>
-      </div>
-    </div>
-    <div>
-      <strong>Bill To:</strong><br>
-      ${escapeHtml(currentInvoice.customer_name || "")}<br>
-      ${currentInvoice.customer_business ? escapeHtml(currentInvoice.customer_business) + "<br>" : ""}
-      ${currentInvoice.customer_address ? escapeHtml(currentInvoice.customer_address) + "<br>" : ""}
-      ${currentInvoice.customer_phone ? escapeHtml(currentInvoice.customer_phone) + "<br>" : ""}
-      ${currentInvoice.customer_email ? escapeHtml(currentInvoice.customer_email) : ""}
-    </div>
-    <table class="print-table">
-      <thead><tr><th>Photo</th><th>Product</th><th>SKU / UPC</th><th>Qty</th><th>Price</th><th>Total</th></tr></thead>
-      <tbody>
-        ${items
-          .map(
-            (item) => `
-          <tr>
-            <td><img src="${escapeHtml(item.image)}"></td>
-            <td>${escapeHtml(item.name)}</td>
-            <td>#${escapeHtml(item.sku)}${item.barcode ? " / " + escapeHtml(item.barcode) : ""}</td>
-            <td>${item.qty}</td>
-            <td>$${parseFloat(item.price || 0).toFixed(2)}</td>
-            <td>$${(item.qty * (parseFloat(item.price) || 0)).toFixed(2)}</td>
-          </tr>`
-          )
-          .join("")}
-      </tbody>
-    </table>
-    <div class="print-totals">Total: $${total.toFixed(2)}</div>
-    ${currentInvoice.notes ? `<p style="margin-top:20px;">${escapeHtml(currentInvoice.notes)}</p>` : ""}
-  `;
+  currentInvoice.status = document.getElementById("inv_status").value;
+  document.getElementById("printInvoiceArea").innerHTML = invoiceHtml(currentInvoice, settings);
   window.print();
 }
 
