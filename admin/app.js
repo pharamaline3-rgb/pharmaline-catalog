@@ -236,6 +236,7 @@ async function refreshProducts() {
   setBusy(true);
   try {
     const data = await api("/products-get");
+    checkLowStock();
     const previewMap = {};
     state.products.forEach((p) => {
       if (p._localPreview) previewMap[p.sku] = p._localPreview;
@@ -248,23 +249,62 @@ async function refreshProducts() {
     renderStats();
     renderFilterTabs();
     renderGrid();
+    checkLowStock();
   } catch (err) {
     alert("Error loading products: " + err.message);
   }
   setBusy(false);
 }
 
+const LOW_STOCK_THRESHOLD = 5;
+state.lowStockSkus = [];
+
+async function checkLowStock() {
+  try {
+    const skus = state.products.map((p) => p.sku);
+    const data = await api("/private-get", { skus });
+    state.lowStockSkus = state.products
+      .filter((p) => {
+        const info = data[p.sku];
+        if (!info) return false;
+        const cases = parseInt(info.stock_cases, 10);
+        return info.in_stock !== false && !isNaN(cases) && cases > 0 && cases <= LOW_STOCK_THRESHOLD;
+      })
+      .map((p) => p.sku);
+  } catch {
+    state.lowStockSkus = [];
+  }
+  renderStats();
+}
+
 function renderStats() {
   const p = state.products;
+  const lowCount = state.lowStockSkus.length;
   document.getElementById("statsRow").innerHTML = `
     <div class="stat-card"><div class="num">${p.length}</div><div class="label">Total Products</div></div>
     <div class="stat-card"><div class="num">${p.filter((x) => x.sale).length}</div><div class="label">On Sale</div></div>
     <div class="stat-card"><div class="num">${new Set(p.map((x) => x.category)).size}</div><div class="label">Categories</div></div>
+    <div class="stat-card" id="lowStockCard" style="${lowCount ? "cursor:pointer; border-color:#C0392B;" : ""}">
+      <div class="num" style="${lowCount ? "color:#C0392B;" : ""}">${lowCount}</div>
+      <div class="label">⚠️ Low Stock</div>
+    </div>
   `;
+  if (lowCount) {
+    document.getElementById("lowStockCard").addEventListener("click", () => {
+      state.activeCategory = "__lowstock__";
+      renderFilterTabs();
+      renderGrid();
+    });
+  }
 }
 
 function renderFilterTabs() {
-  const tabs = [{ key: "all", label: "All" }, { key: "__sale__", label: "🔥 On Sale" }, ...ADMIN_CATEGORIES];
+  const tabs = [
+    { key: "all", label: "All" },
+    { key: "__sale__", label: "🔥 On Sale" },
+    { key: "__lowstock__", label: "⚠️ Low Stock" },
+    ...ADMIN_CATEGORIES,
+  ];
   const wrap = document.getElementById("filterTabs");
   wrap.innerHTML = "";
   tabs.forEach((tab) => {
@@ -286,7 +326,11 @@ function renderGrid() {
   const filtered = state.products.filter((p) => {
     const catOk =
       state.activeCategory === "all" ||
-      (state.activeCategory === "__sale__" ? p.sale === true : p.category === state.activeCategory);
+      (state.activeCategory === "__sale__"
+        ? p.sale === true
+        : state.activeCategory === "__lowstock__"
+        ? state.lowStockSkus.includes(p.sku)
+        : p.category === state.activeCategory);
     if (!catOk) return false;
     if (!term) return true;
     return (
