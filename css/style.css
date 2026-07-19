@@ -697,8 +697,16 @@ form.contact-form { display: flex; flex-direction: column; gap: 14px; }
   .spec-table th, .spec-table td { padding: 8px; font-size: 0.82rem; }
   .product-detail__thumbs img { width: 54px; height: 54px; }
 
-  .contact-card { padding: 18px; }
-  .contact-form textarea { min-height: 110px; }
+  .contact-grid { gap: 20px; }
+  .contact-card { padding: 18px; margin-bottom: 0; }
+  .contact-card h3 { font-size: 0.95rem; }
+  .contact-card a { font-size: 0.95rem; word-break: break-word; }
+  .contact-form { gap: 12px; }
+  .contact-form label { font-size: 0.82rem; margin-bottom: 4px; }
+  .contact-form input,
+  .contact-form textarea { padding: 10px 12px; font-size: 0.9rem; }
+  .contact-form textarea { min-height: 100px; }
+  .contact-form button { width: 100%; }
 
   .footer-grid { gap: 24px; }
   .site-footer { padding: 32px 0 16px; }
