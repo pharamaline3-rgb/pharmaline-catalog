@@ -666,7 +666,7 @@ document.getElementById("viewQuotesBtn").addEventListener("click", () => {
 });
 document.getElementById("addCustomerBtn").addEventListener("click", () => openCustomerModal(null));
 
-document.getElementById("importInvoicePhotoBtn").addEventListener("click", () => {
+document.getElementById("importInvoicePhotoBtnInvoices").addEventListener("click", () => {
   const input = document.createElement("input");
   input.type = "file";
   input.accept = "image/*";
