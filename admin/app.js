@@ -1225,9 +1225,10 @@ async function openCustomerModal(existing) {
   document.getElementById("c_notes").value = c.notes || "";
 
   document.querySelectorAll(".customer-invoice-row").forEach((row) => {
-    row.addEventListener("click", () => {
+    row.addEventListener("click", async () => {
       const inv = customerInvoices.find((i) => i.id === row.dataset.id);
-      openInvoiceBuilder(inv);
+      const settings = await loadSettingsForInvoice();
+      openInvoicePreview(inv, settings);
     });
   });
 
@@ -1709,6 +1710,79 @@ async function loadSettingsForInvoice() {
   } catch {
     return {};
   }
+}
+
+function invoiceHtml(invoice, settings) {
+  const items = invoice.items || [];
+  const total = items.reduce((sum, i) => sum + i.qty * (parseFloat(i.price) || 0), 0);
+  return `
+    <div class="print-header">
+      <div>
+        <img src="../static/images/logo.svg" style="height:50px;">
+        <p>${escapeHtml(settings.address || "")}<br>${escapeHtml(settings.phone_display || "")} · ${escapeHtml(settings.email || "")}</p>
+      </div>
+      <div style="text-align:right;">
+        <h2>INVOICE #${escapeHtml(invoice.number)}</h2>
+        <p>${new Date(invoice.updated_at).toLocaleDateString()}</p>
+      </div>
+    </div>
+    <div>
+      <strong>Bill To:</strong><br>
+      ${escapeHtml(invoice.customer_name || "")}<br>
+      ${invoice.customer_business ? escapeHtml(invoice.customer_business) + "<br>" : ""}
+      ${invoice.customer_address ? escapeHtml(invoice.customer_address) + "<br>" : ""}
+      ${invoice.customer_phone ? escapeHtml(invoice.customer_phone) + "<br>" : ""}
+      ${invoice.customer_email ? escapeHtml(invoice.customer_email) : ""}
+    </div>
+    <table class="print-table" style="width:100%; border-collapse:collapse; margin-top:20px;">
+      <thead><tr><th>Photo</th><th>Product</th><th>SKU / UPC</th><th>Qty</th><th>Price</th><th>Total</th></tr></thead>
+      <tbody>
+        ${items
+          .map(
+            (item) => `
+          <tr>
+            <td><img src="${escapeHtml(item.image)}" style="width:40px;height:40px;object-fit:cover;"></td>
+            <td>${escapeHtml(item.name)}</td>
+            <td>#${escapeHtml(item.sku)}${item.barcode ? " / " + escapeHtml(item.barcode) : ""}</td>
+            <td>${item.qty}</td>
+            <td>$${parseFloat(item.price || 0).toFixed(2)}</td>
+            <td>$${(item.qty * (parseFloat(item.price) || 0)).toFixed(2)}</td>
+          </tr>`
+          )
+          .join("")}
+      </tbody>
+    </table>
+    <div style="text-align:right; margin-top:20px; font-size:1.1rem; font-weight:700;">Total: $${total.toFixed(2)}</div>
+    ${invoice.notes ? `<p style="margin-top:20px;">${escapeHtml(invoice.notes)}</p>` : ""}
+  `;
+}
+
+function openInvoicePreview(invoice, settings) {
+  const root = document.getElementById("modalRoot");
+  root.innerHTML = `
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-box" style="max-width:800px;">
+        <div style="border:1px solid #DCE4EC; border-radius:8px; padding:24px; background:#fff;">
+          ${invoiceHtml(invoice, settings)}
+        </div>
+        <div class="modal-actions">
+          <div></div>
+          <div style="display:flex; gap:10px;">
+            <button class="btn-secondary" id="closePreviewBtn">Close</button>
+            <button class="btn-primary" id="printPreviewBtn">🖨️ Print / Save as PDF</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+  document.getElementById("closePreviewBtn").addEventListener("click", closeModal);
+  document.getElementById("modalOverlay").addEventListener("click", (e) => {
+    if (e.target.id === "modalOverlay") closeModal();
+  });
+  document.getElementById("printPreviewBtn").addEventListener("click", () => {
+    document.getElementById("printInvoiceArea").innerHTML = invoiceHtml(invoice, settings);
+    window.print();
+  });
 }
 
 function printInvoice(settings) {
