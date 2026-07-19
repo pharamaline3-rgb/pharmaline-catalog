@@ -635,3 +635,61 @@ form.contact-form { display: flex; flex-direction: column; gap: 14px; }
 .mt-0 { margin-top: 0; }
 [data-i18n], [data-i18n-placeholder] {}
 [lang-hidden] { display: none !important; }
+
+/* ==========================================================================
+   Mobile polish — applies to phones and small tablets
+   ========================================================================== */
+@media (max-width: 600px) {
+  .container { padding: 0 16px; }
+
+  :root { --header-height: 64px; }
+  .brand img { height: 36px; }
+  .header-actions { gap: 8px; }
+  .lang-toggle button { padding: 5px 10px; font-size: 0.72rem; }
+
+  .ticker__label { font-size: 0.68rem; padding: 0 10px; }
+  .ticker__item { padding: 0 18px; font-size: 0.8rem; }
+  .ticker__item img { width: 26px; height: 26px; }
+  :root { --ticker-height: 48px; }
+
+  .hero { padding: 40px 0; }
+  .hero h1 { font-size: 1.6rem; max-width: none; }
+  .hero p { font-size: 0.95rem; }
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__actions .btn { text-align: center; }
+  .hero__art { display: none; }
+
+  .section { padding: 40px 0; }
+  h2 { font-size: 1.4rem; }
+
+  .category-grid { grid-template-columns: 1fr; gap: 16px; }
+  .category-card { padding: 22px 18px; }
+
+  .toolbar { flex-direction: column; align-items: stretch; }
+  .search-box input { font-size: 0.9rem; }
+  .filter-pills { gap: 6px; }
+  .filter-pill { padding: 7px 12px; font-size: 0.78rem; }
+
+  .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .product-card__body { padding: 10px; gap: 2px; }
+  .product-card__name { font-size: 0.85rem; }
+  .product-card__sku, .product-card__cat { font-size: 0.68rem; }
+
+  .product-detail { gap: 24px; }
+  .product-detail__info h1 { font-size: 1.3rem; }
+  .spec-table th, .spec-table td { padding: 8px; font-size: 0.82rem; }
+  .product-detail__thumbs img { width: 54px; height: 54px; }
+
+  .contact-card { padding: 18px; }
+  .contact-form textarea { min-height: 110px; }
+
+  .footer-grid { gap: 24px; }
+  .site-footer { padding: 32px 0 16px; }
+
+  .btn { padding: 10px 20px; font-size: 0.88rem; }
+}
+
+@media (max-width: 400px) {
+  .product-grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 1.4rem; }
+}
