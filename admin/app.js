@@ -1460,6 +1460,13 @@ async function openInvoiceBuilder(existing) {
       <div class="modal-box" style="max-width:800px;">
         <h2>Invoice #${escapeHtml(currentInvoice.number)}</h2>
 
+        <div class="form-row">
+          <label>Select Existing Customer (optional)</label>
+          <select id="inv_customer_picker">
+            <option value="">— Type details manually below —</option>
+          </select>
+        </div>
+
         <div class="two-col">
           <div class="form-row"><label>Customer Name</label><input type="text" id="inv_customer_name"></div>
           <div class="form-row"><label>Business Name</label><input type="text" id="inv_customer_business"></div>
@@ -1494,6 +1501,27 @@ async function openInvoiceBuilder(existing) {
       </div>
     </div>
   `;
+
+  try {
+    const custData = await api("/customers-list");
+    const picker = document.getElementById("inv_customer_picker");
+    (custData.customers || []).forEach((c) => {
+      const opt = document.createElement("option");
+      opt.value = c.id;
+      opt.textContent = c.name + (c.business_name ? " — " + c.business_name : "");
+      picker.appendChild(opt);
+    });
+    picker.addEventListener("change", () => {
+      const c = custData.customers.find((x) => x.id === picker.value);
+      if (c) {
+        document.getElementById("inv_customer_name").value = c.name || "";
+        document.getElementById("inv_customer_business").value = c.business_name || "";
+        document.getElementById("inv_customer_phone").value = c.phone || "";
+        document.getElementById("inv_customer_email").value = c.email || "";
+        document.getElementById("inv_customer_address").value = c.address || "";
+      }
+    });
+  } catch {}
 
   document.getElementById("inv_customer_name").value = currentInvoice.customer_name || "";
   document.getElementById("inv_customer_business").value = currentInvoice.customer_business || "";
