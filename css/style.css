@@ -292,19 +292,25 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   max-width: 15ch;
 }
 
-.hero h1 .drop-letter {
-  display: inline-block;
+.hero-animate-1,
+.hero-animate-2,
+.hero__actions {
   opacity: 0;
-  transform: translateY(-40px);
-  animation: dropIn 0.5s ease forwards;
+  transform: translateY(-30px);
+  animation: slideDown 0.9s ease forwards;
 }
+.hero-animate-1 { animation-delay: 0.1s; }
+.hero-animate-2 { animation-delay: 0.7s; }
+.hero__actions { animation-delay: 1.3s; }
 
-@keyframes dropIn {
+@keyframes slideDown {
   to { opacity: 1; transform: translateY(0); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero h1 .drop-letter { animation: none; opacity: 1; transform: none; }
+  .hero-animate-1, .hero-animate-2, .hero__actions {
+    animation: none; opacity: 1; transform: none;
+  }
 }
 
 .hero p {
