@@ -317,3 +317,55 @@ body {
   .stats-row { grid-template-columns: repeat(2, 1fr); }
   .two-col { grid-template-columns: 1fr; }
 }
+
+/* ---------------- Invoice builder ---------------- */
+.invoice-line-item {
+  display: grid;
+  grid-template-columns: 50px 1fr 90px 100px 100px 36px;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #DCE4EC;
+}
+.invoice-line-item img { width: 44px; height: 44px; object-fit: cover; border-radius: 6px; }
+.invoice-line-item input { padding: 6px 8px; border: 1px solid #DCE4EC; border-radius: 6px; width: 100%; }
+.invoice-totals { text-align: right; margin-top: 16px; font-size: 1.1rem; }
+.product-picker-results {
+  border: 1px solid #DCE4EC;
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 6px;
+}
+.product-picker-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #F0F0F0;
+}
+.product-picker-row:hover { background: #F7F9FB; }
+.product-picker-row img { width: 32px; height: 32px; object-fit: cover; border-radius: 4px; }
+
+/* ---------------- Printable invoice (hidden until printing) ---------------- */
+#printInvoiceArea { display: none; }
+
+@media print {
+  body * { visibility: hidden; }
+  #printInvoiceArea, #printInvoiceArea * { visibility: visible; }
+  #printInvoiceArea {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+  }
+  .print-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px; }
+  .print-header img { height: 50px; }
+  .print-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  .print-table th, .print-table td { border: 1px solid #ccc; padding: 8px; text-align: left; font-size: 0.85rem; }
+  .print-table img { width: 40px; height: 40px; object-fit: cover; }
+  .print-totals { text-align: right; margin-top: 20px; font-size: 1.1rem; font-weight: 700; }
+}

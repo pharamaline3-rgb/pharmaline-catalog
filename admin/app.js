@@ -1378,5 +1378,317 @@ function renderMessagesList(messages) {
   });
 }
 
+/* ---------------- Invoices ---------------- */
+let currentInvoice = null;
+
+async function refreshInvoices() {
+  const wrap = document.getElementById("invoicesList");
+  wrap.innerHTML = "Loading...";
+  try {
+    const data = await api("/invoices-list");
+    renderInvoicesList(data.invoices || []);
+  } catch (err) {
+    wrap.innerHTML = `<div class="empty-note">Error loading invoices: ${escapeHtml(err.message)}</div>`;
+  }
+}
+
+function renderInvoicesList(invoices) {
+  const wrap = document.getElementById("invoicesList");
+  if (!invoices.length) {
+    wrap.innerHTML = `<div class="empty-note">No invoices yet. Click "+ Create Invoice" to make your first one.</div>`;
+    return;
+  }
+  wrap.innerHTML = invoices
+    .map((inv) => {
+      const total = (inv.items || []).reduce((sum, i) => sum + i.qty * i.price, 0);
+      return `
+      <div class="admin-product-card" data-id="${escapeHtml(inv.id)}" style="cursor:pointer; padding:16px; display:block; margin-bottom:12px;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <div style="font-weight:700;">Invoice #${escapeHtml(inv.number)} — ${escapeHtml(inv.customer_name || "No customer")}</div>
+            <div style="font-size:0.8rem; color:#5B6672;">${new Date(inv.updated_at).toLocaleDateString()} · ${(inv.items || []).length} items</div>
+          </div>
+          <div style="font-weight:700; font-size:1.1rem;">$${total.toFixed(2)}</div>
+        </div>
+      </div>`;
+    })
+    .join("");
+
+  wrap.querySelectorAll(".admin-product-card").forEach((card) => {
+    card.addEventListener("click", async () => {
+      const data = await api("/invoices-list");
+      const inv = data.invoices.find((i) => i.id === card.dataset.id);
+      openInvoiceBuilder(inv);
+    });
+  });
+}
+
+document.getElementById("createInvoiceBtn").addEventListener("click", () => openInvoiceBuilder(null));
+
+async function openInvoiceBuilder(existing) {
+  currentInvoice = existing || {
+    id: "",
+    number: null,
+    customer_name: "",
+    customer_business: "",
+    customer_address: "",
+    customer_phone: "",
+    customer_email: "",
+    items: [],
+    notes: "",
+  };
+
+  if (!existing) {
+    try {
+      const data = await api("/invoices-next-number");
+      currentInvoice.number = data.number;
+    } catch {
+      currentInvoice.number = "----";
+    }
+  }
+
+  const settings = await loadSettingsForInvoice();
+
+  const root = document.getElementById("modalRoot");
+  root.innerHTML = `
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-box" style="max-width:800px;">
+        <h2>Invoice #${escapeHtml(currentInvoice.number)}</h2>
+
+        <div class="two-col">
+          <div class="form-row"><label>Customer Name</label><input type="text" id="inv_customer_name"></div>
+          <div class="form-row"><label>Business Name</label><input type="text" id="inv_customer_business"></div>
+        </div>
+        <div class="two-col">
+          <div class="form-row"><label>Phone</label><input type="text" id="inv_customer_phone"></div>
+          <div class="form-row"><label>Email</label><input type="text" id="inv_customer_email"></div>
+        </div>
+        <div class="form-row"><label>Address</label><input type="text" id="inv_customer_address"></div>
+
+        <div class="form-row">
+          <label>Add a Product</label>
+          <input type="text" id="invProductSearch" placeholder="Search by product name or SKU...">
+          <div class="product-picker-results" id="invProductResults" style="display:none;"></div>
+        </div>
+
+        <div id="invoiceLineItems" style="margin:16px 0;"></div>
+        <div class="invoice-totals" id="invoiceTotal">Total: $0.00</div>
+
+        <div class="form-row"><label>Notes</label><textarea id="inv_notes" placeholder="Payment terms, delivery details, etc."></textarea></div>
+
+        <p class="status-msg" id="invoiceStatus"></p>
+
+        <div class="modal-actions">
+          <div>${existing ? `<button class="btn-secondary" id="deleteInvoiceBtn" style="border-color:#C0392B;color:#C0392B;">Delete</button>` : ""}</div>
+          <div style="display:flex; gap:10px;">
+            <button class="btn-secondary" id="cancelInvoiceBtn">Cancel</button>
+            <button class="btn-secondary" id="printInvoiceBtn">🖨️ Print</button>
+            <button class="btn-primary" id="saveInvoiceBtn">Save Invoice</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.getElementById("inv_customer_name").value = currentInvoice.customer_name || "";
+  document.getElementById("inv_customer_business").value = currentInvoice.customer_business || "";
+  document.getElementById("inv_customer_phone").value = currentInvoice.customer_phone || "";
+  document.getElementById("inv_customer_email").value = currentInvoice.customer_email || "";
+  document.getElementById("inv_customer_address").value = currentInvoice.customer_address || "";
+  document.getElementById("inv_notes").value = currentInvoice.notes || "";
+
+  renderInvoiceLineItems();
+
+  document.getElementById("invProductSearch").addEventListener("input", (e) => {
+    const term = e.target.value.trim().toLowerCase();
+    const resultsBox = document.getElementById("invProductResults");
+    if (!term) {
+      resultsBox.style.display = "none";
+      return;
+    }
+    const matches = state.products
+      .filter((p) => (p.name_en || "").toLowerCase().includes(term) || String(p.sku).includes(term))
+      .slice(0, 8);
+    if (!matches.length) {
+      resultsBox.style.display = "none";
+      return;
+    }
+    resultsBox.style.display = "block";
+    resultsBox.innerHTML = matches
+      .map(
+        (p) => `
+      <div class="product-picker-row" data-sku="${p.sku}">
+        <img src="${escapeHtml(firstImage(p))}">
+        <span>${escapeHtml(p.name_en)} — SKU #${escapeHtml(p.sku)}</span>
+      </div>`
+      )
+      .join("");
+    resultsBox.querySelectorAll(".product-picker-row").forEach((row) => {
+      row.addEventListener("click", () => {
+        addProductToInvoice(row.dataset.sku);
+        document.getElementById("invProductSearch").value = "";
+        resultsBox.style.display = "none";
+      });
+    });
+  });
+
+  document.getElementById("cancelInvoiceBtn").addEventListener("click", closeModal);
+  document.getElementById("modalOverlay").addEventListener("click", (e) => {
+    if (e.target.id === "modalOverlay") closeModal();
+  });
+  document.getElementById("saveInvoiceBtn").addEventListener("click", saveInvoice);
+  document.getElementById("printInvoiceBtn").addEventListener("click", () => printInvoice(settings));
+
+  if (existing) {
+    document.getElementById("deleteInvoiceBtn").addEventListener("click", async () => {
+      if (!confirm("Delete this invoice?")) return;
+      await api("/invoices-delete", { id: currentInvoice.id });
+      closeModal();
+      refreshInvoices();
+    });
+  }
+}
+
+function addProductToInvoice(sku) {
+  const p = state.products.find((x) => String(x.sku) === String(sku));
+  if (!p) return;
+  currentInvoice.items = currentInvoice.items || [];
+  currentInvoice.items.push({
+    sku: p.sku,
+    barcode: p.barcode || "",
+    name: p.name_en,
+    image: firstImage(p),
+    qty: 1,
+    price: 0,
+  });
+  renderInvoiceLineItems();
+}
+
+function renderInvoiceLineItems() {
+  const wrap = document.getElementById("invoiceLineItems");
+  const items = currentInvoice.items || [];
+  if (!items.length) {
+    wrap.innerHTML = `<div class="empty-note">No products added yet — search above to add some.</div>`;
+  } else {
+    wrap.innerHTML = items
+      .map(
+        (item, i) => `
+      <div class="invoice-line-item">
+        <img src="${escapeHtml(item.image)}">
+        <div>
+          <div style="font-weight:600;">${escapeHtml(item.name)}</div>
+          <div style="font-size:0.75rem; color:#5B6672;">SKU #${escapeHtml(item.sku)} ${item.barcode ? "· UPC " + escapeHtml(item.barcode) : ""}</div>
+        </div>
+        <input type="number" min="1" value="${item.qty}" data-i="${i}" data-field="qty" class="inv-item-field">
+        <input type="text" value="${item.price}" placeholder="Price" data-i="${i}" data-field="price" class="inv-item-field">
+        <div style="font-weight:700;">$${(item.qty * (parseFloat(item.price) || 0)).toFixed(2)}</div>
+        <button type="button" class="inv-remove-btn" data-i="${i}" style="background:none;border:none;color:#C0392B;font-size:1.2rem;cursor:pointer;">×</button>
+      </div>`
+      )
+      .join("");
+
+    wrap.querySelectorAll(".inv-item-field").forEach((input) => {
+      input.addEventListener("input", (e) => {
+        const i = parseInt(e.target.dataset.i, 10);
+        const field = e.target.dataset.field;
+        currentInvoice.items[i][field] = field === "qty" ? parseInt(e.target.value, 10) || 1 : e.target.value;
+        renderInvoiceLineItems();
+      });
+    });
+    wrap.querySelectorAll(".inv-remove-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        currentInvoice.items.splice(parseInt(btn.dataset.i, 10), 1);
+        renderInvoiceLineItems();
+      });
+    });
+  }
+
+  const total = items.reduce((sum, i) => sum + i.qty * (parseFloat(i.price) || 0), 0);
+  document.getElementById("invoiceTotal").textContent = `Total: $${total.toFixed(2)}`;
+}
+
+async function saveInvoice() {
+  const statusEl = document.getElementById("invoiceStatus");
+  statusEl.className = "status-msg";
+  statusEl.textContent = "Saving...";
+  currentInvoice.customer_name = document.getElementById("inv_customer_name").value.trim();
+  currentInvoice.customer_business = document.getElementById("inv_customer_business").value.trim();
+  currentInvoice.customer_phone = document.getElementById("inv_customer_phone").value.trim();
+  currentInvoice.customer_email = document.getElementById("inv_customer_email").value.trim();
+  currentInvoice.customer_address = document.getElementById("inv_customer_address").value.trim();
+  currentInvoice.notes = document.getElementById("inv_notes").value.trim();
+
+  try {
+    const res = await api("/invoices-save", currentInvoice);
+    currentInvoice.id = res.id;
+    currentInvoice.number = res.number;
+    statusEl.className = "status-msg success";
+    statusEl.textContent = "Saved!";
+    setTimeout(() => {
+      closeModal();
+      refreshInvoices();
+    }, 400);
+  } catch (err) {
+    statusEl.className = "status-msg error";
+    statusEl.textContent = "Error: " + err.message;
+  }
+}
+
+async function loadSettingsForInvoice() {
+  try {
+    const res = await fetch("../data/settings.json", { cache: "no-store" });
+    return await res.json();
+  } catch {
+    return {};
+  }
+}
+
+function printInvoice(settings) {
+  const items = currentInvoice.items || [];
+  const total = items.reduce((sum, i) => sum + i.qty * (parseFloat(i.price) || 0), 0);
+  const area = document.getElementById("printInvoiceArea");
+  area.innerHTML = `
+    <div class="print-header">
+      <div>
+        <img src="../static/images/logo.svg">
+        <p>${escapeHtml(settings.address || "")}<br>${escapeHtml(settings.phone_display || "")} · ${escapeHtml(settings.email || "")}</p>
+      </div>
+      <div style="text-align:right;">
+        <h2>INVOICE #${escapeHtml(currentInvoice.number)}</h2>
+        <p>${new Date().toLocaleDateString()}</p>
+      </div>
+    </div>
+    <div>
+      <strong>Bill To:</strong><br>
+      ${escapeHtml(currentInvoice.customer_name || "")}<br>
+      ${currentInvoice.customer_business ? escapeHtml(currentInvoice.customer_business) + "<br>" : ""}
+      ${currentInvoice.customer_address ? escapeHtml(currentInvoice.customer_address) + "<br>" : ""}
+      ${currentInvoice.customer_phone ? escapeHtml(currentInvoice.customer_phone) + "<br>" : ""}
+      ${currentInvoice.customer_email ? escapeHtml(currentInvoice.customer_email) : ""}
+    </div>
+    <table class="print-table">
+      <thead><tr><th>Photo</th><th>Product</th><th>SKU / UPC</th><th>Qty</th><th>Price</th><th>Total</th></tr></thead>
+      <tbody>
+        ${items
+          .map(
+            (item) => `
+          <tr>
+            <td><img src="${escapeHtml(item.image)}"></td>
+            <td>${escapeHtml(item.name)}</td>
+            <td>#${escapeHtml(item.sku)}${item.barcode ? " / " + escapeHtml(item.barcode) : ""}</td>
+            <td>${item.qty}</td>
+            <td>$${parseFloat(item.price || 0).toFixed(2)}</td>
+            <td>$${(item.qty * (parseFloat(item.price) || 0)).toFixed(2)}</td>
+          </tr>`
+          )
+          .join("")}
+      </tbody>
+    </table>
+    <div class="print-totals">Total: $${total.toFixed(2)}</div>
+    ${currentInvoice.notes ? `<p style="margin-top:20px;">${escapeHtml(currentInvoice.notes)}</p>` : ""}
+  `;
+  window.print();
+}
+
 /* ---------------- Init ---------------- */
 verifyAndInit();
