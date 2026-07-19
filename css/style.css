@@ -667,8 +667,8 @@ form.contact-form { display: flex; flex-direction: column; gap: 14px; }
   .category-card { padding: 22px 18px; }
 
   .toolbar { flex-direction: column; align-items: stretch; gap: 6px; margin: 0 0 14px 0 !important; }
-  .search-box { margin: 0 !important; }
-  .search-box input { font-size: 0.9rem; margin: 0 !important; display: block; }
+  .search-box { margin: 0 !important; flex: 0 0 auto !important; height: auto !important; min-height: 0 !important; }
+  .search-box input { font-size: 0.9rem; margin: 0 !important; display: block; height: auto !important; }
   .filter-pills { margin: 0 !important; }
   .filter-pills {
     display: flex;
