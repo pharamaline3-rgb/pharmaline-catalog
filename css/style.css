@@ -292,6 +292,21 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   max-width: 15ch;
 }
 
+.hero h1 .drop-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: dropIn 0.5s ease forwards;
+}
+
+@keyframes dropIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero h1 .drop-letter { animation: none; opacity: 1; transform: none; }
+}
+
 .hero p {
   color: #D9E6F0;
   font-size: 1.1rem;

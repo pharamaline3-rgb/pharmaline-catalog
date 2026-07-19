@@ -123,5 +123,28 @@
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 <script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
+<script>
+function animateHeroDrop() {
+  const h1 = document.querySelector(".hero h1");
+  if (!h1 || h1.dataset.animated) return;
+  h1.dataset.animated = "true";
+  const text = h1.textContent;
+  h1.innerHTML = "";
+  [...text].forEach((ch, i) => {
+    const span = document.createElement("span");
+    span.className = "drop-letter";
+    span.style.animationDelay = (i * 0.03) + "s";
+    span.textContent = ch === " " ? "\u00A0" : ch;
+    h1.appendChild(span);
+  });
+}
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(animateHeroDrop, 50);
+});
+document.addEventListener("langchange", () => {
+  document.querySelector(".hero h1").removeAttribute("data-animated");
+  setTimeout(animateHeroDrop, 50);
+});
+</script>
 </body>
 </html>
