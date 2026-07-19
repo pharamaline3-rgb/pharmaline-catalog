@@ -74,14 +74,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
    Specials Ticker
    ========================================================================== */
 .ticker {
-  background: var(--color-sale);
+  background: var(--color-navy);
   color: #fff;
   height: var(--ticker-height);
   overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
-  border-bottom: 2px dashed rgba(255,255,255,0.35);
+  border-bottom: 2px solid var(--color-blue);
 }
 
 .ticker__label {
@@ -437,7 +437,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   position: absolute;
   top: 10px;
   left: 10px;
-  background: var(--color-sale);
+  background: var(--color-navy);
   color: #fff;
   font-size: 0.7rem;
   font-weight: 700;
@@ -445,6 +445,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   border-radius: 999px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  border: 1px solid var(--color-blue-light);
 }
 
 .product-card__body {
