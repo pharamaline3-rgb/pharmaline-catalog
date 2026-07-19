@@ -653,6 +653,72 @@ document.getElementById("viewQuotesBtn").addEventListener("click", () => {
   refreshQuotes();
 });
 document.getElementById("addCustomerBtn").addEventListener("click", () => openCustomerModal(null));
+
+document.getElementById("importCsvBtn").addEventListener("click", () => {
+  const input = document.createElement("input");
+  input.type = "file";
+  input.accept = ".csv,.xlsx,.xls";
+  input.addEventListener("change", (e) => handleSpreadsheetImport(e.target.files[0]));
+  input.click();
+});
+
+function guessColumn(headers, ...keywords) {
+  const idx = headers.findIndex((h) => keywords.some((k) => h.toLowerCase().includes(k)));
+  return idx;
+}
+
+async function handleSpreadsheetImport(file) {
+  if (!file) return;
+  setBusy(true);
+  try {
+    const data = await file.arrayBuffer();
+    const workbook = XLSX.read(data);
+    const sheet = workbook.Sheets[workbook.SheetNames[0]];
+    const rows = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+    if (!rows.length) throw new Error("The file appears to be empty.");
+
+    const headers = rows[0].map((h) => String(h || "").trim());
+    const nameCol = guessColumn(headers, "customer", "name", "company");
+    const emailCol = guessColumn(headers, "email");
+    const phoneCol = guessColumn(headers, "phone", "tel");
+    const addressCol = guessColumn(headers, "address", "billing");
+    const businessCol = guessColumn(headers, "company", "business");
+
+    if (nameCol === -1) {
+      throw new Error("Couldn't find a customer name column in this file — check it has a 'Customer' or 'Name' column.");
+    }
+
+    let imported = 0;
+    let skipped = 0;
+    for (let i = 1; i < rows.length; i++) {
+      const row = rows[i];
+      const name = row[nameCol] ? String(row[nameCol]).trim() : "";
+      if (!name) {
+        skipped++;
+        continue;
+      }
+      try {
+        await api("/customers-save", {
+          name: name,
+          business_name: businessCol !== -1 && row[businessCol] ? String(row[businessCol]).trim() : "",
+          email: emailCol !== -1 && row[emailCol] ? String(row[emailCol]).trim() : "",
+          phone: phoneCol !== -1 && row[phoneCol] ? String(row[phoneCol]).trim() : "",
+          address: addressCol !== -1 && row[addressCol] ? String(row[addressCol]).trim() : "",
+          notes: "Imported from QuickBooks spreadsheet.",
+        });
+        imported++;
+      } catch {
+        skipped++;
+      }
+    }
+
+    alert(`Import complete! Added ${imported} customers. Skipped ${skipped} rows (missing name or already existing).`);
+    refreshCustomers();
+  } catch (err) {
+    alert("Import failed: " + err.message);
+  }
+  setBusy(false);
+}
 document.getElementById("customerSearchInput").addEventListener("input", (e) => {
   state.customerSearchTerm = e.target.value.trim().toLowerCase();
   renderCustomerList();
