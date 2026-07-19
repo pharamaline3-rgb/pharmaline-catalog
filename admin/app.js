@@ -544,20 +544,24 @@ document.getElementById("viewProductsBtn").addEventListener("click", () => {
   document.getElementById("viewCustomersBtn").classList.remove("active");
   document.getElementById("viewQuotesBtn").classList.remove("active");
   document.getElementById("viewMessagesBtn").classList.remove("active");
+  document.getElementById("viewInvoicesBtn").classList.remove("active");
   document.getElementById("productsView").style.display = "block";
   document.getElementById("customersView").style.display = "none";
   document.getElementById("quotesView").style.display = "none";
   document.getElementById("messagesView").style.display = "none";
+  document.getElementById("invoicesView").style.display = "none";
 });
 document.getElementById("viewCustomersBtn").addEventListener("click", () => {
   document.getElementById("viewCustomersBtn").classList.add("active");
   document.getElementById("viewProductsBtn").classList.remove("active");
   document.getElementById("viewQuotesBtn").classList.remove("active");
   document.getElementById("viewMessagesBtn").classList.remove("active");
+  document.getElementById("viewInvoicesBtn").classList.remove("active");
   document.getElementById("productsView").style.display = "none";
   document.getElementById("customersView").style.display = "block";
   document.getElementById("quotesView").style.display = "none";
   document.getElementById("messagesView").style.display = "none";
+  document.getElementById("invoicesView").style.display = "none";
   refreshCustomers();
 });
 document.getElementById("viewMessagesBtn").addEventListener("click", () => {
@@ -565,21 +569,38 @@ document.getElementById("viewMessagesBtn").addEventListener("click", () => {
   document.getElementById("viewProductsBtn").classList.remove("active");
   document.getElementById("viewCustomersBtn").classList.remove("active");
   document.getElementById("viewQuotesBtn").classList.remove("active");
+  document.getElementById("viewInvoicesBtn").classList.remove("active");
   document.getElementById("productsView").style.display = "none";
   document.getElementById("customersView").style.display = "none";
   document.getElementById("quotesView").style.display = "none";
   document.getElementById("messagesView").style.display = "block";
+  document.getElementById("invoicesView").style.display = "none";
   refreshMessages();
+});
+document.getElementById("viewInvoicesBtn").addEventListener("click", () => {
+  document.getElementById("viewInvoicesBtn").classList.add("active");
+  document.getElementById("viewProductsBtn").classList.remove("active");
+  document.getElementById("viewCustomersBtn").classList.remove("active");
+  document.getElementById("viewQuotesBtn").classList.remove("active");
+  document.getElementById("viewMessagesBtn").classList.remove("active");
+  document.getElementById("productsView").style.display = "none";
+  document.getElementById("customersView").style.display = "none";
+  document.getElementById("quotesView").style.display = "none";
+  document.getElementById("messagesView").style.display = "none";
+  document.getElementById("invoicesView").style.display = "block";
+  refreshInvoices();
 });
 document.getElementById("viewQuotesBtn").addEventListener("click", () => {
   document.getElementById("viewQuotesBtn").classList.add("active");
   document.getElementById("viewProductsBtn").classList.remove("active");
   document.getElementById("viewCustomersBtn").classList.remove("active");
   document.getElementById("viewMessagesBtn").classList.remove("active");
+  document.getElementById("viewInvoicesBtn").classList.remove("active");
   document.getElementById("productsView").style.display = "none";
   document.getElementById("customersView").style.display = "none";
   document.getElementById("quotesView").style.display = "block";
   document.getElementById("messagesView").style.display = "none";
+  document.getElementById("invoicesView").style.display = "none";
   refreshQuotes();
 });
 document.getElementById("addCustomerBtn").addEventListener("click", () => openCustomerModal(null));
