@@ -333,9 +333,36 @@ body {
     font-size: 0.78rem;
   }
 
-  .filter-tabs { flex-wrap: wrap; gap: 6px; }
-  .toolbar-row { flex-direction: column; align-items: stretch; }
-  .toolbar-row input[type="text"] { min-width: 0; width: 100%; }
+  .filter-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 6px;
+    padding-bottom: 6px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .filter-tabs::-webkit-scrollbar { display: none; }
+  .filter-tabs button {
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: 0.78rem;
+    padding: 7px 12px;
+  }
+
+  .toolbar-row { flex-direction: column; align-items: stretch; gap: 10px; }
+  .toolbar-row input[type="text"] { min-width: 0; width: 100%; flex: 0 0 auto !important; }
+  .toolbar-row > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .toolbar-row button {
+    flex: 1 1 auto;
+    font-size: 0.8rem;
+    padding: 8px 10px;
+    white-space: nowrap;
+  }
 
   .admin-product-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .modal-box { padding: 18px; max-width: 95vw !important; }
