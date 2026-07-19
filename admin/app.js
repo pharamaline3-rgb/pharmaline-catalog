@@ -688,8 +688,16 @@ async function handleSpreadsheetImport(file) {
       throw new Error("Couldn't find a customer name column in this file — check it has a 'Customer' or 'Name' column.");
     }
 
+    const invoiceNumCol = guessColumn(headers, "invoice", "no.", "number");
+    const dateCol = guessColumn(headers, "date");
+    const totalCol = guessColumn(headers, "total", "amount", "balance");
+    const hasInvoiceData = invoiceNumCol !== -1 && totalCol !== -1;
+
     let imported = 0;
+    let invoicesImported = 0;
     let skipped = 0;
+    const seenCustomers = new Set();
+
     for (let i = 1; i < rows.length; i++) {
       const row = rows[i];
       const name = row[nameCol] ? String(row[nameCol]).trim() : "";
@@ -697,22 +705,46 @@ async function handleSpreadsheetImport(file) {
         skipped++;
         continue;
       }
-      try {
-        await api("/customers-save", {
-          name: name,
-          business_name: businessCol !== -1 && row[businessCol] ? String(row[businessCol]).trim() : "",
-          email: emailCol !== -1 && row[emailCol] ? String(row[emailCol]).trim() : "",
-          phone: phoneCol !== -1 && row[phoneCol] ? String(row[phoneCol]).trim() : "",
-          address: addressCol !== -1 && row[addressCol] ? String(row[addressCol]).trim() : "",
-          notes: "Imported from QuickBooks spreadsheet.",
-        });
-        imported++;
-      } catch {
-        skipped++;
+
+      if (!seenCustomers.has(name)) {
+        seenCustomers.add(name);
+        try {
+          await api("/customers-save", {
+            name: name,
+            business_name: businessCol !== -1 && row[businessCol] ? String(row[businessCol]).trim() : "",
+            email: emailCol !== -1 && row[emailCol] ? String(row[emailCol]).trim() : "",
+            phone: phoneCol !== -1 && row[phoneCol] ? String(row[phoneCol]).trim() : "",
+            address: addressCol !== -1 && row[addressCol] ? String(row[addressCol]).trim() : "",
+            notes: "Imported from QuickBooks spreadsheet.",
+          });
+          imported++;
+        } catch {}
+      }
+
+      if (hasInvoiceData) {
+        const invNum = row[invoiceNumCol] ? String(row[invoiceNumCol]).trim() : "";
+        const total = totalCol !== -1 ? parseFloat(row[totalCol]) || 0 : 0;
+        if (invNum && total) {
+          try {
+            await api("/invoices-save", {
+              number: invNum,
+              customer_name: name,
+              customer_email: emailCol !== -1 && row[emailCol] ? String(row[emailCol]).trim() : "",
+              customer_phone: phoneCol !== -1 && row[phoneCol] ? String(row[phoneCol]).trim() : "",
+              customer_address: addressCol !== -1 && row[addressCol] ? String(row[addressCol]).trim() : "",
+              items: [{ sku: "", barcode: "", name: "Imported from QuickBooks (details not itemized)", image: "", qty: 1, price: total }],
+              status: "sent",
+              notes: "Imported from QuickBooks — please review and update status/details.",
+            });
+            invoicesImported++;
+          } catch {}
+        }
       }
     }
 
-    alert(`Import complete! Added ${imported} customers. Skipped ${skipped} rows (missing name or already existing).`);
+    alert(
+      `Import complete! Added ${imported} customers${hasInvoiceData ? ` and ${invoicesImported} invoices` : ""}. Skipped ${skipped} rows.`
+    );
     refreshCustomers();
   } catch (err) {
     alert("Import failed: " + err.message);
