@@ -690,6 +690,5 @@ form.contact-form { display: flex; flex-direction: column; gap: 14px; }
 }
 
 @media (max-width: 400px) {
-  .product-grid { grid-template-columns: 1fr; }
   .hero h1 { font-size: 1.4rem; }
 }
