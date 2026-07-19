@@ -1117,7 +1117,12 @@ async function saveProduct(sku, isEdit) {
     });
     state.sha = saveRes.sha;
     await savePrivateData(sku);
-    await checkLowStock();
+
+    const casesNum = parseInt(document.getElementById("f_stock_cases").value, 10);
+    const inStock = document.getElementById("f_in_stock").checked;
+    const isLow = inStock && !isNaN(casesNum) && casesNum > 0 && casesNum <= LOW_STOCK_THRESHOLD;
+    state.lowStockSkus = state.lowStockSkus.filter((s) => s !== sku);
+    if (isLow) state.lowStockSkus.push(sku);
 
     statusEl.className = "status-msg success";
     statusEl.textContent = "Saved!";
