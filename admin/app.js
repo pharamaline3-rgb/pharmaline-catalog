@@ -654,6 +654,67 @@ document.getElementById("viewQuotesBtn").addEventListener("click", () => {
 });
 document.getElementById("addCustomerBtn").addEventListener("click", () => openCustomerModal(null));
 
+document.getElementById("importInvoicePhotoBtn").addEventListener("click", () => {
+  const input = document.createElement("input");
+  input.type = "file";
+  input.accept = "image/*";
+  input.addEventListener("change", (e) => handleInvoicePhotoImport(e.target.files[0]));
+  input.click();
+});
+
+async function handleInvoicePhotoImport(file) {
+  if (!file) return;
+  setBusy(true);
+  try {
+    const base64 = await fileToBase64(file);
+    const data = await api("/read-invoice-photo", { image_base64: base64, mime_type: file.type });
+
+    if (!data.items || !data.items.length) {
+      alert("Couldn't read any product details from that photo — try a clearer picture.");
+      setBusy(false);
+      return;
+    }
+
+    // Match each item to a real product in the catalog by SKU or barcode where possible
+    const matchedItems = data.items.map((item) => {
+      const key = String(item.sku_or_barcode || "").trim();
+      const match = state.products.find((p) => String(p.sku) === key || String(p.barcode) === key);
+      return {
+        sku: match ? match.sku : "",
+        barcode: match ? match.barcode : key,
+        name: match ? match.name_en : item.name || "Unrecognized item",
+        image: match ? firstImage(match) : "https://placehold.co/100x100/E8F1F8/2E6FA3?text=No+Match",
+        qty: item.qty || 1,
+        price: item.price || 0,
+      };
+    });
+
+    currentInvoice = {
+      id: "",
+      number: null,
+      customer_name: data.customer_name || "",
+      customer_business: data.customer_business || "",
+      customer_address: data.customer_address || "",
+      customer_phone: data.customer_phone || "",
+      customer_email: data.customer_email || "",
+      items: matchedItems,
+      status: "draft",
+      notes: "Created from a scanned invoice photo — please review before saving.",
+    };
+
+    setBusy(false);
+    await openInvoiceBuilder(currentInvoice);
+
+    const unmatched = matchedItems.filter((i) => !i.sku).length;
+    if (unmatched) {
+      alert(`Invoice draft created! ${unmatched} item(s) couldn't be matched to a product in your catalog — please check those manually before saving.`);
+    }
+  } catch (err) {
+    alert("Failed to read the invoice photo: " + err.message);
+    setBusy(false);
+  }
+}
+
 document.getElementById("importCsvBtn").addEventListener("click", () => {
   const input = document.createElement("input");
   input.type = "file";
