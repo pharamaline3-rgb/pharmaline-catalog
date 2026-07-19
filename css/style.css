@@ -665,7 +665,7 @@ form.contact-form { display: flex; flex-direction: column; gap: 14px; }
   .category-grid { grid-template-columns: 1fr; gap: 16px; }
   .category-card { padding: 22px 18px; }
 
-  .toolbar { flex-direction: column; align-items: stretch; gap: 12px; margin-bottom: 18px; }
+  .toolbar { flex-direction: column; align-items: stretch; gap: 6px; margin-bottom: 14px; }
   .search-box input { font-size: 0.9rem; }
   .filter-pills {
     display: flex;
