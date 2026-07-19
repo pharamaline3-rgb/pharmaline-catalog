@@ -499,6 +499,18 @@ async function runEnrichment() {
   enrichLog(`<strong>Done. ${Object.keys(enrichStagedUpdates).length} products have suggested updates ready.</strong>`);
   document.getElementById("enrichApplyBtn").disabled = Object.keys(enrichStagedUpdates).length === 0;
   document.getElementById("enrichPreviewBtn").style.display = Object.keys(enrichStagedUpdates).length ? "inline-block" : "none";
+
+  enrichLog(`Checking stock levels...`);
+  await checkLowStock();
+  if (state.lowStockSkus.length) {
+    enrichLog(`<strong style="color:#C0392B;">⚠️ ${state.lowStockSkus.length} product(s) are low in stock:</strong>`);
+    state.lowStockSkus.forEach((sku) => {
+      const p = state.products.find((x) => String(x.sku) === String(sku));
+      enrichLog(`&nbsp;&nbsp;• #${escapeHtml(sku)} ${escapeHtml(p ? p.name_en.slice(0, 50) : "")}`);
+    });
+  } else {
+    enrichLog(`No products are currently low in stock.`);
+  }
 }
 
 let enrichExampleIndex = 0;
