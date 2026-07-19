@@ -687,10 +687,27 @@ async function handleInvoicePhotoImport(file) {
       return;
     }
 
-    // Match each item to a real product in the catalog by SKU or barcode where possible
+    // Match each item to a real product in the catalog by SKU/barcode first, then by name similarity
+    function findBestNameMatch(itemName) {
+      if (!itemName) return null;
+      const words = itemName.toLowerCase().split(/\s+/).filter((w) => w.length > 2);
+      let best = null;
+      let bestScore = 0;
+      state.products.forEach((p) => {
+        const pname = (p.name_en || "").toLowerCase();
+        const score = words.filter((w) => pname.includes(w)).length;
+        if (score > bestScore) {
+          bestScore = score;
+          best = p;
+        }
+      });
+      return bestScore >= 2 ? best : null;
+    }
+
     const matchedItems = data.items.map((item) => {
       const key = String(item.sku_or_barcode || "").trim();
-      const match = state.products.find((p) => String(p.sku) === key || String(p.barcode) === key);
+      let match = state.products.find((p) => String(p.sku) === key || String(p.barcode) === key);
+      if (!match) match = findBestNameMatch(item.name);
       return {
         sku: match ? match.sku : "",
         barcode: match ? match.barcode : key,
