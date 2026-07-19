@@ -665,8 +665,10 @@ form.contact-form { display: flex; flex-direction: column; gap: 14px; }
   .category-grid { grid-template-columns: 1fr; gap: 16px; }
   .category-card { padding: 22px 18px; }
 
-  .toolbar { flex-direction: column; align-items: stretch; gap: 6px; margin-bottom: 14px; }
-  .search-box input { font-size: 0.9rem; }
+  .toolbar { flex-direction: column; align-items: stretch; gap: 6px; margin: 0 0 14px 0 !important; }
+  .search-box { margin: 0 !important; }
+  .search-box input { font-size: 0.9rem; margin: 0 !important; display: block; }
+  .filter-pills { margin: 0 !important; }
   .filter-pills {
     display: flex;
     flex-wrap: nowrap;
