@@ -1381,7 +1381,7 @@
     "name_en": "Pampers Baby Dry, S6, 64ct",
     "name_fr": "Pampers Baby Dry, S6, 64 paquets",
     "description_en": "Pampers Baby Dry, S6, 64ct",
-    "description_fr": "",
+    "description_fr": "Pampers Baby Dry, S6, 64 pièces",
     "unit_size": "64",
     "unit_type": "ct",
     "case_qty": 1,
@@ -1396,7 +1396,7 @@
     },
     "description": {
       "en": "Pampers Baby Dry, S6, 64ct",
-      "fr": ""
+      "fr": "Pampers Baby Dry, S6, 64 pièces"
     }
   },
   {
@@ -1404,9 +1404,9 @@
     "barcode": "8001841041391",
     "category": "baby",
     "name_en": "Pampers Baby Wipes, Sensitive, 52 ct, 12/cs",
-    "name_fr": "",
+    "name_fr": "Pampers Lingettes pour bébé, Sensibles, 52 pièces, 12/paquets",
     "description_en": "Pampers Baby Wipes, Sensitive, 52 ct, 12/cs",
-    "description_fr": "",
+    "description_fr": "Pampers lingettes pour bébé, Sensibles, 52 pièces, 12 paquets",
     "unit_size": "52",
     "unit_type": "ct",
     "case_qty": 12,
@@ -1417,11 +1417,11 @@
     ],
     "name": {
       "en": "Pampers Baby Wipes, Sensitive, 52 ct, 12/cs",
-      "fr": ""
+      "fr": "Pampers Lingettes pour bébé, Sensibles, 52 pièces, 12/paquets"
     },
     "description": {
       "en": "Pampers Baby Wipes, Sensitive, 52 ct, 12/cs",
-      "fr": ""
+      "fr": "Pampers lingettes pour bébé, Sensibles, 52 pièces, 12 paquets"
     }
   },
   {
@@ -1431,7 +1431,7 @@
     "name_en": "Pampers Cruis 360 S3 Spr 78ct",
     "name_fr": "Pampers Cruis 360 S3 Spr 78ct",
     "description_en": "Pampers Cruis 360 S3 Spr 78ct",
-    "description_fr": "",
+    "description_fr": "Pampers Cruis 360 S3 Spr 78 pièces",
     "unit_size": "78",
     "unit_type": "ct",
     "case_qty": 1,
@@ -1446,7 +1446,7 @@
     },
     "description": {
       "en": "Pampers Cruis 360 S3 Spr 78ct",
-      "fr": ""
+      "fr": "Pampers Cruis 360 S3 Spr 78 pièces"
     }
   },
   {
@@ -1454,7 +1454,7 @@
     "barcode": "3700071507",
     "category": "baby",
     "name_en": "Pampers Cruisers 360 Diapers S5, 56ct, UPC 37000715078",
-    "name_fr": "",
+    "name_fr": "Couches Pampers Cruisers 360 S5, 56 pièces, UPC 37000715078",
     "description_en": "Pampers Cruisers 360 Diapers S5, 56ct, UPC 37000715078",
     "description_fr": "Couches Pampers Cruisers 360 S5, 56 pièces, UPC 37000715078",
     "unit_size": "56",
@@ -1467,7 +1467,7 @@
     ],
     "name": {
       "en": "Pampers Cruisers 360 Diapers S5, 56ct, UPC 37000715078",
-      "fr": ""
+      "fr": "Couches Pampers Cruisers 360 S5, 56 pièces, UPC 37000715078"
     },
     "description": {
       "en": "Pampers Cruisers 360 Diapers S5, 56ct, UPC 37000715078",
@@ -1481,7 +1481,7 @@
     "name_en": "Pampers Cruisers 360 Diapers S6, 48ct, UPC 37000715122",
     "name_fr": "Couches Pampers Cruisers 360 S6, 48 pièces, UPC 37000715122",
     "description_en": "Pampers Cruisers 360 Diapers S6, 48ct, UPC 37000715122",
-    "description_fr": "",
+    "description_fr": "Pampers Cruisers 360 Couches S6, 48ct, UPC 37000715122",
     "unit_size": "48",
     "unit_type": "ct",
     "case_qty": 1,
@@ -1496,7 +1496,7 @@
     },
     "description": {
       "en": "Pampers Cruisers 360 Diapers S6, 48ct, UPC 37000715122",
-      "fr": ""
+      "fr": "Pampers Cruisers 360 Couches S6, 48ct, UPC 37000715122"
     }
   },
   {
@@ -1529,7 +1529,7 @@
     "barcode": "3700071543",
     "category": "baby",
     "name_en": "Pampers Diapers Cruis 360 S7 Supr 44ct",
-    "name_fr": "",
+    "name_fr": "Pampers Couches Cruis 360 S7 Supr 44 ct",
     "description_en": "Pampers Diapers Cruis 360 S7 Supr 44ct",
     "description_fr": "Pampers Couches Cruis 360 S7 Supr 44ct",
     "unit_size": "44",
@@ -1542,7 +1542,7 @@
     ],
     "name": {
       "en": "Pampers Diapers Cruis 360 S7 Supr 44ct",
-      "fr": ""
+      "fr": "Pampers Couches Cruis 360 S7 Supr 44 ct"
     },
     "description": {
       "en": "Pampers Diapers Cruis 360 S7 Supr 44ct",
@@ -1554,7 +1554,7 @@
     "barcode": "3700076468",
     "category": "baby",
     "name_en": "Pampers Easyup 2T3T Super Boy 74ct",
-    "name_fr": "",
+    "name_fr": "Pampers Easyup 2T3T Super Boy 74 pièces",
     "description_en": "Pampers Easyup 2T3T Super Boy 74ct",
     "description_fr": "Pampers Easyup 2T3T Super Boy 74c.",
     "unit_size": "74",
@@ -1567,7 +1567,7 @@
     ],
     "name": {
       "en": "Pampers Easyup 2T3T Super Boy 74ct",
-      "fr": ""
+      "fr": "Pampers Easyup 2T3T Super Boy 74 pièces"
     },
     "description": {
       "en": "Pampers Easyup 2T3T Super Boy 74ct",
@@ -1604,7 +1604,7 @@
     "barcode": "3700076469",
     "category": "baby",
     "name_en": "Pampers EasyUp 3T 4T Super Boy 66ct",
-    "name_fr": "",
+    "name_fr": "Pampers EasyUp 3T 4T Super Boy 66ct",
     "description_en": "Pampers EasyUp 3T 4T Super Boy 66ct",
     "description_fr": "Pampers EasyUp 3T 4T Super Boy 66 ct",
     "unit_size": "66",
@@ -1617,7 +1617,7 @@
     ],
     "name": {
       "en": "Pampers EasyUp 3T 4T Super Boy 66ct",
-      "fr": ""
+      "fr": "Pampers EasyUp 3T 4T Super Boy 66ct"
     },
     "description": {
       "en": "Pampers EasyUp 3T 4T Super Boy 66ct",
@@ -1629,7 +1629,7 @@
     "barcode": "3700076510",
     "category": "baby",
     "name_en": "Pampers EasyUp 3T 4T Super Girl 66ct",
-    "name_fr": "",
+    "name_fr": "Pampers EasyUp 3T 4T Super Girl 66 pièces",
     "description_en": "Pampers EasyUp 3T 4T Super Girl 66ct",
     "description_fr": "Pampers EasyUp 3T 4T Super Girl 66ct",
     "unit_size": "66",
@@ -1642,7 +1642,7 @@
     ],
     "name": {
       "en": "Pampers EasyUp 3T 4T Super Girl 66ct",
-      "fr": ""
+      "fr": "Pampers EasyUp 3T 4T Super Girl 66 pièces"
     },
     "description": {
       "en": "Pampers EasyUp 3T 4T Super Girl 66ct",
@@ -1654,9 +1654,9 @@
     "barcode": "3700076416",
     "category": "baby",
     "name_en": "Pampers EasyUp 4T 5T Super Girl 56ct",
-    "name_fr": "",
+    "name_fr": "Pampers EasyUp 4T 5T Super Girl 56 pièces",
     "description_en": "Pampers EasyUp 4T 5T Super Girl 56ct",
-    "description_fr": "",
+    "description_fr": "Pampers EasyUp 4T/5T Super Girl 56 pièces",
     "unit_size": "56",
     "unit_type": "ct",
     "case_qty": 1,
@@ -1667,11 +1667,11 @@
     ],
     "name": {
       "en": "Pampers EasyUp 4T 5T Super Girl 56ct",
-      "fr": ""
+      "fr": "Pampers EasyUp 4T 5T Super Girl 56 pièces"
     },
     "description": {
       "en": "Pampers EasyUp 4T 5T Super Girl 56ct",
-      "fr": ""
+      "fr": "Pampers EasyUp 4T/5T Super Girl 56 pièces"
     }
   },
   {
@@ -1679,7 +1679,7 @@
     "barcode": "3700076470",
     "category": "baby",
     "name_en": "Pampers Easyup Super Boy 56ct",
-    "name_fr": "",
+    "name_fr": "Pampers Easyup Super Boy 56ct",
     "description_en": "Pampers Easyup Super Boy 56ct",
     "description_fr": "Pampers Easyup Super Boy 56 pièces",
     "unit_size": "56",
@@ -1692,7 +1692,7 @@
     ],
     "name": {
       "en": "Pampers Easyup Super Boy 56ct",
-      "fr": ""
+      "fr": "Pampers Easyup Super Boy 56ct"
     },
     "description": {
       "en": "Pampers Easyup Super Boy 56ct",
@@ -1706,7 +1706,7 @@
     "name_en": "Pampers Pure Protection Diapers Size 1, 116 Count",
     "name_fr": "Couches Pampers Pure Protection Taille 1, 116 pièces",
     "description_en": "Pampers Pure Protection Diapers Size 1, 116 Count",
-    "description_fr": "",
+    "description_fr": "Couches Pampers Pure Protection, taille 1, 116 pièces",
     "unit_size": "116",
     "unit_type": "units",
     "case_qty": 1,
@@ -1721,7 +1721,7 @@
     },
     "description": {
       "en": "Pampers Pure Protection Diapers Size 1, 116 Count",
-      "fr": ""
+      "fr": "Couches Pampers Pure Protection, taille 1, 116 pièces"
     }
   },
   {
@@ -1731,7 +1731,7 @@
     "name_en": "Pampers Swaddlers, S1, 174ct",
     "name_fr": "Pampers Swaddlers, S1, 174 pièces",
     "description_en": "Pampers Swaddlers, S1, 174ct",
-    "description_fr": "",
+    "description_fr": "Pampers Swaddlers, S1, 174ct",
     "unit_size": "174",
     "unit_type": "ct",
     "case_qty": 1,
@@ -1746,7 +1746,7 @@
     },
     "description": {
       "en": "Pampers Swaddlers, S1, 174ct",
-      "fr": ""
+      "fr": "Pampers Swaddlers, S1, 174ct"
     }
   },
   {
@@ -1754,7 +1754,7 @@
     "barcode": "3700082876",
     "category": "baby",
     "name_en": "Pampers Swaddlers, S1, 96ct",
-    "name_fr": "",
+    "name_fr": "Pampers Swaddlers, S1, 96 pièces",
     "description_en": "Pampers Swaddlers, S1, 96ct",
     "description_fr": "Pampers Swaddlers, S1, 96 pièces",
     "unit_size": "96",
@@ -1767,7 +1767,7 @@
     ],
     "name": {
       "en": "Pampers Swaddlers, S1, 96ct",
-      "fr": ""
+      "fr": "Pampers Swaddlers, S1, 96 pièces"
     },
     "description": {
       "en": "Pampers Swaddlers, S1, 96ct",
@@ -1854,7 +1854,7 @@
     "barcode": "3700082881",
     "category": "baby",
     "name_en": "Pampers Swaddlers, S3, 78ct",
-    "name_fr": "",
+    "name_fr": "Pampers Swaddlers, S3, 78 pièces",
     "description_en": "Pampers Swaddlers, S3, 78ct",
     "description_fr": "Pampers Swaddlers, S3, 78 pièces",
     "unit_size": "78",
@@ -1867,7 +1867,7 @@
     ],
     "name": {
       "en": "Pampers Swaddlers, S3, 78ct",
-      "fr": ""
+      "fr": "Pampers Swaddlers, S3, 78 pièces"
     },
     "description": {
       "en": "Pampers Swaddlers, S3, 78ct",
@@ -1904,7 +1904,7 @@
     "barcode": "3700074969",
     "category": "baby",
     "name_en": "Pampers Swaddlers, S5, 58ct",
-    "name_fr": "",
+    "name_fr": "Pampers Swaddlers, S5, 58 ct",
     "description_en": "Pampers Swaddlers, S5, 58ct",
     "description_fr": "Pampers Swaddlers, S5, 58 pièces",
     "unit_size": "58",
@@ -1917,7 +1917,7 @@
     ],
     "name": {
       "en": "Pampers Swaddlers, S5, 58ct",
-      "fr": ""
+      "fr": "Pampers Swaddlers, S5, 58 ct"
     },
     "description": {
       "en": "Pampers Swaddlers, S5, 58ct",
@@ -1929,7 +1929,7 @@
     "barcode": "3700074971",
     "category": "baby",
     "name_en": "Pampers Swaddlers, S6, 50ct",
-    "name_fr": "",
+    "name_fr": "Pampers Swaddlers, S6, 50 pièces",
     "description_en": "Pampers Swaddlers, S6, 50ct",
     "description_fr": "Pampers Swaddlers, S6, 50 ct",
     "unit_size": "50",
@@ -1942,7 +1942,7 @@
     ],
     "name": {
       "en": "Pampers Swaddlers, S6, 50ct",
-      "fr": ""
+      "fr": "Pampers Swaddlers, S6, 50 pièces"
     },
     "description": {
       "en": "Pampers Swaddlers, S6, 50ct",
@@ -1954,9 +1954,9 @@
     "barcode": "3700083062",
     "category": "baby",
     "name_en": "Pampers Swaddlers, S6, 88ct",
-    "name_fr": "",
+    "name_fr": "Pampers Swaddlers, S6, 88 pièces",
     "description_en": "Pampers Swaddlers, S6, 88ct",
-    "description_fr": "",
+    "description_fr": "Pampers Swaddlers, S6, 88 pièces",
     "unit_size": "88",
     "unit_type": "ct",
     "case_qty": 1,
@@ -1967,11 +1967,11 @@
     ],
     "name": {
       "en": "Pampers Swaddlers, S6, 88ct",
-      "fr": ""
+      "fr": "Pampers Swaddlers, S6, 88 pièces"
     },
     "description": {
       "en": "Pampers Swaddlers, S6, 88ct",
-      "fr": ""
+      "fr": "Pampers Swaddlers, S6, 88 pièces"
     }
   },
   {
@@ -2006,7 +2006,7 @@
     "name_en": "Pampers Swaddlers, S7, 72ct",
     "name_fr": "Pampers Swaddlers, S7, 72 pièces",
     "description_en": "Pampers Swaddlers, S7, 72ct",
-    "description_fr": "",
+    "description_fr": "Pampers Swaddlers, S7, 72c",
     "unit_size": "72",
     "unit_type": "ct",
     "case_qty": 1,
@@ -2021,7 +2021,7 @@
     },
     "description": {
       "en": "Pampers Swaddlers, S7, 72ct",
-      "fr": ""
+      "fr": "Pampers Swaddlers, S7, 72c"
     }
   },
   {
@@ -2029,7 +2029,7 @@
     "barcode": "67489800491",
     "category": "bags_wraps",
     "name_en": "Glad Black Giant 184 liter, 4/40ct",
-    "name_fr": "",
+    "name_fr": "Glad Black Giant 184 L, 4/40 ct",
     "description_en": "Glad Black Giant 184 liter, 4/40ct",
     "description_fr": "Glad Black Giant 184 litres, 4/40ct",
     "unit_size": "40",
@@ -2042,7 +2042,7 @@
     ],
     "name": {
       "en": "Glad Black Giant 184 liter, 4/40ct",
-      "fr": ""
+      "fr": "Glad Black Giant 184 L, 4/40 ct"
     },
     "description": {
       "en": "Glad Black Giant 184 liter, 4/40ct",
@@ -2056,7 +2056,7 @@
     "name_en": "Glad Black Large 90 liter Ds Ff 4/60ct",
     "name_fr": "Glad Noir Grand 90 litres Ds Ff 4/60ct",
     "description_en": "Glad Black Large 90 liter Ds Ff 4/60ct",
-    "description_fr": "",
+    "description_fr": "Glad Noir Grand 90 litres Ds Ff 4/60ct",
     "unit_size": "60",
     "unit_type": "ct",
     "case_qty": 4,
@@ -2071,7 +2071,7 @@
     },
     "description": {
       "en": "Glad Black Large 90 liter Ds Ff 4/60ct",
-      "fr": ""
+      "fr": "Glad Noir Grand 90 litres Ds Ff 4/60ct"
     }
   },
   {
@@ -2079,7 +2079,7 @@
     "barcode": "6748930306",
     "category": "bags_wraps",
     "name_en": "Glad Black Large 90 liter Ds Ff, 6/24ct",
-    "name_fr": "",
+    "name_fr": "Glad Noir Grande 90 litres DS FF, 6/24ct",
     "description_en": "Glad Black Large 90 liter Ds Ff, 6/24ct",
     "description_fr": "",
     "unit_size": "24",
@@ -2092,7 +2092,7 @@
     ],
     "name": {
       "en": "Glad Black Large 90 liter Ds Ff, 6/24ct",
-      "fr": ""
+      "fr": "Glad Noir Grande 90 litres DS FF, 6/24ct"
     },
     "description": {
       "en": "Glad Black Large 90 liter Ds Ff, 6/24ct",
@@ -2131,7 +2131,7 @@
     "name_en": "Glad Black Regular 74 liter Easy tie, 1/100ct",
     "name_fr": "Glad Noir Standard 74 litres Easy tie, 1/100ct",
     "description_en": "Glad Black Regular 74 liter Easy tie, 1/100ct",
-    "description_fr": "",
+    "description_fr": "Glad Noir Regular 74 litre Easy tie, 1/100ct",
     "unit_size": "100",
     "unit_type": "ct",
     "case_qty": 1,
@@ -2146,7 +2146,7 @@
     },
     "description": {
       "en": "Glad Black Regular 74 liter Easy tie, 1/100ct",
-      "fr": ""
+      "fr": "Glad Noir Regular 74 litre Easy tie, 1/100ct"
     }
   },
   {
@@ -2179,7 +2179,7 @@
     "barcode": "67489705123",
     "category": "bags_wraps",
     "name_en": "Glad Black Xlarge 135 liter Easy tie , 8/20ct",
-    "name_fr": "",
+    "name_fr": "Glad Noir XL 135 L liage facile , 8/20ct",
     "description_en": "Glad Black Xlarge 135 liter Easy tie , 8/20ct",
     "description_fr": "",
     "unit_size": "20",
@@ -2192,7 +2192,7 @@
     ],
     "name": {
       "en": "Glad Black Xlarge 135 liter Easy tie , 8/20ct",
-      "fr": ""
+      "fr": "Glad Noir XL 135 L liage facile , 8/20ct"
     },
     "description": {
       "en": "Glad Black Xlarge 135 liter Easy tie , 8/20ct",
