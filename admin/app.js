@@ -1298,11 +1298,30 @@ async function saveProduct(sku, isEdit) {
     }
 
     const cleanProducts = state.products.map(({ _localPreview, ...rest }) => rest);
-    const saveRes = await api("/products-save", {
-      products: cleanProducts,
-      sha: state.sha,
-      message: `${isEdit ? "Update" : "Add"} product ${sku}`,
-    });
+    let saveRes;
+    try {
+      saveRes = await api("/products-save", {
+        products: cleanProducts,
+        sha: state.sha,
+        message: `${isEdit ? "Update" : "Add"} product ${sku}`,
+      });
+    } catch (err) {
+      if (String(err.message).includes("does not match")) {
+        // Someone/something else saved in the meantime — refresh and retry once automatically
+        const fresh = await api("/products-get");
+        const idx2 = fresh.products.findIndex((p) => String(p.sku) === String(sku));
+        if (idx2 >= 0) fresh.products[idx2] = updatedProduct;
+        else fresh.products.push(updatedProduct);
+        saveRes = await api("/products-save", {
+          products: fresh.products,
+          sha: fresh.sha,
+          message: `${isEdit ? "Update" : "Add"} product ${sku}`,
+        });
+        state.products = fresh.products;
+      } else {
+        throw err;
+      }
+    }
     state.sha = saveRes.sha;
     await savePrivateData(sku);
 
