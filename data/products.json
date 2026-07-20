@@ -15101,13 +15101,14 @@
   },
   {
     "sku": "1605",
+    "_localPreview": "../static/images/products/1605.jpeg",
     "barcode": "6700000929",
     "category": "drinks",
-    "name_en": "Caffeine-Free Diet Coke, 355 ml cans, 12 pk",
-    "name_fr": "",
-    "description_en": "Caffeine-Free Diet Coke, 355 ml cans, 12 pk",
-    "description_fr": "",
-    "unit_size": "355",
+    "name_en": "Diet Coke",
+    "name_fr": "Coke Diète",
+    "description_en": "Soda, Diet Coke, 12-pack of 330ml cans",
+    "description_fr": "Boisson gazeuse, Diet Coke, pack de 12 canettes de 330 ml",
+    "unit_size": "330",
     "unit_type": "ml",
     "case_qty": 12,
     "pallet_qty": 273,
@@ -15116,12 +15117,12 @@
       "static/images/products/1605.jpeg"
     ],
     "name": {
-      "en": "Caffeine-Free Diet Coke, 355 ml cans, 12 pk",
-      "fr": ""
+      "en": "Diet Coke",
+      "fr": "Coke Diète"
     },
     "description": {
-      "en": "Caffeine-Free Diet Coke, 355 ml cans, 12 pk",
-      "fr": ""
+      "en": "Soda, Diet Coke, 12-pack of 330ml cans",
+      "fr": "Boisson gazeuse, Diet Coke, pack de 12 canettes de 330 ml"
     }
   },
   {
