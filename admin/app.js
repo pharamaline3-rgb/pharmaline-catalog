@@ -76,6 +76,18 @@ async function checkAuthStatus() {
   } catch {}
 }
 
+document.getElementById("togglePasswordBtn").addEventListener("click", () => {
+  const input = document.getElementById("loginPassword");
+  const btn = document.getElementById("togglePasswordBtn");
+  if (input.type === "password") {
+    input.type = "text";
+    btn.textContent = "🙈";
+  } else {
+    input.type = "password";
+    btn.textContent = "👁️";
+  }
+});
+
 document.getElementById("loginForm").addEventListener("submit", async (e) => {
   e.preventDefault();
   const email = document.getElementById("loginEmail").value.trim();
