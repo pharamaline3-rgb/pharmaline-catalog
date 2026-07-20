@@ -2081,7 +2081,7 @@
     "name_en": "Glad Black Large 90 liter Ds Ff, 6/24ct",
     "name_fr": "Glad Noir Grande 90 litres DS FF, 6/24ct",
     "description_en": "Glad Black Large 90 liter Ds Ff, 6/24ct",
-    "description_fr": "",
+    "description_fr": "Glad Noir Grand 90 litres Ds Ff, 6/24ct",
     "unit_size": "24",
     "unit_type": "ct",
     "case_qty": 6,
@@ -2096,7 +2096,7 @@
     },
     "description": {
       "en": "Glad Black Large 90 liter Ds Ff, 6/24ct",
-      "fr": ""
+      "fr": "Glad Noir Grand 90 litres Ds Ff, 6/24ct"
     }
   },
   {
@@ -2106,7 +2106,7 @@
     "name_en": "Glad Black Large 90 liter Easy tie , 8/30ct",
     "name_fr": "Glad Noir Grand 90 litres Facile à attacher, 8/30ct",
     "description_en": "Glad Black Large 90 liter Easy tie , 8/30ct",
-    "description_fr": "",
+    "description_fr": "Glad Noir Grand 90 L Easy tie, 8/30ct",
     "unit_size": "30",
     "unit_type": "ct",
     "case_qty": 8,
@@ -2121,7 +2121,7 @@
     },
     "description": {
       "en": "Glad Black Large 90 liter Easy tie , 8/30ct",
-      "fr": ""
+      "fr": "Glad Noir Grand 90 L Easy tie, 8/30ct"
     }
   },
   {
@@ -2156,7 +2156,7 @@
     "name_en": "Glad Black Regular 74 liter Easy tie 8/40 Ct",
     "name_fr": "Glad Noir Régulier 74 litres Easy tie 8/40 Ct",
     "description_en": "Glad Black Regular 74 liter Easy tie 8/40 Ct",
-    "description_fr": "",
+    "description_fr": "Glad Noir Standard 74 litres Easy Tie 8/40 Ct",
     "unit_size": "40",
     "unit_type": "Ct",
     "case_qty": 8,
@@ -2171,7 +2171,7 @@
     },
     "description": {
       "en": "Glad Black Regular 74 liter Easy tie 8/40 Ct",
-      "fr": ""
+      "fr": "Glad Noir Standard 74 litres Easy Tie 8/40 Ct"
     }
   },
   {
@@ -2181,7 +2181,7 @@
     "name_en": "Glad Black Xlarge 135 liter Easy tie , 8/20ct",
     "name_fr": "Glad Noir XL 135 L liage facile , 8/20ct",
     "description_en": "Glad Black Xlarge 135 liter Easy tie , 8/20ct",
-    "description_fr": "",
+    "description_fr": "Glad Noir Xlarge 135 litres Easy tie , 8/20ct",
     "unit_size": "20",
     "unit_type": "ct",
     "case_qty": 8,
@@ -2196,7 +2196,7 @@
     },
     "description": {
       "en": "Glad Black Xlarge 135 liter Easy tie , 8/20ct",
-      "fr": ""
+      "fr": "Glad Noir Xlarge 135 litres Easy tie , 8/20ct"
     }
   },
   {
@@ -2229,7 +2229,7 @@
     "barcode": "67489115786",
     "category": "bags_wraps",
     "name_en": "Glad Blue Large 90 liter Et , 8/30ct",
-    "name_fr": "",
+    "name_fr": "Glad Bleu Grand 90 litres Et, 8/30ct",
     "description_en": "Glad Blue Large 90 liter Et , 8/30ct",
     "description_fr": "Glad Bleu Grand 90 L Et, 8/30ct",
     "unit_size": "30",
@@ -2242,7 +2242,7 @@
     ],
     "name": {
       "en": "Glad Blue Large 90 liter Et , 8/30ct",
-      "fr": ""
+      "fr": "Glad Bleu Grand 90 litres Et, 8/30ct"
     },
     "description": {
       "en": "Glad Blue Large 90 liter Et , 8/30ct",
@@ -2254,9 +2254,9 @@
     "barcode": "67489303480",
     "category": "bags_wraps",
     "name_en": "Glad Blue Large 90 liter Ff Ds, 6/24ct",
-    "name_fr": "",
+    "name_fr": "Glad Bleu Large 90 litres Ff Ds, 6/24ct",
     "description_en": "Glad Blue Large 90 liter Ff Ds, 6/24ct",
-    "description_fr": "",
+    "description_fr": "Glad Bleu Grand 90 litre Ff Ds, 6/24ct",
     "unit_size": "24",
     "unit_type": "ct",
     "case_qty": 6,
@@ -2267,11 +2267,11 @@
     ],
     "name": {
       "en": "Glad Blue Large 90 liter Ff Ds, 6/24ct",
-      "fr": ""
+      "fr": "Glad Bleu Large 90 litres Ff Ds, 6/24ct"
     },
     "description": {
       "en": "Glad Blue Large 90 liter Ff Ds, 6/24ct",
-      "fr": ""
+      "fr": "Glad Bleu Grand 90 litre Ff Ds, 6/24ct"
     }
   },
   {
@@ -2281,7 +2281,7 @@
     "name_en": "Glad Blue Regular 74 liter Easy tie, 8/40ct",
     "name_fr": "Glad Blue Standard 74 litre Attache facile, 8/40ct",
     "description_en": "Glad Blue Regular 74 liter Easy tie, 8/40ct",
-    "description_fr": "",
+    "description_fr": "Glad Bleu Regular 74 litres Attache facile, 8/40ct",
     "unit_size": "40",
     "unit_type": "ct",
     "case_qty": 8,
@@ -2296,7 +2296,7 @@
     },
     "description": {
       "en": "Glad Blue Regular 74 liter Easy tie, 8/40ct",
-      "fr": ""
+      "fr": "Glad Bleu Regular 74 litres Attache facile, 8/40ct"
     }
   },
   {
@@ -2304,9 +2304,9 @@
     "barcode": "67489303015",
     "category": "bags_wraps",
     "name_en": "Glad Blue Tall 45 liter Ds Ff, 6/50ct",
-    "name_fr": "",
+    "name_fr": "Glad Blue Tall 45 litres Ds Ff, 6/50ct",
     "description_en": "Glad Blue Tall 45 liter Ds Ff, 6/50ct",
-    "description_fr": "",
+    "description_fr": "Glad Bleu Tall 45 litres Ds Ff, 6/50ct",
     "unit_size": "50",
     "unit_type": "ct",
     "case_qty": 6,
@@ -2317,11 +2317,11 @@
     ],
     "name": {
       "en": "Glad Blue Tall 45 liter Ds Ff, 6/50ct",
-      "fr": ""
+      "fr": "Glad Blue Tall 45 litres Ds Ff, 6/50ct"
     },
     "description": {
       "en": "Glad Blue Tall 45 liter Ds Ff, 6/50ct",
-      "fr": ""
+      "fr": "Glad Bleu Tall 45 litres Ds Ff, 6/50ct"
     }
   },
   {
@@ -2329,7 +2329,7 @@
     "barcode": "67489303022",
     "category": "bags_wraps",
     "name_en": "Glad Blue Tall 45 liter Ds Ff, 12/26ct",
-    "name_fr": "",
+    "name_fr": "Glad Blue Tall 45 litres Ds Ff, 12/26ct",
     "description_en": "Glad Blue Tall 45 liter Ds Ff, 12/26ct",
     "description_fr": "Glad Blue Tall 45 litre DS FF, 12/26ct",
     "unit_size": "26",
@@ -2342,7 +2342,7 @@
     ],
     "name": {
       "en": "Glad Blue Tall 45 liter Ds Ff, 12/26ct",
-      "fr": ""
+      "fr": "Glad Blue Tall 45 litres Ds Ff, 12/26ct"
     },
     "description": {
       "en": "Glad Blue Tall 45 liter Ds Ff, 12/26ct",
@@ -2354,7 +2354,7 @@
     "barcode": "67489303039",
     "category": "bags_wraps",
     "name_en": "Glad Clear Large 90 liter Easy tie, 8/30ct",
-    "name_fr": "",
+    "name_fr": "Glad Clear Large 90 litres Easy tie, 8/30 ct",
     "description_en": "Glad Clear Large 90 liter Easy tie, 8/30ct",
     "description_fr": "Glad Clear Large 90 litres Facile à lier, 8/30ct",
     "unit_size": "30",
@@ -2367,7 +2367,7 @@
     ],
     "name": {
       "en": "Glad Clear Large 90 liter Easy tie, 8/30ct",
-      "fr": ""
+      "fr": "Glad Clear Large 90 litres Easy tie, 8/30 ct"
     },
     "description": {
       "en": "Glad Clear Large 90 liter Easy tie, 8/30ct",
@@ -2379,9 +2379,9 @@
     "barcode": "67489447283",
     "category": "bags_wraps",
     "name_en": "Glad Clear Small 25 liter Easy tie Fz, 12/48ct",
-    "name_fr": "",
+    "name_fr": "Glad Transparent Petit 25 l Easy tie Fz, 12/48ct",
     "description_en": "Glad Clear Small 25 liter Easy tie Fz, 12/48ct",
-    "description_fr": "",
+    "description_fr": "Glad Transparent Petit 25 litres Attache facile Fz, 12/48ct",
     "unit_size": "48",
     "unit_type": "ct",
     "case_qty": 12,
@@ -2392,11 +2392,11 @@
     ],
     "name": {
       "en": "Glad Clear Small 25 liter Easy tie Fz, 12/48ct",
-      "fr": ""
+      "fr": "Glad Transparent Petit 25 l Easy tie Fz, 12/48ct"
     },
     "description": {
       "en": "Glad Clear Small 25 liter Easy tie Fz, 12/48ct",
-      "fr": ""
+      "fr": "Glad Transparent Petit 25 litres Attache facile Fz, 12/48ct"
     }
   },
   {
@@ -2406,7 +2406,7 @@
     "name_en": "Glad Clear Tall 45liter Easy tie Fz, 6/30ct",
     "name_fr": "Glad Transparent Grand 45 l Facile à attacher Fz, 6/30 pièces",
     "description_en": "Glad Clear Tall 45liter Easy tie Fz, 6/30ct",
-    "description_fr": "",
+    "description_fr": "Glad Clear Tall 45 L Attache facile Fz, 6/30ct",
     "unit_size": "30",
     "unit_type": "ct",
     "case_qty": 6,
@@ -2421,7 +2421,7 @@
     },
     "description": {
       "en": "Glad Clear Tall 45liter Easy tie Fz, 6/30ct",
-      "fr": ""
+      "fr": "Glad Clear Tall 45 L Attache facile Fz, 6/30ct"
     }
   },
   {
@@ -2429,9 +2429,9 @@
     "barcode": "67489115922",
     "category": "bags_wraps",
     "name_en": "Glad Clear Xlarge 135 liter Easy tie , 8/20ct",
-    "name_fr": "",
+    "name_fr": "Glad Transparent Xlarge 135 litres Easy tie , 8/20ct",
     "description_en": "Glad Clear Xlarge 135 liter Easy tie , 8/20ct",
-    "description_fr": "",
+    "description_fr": "Glad Transparent Xlarge 135 litres Attache facile, 8/20ct",
     "unit_size": "20",
     "unit_type": "ct",
     "case_qty": 8,
@@ -2442,11 +2442,11 @@
     ],
     "name": {
       "en": "Glad Clear Xlarge 135 liter Easy tie , 8/20ct",
-      "fr": ""
+      "fr": "Glad Transparent Xlarge 135 litres Easy tie , 8/20ct"
     },
     "description": {
       "en": "Glad Clear Xlarge 135 liter Easy tie , 8/20ct",
-      "fr": ""
+      "fr": "Glad Transparent Xlarge 135 litres Attache facile, 8/20ct"
     }
   },
   {
@@ -2454,9 +2454,9 @@
     "barcode": "12587790462",
     "category": "bags_wraps",
     "name_en": "Glad Cling Wrap 108 x 30m",
-    "name_fr": "",
+    "name_fr": "Film Cling Glad 108 x 30 m",
     "description_en": "Glad Cling Wrap 108 x 30m",
-    "description_fr": "",
+    "description_fr": "Film Glad Cling 108 x 30m",
     "unit_size": "",
     "unit_type": "units",
     "case_qty": 108,
@@ -2467,11 +2467,11 @@
     ],
     "name": {
       "en": "Glad Cling Wrap 108 x 30m",
-      "fr": ""
+      "fr": "Film Cling Glad 108 x 30 m"
     },
     "description": {
       "en": "Glad Cling Wrap 108 x 30m",
-      "fr": ""
+      "fr": "Film Glad Cling 108 x 30m"
     }
   },
   {
@@ -2479,9 +2479,9 @@
     "barcode": "67489106869",
     "category": "bags_wraps",
     "name_en": "Glad Cling Wrap 12/152m",
-    "name_fr": "",
+    "name_fr": "Glad Cling Wrap 12/152m",
     "description_en": "Glad Cling Wrap 12/152m",
-    "description_fr": "",
+    "description_fr": "Glad Film étirable 12/152m",
     "unit_size": "",
     "unit_type": "units",
     "case_qty": 12,
@@ -2492,11 +2492,11 @@
     ],
     "name": {
       "en": "Glad Cling Wrap 12/152m",
-      "fr": ""
+      "fr": "Glad Cling Wrap 12/152m"
     },
     "description": {
       "en": "Glad Cling Wrap 12/152m",
-      "fr": ""
+      "fr": "Glad Film étirable 12/152m"
     }
   },
   {
@@ -2506,7 +2506,7 @@
     "name_en": "Glad Cling Wrap 12/90m",
     "name_fr": "Film étirable Glad 12/90 m",
     "description_en": "Glad Cling Wrap 12/90m",
-    "description_fr": "",
+    "description_fr": "Glad Cling Wrap 12/90m",
     "unit_size": "",
     "unit_type": "units",
     "case_qty": 12,
@@ -2521,7 +2521,7 @@
     },
     "description": {
       "en": "Glad Cling Wrap 12/90m",
-      "fr": ""
+      "fr": "Glad Cling Wrap 12/90m"
     }
   },
   {
@@ -2531,7 +2531,7 @@
     "name_en": "Glad Clingwrap, 12/103m",
     "name_fr": "Glad Clingwrap, 12/103 m",
     "description_en": "Glad Clingwrap, 12/103m",
-    "description_fr": "",
+    "description_fr": "Glad Clingwrap, 12/103 m",
     "unit_size": "",
     "unit_type": "units",
     "case_qty": 12,
@@ -2546,7 +2546,7 @@
     },
     "description": {
       "en": "Glad Clingwrap, 12/103m",
-      "fr": ""
+      "fr": "Glad Clingwrap, 12/103 m"
     }
   },
   {
@@ -2556,7 +2556,7 @@
     "name_en": "Glad Clingwrap, 6/300m",
     "name_fr": "Glad Clingwrap, 6/300m",
     "description_en": "Glad Clingwrap, 6/300m",
-    "description_fr": "",
+    "description_fr": "Glad Clingwrap, 6/300 m",
     "unit_size": "",
     "unit_type": "units",
     "case_qty": 6,
@@ -2571,7 +2571,7 @@
     },
     "description": {
       "en": "Glad Clingwrap, 6/300m",
-      "fr": ""
+      "fr": "Glad Clingwrap, 6/300 m"
     }
   },
   {
@@ -2581,7 +2581,7 @@
     "name_en": "Glad Compostable Drawstring Ba, 12/15ct",
     "name_fr": "Sac à cordon compostable Glad, 12/15 pièces",
     "description_en": "Glad Compostable Drawstring Ba, 12/15ct",
-    "description_fr": "",
+    "description_fr": "Sac à cordon compostable de Glad, 12/15ct",
     "unit_size": "15",
     "unit_type": "ct",
     "case_qty": 12,
@@ -2596,7 +2596,7 @@
     },
     "description": {
       "en": "Glad Compostable Drawstring Ba, 12/15ct",
-      "fr": ""
+      "fr": "Sac à cordon compostable de Glad, 12/15ct"
     }
   },
   {
@@ -2604,7 +2604,7 @@
     "barcode": "67489447344",
     "category": "bags_wraps",
     "name_en": "Glad Compostable Drawstring Ba, 6/30ct",
-    "name_fr": "",
+    "name_fr": "Sac à cordon Glad compostable, 6/30ct",
     "description_en": "Glad Compostable Drawstring Ba, 6/30ct",
     "description_fr": "",
     "unit_size": "30",
@@ -2617,7 +2617,7 @@
     ],
     "name": {
       "en": "Glad Compostable Drawstring Ba, 6/30ct",
-      "fr": ""
+      "fr": "Sac à cordon Glad compostable, 6/30ct"
     },
     "description": {
       "en": "Glad Compostable Drawstring Ba, 6/30ct",
@@ -2654,7 +2654,7 @@
     "barcode": "12587781623",
     "category": "bags_wraps",
     "name_en": "Glad Compostable Small 10 liter Lemon Fz, 12/20ct",
-    "name_fr": "",
+    "name_fr": "Glad Compostable Petit 10 litres Citron Fz, 12/20ct",
     "description_en": "Glad Compostable Small 10 liter Lemon Fz, 12/20ct",
     "description_fr": "",
     "unit_size": "20",
@@ -2667,7 +2667,7 @@
     ],
     "name": {
       "en": "Glad Compostable Small 10 liter Lemon Fz, 12/20ct",
-      "fr": ""
+      "fr": "Glad Compostable Petit 10 litres Citron Fz, 12/20ct"
     },
     "description": {
       "en": "Glad Compostable Small 10 liter Lemon Fz, 12/20ct",
@@ -2731,7 +2731,7 @@
     "name_en": "Glad Flex N' Seal 100ct",
     "name_fr": "Glad Flex N' Seal 100 pièces",
     "description_en": "Glad Flex N' Seal 100ct",
-    "description_fr": "",
+    "description_fr": "Glad Flex N' Seal 100 pièces",
     "unit_size": "100",
     "unit_type": "ct",
     "case_qty": 4,
@@ -2746,7 +2746,7 @@
     },
     "description": {
       "en": "Glad Flex N' Seal 100ct",
-      "fr": ""
+      "fr": "Glad Flex N' Seal 100 pièces"
     }
   },
   {
@@ -2754,7 +2754,7 @@
     "barcode": "6748930345",
     "category": "bags_wraps",
     "name_en": "Glad Flex N' Seal Freezer Large, 28ct",
-    "name_fr": "",
+    "name_fr": "Glad Flex N' Seal Grand sac congélation, 28 pièces",
     "description_en": "Glad Flex N' Seal Freezer Large, 28ct",
     "description_fr": "",
     "unit_size": "28",
@@ -2767,7 +2767,7 @@
     ],
     "name": {
       "en": "Glad Flex N' Seal Freezer Large, 28ct",
-      "fr": ""
+      "fr": "Glad Flex N' Seal Grand sac congélation, 28 pièces"
     },
     "description": {
       "en": "Glad Flex N' Seal Freezer Large, 28ct",
@@ -2781,7 +2781,7 @@
     "name_en": "Glad Flex N' Seal Freezer Medium, 35ct",
     "name_fr": "Glad Flex N' Seal sac congélateur moyen, 35 pièces",
     "description_en": "Glad Flex N' Seal Freezer Medium, 35ct",
-    "description_fr": "",
+    "description_fr": "Glad Flex N' Seal Congélation Moyen, 35ct",
     "unit_size": "35",
     "unit_type": "ct",
     "case_qty": 4,
@@ -2796,7 +2796,7 @@
     },
     "description": {
       "en": "Glad Flex N' Seal Freezer Medium, 35ct",
-      "fr": ""
+      "fr": "Glad Flex N' Seal Congélation Moyen, 35ct"
     }
   },
   {
@@ -2831,7 +2831,7 @@
     "name_en": "Glad Press N' Seal Storage, 35ct",
     "name_fr": "Glad Press N' Seal Stockage, 35 pièces",
     "description_en": "Glad Press N' Seal Storage, 35ct",
-    "description_fr": "",
+    "description_fr": "Rangement Glad Press N' Seal, 35 pièces",
     "unit_size": "35",
     "unit_type": "ct",
     "case_qty": 4,
@@ -2846,7 +2846,7 @@
     },
     "description": {
       "en": "Glad Press N' Seal Storage, 35ct",
-      "fr": ""
+      "fr": "Rangement Glad Press N' Seal, 35 pièces"
     }
   },
   {
@@ -2879,7 +2879,7 @@
     "barcode": "1258770441",
     "category": "bags_wraps",
     "name_en": "Glad Press'n Seal Plastic Food Wrap, 70 Ft / 23.7yd",
-    "name_fr": "",
+    "name_fr": "Glad Press'n Seal Film alimentaire en plastique, 70 ft / 23,7 yd",
     "description_en": "Glad Press'n Seal Plastic Food Wrap, 70 Ft / 23.7yd",
     "description_fr": "",
     "unit_size": "",
@@ -2892,7 +2892,7 @@
     ],
     "name": {
       "en": "Glad Press'n Seal Plastic Food Wrap, 70 Ft / 23.7yd",
-      "fr": ""
+      "fr": "Glad Press'n Seal Film alimentaire en plastique, 70 ft / 23,7 yd"
     },
     "description": {
       "en": "Glad Press'n Seal Plastic Food Wrap, 70 Ft / 23.7yd",
@@ -2954,7 +2954,7 @@
     "barcode": "67489700494",
     "category": "bags_wraps",
     "name_en": "Glad White Small 25 liter Ds Fz, 12/36ct",
-    "name_fr": "",
+    "name_fr": "Glad White Petit 25 litres DS FZ, 12/36ct",
     "description_en": "Glad White Small 25 liter Ds Fz, 12/36ct",
     "description_fr": "",
     "unit_size": "36",
@@ -2967,7 +2967,7 @@
     ],
     "name": {
       "en": "Glad White Small 25 liter Ds Fz, 12/36ct",
-      "fr": ""
+      "fr": "Glad White Petit 25 litres DS FZ, 12/36ct"
     },
     "description": {
       "en": "Glad White Small 25 liter Ds Fz, 12/36ct",
@@ -3054,7 +3054,7 @@
     "barcode": "67489302964",
     "category": "bags_wraps",
     "name_en": "Glad White Small 25 liter Easy tie Unscented, 12/48ct",
-    "name_fr": "",
+    "name_fr": "Glad Blanc Petit 25 L Lien Facile Sans Parfum, 12/48ct",
     "description_en": "Glad White Small 25 liter Easy tie Unscented, 12/48ct",
     "description_fr": "",
     "unit_size": "48",
@@ -3067,7 +3067,7 @@
     ],
     "name": {
       "en": "Glad White Small 25 liter Easy tie Unscented, 12/48ct",
-      "fr": ""
+      "fr": "Glad Blanc Petit 25 L Lien Facile Sans Parfum, 12/48ct"
     },
     "description": {
       "en": "Glad White Small 25 liter Easy tie Unscented, 12/48ct",
@@ -3179,7 +3179,7 @@
     "barcode": "67489302797",
     "category": "bags_wraps",
     "name_en": "Glad White Tall 45 liter Easy tie Fz, 6/60ct",
-    "name_fr": "",
+    "name_fr": "Glad White Tall 45 litres Attache facile Fz, 6/60ct",
     "description_en": "Glad White Tall 45 liter Easy tie Fz, 6/60ct",
     "description_fr": "Glad Blanc Grand 45 litres Easy Tie Fz, 6/60ct",
     "unit_size": "60",
@@ -3192,7 +3192,7 @@
     ],
     "name": {
       "en": "Glad White Tall 45 liter Easy tie Fz, 6/60ct",
-      "fr": ""
+      "fr": "Glad White Tall 45 litres Attache facile Fz, 6/60ct"
     },
     "description": {
       "en": "Glad White Tall 45 liter Easy tie Fz, 6/60ct",
@@ -3231,7 +3231,7 @@
     "name_en": "Glad White Xs/roomate 15 liter Fz, 12/52ct",
     "name_fr": "Glad White Xs/roommate 15 litres Fz, 12/52ct",
     "description_en": "Glad White Xs/roomate 15 liter Fz, 12/52ct",
-    "description_fr": "",
+    "description_fr": "Glad White Xs/roommate 15 litres Fz, 12/52ct",
     "unit_size": "52",
     "unit_type": "ct",
     "case_qty": 12,
@@ -3246,7 +3246,7 @@
     },
     "description": {
       "en": "Glad White Xs/roomate 15 liter Fz, 12/52ct",
-      "fr": ""
+      "fr": "Glad White Xs/roommate 15 litres Fz, 12/52ct"
     }
   },
   {
@@ -3304,7 +3304,7 @@
     "barcode": "5550001731",
     "category": "cleaning",
     "name_en": "Clorox Bleach Concentrated Original 2.4l",
-    "name_fr": "",
+    "name_fr": "Clorox Blanchissant Concentré Original 2,4 L",
     "description_en": "Clorox Bleach Concentrated Original 2.4l",
     "description_fr": "",
     "unit_size": "2.4",
@@ -3317,7 +3317,7 @@
     ],
     "name": {
       "en": "Clorox Bleach Concentrated Original 2.4l",
-      "fr": ""
+      "fr": "Clorox Blanchissant Concentré Original 2,4 L"
     },
     "description": {
       "en": "Clorox Bleach Concentrated Original 2.4l",
@@ -3379,7 +3379,7 @@
     "barcode": "5550055978",
     "category": "cleaning",
     "name_en": "Clorox Scentiva Bleach Lavender & Jasmin 2.4L, 6/cs",
-    "name_fr": "",
+    "name_fr": "Clorox Scentiva Eau de Javel Lavande & Jasmin 2,4L, 6/cs",
     "description_en": "Clorox Scentiva Bleach Lavender & Jasmin 2.4L, 6/cs",
     "description_fr": "Clorox Scentiva Eau de Javel Lavande & Jasmin 2,4 L, 6/boîte",
     "unit_size": "2.4",
@@ -3392,7 +3392,7 @@
     ],
     "name": {
       "en": "Clorox Scentiva Bleach Lavender & Jasmin 2.4L, 6/cs",
-      "fr": ""
+      "fr": "Clorox Scentiva Eau de Javel Lavande & Jasmin 2,4L, 6/cs"
     },
     "description": {
       "en": "Clorox Scentiva Bleach Lavender & Jasmin 2.4L, 6/cs",
@@ -3506,7 +3506,7 @@
     "name_en": "Dawn EZ-Squeeze Ultra Dish Soap Dishwashing Liquid, Apple Blossom, 650 ml",
     "name_fr": "Dawn EZ‑Squeeze Ultra Liquide Vaisselle, Fleur de pomme, 650 ml",
     "description_en": "Dawn EZ-Squeeze Ultra Dish Soap Dishwashing Liquid, Apple Blossom, 650 ml",
-    "description_fr": "",
+    "description_fr": "Savon ultra liquide de vaisselle Dawn EZ‑Squeeze, Fleur de pomme, 650 ml",
     "unit_size": "650",
     "unit_type": "ml",
     "case_qty": 8,
@@ -3521,7 +3521,7 @@
     },
     "description": {
       "en": "Dawn EZ-Squeeze Ultra Dish Soap Dishwashing Liquid, Apple Blossom, 650 ml",
-      "fr": ""
+      "fr": "Savon ultra liquide de vaisselle Dawn EZ‑Squeeze, Fleur de pomme, 650 ml"
     }
   },
   {
@@ -3631,7 +3631,7 @@
     "name_en": "Dawn Platinum Refresh Rain Oxi, 2.21L",
     "name_fr": "Dawn Platinum Refresh Rain Oxi, 2,21 L",
     "description_en": "Dawn Platinum Refresh Rain Oxi, 2.21L",
-    "description_fr": "",
+    "description_fr": "Dawn Platinum Refresh Rain Oxi, 2,21 L",
     "unit_size": "2.21",
     "unit_type": "L",
     "case_qty": 6,
@@ -3646,7 +3646,7 @@
     },
     "description": {
       "en": "Dawn Platinum Refresh Rain Oxi, 2.21L",
-      "fr": ""
+      "fr": "Dawn Platinum Refresh Rain Oxi, 2,21 L"
     }
   },
   {
@@ -3706,7 +3706,7 @@
     "name_en": "Dawn Ultra Dish Soap Dishwashing Liquid, original, 2.64L",
     "name_fr": "Dawn Ultra Dish Soap Liquide à vaisselle, original, 2,64 L",
     "description_en": "Dawn Ultra Dish Soap Dishwashing Liquid, original, 2.64L",
-    "description_fr": "",
+    "description_fr": "Savon à vaisselle Dawn Ultra liquide, original, 2,64 L",
     "unit_size": "2.64",
     "unit_type": "L",
     "case_qty": 6,
@@ -3721,7 +3721,7 @@
     },
     "description": {
       "en": "Dawn Ultra Dish Soap Dishwashing Liquid, original, 2.64L",
-      "fr": ""
+      "fr": "Savon à vaisselle Dawn Ultra liquide, original, 2,64 L"
     }
   },
   {
@@ -3729,7 +3729,7 @@
     "barcode": "3077222727",
     "category": "cleaning",
     "name_en": "Dawn Ultra Dish Soap, 502ml, Apple Blossom, 10/cs",
-    "name_fr": "",
+    "name_fr": "Savon à vaisselle Dawn Ultra, 502 ml, Fleur de pomme, 10/cs",
     "description_en": "Dawn Ultra Dish Soap, 502ml, Apple Blossom, 10/cs",
     "description_fr": "",
     "unit_size": "502",
@@ -3742,7 +3742,7 @@
     ],
     "name": {
       "en": "Dawn Ultra Dish Soap, 502ml, Apple Blossom, 10/cs",
-      "fr": ""
+      "fr": "Savon à vaisselle Dawn Ultra, 502 ml, Fleur de pomme, 10/cs"
     },
     "description": {
       "en": "Dawn Ultra Dish Soap, 502ml, Apple Blossom, 10/cs",
@@ -3829,9 +3829,9 @@
     "barcode": "3077207036",
     "category": "cleaning",
     "name_en": "Dawn Ultra Dish Soap, Dishwashing Liquid, original Scent, 709ml",
-    "name_fr": "",
+    "name_fr": "Savon Ultra Dawn, liquide vaisselle, parfum original, 709 ml",
     "description_en": "Dawn Ultra Dish Soap, Dishwashing Liquid, original Scent, 709ml",
-    "description_fr": "",
+    "description_fr": "Savon Ultra Dawn, Liquide vaisselle, parfum original, 709 ml",
     "unit_size": "709",
     "unit_type": "ml",
     "case_qty": 10,
@@ -3842,11 +3842,11 @@
     ],
     "name": {
       "en": "Dawn Ultra Dish Soap, Dishwashing Liquid, original Scent, 709ml",
-      "fr": ""
+      "fr": "Savon Ultra Dawn, liquide vaisselle, parfum original, 709 ml"
     },
     "description": {
       "en": "Dawn Ultra Dish Soap, Dishwashing Liquid, original Scent, 709ml",
-      "fr": ""
+      "fr": "Savon Ultra Dawn, Liquide vaisselle, parfum original, 709 ml"
     }
   },
   {
@@ -3906,7 +3906,7 @@
     "name_en": "Drano Liquid Drain Cleaner, 900ml",
     "name_fr": "",
     "description_en": "Drano Liquid Drain Cleaner, 900ml",
-    "description_fr": "",
+    "description_fr": "Nettoyant liquide de canalisations Drano, 900 ml",
     "unit_size": "900",
     "unit_type": "ml",
     "case_qty": 12,
@@ -3921,7 +3921,7 @@
     },
     "description": {
       "en": "Drano Liquid Drain Cleaner, 900ml",
-      "fr": ""
+      "fr": "Nettoyant liquide de canalisations Drano, 900 ml"
     }
   },
   {
@@ -3956,7 +3956,7 @@
     "name_en": "Easy-Off Heavy Duty Oven Cleaner Lemon Scent, 400g",
     "name_fr": "Nettoyant de four haute performance Easy-Off parfum citron, 400 g",
     "description_en": "Easy-Off Heavy Duty Oven Cleaner Lemon Scent, 400g",
-    "description_fr": "",
+    "description_fr": "Nettoyant de four puissant Easy-Off, parfum citron, 400 g",
     "unit_size": "400",
     "unit_type": "g",
     "case_qty": 12,
@@ -3971,7 +3971,7 @@
     },
     "description": {
       "en": "Easy-Off Heavy Duty Oven Cleaner Lemon Scent, 400g",
-      "fr": ""
+      "fr": "Nettoyant de four puissant Easy-Off, parfum citron, 400 g"
     }
   },
   {
@@ -4004,9 +4004,9 @@
     "barcode": "3500097758",
     "category": "cleaning",
     "name_en": "Fabuloso All Purpose Cleaner, Lavender 1.65L",
-    "name_fr": "",
+    "name_fr": "Nettoyant tout usage Fabuloso, Lavande 1,65 L",
     "description_en": "Fabuloso All Purpose Cleaner, Lavender 1.65L",
-    "description_fr": "",
+    "description_fr": "Fabuloso Nettoyant tout usage, Lavande 1.65L",
     "unit_size": "1.65",
     "unit_type": "L",
     "case_qty": 6,
@@ -4017,11 +4017,11 @@
     ],
     "name": {
       "en": "Fabuloso All Purpose Cleaner, Lavender 1.65L",
-      "fr": ""
+      "fr": "Nettoyant tout usage Fabuloso, Lavande 1,65 L"
     },
     "description": {
       "en": "Fabuloso All Purpose Cleaner, Lavender 1.65L",
-      "fr": ""
+      "fr": "Fabuloso Nettoyant tout usage, Lavande 1.65L"
     }
   },
   {
@@ -4106,7 +4106,7 @@
     "name_en": "Finish Jet-Dry Quantum Dishwasher Rinse Aid, 946ml, 12/cs",
     "name_fr": "Finish Jet-Dry Quantum aide rinçage pour lave-vaisselle, 946 ml, 12/cs",
     "description_en": "Finish Jet-Dry Quantum Dishwasher Rinse Aid, 946ml, 12/cs",
-    "description_fr": "",
+    "description_fr": "Finish Jet‑Dry Quantum Aide à rinçage pour lave-vaisselle, 946 ml, 12 pièces",
     "unit_size": "946",
     "unit_type": "ml",
     "case_qty": 12,
@@ -4121,7 +4121,7 @@
     },
     "description": {
       "en": "Finish Jet-Dry Quantum Dishwasher Rinse Aid, 946ml, 12/cs",
-      "fr": ""
+      "fr": "Finish Jet‑Dry Quantum Aide à rinçage pour lave-vaisselle, 946 ml, 12 pièces"
     }
   },
   {
@@ -4179,7 +4179,7 @@
     "barcode": "3077224768",
     "category": "cleaning",
     "name_en": "Gain Liquid Detergent, Blossom Burst Scent, 1.24 L, 6/cs",
-    "name_fr": "",
+    "name_fr": "Détergent Liquide Gain, Parfum Blossom Burst, 1,24 L, 6 pcs",
     "description_en": "Gain Liquid Detergent, Blossom Burst Scent, 1.24 L, 6/cs",
     "description_fr": "",
     "unit_size": "1.24",
@@ -4192,7 +4192,7 @@
     ],
     "name": {
       "en": "Gain Liquid Detergent, Blossom Burst Scent, 1.24 L, 6/cs",
-      "fr": ""
+      "fr": "Détergent Liquide Gain, Parfum Blossom Burst, 1,24 L, 6 pcs"
     },
     "description": {
       "en": "Gain Liquid Detergent, Blossom Burst Scent, 1.24 L, 6/cs",
@@ -4254,7 +4254,7 @@
     "barcode": "3077222600",
     "category": "cleaning",
     "name_en": "Gain Liquid Detergent, Island Fresh Scent, 1.24 L, 6/cs",
-    "name_fr": "",
+    "name_fr": "Détergent Liquide Gain, Arôme Fraîche Île, 1,24 L, 6/cs",
     "description_en": "Gain Liquid Detergent, Island Fresh Scent, 1.24 L, 6/cs",
     "description_fr": "Détergent liquide Gain, parfum Island Fresh, 1,24 L, 6 cs",
     "unit_size": "1.24",
@@ -4267,7 +4267,7 @@
     ],
     "name": {
       "en": "Gain Liquid Detergent, Island Fresh Scent, 1.24 L, 6/cs",
-      "fr": ""
+      "fr": "Détergent Liquide Gain, Arôme Fraîche Île, 1,24 L, 6/cs"
     },
     "description": {
       "en": "Gain Liquid Detergent, Island Fresh Scent, 1.24 L, 6/cs",
@@ -4354,7 +4354,7 @@
     "barcode": "3077222581",
     "category": "cleaning",
     "name_en": "Gain Liquid Detergent, Original Scent, 1.03L, 6/cs",
-    "name_fr": "",
+    "name_fr": "Détergent liquide Gain, Parfum original, 1,03 L, 6/cs",
     "description_en": "Gain Liquid Detergent, Original Scent, 1.03L, 6/cs",
     "description_fr": "",
     "unit_size": "1.03",
@@ -4367,7 +4367,7 @@
     ],
     "name": {
       "en": "Gain Liquid Detergent, Original Scent, 1.03L, 6/cs",
-      "fr": ""
+      "fr": "Détergent liquide Gain, Parfum original, 1,03 L, 6/cs"
     },
     "description": {
       "en": "Gain Liquid Detergent, Original Scent, 1.03L, 6/cs",
@@ -4479,7 +4479,7 @@
     "barcode": "3700025574",
     "category": "cleaning",
     "name_en": "Ivory Classic Dish Soap, Original, 709 mL",
-    "name_fr": "",
+    "name_fr": "Savon à vaisselle Ivory Classic, Original, 709 mL",
     "description_en": "Ivory Classic Dish Soap, Original, 709 mL",
     "description_fr": "",
     "unit_size": "709",
@@ -4492,7 +4492,7 @@
     ],
     "name": {
       "en": "Ivory Classic Dish Soap, Original, 709 mL",
-      "fr": ""
+      "fr": "Savon à vaisselle Ivory Classic, Original, 709 mL"
     },
     "description": {
       "en": "Ivory Classic Dish Soap, Original, 709 mL",
@@ -4504,7 +4504,7 @@
     "barcode": "5550025007",
     "category": "cleaning",
     "name_en": "Lestoil Heavy Duty Multi-Purpose Cleaner 800ml",
-    "name_fr": "",
+    "name_fr": "Nettoyant multi‑usage Lestoil Heavy Duty 800 ml",
     "description_en": "Lestoil Heavy Duty Multi-Purpose Cleaner 800ml",
     "description_fr": "Lestoil Nettoyant polyvalent haute performance 800 ml",
     "unit_size": "800",
@@ -4517,7 +4517,7 @@
     ],
     "name": {
       "en": "Lestoil Heavy Duty Multi-Purpose Cleaner 800ml",
-      "fr": ""
+      "fr": "Nettoyant multi‑usage Lestoil Heavy Duty 800 ml"
     },
     "description": {
       "en": "Lestoil Heavy Duty Multi-Purpose Cleaner 800ml",
@@ -4554,7 +4554,7 @@
     "barcode": "7048100006",
     "category": "cleaning",
     "name_en": "Murphy Oil Soap 475ml / 16oz",
-    "name_fr": "",
+    "name_fr": "Savon à l'huile Murphy 475 ml / 16 oz",
     "description_en": "Murphy Oil Soap 475ml / 16oz",
     "description_fr": "",
     "unit_size": "475",
@@ -4567,7 +4567,7 @@
     ],
     "name": {
       "en": "Murphy Oil Soap 475ml / 16oz",
-      "fr": ""
+      "fr": "Savon à l'huile Murphy 475 ml / 16 oz"
     },
     "description": {
       "en": "Murphy Oil Soap 475ml / 16oz",
@@ -4604,7 +4604,7 @@
     "barcode": "7048100007",
     "category": "cleaning",
     "name_en": "Murphy Original Oil Soap Concentrated Wood Floor cleaner, 950ml / 32oz",
-    "name_fr": "",
+    "name_fr": "Murphy Original Oil Soap Concentré Nettoyant pour sol en bois, 950 ml / 32 oz",
     "description_en": "Murphy Original Oil Soap Concentrated Wood Floor cleaner, 950ml / 32oz",
     "description_fr": "",
     "unit_size": "950",
@@ -4617,7 +4617,7 @@
     ],
     "name": {
       "en": "Murphy Original Oil Soap Concentrated Wood Floor cleaner, 950ml / 32oz",
-      "fr": ""
+      "fr": "Murphy Original Oil Soap Concentré Nettoyant pour sol en bois, 950 ml / 32 oz"
     },
     "description": {
       "en": "Murphy Original Oil Soap Concentrated Wood Floor cleaner, 950ml / 32oz",
@@ -4629,7 +4629,7 @@
     "barcode": "2785401102",
     "category": "cleaning",
     "name_en": "Palmolive Clean Lavender Dish Liquid 828ml / 28oz, 9/cs",
-    "name_fr": "",
+    "name_fr": "Palmolive Clean Lavande Liquide à Laver la Vaisselle 828 ml / 28 oz, 9/cs",
     "description_en": "Palmolive Clean Lavender Dish Liquid 828ml / 28oz, 9/cs",
     "description_fr": "",
     "unit_size": "828",
@@ -4642,7 +4642,7 @@
     ],
     "name": {
       "en": "Palmolive Clean Lavender Dish Liquid 828ml / 28oz, 9/cs",
-      "fr": ""
+      "fr": "Palmolive Clean Lavande Liquide à Laver la Vaisselle 828 ml / 28 oz, 9/cs"
     },
     "description": {
       "en": "Palmolive Clean Lavender Dish Liquid 828ml / 28oz, 9/cs",
@@ -4704,7 +4704,7 @@
     "barcode": "2785402113",
     "category": "cleaning",
     "name_en": "Palmolive Grapefruit & Pomegranate Dish Liquid, 4.27l /145oz, 4/CS",
-    "name_fr": "",
+    "name_fr": "Palmolive liquide vaisselle pamplemousse et grenade, 4,27 L / 145 oz, 4/CS",
     "description_en": "Palmolive Grapefruit & Pomegranate Dish Liquid, 4.27l /145oz, 4/CS",
     "description_fr": "",
     "unit_size": "4.27",
@@ -4717,7 +4717,7 @@
     ],
     "name": {
       "en": "Palmolive Grapefruit & Pomegranate Dish Liquid, 4.27l /145oz, 4/CS",
-      "fr": ""
+      "fr": "Palmolive liquide vaisselle pamplemousse et grenade, 4,27 L / 145 oz, 4/CS"
     },
     "description": {
       "en": "Palmolive Grapefruit & Pomegranate Dish Liquid, 4.27l /145oz, 4/CS",
@@ -4804,9 +4804,9 @@
     "barcode": "5800031161",
     "category": "cleaning",
     "name_en": "Palmolive Orange Dish Liquid, 372ml / 12.6oz",
-    "name_fr": "",
+    "name_fr": "Palmolive liquide vaisselle orange, 372 ml / 12,6 oz",
     "description_en": "Palmolive Orange Dish Liquid, 372ml / 12.6oz",
-    "description_fr": "",
+    "description_fr": "Liquide à vaisselle Palmolive Orange, 372 ml / 12,6 oz",
     "unit_size": "372",
     "unit_type": "ml",
     "case_qty": 20,
@@ -4817,11 +4817,11 @@
     ],
     "name": {
       "en": "Palmolive Orange Dish Liquid, 372ml / 12.6oz",
-      "fr": ""
+      "fr": "Palmolive liquide vaisselle orange, 372 ml / 12,6 oz"
     },
     "description": {
       "en": "Palmolive Orange Dish Liquid, 372ml / 12.6oz",
-      "fr": ""
+      "fr": "Liquide à vaisselle Palmolive Orange, 372 ml / 12,6 oz"
     }
   },
   {
@@ -4831,7 +4831,7 @@
     "name_en": "Palmolive Orange Dish Liquid, 828ml / 28oz",
     "name_fr": "",
     "description_en": "Palmolive Orange Dish Liquid, 828ml / 28oz",
-    "description_fr": "",
+    "description_fr": "Palmolive liquide vaisselle à l’orange, 828 ml / 28 oz",
     "unit_size": "828",
     "unit_type": "ml",
     "case_qty": 9,
@@ -4846,7 +4846,7 @@
     },
     "description": {
       "en": "Palmolive Orange Dish Liquid, 828ml / 28oz",
-      "fr": ""
+      "fr": "Palmolive liquide vaisselle à l’orange, 828 ml / 28 oz"
     }
   },
   {
@@ -4904,7 +4904,7 @@
     "barcode": "2785400724",
     "category": "cleaning",
     "name_en": "Palmolive Original, 4.27l / 145oz",
-    "name_fr": "",
+    "name_fr": "Palmolive Original, 4,27 l / 145 oz",
     "description_en": "Palmolive Original, 4.27l / 145oz",
     "description_fr": "Palmolive Original, 4,27 L / 145 oz",
     "unit_size": "4.27",
@@ -4917,7 +4917,7 @@
     ],
     "name": {
       "en": "Palmolive Original, 4.27l / 145oz",
-      "fr": ""
+      "fr": "Palmolive Original, 4,27 l / 145 oz"
     },
     "description": {
       "en": "Palmolive Original, 4.27l / 145oz",
@@ -4929,7 +4929,7 @@
     "barcode": "2785400754",
     "category": "cleaning",
     "name_en": "Palmolive Regular Essential, Apple and Pear, 473ml / 16oz",
-    "name_fr": "",
+    "name_fr": "Palmolive Regular Essential, pomme et poire, 473 ml / 16 oz",
     "description_en": "Palmolive Regular Essential, Apple and Pear, 473ml / 16oz",
     "description_fr": "Palmolive Régulier Essentiel, Pomme et Poire, 473 ml / 16 oz",
     "unit_size": "473",
@@ -4942,7 +4942,7 @@
     ],
     "name": {
       "en": "Palmolive Regular Essential, Apple and Pear, 473ml / 16oz",
-      "fr": ""
+      "fr": "Palmolive Regular Essential, pomme et poire, 473 ml / 16 oz"
     },
     "description": {
       "en": "Palmolive Regular Essential, Apple and Pear, 473ml / 16oz",
@@ -4956,7 +4956,7 @@
     "name_en": "Palmolive Regular Essential, Grapefruit and Pomegranate, 473ml / 16oz",
     "name_fr": "Palmolive Regular Essential, Pamplemousse et Grenade, 473 ml / 16 oz",
     "description_en": "Palmolive Regular Essential, Grapefruit and Pomegranate, 473ml / 16oz",
-    "description_fr": "",
+    "description_fr": "Palmolive Regular Essential, Pamplemousse et Grenade, 473 ml / 16 oz",
     "unit_size": "473",
     "unit_type": "ml",
     "case_qty": 20,
@@ -4971,7 +4971,7 @@
     },
     "description": {
       "en": "Palmolive Regular Essential, Grapefruit and Pomegranate, 473ml / 16oz",
-      "fr": ""
+      "fr": "Palmolive Regular Essential, Pamplemousse et Grenade, 473 ml / 16 oz"
     }
   },
   {
@@ -4979,7 +4979,7 @@
     "barcode": "2785400752",
     "category": "cleaning",
     "name_en": "Palmolive Regular Essential, Original, 473ml / 16oz",
-    "name_fr": "",
+    "name_fr": "Palmolive Regular Essential, Original, 473ml / 16oz",
     "description_en": "Palmolive Regular Essential, Original, 473ml / 16oz",
     "description_fr": "",
     "unit_size": "473",
@@ -4992,7 +4992,7 @@
     ],
     "name": {
       "en": "Palmolive Regular Essential, Original, 473ml / 16oz",
-      "fr": ""
+      "fr": "Palmolive Regular Essential, Original, 473ml / 16oz"
     },
     "description": {
       "en": "Palmolive Regular Essential, Original, 473ml / 16oz",
@@ -5056,7 +5056,7 @@
     "name_en": "Palmolive Ultra Dish Liquid, Passion Fruit and mandarin, 20oz / 591ml",
     "name_fr": "Palmolive Ultra liquide à vaisselle, fruit de la passion et mandarine, 20 oz / 591 ml",
     "description_en": "Palmolive Ultra Dish Liquid, Passion Fruit and mandarin, 20oz / 591ml",
-    "description_fr": "",
+    "description_fr": "Palmolive Ultra Liquide à vaisselle, Fruit de la passion et mandarine, 20 oz / 591 ml",
     "unit_size": "20",
     "unit_type": "oz",
     "case_qty": 9,
@@ -5071,7 +5071,7 @@
     },
     "description": {
       "en": "Palmolive Ultra Dish Liquid, Passion Fruit and mandarin, 20oz / 591ml",
-      "fr": ""
+      "fr": "Palmolive Ultra Liquide à vaisselle, Fruit de la passion et mandarine, 20 oz / 591 ml"
     }
   },
   {
@@ -5104,7 +5104,7 @@
     "barcode": "5800014026",
     "category": "cleaning",
     "name_en": "Palmolive Ultra Soft Touch Coconut Butter and Orchid Dish Liquid, 20oz / 591ml",
-    "name_fr": "",
+    "name_fr": "Palmolive Ultra Soft Touch Liquide à vaisselle beurre de noix de coco et orchidée, 20 oz / 591 ml",
     "description_en": "Palmolive Ultra Soft Touch Coconut Butter and Orchid Dish Liquid, 20oz / 591ml",
     "description_fr": "",
     "unit_size": "20",
@@ -5117,7 +5117,7 @@
     ],
     "name": {
       "en": "Palmolive Ultra Soft Touch Coconut Butter and Orchid Dish Liquid, 20oz / 591ml",
-      "fr": ""
+      "fr": "Palmolive Ultra Soft Touch Liquide à vaisselle beurre de noix de coco et orchidée, 20 oz / 591 ml"
     },
     "description": {
       "en": "Palmolive Ultra Soft Touch Coconut Butter and Orchid Dish Liquid, 20oz / 591ml",
@@ -5181,7 +5181,7 @@
     "name_en": "Palmolive Ultra Strength Liquid Dish Soap, Oxy Degreaser and Odour, 20oz / 591ml",
     "name_fr": "Savon liquide ultra-torque pour vaisselle Palmolive, dégraissant et désodorisant Oxy, 20 oz / 591 ml",
     "description_en": "Palmolive Ultra Strength Liquid Dish Soap, Oxy Degreaser and Odour, 20oz / 591ml",
-    "description_fr": "",
+    "description_fr": "Savon liquide Ultra Puissance de Palmolive, dégraissant Oxy et désodorisant, 20 oz / 591 ml",
     "unit_size": "20",
     "unit_type": "oz",
     "case_qty": 9,
@@ -5196,7 +5196,7 @@
     },
     "description": {
       "en": "Palmolive Ultra Strength Liquid Dish Soap, Oxy Degreaser and Odour, 20oz / 591ml",
-      "fr": ""
+      "fr": "Savon liquide Ultra Puissance de Palmolive, dégraissant Oxy et désodorisant, 20 oz / 591 ml"
     }
   },
   {
@@ -5206,7 +5206,7 @@
     "name_en": "Palmolive Ultra Strength Liquid Dish Soap, Pure and Clear, 591ml",
     "name_fr": "Savon Liquide Ultra Force Palmolive, Pure et Clair, 591 ml",
     "description_en": "Palmolive Ultra Strength Liquid Dish Soap, Pure and Clear, 591ml",
-    "description_fr": "",
+    "description_fr": "Savon à vaisselle liquide Ultra Force Palmolive, Pure et Clair, 591 ml",
     "unit_size": "591",
     "unit_type": "ml",
     "case_qty": 9,
@@ -5221,7 +5221,7 @@
     },
     "description": {
       "en": "Palmolive Ultra Strength Liquid Dish Soap, Pure and Clear, 591ml",
-      "fr": ""
+      "fr": "Savon à vaisselle liquide Ultra Force Palmolive, Pure et Clair, 591 ml"
     }
   },
   {
@@ -5254,7 +5254,7 @@
     "barcode": "2785402181",
     "category": "cleaning",
     "name_en": "Palmolive Watermelon Dish Liquid, 828ml /28oz, 9/CS",
-    "name_fr": "",
+    "name_fr": "Palmolive Liquide de vaisselle à la pastèque, 828 ml / 28 oz, 9/CS",
     "description_en": "Palmolive Watermelon Dish Liquid, 828ml /28oz, 9/CS",
     "description_fr": "Palmolive Liquide vaisselle à la pastèque, 828 ml / 28 oz, 9 / CS",
     "unit_size": "828",
@@ -5267,7 +5267,7 @@
     ],
     "name": {
       "en": "Palmolive Watermelon Dish Liquid, 828ml /28oz, 9/CS",
-      "fr": ""
+      "fr": "Palmolive Liquide de vaisselle à la pastèque, 828 ml / 28 oz, 9/CS"
     },
     "description": {
       "en": "Palmolive Watermelon Dish Liquid, 828ml /28oz, 9/CS",
@@ -5279,7 +5279,7 @@
     "barcode": "5550040289",
     "category": "cleaning",
     "name_en": "Pine-sol Lavendar Cleaner, 828ml",
-    "name_fr": "",
+    "name_fr": "Pine‑Sol Nettoyant Lavande, 828 ml",
     "description_en": "Pine-sol Lavendar Cleaner, 828ml",
     "description_fr": "",
     "unit_size": "828",
@@ -5292,7 +5292,7 @@
     ],
     "name": {
       "en": "Pine-sol Lavendar Cleaner, 828ml",
-      "fr": ""
+      "fr": "Pine‑Sol Nettoyant Lavande, 828 ml"
     },
     "description": {
       "en": "Pine-sol Lavendar Cleaner, 828ml",
@@ -5331,7 +5331,7 @@
     "name_en": "Pine-sol Lemon Fresh Cleaner, 1.4l",
     "name_fr": "Pine-sol Lemon Fresh Nettoyant, 1,4 L",
     "description_en": "Pine-sol Lemon Fresh Cleaner, 1.4l",
-    "description_fr": "",
+    "description_fr": "Pine-sol Nettoyant citron frais, 1,4 L",
     "unit_size": "1.4",
     "unit_type": "L",
     "case_qty": 8,
@@ -5346,7 +5346,7 @@
     },
     "description": {
       "en": "Pine-sol Lemon Fresh Cleaner, 1.4l",
-      "fr": ""
+      "fr": "Pine-sol Nettoyant citron frais, 1,4 L"
     }
   },
   {
@@ -5406,7 +5406,7 @@
     "name_en": "Pine-sol Spring Blossom Cleaner 1.4l",
     "name_fr": "Pine-Sol Nettoyant Spring Blossom 1,4 l",
     "description_en": "Pine-sol Spring Blossom Cleaner 1.4l",
-    "description_fr": "",
+    "description_fr": "Pine‑sol Spring Blossom Nettoyant 1,4 l",
     "unit_size": "1.4",
     "unit_type": "L",
     "case_qty": 8,
@@ -5421,7 +5421,7 @@
     },
     "description": {
       "en": "Pine-sol Spring Blossom Cleaner 1.4l",
-      "fr": ""
+      "fr": "Pine‑sol Spring Blossom Nettoyant 1,4 l"
     }
   },
   {
@@ -5479,7 +5479,7 @@
     "barcode": "5060033821114",
     "category": "cleaning",
     "name_en": "Pink Stuff Miracle Cleaning Paste 850g, 12/cs",
-    "name_fr": "",
+    "name_fr": "Pâte de nettoyage miracle Pink Stuff 850 g, 12 pièces",
     "description_en": "Pink Stuff Miracle Cleaning Paste 850g, 12/cs",
     "description_fr": "",
     "unit_size": "850",
@@ -5492,7 +5492,7 @@
     ],
     "name": {
       "en": "Pink Stuff Miracle Cleaning Paste 850g, 12/cs",
-      "fr": ""
+      "fr": "Pâte de nettoyage miracle Pink Stuff 850 g, 12 pièces"
     },
     "description": {
       "en": "Pink Stuff Miracle Cleaning Paste 850g, 12/cs",
@@ -5529,7 +5529,7 @@
     "barcode": "5060033821619",
     "category": "cleaning",
     "name_en": "Pink Stuff Miracle Floor Cleaner 750 mL, 12/cs",
-    "name_fr": "",
+    "name_fr": "Nettoyant Miracle Pink Stuff pour sol 750 mL, 12/unité",
     "description_en": "Pink Stuff Miracle Floor Cleaner 750 mL, 12/cs",
     "description_fr": "",
     "unit_size": "750",
@@ -5542,7 +5542,7 @@
     ],
     "name": {
       "en": "Pink Stuff Miracle Floor Cleaner 750 mL, 12/cs",
-      "fr": ""
+      "fr": "Nettoyant Miracle Pink Stuff pour sol 750 mL, 12/unité"
     },
     "description": {
       "en": "Pink Stuff Miracle Floor Cleaner 750 mL, 12/cs",
@@ -5604,7 +5604,7 @@
     "barcode": "1920078033",
     "category": "cleaning",
     "name_en": "Resolve Pet Carpet Stain Remover, 650ml / 22oz, 6/cs",
-    "name_fr": "",
+    "name_fr": "Résolve Détachant de taches de tapis pour animaux, 650 ml / 22 oz, 6/pièces",
     "description_en": "Resolve Pet Carpet Stain Remover, 650ml / 22oz, 6/cs",
     "description_fr": "",
     "unit_size": "650",
@@ -5617,7 +5617,7 @@
     ],
     "name": {
       "en": "Resolve Pet Carpet Stain Remover, 650ml / 22oz, 6/cs",
-      "fr": ""
+      "fr": "Résolve Détachant de taches de tapis pour animaux, 650 ml / 22 oz, 6/pièces"
     },
     "description": {
       "en": "Resolve Pet Carpet Stain Remover, 650ml / 22oz, 6/cs",
@@ -5729,7 +5729,7 @@
     "barcode": "7506339394917",
     "category": "laundry_fabric",
     "name_en": "Downy Liquid Fabric Softener, Cool Breeze, 800ml 9/CS",
-    "name_fr": "",
+    "name_fr": "Adoucissant liquide Downy, Cool Breeze, 800 ml 9/CS",
     "description_en": "Downy Liquid Fabric Softener, Cool Breeze, 800ml 9/CS",
     "description_fr": "",
     "unit_size": "800",
@@ -5742,7 +5742,7 @@
     ],
     "name": {
       "en": "Downy Liquid Fabric Softener, Cool Breeze, 800ml 9/CS",
-      "fr": ""
+      "fr": "Adoucissant liquide Downy, Cool Breeze, 800 ml 9/CS"
     },
     "description": {
       "en": "Downy Liquid Fabric Softener, Cool Breeze, 800ml 9/CS",
@@ -5754,7 +5754,7 @@
     "barcode": "7500435126045",
     "category": "laundry_fabric",
     "name_en": "Downy Liquid Fabric Softener, Elegance, 750ml 9/CS",
-    "name_fr": "",
+    "name_fr": "Adoucissant liquide Downy, Elegance, 750 ml 9/CS",
     "description_en": "Downy Liquid Fabric Softener, Elegance, 750ml 9/CS",
     "description_fr": "",
     "unit_size": "750",
@@ -5767,7 +5767,7 @@
     ],
     "name": {
       "en": "Downy Liquid Fabric Softener, Elegance, 750ml 9/CS",
-      "fr": ""
+      "fr": "Adoucissant liquide Downy, Elegance, 750 ml 9/CS"
     },
     "description": {
       "en": "Downy Liquid Fabric Softener, Elegance, 750ml 9/CS",
@@ -5781,7 +5781,7 @@
     "name_en": "Downy Liquid Fabric Softener, Floral, 360ml 12/CS",
     "name_fr": "",
     "description_en": "Downy Liquid Fabric Softener, Floral, 360ml 12/CS",
-    "description_fr": "",
+    "description_fr": "Adoucissant liquide Downy Floral, 360 ml, 12/CS",
     "unit_size": "360",
     "unit_type": "ml",
     "case_qty": 12,
@@ -5796,7 +5796,7 @@
     },
     "description": {
       "en": "Downy Liquid Fabric Softener, Floral, 360ml 12/CS",
-      "fr": ""
+      "fr": "Adoucissant liquide Downy Floral, 360 ml, 12/CS"
     }
   },
   {
@@ -5829,7 +5829,7 @@
     "barcode": "7500435125987",
     "category": "laundry_fabric",
     "name_en": "Downy Liquid Fabric Softener, Passion, 750ml 9/CS",
-    "name_fr": "",
+    "name_fr": "Adoucissant liquide Downy, Passion, 750 ml 9/CS",
     "description_en": "Downy Liquid Fabric Softener, Passion, 750ml 9/CS",
     "description_fr": "",
     "unit_size": "750",
@@ -5842,7 +5842,7 @@
     ],
     "name": {
       "en": "Downy Liquid Fabric Softener, Passion, 750ml 9/CS",
-      "fr": ""
+      "fr": "Adoucissant liquide Downy, Passion, 750 ml 9/CS"
     },
     "description": {
       "en": "Downy Liquid Fabric Softener, Passion, 750ml 9/CS",
@@ -5881,7 +5881,7 @@
     "name_en": "Downy Liquid Fabric Softener, Soft and Gentle, 800ml 9/CS",
     "name_fr": "Assouplissant liquide Downy, doux et délicat, 800 ml 9/CS",
     "description_en": "Downy Liquid Fabric Softener, Soft and Gentle, 800ml 9/CS",
-    "description_fr": "",
+    "description_fr": "Adoucissant liquide Downy, doux et délicat, 800 ml 9/CS",
     "unit_size": "800",
     "unit_type": "ml",
     "case_qty": 9,
@@ -5896,7 +5896,7 @@
     },
     "description": {
       "en": "Downy Liquid Fabric Softener, Soft and Gentle, 800ml 9/CS",
-      "fr": ""
+      "fr": "Adoucissant liquide Downy, doux et délicat, 800 ml 9/CS"
     }
   },
   {
@@ -5929,7 +5929,7 @@
     "barcode": "3077215026",
     "category": "laundry_fabric",
     "name_en": "Downy Soft Liquid Fabric Softener April Fresh 4.35 L, 251 Loads, 4/cs",
-    "name_fr": "",
+    "name_fr": "Adoucissant liquide Downy Fresh Avril 4,35 L, 251 utilisations, 4 cs",
     "description_en": "Downy Soft Liquid Fabric Softener April Fresh 4.35 L, 251 Loads, 4/cs",
     "description_fr": "",
     "unit_size": "4.35",
@@ -5942,7 +5942,7 @@
     ],
     "name": {
       "en": "Downy Soft Liquid Fabric Softener April Fresh 4.35 L, 251 Loads, 4/cs",
-      "fr": ""
+      "fr": "Adoucissant liquide Downy Fresh Avril 4,35 L, 251 utilisations, 4 cs"
     },
     "description": {
       "en": "Downy Soft Liquid Fabric Softener April Fresh 4.35 L, 251 Loads, 4/cs",
@@ -6004,7 +6004,7 @@
     "barcode": "750954668011",
     "category": "laundry_fabric",
     "name_en": "Suavitel Liquid Fabric Softener and Conditioner, Anochecer, 700ml 12/CS",
-    "name_fr": "",
+    "name_fr": "Suavitel Adoucissant liquide et conditionneur, Anochecer, 700 ml 12/CS",
     "description_en": "Suavitel Liquid Fabric Softener and Conditioner, Anochecer, 700ml 12/CS",
     "description_fr": "Suavitel Adoucissant liquide pour tissus et conditionneur, Anochecer, 700 ml 12/CS",
     "unit_size": "700",
@@ -6017,7 +6017,7 @@
     ],
     "name": {
       "en": "Suavitel Liquid Fabric Softener and Conditioner, Anochecer, 700ml 12/CS",
-      "fr": ""
+      "fr": "Suavitel Adoucissant liquide et conditionneur, Anochecer, 700 ml 12/CS"
     },
     "description": {
       "en": "Suavitel Liquid Fabric Softener and Conditioner, Anochecer, 700ml 12/CS",
@@ -6029,7 +6029,7 @@
     "barcode": "7509546680132",
     "category": "laundry_fabric",
     "name_en": "Suavitel Liquid Fabric Softener and Conditioner, Complete Fresca, 700ml 12/CS",
-    "name_fr": "",
+    "name_fr": "Suavitel Adoucissant liquide et conditionneur, Complete Fresca, 700 ml 12/CS",
     "description_en": "Suavitel Liquid Fabric Softener and Conditioner, Complete Fresca, 700ml 12/CS",
     "description_fr": "",
     "unit_size": "700",
@@ -6042,7 +6042,7 @@
     ],
     "name": {
       "en": "Suavitel Liquid Fabric Softener and Conditioner, Complete Fresca, 700ml 12/CS",
-      "fr": ""
+      "fr": "Suavitel Adoucissant liquide et conditionneur, Complete Fresca, 700 ml 12/CS"
     },
     "description": {
       "en": "Suavitel Liquid Fabric Softener and Conditioner, Complete Fresca, 700ml 12/CS",
@@ -6079,7 +6079,7 @@
     "barcode": "7509546016306",
     "category": "laundry_fabric",
     "name_en": "Suavitel Liquid Fabric Softener and Conditioner, Fresh Spring, 850ml 12/CS",
-    "name_fr": "",
+    "name_fr": "Adoucissant liquide Suavitel et conditionneur, Fresh Spring, 850 ml, 12/CS",
     "description_en": "Suavitel Liquid Fabric Softener and Conditioner, Fresh Spring, 850ml 12/CS",
     "description_fr": "",
     "unit_size": "850",
@@ -6092,7 +6092,7 @@
     ],
     "name": {
       "en": "Suavitel Liquid Fabric Softener and Conditioner, Fresh Spring, 850ml 12/CS",
-      "fr": ""
+      "fr": "Adoucissant liquide Suavitel et conditionneur, Fresh Spring, 850 ml, 12/CS"
     },
     "description": {
       "en": "Suavitel Liquid Fabric Softener and Conditioner, Fresh Spring, 850ml 12/CS",
@@ -6129,7 +6129,7 @@
     "barcode": "7509546016313",
     "category": "laundry_fabric",
     "name_en": "Suavitel Liquid Fabric Softener and Conditioner, Morning Sun, 850ml 12/CS",
-    "name_fr": "",
+    "name_fr": "Adoucissant et conditionneur de textile liquide Suavitel, Soleil du Matin, 850 ml 12/CS",
     "description_en": "Suavitel Liquid Fabric Softener and Conditioner, Morning Sun, 850ml 12/CS",
     "description_fr": "",
     "unit_size": "850",
@@ -6142,7 +6142,7 @@
     ],
     "name": {
       "en": "Suavitel Liquid Fabric Softener and Conditioner, Morning Sun, 850ml 12/CS",
-      "fr": ""
+      "fr": "Adoucissant et conditionneur de textile liquide Suavitel, Soleil du Matin, 850 ml 12/CS"
     },
     "description": {
       "en": "Suavitel Liquid Fabric Softener and Conditioner, Morning Sun, 850ml 12/CS",
@@ -6179,7 +6179,7 @@
     "barcode": "7501065908841",
     "category": "laundry_fabric",
     "name_en": "Ariel Powder Detergent, 250g, 36/cs",
-    "name_fr": "",
+    "name_fr": "Détergent en poudre Ariel, 250 g, 36/cs",
     "description_en": "Ariel Powder Detergent, 250g, 36/cs",
     "description_fr": "",
     "unit_size": "250",
@@ -6192,7 +6192,7 @@
     ],
     "name": {
       "en": "Ariel Powder Detergent, 250g, 36/cs",
-      "fr": ""
+      "fr": "Détergent en poudre Ariel, 250 g, 36/cs"
     },
     "description": {
       "en": "Ariel Powder Detergent, 250g, 36/cs",
@@ -6281,7 +6281,7 @@
     "name_en": "Arm & Hammer Original Laundry Detergent Clean Fresh Scent, 55 Loads, 1.63L",
     "name_fr": "",
     "description_en": "Arm & Hammer Original Laundry Detergent Clean Fresh Scent, 55 Loads, 1.63L",
-    "description_fr": "",
+    "description_fr": "Arm & Hammer Original Détergent à Lessive Arôme Frais et Propre, 55 Lavages, 1,63 L",
     "unit_size": "1.63",
     "unit_type": "L",
     "case_qty": 6,
@@ -6296,7 +6296,7 @@
     },
     "description": {
       "en": "Arm & Hammer Original Laundry Detergent Clean Fresh Scent, 55 Loads, 1.63L",
-      "fr": ""
+      "fr": "Arm & Hammer Original Détergent à Lessive Arôme Frais et Propre, 55 Lavages, 1,63 L"
     }
   },
   {
@@ -6331,7 +6331,7 @@
     "name_en": "Cheer Liquid Laundry Detergent HE, 107 Loads, 4.55L / 154oz, 4/cs",
     "name_fr": "",
     "description_en": "Cheer Liquid Laundry Detergent HE, 107 Loads, 4.55L / 154oz, 4/cs",
-    "description_fr": "",
+    "description_fr": "Cheer Détergent liquide HE, 107 lavages, 4,55 L / 154 oz, 4 / ca",
     "unit_size": "4.55",
     "unit_type": "L",
     "case_qty": 4,
@@ -6346,7 +6346,7 @@
     },
     "description": {
       "en": "Cheer Liquid Laundry Detergent HE, 107 Loads, 4.55L / 154oz, 4/cs",
-      "fr": ""
+      "fr": "Cheer Détergent liquide HE, 107 lavages, 4,55 L / 154 oz, 4 / ca"
     }
   },
   {
@@ -6429,7 +6429,7 @@
     "barcode": "3700055863",
     "category": "laundry_fabric",
     "name_en": "Gain + Aroma Boost Liquid Laundry Detergent HE Original, 45 Loads, 1.92L / 65 oz, 4/cs",
-    "name_fr": "",
+    "name_fr": "Liquide détergent à lessive Gain + Aroma Boost HE Original, 45 lavages, 1,92 L / 65 oz, 4 paquets",
     "description_en": "Gain + Aroma Boost Liquid Laundry Detergent HE Original, 45 Loads, 1.92L / 65 oz, 4/cs",
     "description_fr": "",
     "unit_size": "1.92",
@@ -6442,7 +6442,7 @@
     ],
     "name": {
       "en": "Gain + Aroma Boost Liquid Laundry Detergent HE Original, 45 Loads, 1.92L / 65 oz, 4/cs",
-      "fr": ""
+      "fr": "Liquide détergent à lessive Gain + Aroma Boost HE Original, 45 lavages, 1,92 L / 65 oz, 4 paquets"
     },
     "description": {
       "en": "Gain + Aroma Boost Liquid Laundry Detergent HE Original, 45 Loads, 1.92L / 65 oz, 4/cs",
@@ -6479,7 +6479,7 @@
     "barcode": "3700077179",
     "category": "laundry_fabric",
     "name_en": "Gain + Aroma Boost Liquid Laundry Detergent, Moonlight Breeze Scent, 92 Fl Oz, 64 Loads, He",
-    "name_fr": "",
+    "name_fr": "Gain + Aroma Boost Détergent à lessive liquide, parfum Bouffée de Lune, 92 fl oz, 64 charges, He",
     "description_en": "Gain + Aroma Boost Liquid Laundry Detergent, Moonlight Breeze Scent, 92 Fl Oz, 64 Loads, He",
     "description_fr": "",
     "unit_size": "",
@@ -6492,7 +6492,7 @@
     ],
     "name": {
       "en": "Gain + Aroma Boost Liquid Laundry Detergent, Moonlight Breeze Scent, 92 Fl Oz, 64 Loads, He",
-      "fr": ""
+      "fr": "Gain + Aroma Boost Détergent à lessive liquide, parfum Bouffée de Lune, 92 fl oz, 64 charges, He"
     },
     "description": {
       "en": "Gain + Aroma Boost Liquid Laundry Detergent, Moonlight Breeze Scent, 92 Fl Oz, 64 Loads, He",
@@ -6531,7 +6531,7 @@
     "name_en": "Gain + Odor Defense Liquid Laundry Detergent, Super Fresh Blast Scent, 4.55L",
     "name_fr": "Détergent liquide Gain + Odor Defense, parfum Super Fresh Blast, 4,55 L",
     "description_en": "Gain + Odor Defense Liquid Laundry Detergent, Super Fresh Blast Scent, 4.55L",
-    "description_fr": "",
+    "description_fr": "Gain + Détergent à lessive liquide Protection contre les odeurs, Senteur Super Fraîche, 4,55 L",
     "unit_size": "4.55",
     "unit_type": "L",
     "case_qty": 4,
@@ -6546,7 +6546,7 @@
     },
     "description": {
       "en": "Gain + Odor Defense Liquid Laundry Detergent, Super Fresh Blast Scent, 4.55L",
-      "fr": ""
+      "fr": "Gain + Détergent à lessive liquide Protection contre les odeurs, Senteur Super Fraîche, 4,55 L"
     }
   },
   {
@@ -6654,7 +6654,7 @@
     "barcode": "3700000993",
     "category": "laundry_fabric",
     "name_en": "Gain Flings Pods Moonlight Breeze, 42ct",
-    "name_fr": "",
+    "name_fr": "Gain Flings Pods Brise de Lune, 42 ct",
     "description_en": "Gain Flings Pods Moonlight Breeze, 42ct",
     "description_fr": "",
     "unit_size": "42",
@@ -6667,7 +6667,7 @@
     ],
     "name": {
       "en": "Gain Flings Pods Moonlight Breeze, 42ct",
-      "fr": ""
+      "fr": "Gain Flings Pods Brise de Lune, 42 ct"
     },
     "description": {
       "en": "Gain Flings Pods Moonlight Breeze, 42ct",
@@ -6681,7 +6681,7 @@
     "name_en": "Gain Liquid Detergent, Blossom Burst Scent, 2.39L, 4/cs",
     "name_fr": "Détergent liquide Gain, parfum Blossom Burst, 2,39 L, 4 par caisse",
     "description_en": "Gain Liquid Detergent, Blossom Burst Scent, 2.39L, 4/cs",
-    "description_fr": "",
+    "description_fr": "Gain Détergent Liquide, Parfum Explosion de Fleurs, 2,39 L, 4 par caisse",
     "unit_size": "2.39",
     "unit_type": "L",
     "case_qty": 4,
@@ -6696,7 +6696,7 @@
     },
     "description": {
       "en": "Gain Liquid Detergent, Blossom Burst Scent, 2.39L, 4/cs",
-      "fr": ""
+      "fr": "Gain Détergent Liquide, Parfum Explosion de Fleurs, 2,39 L, 4 par caisse"
     }
   },
   {
@@ -6729,7 +6729,7 @@
     "barcode": "3077222603",
     "category": "laundry_fabric",
     "name_en": "Gain Liquid Detergent, Moonlight Breeze Scent, 2.39L, 4/cs",
-    "name_fr": "",
+    "name_fr": "Gain Lessive liquide, parfum Brise de Clair de Lune, 2,39 L, 4/cs",
     "description_en": "Gain Liquid Detergent, Moonlight Breeze Scent, 2.39L, 4/cs",
     "description_fr": "",
     "unit_size": "2.39",
@@ -6742,7 +6742,7 @@
     ],
     "name": {
       "en": "Gain Liquid Detergent, Moonlight Breeze Scent, 2.39L, 4/cs",
-      "fr": ""
+      "fr": "Gain Lessive liquide, parfum Brise de Clair de Lune, 2,39 L, 4/cs"
     },
     "description": {
       "en": "Gain Liquid Detergent, Moonlight Breeze Scent, 2.39L, 4/cs",
@@ -6804,7 +6804,7 @@
     "barcode": "3077219833",
     "category": "laundry_fabric",
     "name_en": "Gain Liquid Laundry Detergent Original + Aroma Boost, 4.82L / 163 FL Oz, 146 Wash Loads 4/cs",
-    "name_fr": "",
+    "name_fr": "Gain Détergent à lessive liquide Original + Aroma Boost, 4,82 L / 163 fl oz, 146 cycles de lavage 4/cs",
     "description_en": "Gain Liquid Laundry Detergent Original + Aroma Boost, 4.82L / 163 FL Oz, 146 Wash Loads 4/cs",
     "description_fr": "",
     "unit_size": "4.82",
@@ -6817,7 +6817,7 @@
     ],
     "name": {
       "en": "Gain Liquid Laundry Detergent Original + Aroma Boost, 4.82L / 163 FL Oz, 146 Wash Loads 4/cs",
-      "fr": ""
+      "fr": "Gain Détergent à lessive liquide Original + Aroma Boost, 4,82 L / 163 fl oz, 146 cycles de lavage 4/cs"
     },
     "description": {
       "en": "Gain Liquid Laundry Detergent Original + Aroma Boost, 4.82L / 163 FL Oz, 146 Wash Loads 4/cs",
@@ -6879,7 +6879,7 @@
     "barcode": "3700055861",
     "category": "laundry_fabric",
     "name_en": "Gain Lq 2x Original Aroma Boost 32loads 1.36l",
-    "name_fr": "",
+    "name_fr": "Gain Lq 2x Original Aroma Boost 32 charges 1,36 l",
     "description_en": "Gain Lq 2x Original Aroma Boost 32loads 1.36l",
     "description_fr": "",
     "unit_size": "1.36",
@@ -6892,7 +6892,7 @@
     ],
     "name": {
       "en": "Gain Lq 2x Original Aroma Boost 32loads 1.36l",
-      "fr": ""
+      "fr": "Gain Lq 2x Original Aroma Boost 32 charges 1,36 l"
     },
     "description": {
       "en": "Gain Lq 2x Original Aroma Boost 32loads 1.36l",
@@ -6904,7 +6904,7 @@
     "barcode": "3700076954",
     "category": "laundry_fabric",
     "name_en": "Gain Lq Island Fresh 32 Loads, 1.36l",
-    "name_fr": "",
+    "name_fr": "Gain Lq Island Fresh 32 charges, 1,36 l",
     "description_en": "Gain Lq Island Fresh 32 Loads, 1.36l",
     "description_fr": "",
     "unit_size": "1.36",
@@ -6917,7 +6917,7 @@
     ],
     "name": {
       "en": "Gain Lq Island Fresh 32 Loads, 1.36l",
-      "fr": ""
+      "fr": "Gain Lq Island Fresh 32 charges, 1,36 l"
     },
     "description": {
       "en": "Gain Lq Island Fresh 32 Loads, 1.36l",
@@ -6956,7 +6956,7 @@
     "name_en": "Irish Spring Bw - Honey & Vetiver, 591 mL, 4/cs",
     "name_fr": "Irish Spring Bw - Miel & Vétiver, 591 mL, 4/unité",
     "description_en": "Irish Spring Bw - Honey & Vetiver, 591 mL, 4/cs",
-    "description_fr": "",
+    "description_fr": "Irish Spring Bw - Miel & Vétiver, 591 mL, 4/cs",
     "unit_size": "591",
     "unit_type": "mL",
     "case_qty": 4,
@@ -6971,7 +6971,7 @@
     },
     "description": {
       "en": "Irish Spring Bw - Honey & Vetiver, 591 mL, 4/cs",
-      "fr": ""
+      "fr": "Irish Spring Bw - Miel & Vétiver, 591 mL, 4/cs"
     }
   },
   {
@@ -6979,7 +6979,7 @@
     "barcode": "2420009138",
     "category": "laundry_fabric",
     "name_en": "Purex Liquid Detergent, Coldwater 1.47L, 6/cs",
-    "name_fr": "",
+    "name_fr": "Détergent liquide Purex, eau froide 1,47 L, 6/unité",
     "description_en": "Purex Liquid Detergent, Coldwater 1.47L, 6/cs",
     "description_fr": "",
     "unit_size": "1.47",
@@ -6992,7 +6992,7 @@
     ],
     "name": {
       "en": "Purex Liquid Detergent, Coldwater 1.47L, 6/cs",
-      "fr": ""
+      "fr": "Détergent liquide Purex, eau froide 1,47 L, 6/unité"
     },
     "description": {
       "en": "Purex Liquid Detergent, Coldwater 1.47L, 6/cs",
@@ -7079,7 +7079,7 @@
     "barcode": "3077217482",
     "category": "laundry_fabric",
     "name_en": "Tide Coldwater Liquid Laundry Detergent, Original, 1.62L/55 fl oz, 39 Loads, 4/CS",
-    "name_fr": "",
+    "name_fr": "Détergent liquide Tide Coldwater Original, 1,62 L / 55 fl oz, 39 lavages, 4/CS",
     "description_en": "Tide Coldwater Liquid Laundry Detergent, Original, 1.62L/55 fl oz, 39 Loads, 4/CS",
     "description_fr": "",
     "unit_size": "1.62",
@@ -7092,7 +7092,7 @@
     ],
     "name": {
       "en": "Tide Coldwater Liquid Laundry Detergent, Original, 1.62L/55 fl oz, 39 Loads, 4/CS",
-      "fr": ""
+      "fr": "Détergent liquide Tide Coldwater Original, 1,62 L / 55 fl oz, 39 lavages, 4/CS"
     },
     "description": {
       "en": "Tide Coldwater Liquid Laundry Detergent, Original, 1.62L/55 fl oz, 39 Loads, 4/CS",
@@ -7156,7 +7156,7 @@
     "name_en": "Tide Laundry Stain Remover with Oxi, 650 ml",
     "name_fr": "Tide Détachant à Oxi pour le linge, 650 ml",
     "description_en": "Tide Laundry Stain Remover with Oxi, 650 ml",
-    "description_fr": "",
+    "description_fr": "Tide Détachant pour lessive Oxi, 650 ml",
     "unit_size": "650",
     "unit_type": "ml",
     "case_qty": 4,
@@ -7171,7 +7171,7 @@
     },
     "description": {
       "en": "Tide Laundry Stain Remover with Oxi, 650 ml",
-      "fr": ""
+      "fr": "Tide Détachant pour lessive Oxi, 650 ml"
     }
   },
   {
@@ -7206,7 +7206,7 @@
     "name_en": "Tide Liquid Laundry Detergent Original HE, 25 loads, 1L / 34 oz, 6/CS",
     "name_fr": "Détergent liquide pour lessive Tide Original HE, 25 lavages, 1L / 34 oz, 6/CS",
     "description_en": "Tide Liquid Laundry Detergent Original HE, 25 loads, 1L / 34 oz, 6/CS",
-    "description_fr": "",
+    "description_fr": "Détergent à lessive liquide Tide Original HE, 25 charges, 1 L / 34 oz, 6/CS",
     "unit_size": "1",
     "unit_type": "L",
     "case_qty": 6,
@@ -7221,7 +7221,7 @@
     },
     "description": {
       "en": "Tide Liquid Laundry Detergent Original HE, 25 loads, 1L / 34 oz, 6/CS",
-      "fr": ""
+      "fr": "Détergent à lessive liquide Tide Original HE, 25 charges, 1 L / 34 oz, 6/CS"
     }
   },
   {
@@ -7254,7 +7254,7 @@
     "barcode": "3077212110",
     "category": "laundry_fabric",
     "name_en": "Tide Liquid Laundry Detergent Original HE, 64 loads, 2.48L / 84 oz",
-    "name_fr": "",
+    "name_fr": "Détergent à lessive liquide Tide Original HE, 64 lavages, 2,48 L / 84 oz",
     "description_en": "Tide Liquid Laundry Detergent Original HE, 64 loads, 2.48L / 84 oz",
     "description_fr": "",
     "unit_size": "2.48",
@@ -7267,7 +7267,7 @@
     ],
     "name": {
       "en": "Tide Liquid Laundry Detergent Original HE, 64 loads, 2.48L / 84 oz",
-      "fr": ""
+      "fr": "Détergent à lessive liquide Tide Original HE, 64 lavages, 2,48 L / 84 oz"
     },
     "description": {
       "en": "Tide Liquid Laundry Detergent Original HE, 64 loads, 2.48L / 84 oz",
@@ -7304,7 +7304,7 @@
     "barcode": "3077212108",
     "category": "laundry_fabric",
     "name_en": "Tide Liquid Laundry Detergent Original, 64 loads, 2.48L / 84 oz, 4/cs",
-    "name_fr": "",
+    "name_fr": "Detergent liquide Tide Original, 64 lavages, 2,48 L / 84 oz, 4/paquets",
     "description_en": "Tide Liquid Laundry Detergent Original, 64 loads, 2.48L / 84 oz, 4/cs",
     "description_fr": "",
     "unit_size": "2.48",
@@ -7317,7 +7317,7 @@
     ],
     "name": {
       "en": "Tide Liquid Laundry Detergent Original, 64 loads, 2.48L / 84 oz, 4/cs",
-      "fr": ""
+      "fr": "Detergent liquide Tide Original, 64 lavages, 2,48 L / 84 oz, 4/paquets"
     },
     "description": {
       "en": "Tide Liquid Laundry Detergent Original, 64 loads, 2.48L / 84 oz, 4/cs",
@@ -7331,7 +7331,7 @@
     "name_en": "Tide Liquid Laundry Detergent, Febreze HE Turbo Clean, 2.48L / 84 oz, 4/cs",
     "name_fr": "Détergent à lessive liquide Tide, Febreze HE Turbo Clean, 2,48 L / 84 oz, 4 unités",
     "description_en": "Tide Liquid Laundry Detergent, Febreze HE Turbo Clean, 2.48L / 84 oz, 4/cs",
-    "description_fr": "",
+    "description_fr": "Tide Détergent à lessive liquide, Febreze HE Turbo Clean, 2,48 L / 84 oz, 4/cs",
     "unit_size": "2.48",
     "unit_type": "L",
     "case_qty": 4,
@@ -7346,7 +7346,7 @@
     },
     "description": {
       "en": "Tide Liquid Laundry Detergent, Febreze HE Turbo Clean, 2.48L / 84 oz, 4/cs",
-      "fr": ""
+      "fr": "Tide Détergent à lessive liquide, Febreze HE Turbo Clean, 2,48 L / 84 oz, 4/cs"
     }
   },
   {
@@ -7404,9 +7404,9 @@
     "barcode": "8372584900",
     "category": "laundry_fabric",
     "name_en": "Tide Original Scent Detergent, 1 Load 48ml",
-    "name_fr": "",
+    "name_fr": "Détergent Tide Original Scent, 1 charge 48 ml",
     "description_en": "Tide Original Scent Detergent, 1 Load 48ml",
-    "description_fr": "",
+    "description_fr": "Détergent à parfum original Tide, 1 charge, 48 ml",
     "unit_size": "48",
     "unit_type": "ml",
     "case_qty": 24,
@@ -7417,11 +7417,11 @@
     ],
     "name": {
       "en": "Tide Original Scent Detergent, 1 Load 48ml",
-      "fr": ""
+      "fr": "Détergent Tide Original Scent, 1 charge 48 ml"
     },
     "description": {
       "en": "Tide Original Scent Detergent, 1 Load 48ml",
-      "fr": ""
+      "fr": "Détergent à parfum original Tide, 1 charge, 48 ml"
     }
   },
   {
@@ -7454,7 +7454,7 @@
     "barcode": "3700000997",
     "category": "laundry_fabric",
     "name_en": "Tide Pod Free And Gentle, 42ct, 4 Per Case",
-    "name_fr": "",
+    "name_fr": "Tide Pod Free And Gentle, 42ct, 4 par boîte",
     "description_en": "Tide Pod Free And Gentle, 42ct, 4 Per Case",
     "description_fr": "",
     "unit_size": "42",
@@ -7467,7 +7467,7 @@
     ],
     "name": {
       "en": "Tide Pod Free And Gentle, 42ct, 4 Per Case",
-      "fr": ""
+      "fr": "Tide Pod Free And Gentle, 42ct, 4 par boîte"
     },
     "description": {
       "en": "Tide Pod Free And Gentle, 42ct, 4 Per Case",
@@ -7506,7 +7506,7 @@
     "name_en": "Tide Pods Liquid Laundry Detergent Pacs, Clean Breeze, 42ct, 4 Per Case",
     "name_fr": "Tide Pods, Paquets de détergent liquide pour lessive, Clean Breeze, 42 pièces, 4 par boîte",
     "description_en": "Tide Pods Liquid Laundry Detergent Pacs, Clean Breeze, 42ct, 4 Per Case",
-    "description_fr": "",
+    "description_fr": "Tide Pods Paquets de détergent liquide pour lessive Clean Breeze, 42 pièces, 4 par caisse",
     "unit_size": "42",
     "unit_type": "ct",
     "case_qty": 4,
@@ -7521,7 +7521,7 @@
     },
     "description": {
       "en": "Tide Pods Liquid Laundry Detergent Pacs, Clean Breeze, 42ct, 4 Per Case",
-      "fr": ""
+      "fr": "Tide Pods Paquets de détergent liquide pour lessive Clean Breeze, 42 pièces, 4 par caisse"
     }
   },
   {
@@ -7579,7 +7579,7 @@
     "barcode": "3077216669",
     "category": "laundry_fabric",
     "name_en": "Tide Powder Laundry Detergent, Original Scent, 44 Loads, 1.4 kg/49oz, 4/cs",
-    "name_fr": "",
+    "name_fr": "Détergent à lessive Tide en poudre, parfum Original, 44 chargements, 1,4 kg/49 oz, 4/cs",
     "description_en": "Tide Powder Laundry Detergent, Original Scent, 44 Loads, 1.4 kg/49oz, 4/cs",
     "description_fr": "Détergent à poudre Tide, parfum original, 44 charges, 1,4 kg / 49 oz, 4/cs",
     "unit_size": "1.4",
@@ -7592,7 +7592,7 @@
     ],
     "name": {
       "en": "Tide Powder Laundry Detergent, Original Scent, 44 Loads, 1.4 kg/49oz, 4/cs",
-      "fr": ""
+      "fr": "Détergent à lessive Tide en poudre, parfum Original, 44 chargements, 1,4 kg/49 oz, 4/cs"
     },
     "description": {
       "en": "Tide Powder Laundry Detergent, Original Scent, 44 Loads, 1.4 kg/49oz, 4/cs",
@@ -7629,7 +7629,7 @@
     "barcode": "81452101206",
     "category": "laundry_fabric",
     "name_en": "Tide To Go Instant Stain Remover, 1ct, Checklane",
-    "name_fr": "",
+    "name_fr": "Tide To Go Retrait instantané des taches, 1ct, Checklane",
     "description_en": "Tide To Go Instant Stain Remover, 1ct, Checklane",
     "description_fr": "",
     "unit_size": "1",
@@ -7642,7 +7642,7 @@
     ],
     "name": {
       "en": "Tide To Go Instant Stain Remover, 1ct, Checklane",
-      "fr": ""
+      "fr": "Tide To Go Retrait instantané des taches, 1ct, Checklane"
     },
     "description": {
       "en": "Tide To Go Instant Stain Remover, 1ct, Checklane",
@@ -7679,7 +7679,7 @@
     "barcode": "8372584100",
     "category": "laundry_fabric",
     "name_en": "Tide Travel Sink Packets, 4.5ml/.15oz, 3ct",
-    "name_fr": "",
+    "name_fr": "Tide Travel Sink Packets, 4,5 ml / 0,15 oz, 3 ct",
     "description_en": "Tide Travel Sink Packets, 4.5ml/.15oz, 3ct",
     "description_fr": "",
     "unit_size": "4.5",
@@ -7692,7 +7692,7 @@
     ],
     "name": {
       "en": "Tide Travel Sink Packets, 4.5ml/.15oz, 3ct",
-      "fr": ""
+      "fr": "Tide Travel Sink Packets, 4,5 ml / 0,15 oz, 3 ct"
     },
     "description": {
       "en": "Tide Travel Sink Packets, 4.5ml/.15oz, 3ct",
@@ -7779,7 +7779,7 @@
     "barcode": "3077217467",
     "category": "laundry_fabric",
     "name_en": "Tide Ultra Hygienic Clean Liquid Laundry Detergent, Original Scent, 52 Loads, 2.15 L, 4/cs",
-    "name_fr": "",
+    "name_fr": "Détergent liquide Tide Ultra Hygienic Clean, parfum original, 52 lavages, 2,15 L, 4/cs",
     "description_en": "Tide Ultra Hygienic Clean Liquid Laundry Detergent, Original Scent, 52 Loads, 2.15 L, 4/cs",
     "description_fr": "",
     "unit_size": "2.15",
@@ -7792,7 +7792,7 @@
     ],
     "name": {
       "en": "Tide Ultra Hygienic Clean Liquid Laundry Detergent, Original Scent, 52 Loads, 2.15 L, 4/cs",
-      "fr": ""
+      "fr": "Détergent liquide Tide Ultra Hygienic Clean, parfum original, 52 lavages, 2,15 L, 4/cs"
     },
     "description": {
       "en": "Tide Ultra Hygienic Clean Liquid Laundry Detergent, Original Scent, 52 Loads, 2.15 L, 4/cs",
@@ -7929,7 +7929,7 @@
     "barcode": "3077219950",
     "category": "air_freshener",
     "name_en": "Febreze Air Freshener Spray, Cherry Blossom, 230 g, 6/cs",
-    "name_fr": "",
+    "name_fr": "Febreze Spray désodorisant, Fleur de Cerisier, 230 g, 6/cs",
     "description_en": "Febreze Air Freshener Spray, Cherry Blossom, 230 g, 6/cs",
     "description_fr": "",
     "unit_size": "230",
@@ -7942,7 +7942,7 @@
     ],
     "name": {
       "en": "Febreze Air Freshener Spray, Cherry Blossom, 230 g, 6/cs",
-      "fr": ""
+      "fr": "Febreze Spray désodorisant, Fleur de Cerisier, 230 g, 6/cs"
     },
     "description": {
       "en": "Febreze Air Freshener Spray, Cherry Blossom, 230 g, 6/cs",
@@ -8004,7 +8004,7 @@
     "barcode": "3077221907",
     "category": "air_freshener",
     "name_en": "Febreze Air Freshener Spray, Mango, 230 g, 6/cs",
-    "name_fr": "",
+    "name_fr": "Spray désodorisant Febreze, Mangue, 230 g, 6/cs",
     "description_en": "Febreze Air Freshener Spray, Mango, 230 g, 6/cs",
     "description_fr": "",
     "unit_size": "230",
@@ -8017,7 +8017,7 @@
     ],
     "name": {
       "en": "Febreze Air Freshener Spray, Mango, 230 g, 6/cs",
-      "fr": ""
+      "fr": "Spray désodorisant Febreze, Mangue, 230 g, 6/cs"
     },
     "description": {
       "en": "Febreze Air Freshener Spray, Mango, 230 g, 6/cs",
@@ -8056,7 +8056,7 @@
     "name_en": "Apple Cinnamon Cheerios, 420g",
     "name_fr": "Cheerios à la pomme et à la cannelle, 420 g",
     "description_en": "Apple Cinnamon Cheerios, 420g",
-    "description_fr": "",
+    "description_fr": "Cheerios à la pomme et à la cannelle, 420g",
     "unit_size": "420",
     "unit_type": "g",
     "case_qty": 8,
@@ -8071,7 +8071,7 @@
     },
     "description": {
       "en": "Apple Cinnamon Cheerios, 420g",
-      "fr": ""
+      "fr": "Cheerios à la pomme et à la cannelle, 420g"
     }
   },
   {
@@ -8079,7 +8079,7 @@
     "barcode": "6563313281",
     "category": "grocery",
     "name_en": "Cheerios, 350g",
-    "name_fr": "",
+    "name_fr": "Cheerios, 350 g",
     "description_en": "Cheerios, 350g",
     "description_fr": "",
     "unit_size": "350",
@@ -8092,7 +8092,7 @@
     ],
     "name": {
       "en": "Cheerios, 350g",
-      "fr": ""
+      "fr": "Cheerios, 350 g"
     },
     "description": {
       "en": "Cheerios, 350g",
@@ -8129,7 +8129,7 @@
     "barcode": "6563320511",
     "category": "grocery",
     "name_en": "Cinnamon Toast Crunch Mini's, 349g",
-    "name_fr": "",
+    "name_fr": "Cinnamon Toast Crunch Mini's, 349 g",
     "description_en": "Cinnamon Toast Crunch Mini's, 349g",
     "description_fr": "Cinnamon Toast Crunch Mini's, 349 g",
     "unit_size": "349",
@@ -8142,7 +8142,7 @@
     ],
     "name": {
       "en": "Cinnamon Toast Crunch Mini's, 349g",
-      "fr": ""
+      "fr": "Cinnamon Toast Crunch Mini's, 349 g"
     },
     "description": {
       "en": "Cinnamon Toast Crunch Mini's, 349g",
@@ -8179,7 +8179,7 @@
     "barcode": "5727131228",
     "category": "grocery",
     "name_en": "Gatorade 591ml Pack Of 28 Bottles (Variety Pack)",
-    "name_fr": "",
+    "name_fr": "Gatorade 591 ml Pack de 28 bouteilles (Pack varié)",
     "description_en": "Gatorade 591ml Pack Of 28 Bottles (Variety Pack)",
     "description_fr": "",
     "unit_size": "591",
@@ -8192,7 +8192,7 @@
     ],
     "name": {
       "en": "Gatorade 591ml Pack Of 28 Bottles (Variety Pack)",
-      "fr": ""
+      "fr": "Gatorade 591 ml Pack de 28 bouteilles (Pack varié)"
     },
     "description": {
       "en": "Gatorade 591ml Pack Of 28 Bottles (Variety Pack)",
@@ -8231,7 +8231,7 @@
     "name_en": "General Mills Cinnamon Toast Crunch Rolls, 303 g, 12/cs",
     "name_fr": "General Mills Cinnamon Toast Crunch Rolls, 303 g, 12 par caisse",
     "description_en": "General Mills Cinnamon Toast Crunch Rolls, 303 g, 12/cs",
-    "description_fr": "",
+    "description_fr": "Bouchées de pain grillé à la cannelle General Mills Cinnamon Toast Crunch, 303 g, 12/cs",
     "unit_size": "303",
     "unit_type": "g",
     "case_qty": 12,
@@ -8246,7 +8246,7 @@
     },
     "description": {
       "en": "General Mills Cinnamon Toast Crunch Rolls, 303 g, 12/cs",
-      "fr": ""
+      "fr": "Bouchées de pain grillé à la cannelle General Mills Cinnamon Toast Crunch, 303 g, 12/cs"
     }
   },
   {
@@ -8256,7 +8256,7 @@
     "name_en": "General Mills Cinnamon Toast Crunch Waffle, 328 g, 12/cs",
     "name_fr": "",
     "description_en": "General Mills Cinnamon Toast Crunch Waffle, 328 g, 12/cs",
-    "description_fr": "",
+    "description_fr": "Gaufre General Mills Cinnamon Toast Crunch, 328 g, 12/cs",
     "unit_size": "328",
     "unit_type": "g",
     "case_qty": 12,
@@ -8271,7 +8271,7 @@
     },
     "description": {
       "en": "General Mills Cinnamon Toast Crunch Waffle, 328 g, 12/cs",
-      "fr": ""
+      "fr": "Gaufre General Mills Cinnamon Toast Crunch, 328 g, 12/cs"
     }
   },
   {
@@ -8304,7 +8304,7 @@
     "barcode": "6563322751",
     "category": "grocery",
     "name_en": "General Mills Fruity Cheerios, 311 g, 12/CS",
-    "name_fr": "",
+    "name_fr": "Fruity Cheerios de General Mills, 311 g, 12/CS",
     "description_en": "General Mills Fruity Cheerios, 311 g, 12/CS",
     "description_fr": "",
     "unit_size": "311",
@@ -8317,7 +8317,7 @@
     ],
     "name": {
       "en": "General Mills Fruity Cheerios, 311 g, 12/CS",
-      "fr": ""
+      "fr": "Fruity Cheerios de General Mills, 311 g, 12/CS"
     },
     "description": {
       "en": "General Mills Fruity Cheerios, 311 g, 12/CS",
@@ -8354,7 +8354,7 @@
     "barcode": "6563323025",
     "category": "grocery",
     "name_en": "General Mills Strawberry Toast Crunch, 340 g, 12/cs",
-    "name_fr": "",
+    "name_fr": "General Mills Toast Crunch Fraise, 340 g, 12/cs",
     "description_en": "General Mills Strawberry Toast Crunch, 340 g, 12/cs",
     "description_fr": "",
     "unit_size": "340",
@@ -8367,7 +8367,7 @@
     ],
     "name": {
       "en": "General Mills Strawberry Toast Crunch, 340 g, 12/cs",
-      "fr": ""
+      "fr": "General Mills Toast Crunch Fraise, 340 g, 12/cs"
     },
     "description": {
       "en": "General Mills Strawberry Toast Crunch, 340 g, 12/cs",
@@ -8479,7 +8479,7 @@
     "barcode": "6840066270",
     "category": "grocery",
     "name_en": "Hellmanns Light Mayonnaise 890ml, 10 Per Case",
-    "name_fr": "",
+    "name_fr": "Mayonnaise Hellmann's Light 890 ml, 10 par caisse",
     "description_en": "Hellmanns Light Mayonnaise 890ml, 10 Per Case",
     "description_fr": "",
     "unit_size": "890",
@@ -8492,7 +8492,7 @@
     ],
     "name": {
       "en": "Hellmanns Light Mayonnaise 890ml, 10 Per Case",
-      "fr": ""
+      "fr": "Mayonnaise Hellmann's Light 890 ml, 10 par caisse"
     },
     "description": {
       "en": "Hellmanns Light Mayonnaise 890ml, 10 Per Case",
@@ -8529,7 +8529,7 @@
     "barcode": "6410014452",
     "category": "grocery",
     "name_en": "Kelloggs Corn Flakes, 340g, 10/cs",
-    "name_fr": "",
+    "name_fr": "Corn Flakes Kelloggs, 340 g, 10 cs",
     "description_en": "Kelloggs Corn Flakes, 340g, 10/cs",
     "description_fr": "Kelloggs Corn Flakes, 340 g, 10 cs",
     "unit_size": "340",
@@ -8542,7 +8542,7 @@
     ],
     "name": {
       "en": "Kelloggs Corn Flakes, 340g, 10/cs",
-      "fr": ""
+      "fr": "Corn Flakes Kelloggs, 340 g, 10 cs"
     },
     "description": {
       "en": "Kelloggs Corn Flakes, 340g, 10/cs",
@@ -8579,7 +8579,7 @@
     "barcode": "6410014802",
     "category": "grocery",
     "name_en": "Kelloggs Froot Loops with Marshmallow, 315g, 12/cs",
-    "name_fr": "",
+    "name_fr": "Kelloggs Froot Loops avec marshmallow, 315 g, 12/cartons",
     "description_en": "Kelloggs Froot Loops with Marshmallow, 315g, 12/cs",
     "description_fr": "",
     "unit_size": "315",
@@ -8592,7 +8592,7 @@
     ],
     "name": {
       "en": "Kelloggs Froot Loops with Marshmallow, 315g, 12/cs",
-      "fr": ""
+      "fr": "Kelloggs Froot Loops avec marshmallow, 315 g, 12/cartons"
     },
     "description": {
       "en": "Kelloggs Froot Loops with Marshmallow, 315g, 12/cs",
@@ -8679,7 +8679,7 @@
     "barcode": "9724102224",
     "category": "grocery",
     "name_en": "Kelloggs Frosted Flakes Maple Cinnamon, 329g, 12/cs",
-    "name_fr": "",
+    "name_fr": "Kelloggs Flocons glacés à l'érable et à la cannelle, 329 g, 12 paquets",
     "description_en": "Kelloggs Frosted Flakes Maple Cinnamon, 329g, 12/cs",
     "description_fr": "",
     "unit_size": "329",
@@ -8692,7 +8692,7 @@
     ],
     "name": {
       "en": "Kelloggs Frosted Flakes Maple Cinnamon, 329g, 12/cs",
-      "fr": ""
+      "fr": "Kelloggs Flocons glacés à l'érable et à la cannelle, 329 g, 12 paquets"
     },
     "description": {
       "en": "Kelloggs Frosted Flakes Maple Cinnamon, 329g, 12/cs",
@@ -8731,7 +8731,7 @@
     "name_en": "Kelloggs Frosted Flakes Strawberry Milkshake, 329g, 12/cs",
     "name_fr": "Kelloggs Frosted Flakes Milkshake à la fraise, 329 g, 12/unités",
     "description_en": "Kelloggs Frosted Flakes Strawberry Milkshake, 329g, 12/cs",
-    "description_fr": "",
+    "description_fr": "Kelloggs Frosted Flakes Milkshake à la fraise, 329 g, 12/cs",
     "unit_size": "329",
     "unit_type": "g",
     "case_qty": 12,
@@ -8746,7 +8746,7 @@
     },
     "description": {
       "en": "Kelloggs Frosted Flakes Strawberry Milkshake, 329g, 12/cs",
-      "fr": ""
+      "fr": "Kelloggs Frosted Flakes Milkshake à la fraise, 329 g, 12/cs"
     }
   },
   {
@@ -8779,7 +8779,7 @@
     "barcode": "6410014622",
     "category": "grocery",
     "name_en": "Kelloggs Krave Brownie, 298g, 10/cs",
-    "name_fr": "",
+    "name_fr": "Kelloggs Krave Brownie, 298 g, 10/carton",
     "description_en": "Kelloggs Krave Brownie, 298g, 10/cs",
     "description_fr": "",
     "unit_size": "298",
@@ -8792,7 +8792,7 @@
     ],
     "name": {
       "en": "Kelloggs Krave Brownie, 298g, 10/cs",
-      "fr": ""
+      "fr": "Kelloggs Krave Brownie, 298 g, 10/carton"
     },
     "description": {
       "en": "Kelloggs Krave Brownie, 298g, 10/cs",
@@ -8831,7 +8831,7 @@
     "name_en": "Kelloggs Krave Glazed Donut Holes, 283g, 12/cs",
     "name_fr": "",
     "description_en": "Kelloggs Krave Glazed Donut Holes, 283g, 12/cs",
-    "description_fr": "",
+    "description_fr": "Kelloggs Krave Boules de beignets glacées, 283 g, 12/cs",
     "unit_size": "283",
     "unit_type": "g",
     "case_qty": 12,
@@ -8846,7 +8846,7 @@
     },
     "description": {
       "en": "Kelloggs Krave Glazed Donut Holes, 283g, 12/cs",
-      "fr": ""
+      "fr": "Kelloggs Krave Boules de beignets glacées, 283 g, 12/cs"
     }
   },
   {
@@ -8904,7 +8904,7 @@
     "barcode": "9724100695",
     "category": "grocery",
     "name_en": "Kelloggs Wednesday Cereal, 227g, 10/cs",
-    "name_fr": "",
+    "name_fr": "Céréale Kelloggs Wednesday, 227 g, 10/cs",
     "description_en": "Kelloggs Wednesday Cereal, 227g, 10/cs",
     "description_fr": "",
     "unit_size": "227",
@@ -8917,7 +8917,7 @@
     ],
     "name": {
       "en": "Kelloggs Wednesday Cereal, 227g, 10/cs",
-      "fr": ""
+      "fr": "Céréale Kelloggs Wednesday, 227 g, 10/cs"
     },
     "description": {
       "en": "Kelloggs Wednesday Cereal, 227g, 10/cs",
@@ -8954,7 +8954,7 @@
     "barcode": "6172000178",
     "category": "grocery",
     "name_en": "Mazola 100% Pure Canola Oil, 1.18 L",
-    "name_fr": "",
+    "name_fr": "Huile de colza 100 % pure Mazola, 1,18 L",
     "description_en": "Mazola 100% Pure Canola Oil, 1.18 L",
     "description_fr": "",
     "unit_size": "1.18",
@@ -8967,7 +8967,7 @@
     ],
     "name": {
       "en": "Mazola 100% Pure Canola Oil, 1.18 L",
-      "fr": ""
+      "fr": "Huile de colza 100 % pure Mazola, 1,18 L"
     },
     "description": {
       "en": "Mazola 100% Pure Canola Oil, 1.18 L",
@@ -8981,7 +8981,7 @@
     "name_en": "Mazola 100% Pure Canola Oil, 2.8 L",
     "name_fr": "",
     "description_en": "Mazola 100% Pure Canola Oil, 2.8 L",
-    "description_fr": "",
+    "description_fr": "Mazola Huile de colza 100 % pure, 2,8 L",
     "unit_size": "2.8",
     "unit_type": "L",
     "case_qty": 6,
@@ -8996,7 +8996,7 @@
     },
     "description": {
       "en": "Mazola 100% Pure Canola Oil, 2.8 L",
-      "fr": ""
+      "fr": "Mazola Huile de colza 100 % pure, 2,8 L"
     }
   },
   {
@@ -9054,7 +9054,7 @@
     "barcode": "6172019212",
     "category": "grocery",
     "name_en": "Mazola 100% Pure Corn Oil, 2.8 L",
-    "name_fr": "",
+    "name_fr": "Mazola 100 % huile de maïs pure, 2,8 L",
     "description_en": "Mazola 100% Pure Corn Oil, 2.8 L",
     "description_fr": "",
     "unit_size": "2.8",
@@ -9067,7 +9067,7 @@
     ],
     "name": {
       "en": "Mazola 100% Pure Corn Oil, 2.8 L",
-      "fr": ""
+      "fr": "Mazola 100 % huile de maïs pure, 2,8 L"
     },
     "description": {
       "en": "Mazola 100% Pure Corn Oil, 2.8 L",
@@ -9106,7 +9106,7 @@
     "name_en": "Mazola 100% Pure Corn Oil, 946 ML",
     "name_fr": "",
     "description_en": "Mazola 100% Pure Corn Oil, 946 ML",
-    "description_fr": "",
+    "description_fr": "Mazola Huile de maïs 100 % pure, 946 mL",
     "unit_size": "",
     "unit_type": "units",
     "case_qty": 12,
@@ -9121,7 +9121,7 @@
     },
     "description": {
       "en": "Mazola 100% Pure Corn Oil, 946 ML",
-      "fr": ""
+      "fr": "Mazola Huile de maïs 100 % pure, 946 mL"
     }
   },
   {
@@ -9131,7 +9131,7 @@
     "name_en": "Mazola Pure Vegetable Oil, 1.18 L",
     "name_fr": "Mazola Huile végétale pure, 1,18 L",
     "description_en": "Mazola Pure Vegetable Oil, 1.18 L",
-    "description_fr": "",
+    "description_fr": "Mazola Huile végétale pure, 1,18 L",
     "unit_size": "1.18",
     "unit_type": "L",
     "case_qty": 12,
@@ -9146,7 +9146,7 @@
     },
     "description": {
       "en": "Mazola Pure Vegetable Oil, 1.18 L",
-      "fr": ""
+      "fr": "Mazola Huile végétale pure, 1,18 L"
     }
   },
   {
@@ -9181,7 +9181,7 @@
     "name_en": "Mazola Rightblend Canola Olive Oil Blend, 1.18 L",
     "name_fr": "",
     "description_en": "Mazola Rightblend Canola Olive Oil Blend, 1.18 L",
-    "description_fr": "",
+    "description_fr": "Mazola Rightblend Mélange d'huile de colza et d'olive, 1,18 L",
     "unit_size": "1.18",
     "unit_type": "L",
     "case_qty": 12,
@@ -9196,7 +9196,7 @@
     },
     "description": {
       "en": "Mazola Rightblend Canola Olive Oil Blend, 1.18 L",
-      "fr": ""
+      "fr": "Mazola Rightblend Mélange d'huile de colza et d'olive, 1,18 L"
     }
   },
   {
@@ -9231,7 +9231,7 @@
     "name_en": "Multigrain Cheerios, 342g",
     "name_fr": "Cheerios multigrains, 342 g",
     "description_en": "Multigrain Cheerios, 342g",
-    "description_fr": "",
+    "description_fr": "Cheerios multigrains, 342 g",
     "unit_size": "342",
     "unit_type": "g",
     "case_qty": 10,
@@ -9246,7 +9246,7 @@
     },
     "description": {
       "en": "Multigrain Cheerios, 342g",
-      "fr": ""
+      "fr": "Cheerios multigrains, 342 g"
     }
   },
   {
@@ -9279,7 +9279,7 @@
     "barcode": "5500000065",
     "category": "grocery",
     "name_en": "Nescafe Encore Instant Coffee 12x100g",
-    "name_fr": "",
+    "name_fr": "Café instantané Nescafé Encore 12x100g",
     "description_en": "Nescafe Encore Instant Coffee 12x100g",
     "description_fr": "Café instantané Nescafé Encore 12x100g",
     "unit_size": "100",
@@ -9292,7 +9292,7 @@
     ],
     "name": {
       "en": "Nescafe Encore Instant Coffee 12x100g",
-      "fr": ""
+      "fr": "Café instantané Nescafé Encore 12x100g"
     },
     "description": {
       "en": "Nescafe Encore Instant Coffee 12x100g",
@@ -9304,7 +9304,7 @@
     "barcode": "5500077751",
     "category": "grocery",
     "name_en": "Nescafe Gold Dark Roast Instant Coffee (Jar) 6x100g",
-    "name_fr": "",
+    "name_fr": "Café instantané Nescafé Gold Dark Roast (pot) 6x100g",
     "description_en": "Nescafe Gold Dark Roast Instant Coffee (Jar) 6x100g",
     "description_fr": "",
     "unit_size": "100",
@@ -9317,7 +9317,7 @@
     ],
     "name": {
       "en": "Nescafe Gold Dark Roast Instant Coffee (Jar) 6x100g",
-      "fr": ""
+      "fr": "Café instantané Nescafé Gold Dark Roast (pot) 6x100g"
     },
     "description": {
       "en": "Nescafe Gold Dark Roast Instant Coffee (Jar) 6x100g",
@@ -9329,7 +9329,7 @@
     "barcode": "5500037776",
     "category": "grocery",
     "name_en": "Nescafe Gold Espresso Jar 6x100g",
-    "name_fr": "",
+    "name_fr": "Pot d’espresso Nescafé Gold 6 × 100 g",
     "description_en": "Nescafe Gold Espresso Jar 6x100g",
     "description_fr": "",
     "unit_size": "100",
@@ -9342,7 +9342,7 @@
     ],
     "name": {
       "en": "Nescafe Gold Espresso Jar 6x100g",
-      "fr": ""
+      "fr": "Pot d’espresso Nescafé Gold 6 × 100 g"
     },
     "description": {
       "en": "Nescafe Gold Espresso Jar 6x100g",
@@ -9354,7 +9354,7 @@
     "barcode": "5500037774",
     "category": "grocery",
     "name_en": "Nescafe Gold Instant Jar 6x100g",
-    "name_fr": "",
+    "name_fr": "Nescafé Gold Instant en pot 6×100g",
     "description_en": "Nescafe Gold Instant Jar 6x100g",
     "description_fr": "Bocal de café instantané Nescafé Gold 6x100 g",
     "unit_size": "100",
@@ -9367,7 +9367,7 @@
     ],
     "name": {
       "en": "Nescafe Gold Instant Jar 6x100g",
-      "fr": ""
+      "fr": "Nescafé Gold Instant en pot 6×100g"
     },
     "description": {
       "en": "Nescafe Gold Instant Jar 6x100g",
@@ -9429,7 +9429,7 @@
     "barcode": "55000001205",
     "category": "grocery",
     "name_en": "Nescafe Rich Decaf Instant Coffee 12x100g",
-    "name_fr": "",
+    "name_fr": "Café instantané décaféiné Nescafé Rich 12x100g",
     "description_en": "Nescafe Rich Decaf Instant Coffee 12x100g",
     "description_fr": "",
     "unit_size": "100",
@@ -9442,7 +9442,7 @@
     ],
     "name": {
       "en": "Nescafe Rich Decaf Instant Coffee 12x100g",
-      "fr": ""
+      "fr": "Café instantané décaféiné Nescafé Rich 12x100g"
     },
     "description": {
       "en": "Nescafe Rich Decaf Instant Coffee 12x100g",
@@ -9481,7 +9481,7 @@
     "name_en": "Nescafe Rich Instant Coffee 12x170g",
     "name_fr": "",
     "description_en": "Nescafe Rich Instant Coffee 12x170g",
-    "description_fr": "",
+    "description_fr": "Café instantané Nescafé Rich 12x170g",
     "unit_size": "170",
     "unit_type": "g",
     "case_qty": 12,
@@ -9496,7 +9496,7 @@
     },
     "description": {
       "en": "Nescafe Rich Instant Coffee 12x170g",
-      "fr": ""
+      "fr": "Café instantané Nescafé Rich 12x170g"
     }
   },
   {
@@ -9504,7 +9504,7 @@
     "barcode": "5500071059",
     "category": "grocery",
     "name_en": "Nescafe Rich Intense Roast Coffee 12x160g",
-    "name_fr": "",
+    "name_fr": "Café Nescafé Rich Intense Roast 12x160g",
     "description_en": "Nescafe Rich Intense Roast Coffee 12x160g",
     "description_fr": "",
     "unit_size": "160",
@@ -9517,7 +9517,7 @@
     ],
     "name": {
       "en": "Nescafe Rich Intense Roast Coffee 12x160g",
-      "fr": ""
+      "fr": "Café Nescafé Rich Intense Roast 12x160g"
     },
     "description": {
       "en": "Nescafe Rich Intense Roast Coffee 12x160g",
@@ -9531,7 +9531,7 @@
     "name_en": "Nescafe Taster's Choice Classic Coffee, 12x100g",
     "name_fr": "",
     "description_en": "Nescafe Taster's Choice Classic Coffee, 12x100g",
-    "description_fr": "",
+    "description_fr": "Café Classique Taster's Choice de Nescafé, 12×100 g",
     "unit_size": "100",
     "unit_type": "g",
     "case_qty": 12,
@@ -9546,7 +9546,7 @@
     },
     "description": {
       "en": "Nescafe Taster's Choice Classic Coffee, 12x100g",
-      "fr": ""
+      "fr": "Café Classique Taster's Choice de Nescafé, 12×100 g"
     }
   },
   {
@@ -9681,7 +9681,7 @@
     "name_en": "Tang Orange Drink Mix, 2.2kg/4.9lbs",
     "name_fr": "Mélange à boire Tang Orange, 2,2 kg / 4,9 lb",
     "description_en": "Tang Orange Drink Mix, 2.2kg/4.9lbs",
-    "description_fr": "",
+    "description_fr": "Mélange à l'orange Tang, 2,2 kg / 4,9 lb",
     "unit_size": "2.2",
     "unit_type": "kg",
     "case_qty": 6,
@@ -9696,7 +9696,7 @@
     },
     "description": {
       "en": "Tang Orange Drink Mix, 2.2kg/4.9lbs",
-      "fr": ""
+      "fr": "Mélange à l'orange Tang, 2,2 kg / 4,9 lb"
     }
   },
   {
@@ -9779,7 +9779,7 @@
     "barcode": "8151918676",
     "category": "health_beauty",
     "name_en": "Aussie Miracle Moist Conditioner, Moisturizing, 360 mL, 6/cs",
-    "name_fr": "",
+    "name_fr": "Aussie Miracle Moist Conditionneur, Hydratant, 360 mL, 6 pièces",
     "description_en": "Aussie Miracle Moist Conditioner, Moisturizing, 360 mL, 6/cs",
     "description_fr": "",
     "unit_size": "360",
@@ -9792,7 +9792,7 @@
     ],
     "name": {
       "en": "Aussie Miracle Moist Conditioner, Moisturizing, 360 mL, 6/cs",
-      "fr": ""
+      "fr": "Aussie Miracle Moist Conditionneur, Hydratant, 360 mL, 6 pièces"
     },
     "description": {
       "en": "Aussie Miracle Moist Conditioner, Moisturizing, 360 mL, 6/cs",
@@ -9806,7 +9806,7 @@
     "name_en": "Aussie Miracle Moist Shampoo, Moisturizing for Dry Hair & All Hair Types, 360 mL, 6/cs",
     "name_fr": "Shampooing Miracle Moist Aussie, hydratant pour cheveux secs et tous types de cheveux, 360 ml, 6 par boîte",
     "description_en": "Aussie Miracle Moist Shampoo, Moisturizing for Dry Hair & All Hair Types, 360 mL, 6/cs",
-    "description_fr": "",
+    "description_fr": "Shampooing Aussie Miracle Moist, hydratant pour cheveux secs et tous types de cheveux, 360 mL, 6 paquets",
     "unit_size": "360",
     "unit_type": "mL",
     "case_qty": 6,
@@ -9821,7 +9821,7 @@
     },
     "description": {
       "en": "Aussie Miracle Moist Shampoo, Moisturizing for Dry Hair & All Hair Types, 360 mL, 6/cs",
-      "fr": ""
+      "fr": "Shampooing Aussie Miracle Moist, hydratant pour cheveux secs et tous types de cheveux, 360 mL, 6 paquets"
     }
   },
   {
@@ -9829,7 +9829,7 @@
     "barcode": "8151918678",
     "category": "health_beauty",
     "name_en": "Aussie Miracle Moist, Conditioner, 26.2 fl oz/778 mL, 4/cs",
-    "name_fr": "",
+    "name_fr": "Aussie Miracle Moist, Conditionneur, 26,2 fl oz / 778 ml, 4/cs",
     "description_en": "Aussie Miracle Moist, Conditioner, 26.2 fl oz/778 mL, 4/cs",
     "description_fr": "",
     "unit_size": "778",
@@ -9842,7 +9842,7 @@
     ],
     "name": {
       "en": "Aussie Miracle Moist, Conditioner, 26.2 fl oz/778 mL, 4/cs",
-      "fr": ""
+      "fr": "Aussie Miracle Moist, Conditionneur, 26,2 fl oz / 778 ml, 4/cs"
     },
     "description": {
       "en": "Aussie Miracle Moist, Conditioner, 26.2 fl oz/778 mL, 4/cs",
@@ -9881,7 +9881,7 @@
     "name_en": "Aussie Miracle Repairer, Conditioner, 26.2 fl oz/778 mL, 4/cs",
     "name_fr": "Aussie Miracle Repairer, Conditionneur, 26,2 fl oz/778 mL, 4/cs",
     "description_en": "Aussie Miracle Repairer, Conditioner, 26.2 fl oz/778 mL, 4/cs",
-    "description_fr": "",
+    "description_fr": "Aussie Miracle Repairer, Après‑shampooing, 26.2 fl oz/778 mL, 4/cs",
     "unit_size": "778",
     "unit_type": "mL",
     "case_qty": 4,
@@ -9896,7 +9896,7 @@
     },
     "description": {
       "en": "Aussie Miracle Repairer, Conditioner, 26.2 fl oz/778 mL, 4/cs",
-      "fr": ""
+      "fr": "Aussie Miracle Repairer, Après‑shampooing, 26.2 fl oz/778 mL, 4/cs"
     }
   },
   {
@@ -9979,7 +9979,7 @@
     "barcode": "8151918826",
     "category": "health_beauty",
     "name_en": "Aussie Miracle Waves, Conditioner, 26.2 fl oz/778 mL, 4/cs",
-    "name_fr": "",
+    "name_fr": "Aussie Miracle Waves, Conditionneur, 26,2 fl oz / 778 mL, 4/cs",
     "description_en": "Aussie Miracle Waves, Conditioner, 26.2 fl oz/778 mL, 4/cs",
     "description_fr": "",
     "unit_size": "778",
@@ -9992,7 +9992,7 @@
     ],
     "name": {
       "en": "Aussie Miracle Waves, Conditioner, 26.2 fl oz/778 mL, 4/cs",
-      "fr": ""
+      "fr": "Aussie Miracle Waves, Conditionneur, 26,2 fl oz / 778 mL, 4/cs"
     },
     "description": {
       "en": "Aussie Miracle Waves, Conditioner, 26.2 fl oz/778 mL, 4/cs",
@@ -10056,7 +10056,7 @@
     "name_en": "Dial Body Wash, 473ml/16oz, Coconut Water, 6/cs",
     "name_fr": "",
     "description_en": "Dial Body Wash, 473ml/16oz, Coconut Water, 6/cs",
-    "description_fr": "",
+    "description_fr": "Gel douche Dial, 473 ml / 16 oz, Eau de coco, 6 par caisse",
     "unit_size": "473",
     "unit_type": "ml",
     "case_qty": 6,
@@ -10071,7 +10071,7 @@
     },
     "description": {
       "en": "Dial Body Wash, 473ml/16oz, Coconut Water, 6/cs",
-      "fr": ""
+      "fr": "Gel douche Dial, 473 ml / 16 oz, Eau de coco, 6 par caisse"
     }
   },
   {
@@ -10179,7 +10179,7 @@
     "barcode": "1700012002",
     "category": "health_beauty",
     "name_en": "Dial Body Wash, 473ml/16oz, Silk & Seaberry, 6/cs",
-    "name_fr": "",
+    "name_fr": "Gel douche Dial, 473 ml / 16 oz, Silk & Seaberry, 6/pcs",
     "description_en": "Dial Body Wash, 473ml/16oz, Silk & Seaberry, 6/cs",
     "description_fr": "",
     "unit_size": "473",
@@ -10192,7 +10192,7 @@
     ],
     "name": {
       "en": "Dial Body Wash, 473ml/16oz, Silk & Seaberry, 6/cs",
-      "fr": ""
+      "fr": "Gel douche Dial, 473 ml / 16 oz, Silk & Seaberry, 6/pcs"
     },
     "description": {
       "en": "Dial Body Wash, 473ml/16oz, Silk & Seaberry, 6/cs",
@@ -10229,7 +10229,7 @@
     "barcode": "1700001874",
     "category": "health_beauty",
     "name_en": "Dial Body Wash, 473ml/16oz, Spring Water, 6/cs",
-    "name_fr": "",
+    "name_fr": "Dial Gel Douche, 473 ml / 16 oz, Eau de Source, 6/cs",
     "description_en": "Dial Body Wash, 473ml/16oz, Spring Water, 6/cs",
     "description_fr": "",
     "unit_size": "473",
@@ -10242,7 +10242,7 @@
     ],
     "name": {
       "en": "Dial Body Wash, 473ml/16oz, Spring Water, 6/cs",
-      "fr": ""
+      "fr": "Dial Gel Douche, 473 ml / 16 oz, Eau de Source, 6/cs"
     },
     "description": {
       "en": "Dial Body Wash, 473ml/16oz, Spring Water, 6/cs",
@@ -10329,7 +10329,7 @@
     "barcode": "1700016958",
     "category": "health_beauty",
     "name_en": "Dial Mens Body Wash, 473ml/16oz, Soothe Infinite Fresh, 6/cs",
-    "name_fr": "",
+    "name_fr": "Gel douche pour hommes Dial, 473 ml / 16 oz, Soothe Infinite Fresh, 6/caisse",
     "description_en": "Dial Mens Body Wash, 473ml/16oz, Soothe Infinite Fresh, 6/cs",
     "description_fr": "",
     "unit_size": "473",
@@ -10342,7 +10342,7 @@
     ],
     "name": {
       "en": "Dial Mens Body Wash, 473ml/16oz, Soothe Infinite Fresh, 6/cs",
-      "fr": ""
+      "fr": "Gel douche pour hommes Dial, 473 ml / 16 oz, Soothe Infinite Fresh, 6/caisse"
     },
     "description": {
       "en": "Dial Mens Body Wash, 473ml/16oz, Soothe Infinite Fresh, 6/cs",
@@ -10429,7 +10429,7 @@
     "barcode": "4740056127",
     "category": "health_beauty",
     "name_en": "Gillette Antiperspirant Deodorant, Clear Gel, Cool Wave, 5 X 108g/3.8oz",
-    "name_fr": "",
+    "name_fr": "Gillette Antitranspirant Déodorant, Gel Transparent, Vague Fraîche, 5 x 108 g / 3,8 oz",
     "description_en": "Gillette Antiperspirant Deodorant, Clear Gel, Cool Wave, 5 X 108g/3.8oz",
     "description_fr": "",
     "unit_size": "108",
@@ -10442,7 +10442,7 @@
     ],
     "name": {
       "en": "Gillette Antiperspirant Deodorant, Clear Gel, Cool Wave, 5 X 108g/3.8oz",
-      "fr": ""
+      "fr": "Gillette Antitranspirant Déodorant, Gel Transparent, Vague Fraîche, 5 x 108 g / 3,8 oz"
     },
     "description": {
       "en": "Gillette Antiperspirant Deodorant, Clear Gel, Cool Wave, 5 X 108g/3.8oz",
@@ -10506,7 +10506,7 @@
     "name_en": "Gillette Mach3 Sensitive Men's Disposable Razors, 3ct, 12/cs",
     "name_fr": "",
     "description_en": "Gillette Mach3 Sensitive Men's Disposable Razors, 3ct, 12/cs",
-    "description_fr": "",
+    "description_fr": "Gillette Mach3 Sensitive Rasoirs jetables pour hommes, 3 pièces, 12 paquets",
     "unit_size": "3",
     "unit_type": "ct",
     "case_qty": 12,
@@ -10521,7 +10521,7 @@
     },
     "description": {
       "en": "Gillette Mach3 Sensitive Men's Disposable Razors, 3ct, 12/cs",
-      "fr": ""
+      "fr": "Gillette Mach3 Sensitive Rasoirs jetables pour hommes, 3 pièces, 12 paquets"
     }
   },
   {
@@ -10531,7 +10531,7 @@
     "name_en": "Gillette Sensor2 Disposable Razors, 12ct, 72/cs",
     "name_fr": "Gillette Sensor2 Rasoirs jetables, 12ct, 72/cs",
     "description_en": "Gillette Sensor2 Disposable Razors, 12ct, 72/cs",
-    "description_fr": "",
+    "description_fr": "Rasoirs jetables Gillette Sensor2, 12 pièces, 72 par caisse",
     "unit_size": "12",
     "unit_type": "ct",
     "case_qty": 72,
@@ -10546,7 +10546,7 @@
     },
     "description": {
       "en": "Gillette Sensor2 Disposable Razors, 12ct, 72/cs",
-      "fr": ""
+      "fr": "Rasoirs jetables Gillette Sensor2, 12 pièces, 72 par caisse"
     }
   },
   {
@@ -10556,7 +10556,7 @@
     "name_en": "Gillette Sensor2 Plus Disposable Razors 52ct, 15/cs",
     "name_fr": "",
     "description_en": "Gillette Sensor2 Plus Disposable Razors 52ct, 15/cs",
-    "description_fr": "",
+    "description_fr": "Rasoirs jetables Gillette Sensor2 Plus 52 pièces, 15 par boîte",
     "unit_size": "52",
     "unit_type": "ct",
     "case_qty": 15,
@@ -10571,7 +10571,7 @@
     },
     "description": {
       "en": "Gillette Sensor2 Plus Disposable Razors 52ct, 15/cs",
-      "fr": ""
+      "fr": "Rasoirs jetables Gillette Sensor2 Plus 52 pièces, 15 par boîte"
     }
   },
   {
@@ -10606,7 +10606,7 @@
     "name_en": "Gillette Sensor5 Men's Disposable Razors, 2ct, 12/cs",
     "name_fr": "",
     "description_en": "Gillette Sensor5 Men's Disposable Razors, 2ct, 12/cs",
-    "description_fr": "",
+    "description_fr": "Gillette Sensor5 Rasoirs jetables pour hommes, 2 pièces, 12/paquet",
     "unit_size": "2",
     "unit_type": "ct",
     "case_qty": 12,
@@ -10621,7 +10621,7 @@
     },
     "description": {
       "en": "Gillette Sensor5 Men's Disposable Razors, 2ct, 12/cs",
-      "fr": ""
+      "fr": "Gillette Sensor5 Rasoirs jetables pour hommes, 2 pièces, 12/paquet"
     }
   },
   {
@@ -10704,7 +10704,7 @@
     "barcode": "7506309894522",
     "category": "health_beauty",
     "name_en": "Head & Shoulders Shampoo w/ Pump, 1L, Old Spice, 9/cs",
-    "name_fr": "",
+    "name_fr": "Shampooing Head & Shoulders avec pompe, 1L, Old Spice, 9/CS",
     "description_en": "Head & Shoulders Shampoo w/ Pump, 1L, Old Spice, 9/cs",
     "description_fr": "",
     "unit_size": "1",
@@ -10717,7 +10717,7 @@
     ],
     "name": {
       "en": "Head & Shoulders Shampoo w/ Pump, 1L, Old Spice, 9/cs",
-      "fr": ""
+      "fr": "Shampooing Head & Shoulders avec pompe, 1L, Old Spice, 9/CS"
     },
     "description": {
       "en": "Head & Shoulders Shampoo w/ Pump, 1L, Old Spice, 9/cs",
@@ -10731,7 +10731,7 @@
     "name_en": "Head & Shoulders Shampoo w/ Pump, 1L, Renewing Cleanse, 9/cs",
     "name_fr": "",
     "description_en": "Head & Shoulders Shampoo w/ Pump, 1L, Renewing Cleanse, 9/cs",
-    "description_fr": "",
+    "description_fr": "Shampooing Head & Shoulders à pompe, 1L, Nettoyage rajeunissant, 9/ca",
     "unit_size": "1",
     "unit_type": "L",
     "case_qty": 9,
@@ -10746,7 +10746,7 @@
     },
     "description": {
       "en": "Head & Shoulders Shampoo w/ Pump, 1L, Renewing Cleanse, 9/cs",
-      "fr": ""
+      "fr": "Shampooing Head & Shoulders à pompe, 1L, Nettoyage rajeunissant, 9/ca"
     }
   },
   {
@@ -10804,7 +10804,7 @@
     "barcode": "9067900492",
     "category": "health_beauty",
     "name_en": "Herbal Essences Color Me Happy Conditioner, 11.7 oz / 346ml, 6/cs",
-    "name_fr": "",
+    "name_fr": "Herbal Essences Color Me Happy Après-shampoing, 11,7 oz / 346 ml, 6/cs",
     "description_en": "Herbal Essences Color Me Happy Conditioner, 11.7 oz / 346ml, 6/cs",
     "description_fr": "",
     "unit_size": "11.7",
@@ -10817,7 +10817,7 @@
     ],
     "name": {
       "en": "Herbal Essences Color Me Happy Conditioner, 11.7 oz / 346ml, 6/cs",
-      "fr": ""
+      "fr": "Herbal Essences Color Me Happy Après-shampoing, 11,7 oz / 346 ml, 6/cs"
     },
     "description": {
       "en": "Herbal Essences Color Me Happy Conditioner, 11.7 oz / 346ml, 6/cs",
@@ -10904,7 +10904,7 @@
     "barcode": "906790053",
     "category": "health_beauty",
     "name_en": "Herbal Essences Tea-Lightfully Clean Shampoo, 11.7 oz / 346ml, 6/cs",
-    "name_fr": "",
+    "name_fr": "Shampooing Herbal Essences Tea-Lightfully Clean, 11,7 oz / 346 ml, 6 par boîte",
     "description_en": "Herbal Essences Tea-Lightfully Clean Shampoo, 11.7 oz / 346ml, 6/cs",
     "description_fr": "",
     "unit_size": "11.7",
@@ -10917,7 +10917,7 @@
     ],
     "name": {
       "en": "Herbal Essences Tea-Lightfully Clean Shampoo, 11.7 oz / 346ml, 6/cs",
-      "fr": ""
+      "fr": "Shampooing Herbal Essences Tea-Lightfully Clean, 11,7 oz / 346 ml, 6 par boîte"
     },
     "description": {
       "en": "Herbal Essences Tea-Lightfully Clean Shampoo, 11.7 oz / 346ml, 6/cs",
@@ -10956,7 +10956,7 @@
     "name_en": "Irish Spring Active Scrub Moisturizing Face and Body Wash Pump, 887 ML",
     "name_fr": "Gel Douche Visage et Corps Hydratant Irish Spring Active Scrub à Pompe, 887 ML",
     "description_en": "Irish Spring Active Scrub Moisturizing Face and Body Wash Pump, 887 ML",
-    "description_fr": "",
+    "description_fr": "Gel hydratant exfoliant pour visage et corps à pompe Irish Spring, 887 ml",
     "unit_size": "",
     "unit_type": "units",
     "case_qty": 4,
@@ -10971,7 +10971,7 @@
     },
     "description": {
       "en": "Irish Spring Active Scrub Moisturizing Face and Body Wash Pump, 887 ML",
-      "fr": ""
+      "fr": "Gel hydratant exfoliant pour visage et corps à pompe Irish Spring, 887 ml"
     }
   },
   {
@@ -11056,7 +11056,7 @@
     "name_en": "Irish Spring Bar Soap 3 Bar - Original 104.8g/3.7oz, 18/cs",
     "name_fr": "",
     "description_en": "Irish Spring Bar Soap 3 Bar - Original 104.8g/3.7oz, 18/cs",
-    "description_fr": "",
+    "description_fr": "Savon en barre Irish Spring 3 barres - Original 104,8 g / 3,7 oz, 18/cs",
     "unit_size": "104.8",
     "unit_type": "g",
     "case_qty": 18,
@@ -11071,7 +11071,7 @@
     },
     "description": {
       "en": "Irish Spring Bar Soap 3 Bar - Original 104.8g/3.7oz, 18/cs",
-      "fr": ""
+      "fr": "Savon en barre Irish Spring 3 barres - Original 104,8 g / 3,7 oz, 18/cs"
     }
   },
   {
@@ -11104,7 +11104,7 @@
     "barcode": "2785402071",
     "category": "health_beauty",
     "name_en": "Irish Spring Bw - Saharan Dawn, 591ml/20oz, 4/cs",
-    "name_fr": "",
+    "name_fr": "Irish Spring Bw - Saharan Dawn, 591 ml / 20 oz, 4/paquets",
     "description_en": "Irish Spring Bw - Saharan Dawn, 591ml/20oz, 4/cs",
     "description_fr": "Irish Spring Bw - Aurore Saharienne, 591 ml / 20 oz, 4/unité",
     "unit_size": "591",
@@ -11117,7 +11117,7 @@
     ],
     "name": {
       "en": "Irish Spring Bw - Saharan Dawn, 591ml/20oz, 4/cs",
-      "fr": ""
+      "fr": "Irish Spring Bw - Saharan Dawn, 591 ml / 20 oz, 4/paquets"
     },
     "description": {
       "en": "Irish Spring Bw - Saharan Dawn, 591ml/20oz, 4/cs",
@@ -11179,7 +11179,7 @@
     "barcode": "3500099361",
     "category": "health_beauty",
     "name_en": "Irish Spring Bw, Deep Action Scrub, 591ml/20oz",
-    "name_fr": "",
+    "name_fr": "Irish Spring Bw, gommage à action profonde, 591 ml / 20 oz",
     "description_en": "Irish Spring Bw, Deep Action Scrub, 591ml/20oz",
     "description_fr": "",
     "unit_size": "591",
@@ -11192,7 +11192,7 @@
     ],
     "name": {
       "en": "Irish Spring Bw, Deep Action Scrub, 591ml/20oz",
-      "fr": ""
+      "fr": "Irish Spring Bw, gommage à action profonde, 591 ml / 20 oz"
     },
     "description": {
       "en": "Irish Spring Bw, Deep Action Scrub, 591ml/20oz",
@@ -11254,7 +11254,7 @@
     "barcode": "3500099674",
     "category": "health_beauty",
     "name_en": "Irish Spring Bw, Original Clean, 591ml/20oz",
-    "name_fr": "",
+    "name_fr": "Irish Spring Bw, Original Clean, 591 ml / 20 oz",
     "description_en": "Irish Spring Bw, Original Clean, 591ml/20oz",
     "description_fr": "",
     "unit_size": "591",
@@ -11267,7 +11267,7 @@
     ],
     "name": {
       "en": "Irish Spring Bw, Original Clean, 591ml/20oz",
-      "fr": ""
+      "fr": "Irish Spring Bw, Original Clean, 591 ml / 20 oz"
     },
     "description": {
       "en": "Irish Spring Bw, Original Clean, 591ml/20oz",
@@ -11329,7 +11329,7 @@
     "barcode": "5800014050",
     "category": "health_beauty",
     "name_en": "Irish Spring Deodorant Soap Original Clean, 113g, 20ct, 4/ tray",
-    "name_fr": "",
+    "name_fr": "Irish Spring Savon déodorant Original Clean, 113 g, 20 pièces, 4/ plateau",
     "description_en": "Irish Spring Deodorant Soap Original Clean, 113g, 20ct, 4/ tray",
     "description_fr": "",
     "unit_size": "113",
@@ -11342,7 +11342,7 @@
     ],
     "name": {
       "en": "Irish Spring Deodorant Soap Original Clean, 113g, 20ct, 4/ tray",
-      "fr": ""
+      "fr": "Irish Spring Savon déodorant Original Clean, 113 g, 20 pièces, 4/ plateau"
     },
     "description": {
       "en": "Irish Spring Deodorant Soap Original Clean, 113g, 20ct, 4/ tray",
@@ -11404,7 +11404,7 @@
     "barcode": "3700021849",
     "category": "health_beauty",
     "name_en": "Ivory Gentle Bar Soap Aloe Scent 90g., 10ct",
-    "name_fr": "",
+    "name_fr": "Savon doux Ivory parfum aloe 90 g, 10 pièces",
     "description_en": "Ivory Gentle Bar Soap Aloe Scent 90g., 10ct",
     "description_fr": "",
     "unit_size": "90",
@@ -11417,7 +11417,7 @@
     ],
     "name": {
       "en": "Ivory Gentle Bar Soap Aloe Scent 90g., 10ct",
-      "fr": ""
+      "fr": "Savon doux Ivory parfum aloe 90 g, 10 pièces"
     },
     "description": {
       "en": "Ivory Gentle Bar Soap Aloe Scent 90g., 10ct",
@@ -11431,7 +11431,7 @@
     "name_en": "Ivory Gentle Bar Soap Original Scent 90g / 3.17 Oz, 10ct",
     "name_fr": "Savon doux à l'ivoire, parfum original, 90 g / 3,17 oz, 10 pièces",
     "description_en": "Ivory Gentle Bar Soap Original Scent 90g / 3.17 Oz, 10ct",
-    "description_fr": "",
+    "description_fr": "Savon Barre doux ivoire parfum original 90 g / 3,17 oz, 10 pièces",
     "unit_size": "90",
     "unit_type": "g",
     "case_qty": 12,
@@ -11446,7 +11446,7 @@
     },
     "description": {
       "en": "Ivory Gentle Bar Soap Original Scent 90g / 3.17 Oz, 10ct",
-      "fr": ""
+      "fr": "Savon Barre doux ivoire parfum original 90 g / 3,17 oz, 10 pièces"
     }
   },
   {
@@ -11454,7 +11454,7 @@
     "barcode": "3600524081713",
     "category": "health_beauty",
     "name_en": "L'Oreal Men Expert Shower Gel, Magnesium Sensitive, 300 mL, 6/cs",
-    "name_fr": "",
+    "name_fr": "Gel douche L'Oréal Men Expert, Sensibilité magnésium, 300 mL, 6 caisses",
     "description_en": "L'Oreal Men Expert Shower Gel, Magnesium Sensitive, 300 mL, 6/cs",
     "description_fr": "",
     "unit_size": "300",
@@ -11467,7 +11467,7 @@
     ],
     "name": {
       "en": "L'Oreal Men Expert Shower Gel, Magnesium Sensitive, 300 mL, 6/cs",
-      "fr": ""
+      "fr": "Gel douche L'Oréal Men Expert, Sensibilité magnésium, 300 mL, 6 caisses"
     },
     "description": {
       "en": "L'Oreal Men Expert Shower Gel, Magnesium Sensitive, 300 mL, 6/cs",
@@ -11579,7 +11579,7 @@
     "barcode": "2785401194",
     "category": "health_beauty",
     "name_en": "Softsoap Body Wash Hawaiian Luau, 591ML / 20oz, 4/CS",
-    "name_fr": "",
+    "name_fr": "Softsoap Gel douche Hawaiian Luau, 591 ml / 20 oz, 4/CS",
     "description_en": "Softsoap Body Wash Hawaiian Luau, 591ML / 20oz, 4/CS",
     "description_fr": "",
     "unit_size": "20",
@@ -11592,7 +11592,7 @@
     ],
     "name": {
       "en": "Softsoap Body Wash Hawaiian Luau, 591ML / 20oz, 4/CS",
-      "fr": ""
+      "fr": "Softsoap Gel douche Hawaiian Luau, 591 ml / 20 oz, 4/CS"
     },
     "description": {
       "en": "Softsoap Body Wash Hawaiian Luau, 591ML / 20oz, 4/CS",
@@ -11629,7 +11629,7 @@
     "barcode": "2785401917",
     "category": "health_beauty",
     "name_en": "Softsoap Body Wash, & Shave Gel Innovation Strawberry, 591 mL, 4/cs",
-    "name_fr": "",
+    "name_fr": "Gel douche Softsoap, et gel à raser Innovation Fraise, 591 mL, 4/cs",
     "description_en": "Softsoap Body Wash, & Shave Gel Innovation Strawberry, 591 mL, 4/cs",
     "description_fr": "",
     "unit_size": "591",
@@ -11642,7 +11642,7 @@
     ],
     "name": {
       "en": "Softsoap Body Wash, & Shave Gel Innovation Strawberry, 591 mL, 4/cs",
-      "fr": ""
+      "fr": "Gel douche Softsoap, et gel à raser Innovation Fraise, 591 mL, 4/cs"
     },
     "description": {
       "en": "Softsoap Body Wash, & Shave Gel Innovation Strawberry, 591 mL, 4/cs",
@@ -11729,7 +11729,7 @@
     "barcode": "7418247338",
     "category": "health_beauty",
     "name_en": "Softsoap Exfoliating Body Wash Scrub Coconut Butter, 20.0 fl oz",
-    "name_fr": "",
+    "name_fr": "Savon Corps Exfoliant Softsoap Beurre de Coco, 20,0 fl oz",
     "description_en": "Softsoap Exfoliating Body Wash Scrub Coconut Butter, 20.0 fl oz",
     "description_fr": "",
     "unit_size": "",
@@ -11742,7 +11742,7 @@
     ],
     "name": {
       "en": "Softsoap Exfoliating Body Wash Scrub Coconut Butter, 20.0 fl oz",
-      "fr": ""
+      "fr": "Savon Corps Exfoliant Softsoap Beurre de Coco, 20,0 fl oz"
     },
     "description": {
       "en": "Softsoap Exfoliating Body Wash Scrub Coconut Butter, 20.0 fl oz",
@@ -11806,7 +11806,7 @@
     "name_en": "Softsoap Hand Soap, Bali Bliss, 591 mL, 4/cs",
     "name_fr": "",
     "description_en": "Softsoap Hand Soap, Bali Bliss, 591 mL, 4/cs",
-    "description_fr": "",
+    "description_fr": "Savon pour les mains Softsoap, Bali Bliss, 591 mL, 4/unité",
     "unit_size": "591",
     "unit_type": "mL",
     "case_qty": 4,
@@ -11821,7 +11821,7 @@
     },
     "description": {
       "en": "Softsoap Hand Soap, Bali Bliss, 591 mL, 4/cs",
-      "fr": ""
+      "fr": "Savon pour les mains Softsoap, Bali Bliss, 591 mL, 4/unité"
     }
   },
   {
@@ -11829,7 +11829,7 @@
     "barcode": "2785402585",
     "category": "health_beauty",
     "name_en": "Softsoap Hand Soap, Seasonal Cucumber, 591 mL, 4/cs",
-    "name_fr": "",
+    "name_fr": "Savon à la main Softsoap, Concombre saisonnier, 591 mL, 4 par caisse",
     "description_en": "Softsoap Hand Soap, Seasonal Cucumber, 591 mL, 4/cs",
     "description_fr": "",
     "unit_size": "591",
@@ -11842,7 +11842,7 @@
     ],
     "name": {
       "en": "Softsoap Hand Soap, Seasonal Cucumber, 591 mL, 4/cs",
-      "fr": ""
+      "fr": "Savon à la main Softsoap, Concombre saisonnier, 591 mL, 4 par caisse"
     },
     "description": {
       "en": "Softsoap Hand Soap, Seasonal Cucumber, 591 mL, 4/cs",
@@ -11854,7 +11854,7 @@
     "barcode": "3500099376",
     "category": "health_beauty",
     "name_en": "Softsoap Invigorating Body Wash Eucalyptus and Mint, Packed 4 Per Case - 20.0 oz",
-    "name_fr": "",
+    "name_fr": "Softsoap Gel Douche Revigorant à l'Eucalyptus et à la Menthe, Conditionné en paquets de 4 par caisse – 20,0 oz",
     "description_en": "Softsoap Invigorating Body Wash Eucalyptus and Mint, Packed 4 Per Case - 20.0 oz",
     "description_fr": "",
     "unit_size": "20.0",
@@ -11867,7 +11867,7 @@
     ],
     "name": {
       "en": "Softsoap Invigorating Body Wash Eucalyptus and Mint, Packed 4 Per Case - 20.0 oz",
-      "fr": ""
+      "fr": "Softsoap Gel Douche Revigorant à l'Eucalyptus et à la Menthe, Conditionné en paquets de 4 par caisse – 20,0 oz"
     },
     "description": {
       "en": "Softsoap Invigorating Body Wash Eucalyptus and Mint, Packed 4 Per Case - 20.0 oz",
@@ -11904,7 +11904,7 @@
     "barcode": "3500096911",
     "category": "health_beauty",
     "name_en": "Softsoap Lustrous Glow Body Wash Pink Rose & Vanilla, Packed 4 Per Case- 20.0 fl oz",
-    "name_fr": "",
+    "name_fr": "Gel douche Softsoap Lustrous Glow Rose Rose & Vanille, 4 par boîte – 20,0 fl oz",
     "description_en": "Softsoap Lustrous Glow Body Wash Pink Rose & Vanilla, Packed 4 Per Case- 20.0 fl oz",
     "description_fr": "Softsoap Lustrous Glow Gel douche Rose et Vanille, Pack de 4 par boîte - 20,0 fl oz",
     "unit_size": "",
@@ -11917,7 +11917,7 @@
     ],
     "name": {
       "en": "Softsoap Lustrous Glow Body Wash Pink Rose & Vanilla, Packed 4 Per Case- 20.0 fl oz",
-      "fr": ""
+      "fr": "Gel douche Softsoap Lustrous Glow Rose Rose & Vanille, 4 par boîte – 20,0 fl oz"
     },
     "description": {
       "en": "Softsoap Lustrous Glow Body Wash Pink Rose & Vanilla, Packed 4 Per Case- 20.0 fl oz",
@@ -11981,7 +11981,7 @@
     "name_en": "Softsoap Moisturizing Body Wash, Shea And Almond Oil, 20 Fl Oz",
     "name_fr": "",
     "description_en": "Softsoap Moisturizing Body Wash, Shea And Almond Oil, 20 Fl Oz",
-    "description_fr": "",
+    "description_fr": "Gel douche hydratant Softsoap, huile de karité et d’amande, 20 fl oz",
     "unit_size": "",
     "unit_type": "units",
     "case_qty": 4,
@@ -11996,7 +11996,7 @@
     },
     "description": {
       "en": "Softsoap Moisturizing Body Wash, Shea And Almond Oil, 20 Fl Oz",
-      "fr": ""
+      "fr": "Gel douche hydratant Softsoap, huile de karité et d’amande, 20 fl oz"
     }
   },
   {
@@ -12006,7 +12006,7 @@
     "name_en": "Softsoap Moisturizing Body Wash, Vanilla and Jojoba Oil, 20 Fl Oz (591ml)",
     "name_fr": "",
     "description_en": "Softsoap Moisturizing Body Wash, Vanilla and Jojoba Oil, 20 Fl Oz (591ml)",
-    "description_fr": "",
+    "description_fr": "Gel douche hydratant Softsoap, vanille et huile de jojoba, 20 fl oz (591 ml)",
     "unit_size": "591",
     "unit_type": "ml",
     "case_qty": 4,
@@ -12021,7 +12021,7 @@
     },
     "description": {
       "en": "Softsoap Moisturizing Body Wash, Vanilla and Jojoba Oil, 20 Fl Oz (591ml)",
-      "fr": ""
+      "fr": "Gel douche hydratant Softsoap, vanille et huile de jojoba, 20 fl oz (591 ml)"
     }
   },
   {
@@ -12054,7 +12054,7 @@
     "barcode": "73010718531",
     "category": "health_beauty",
     "name_en": "Tampax Super Pearl 96ct Art# 1770999",
-    "name_fr": "",
+    "name_fr": "Tampax Super Pearl 96ct art# 1770999",
     "description_en": "Tampax Super Pearl 96ct Art# 1770999",
     "description_fr": "Tampax Super Pearl 96ct art# 1770999",
     "unit_size": "96",
@@ -12067,7 +12067,7 @@
     ],
     "name": {
       "en": "Tampax Super Pearl 96ct Art# 1770999",
-      "fr": ""
+      "fr": "Tampax Super Pearl 96ct art# 1770999"
     },
     "description": {
       "en": "Tampax Super Pearl 96ct Art# 1770999",
@@ -12104,7 +12104,7 @@
     "barcode": "4740031535",
     "category": "health_beauty",
     "name_en": "Venus Simply 3 Colors Disposable Razors, 4ct, 4/cs",
-    "name_fr": "",
+    "name_fr": "Venus Simply 3 Couleurs, rasoirs jetables, 4 pièces, 4 par caisse",
     "description_en": "Venus Simply 3 Colors Disposable Razors, 4ct, 4/cs",
     "description_fr": "",
     "unit_size": "4",
@@ -12117,7 +12117,7 @@
     ],
     "name": {
       "en": "Venus Simply 3 Colors Disposable Razors, 4ct, 4/cs",
-      "fr": ""
+      "fr": "Venus Simply 3 Couleurs, rasoirs jetables, 4 pièces, 4 par caisse"
     },
     "description": {
       "en": "Venus Simply 3 Colors Disposable Razors, 4ct, 4/cs",
@@ -12179,7 +12179,7 @@
     "barcode": "3500098318",
     "category": "health_beauty",
     "name_en": "Colgate Max Fresh Toothpaste with Mini Breath Strips, Charcoal, 150ml, 24/CS",
-    "name_fr": "",
+    "name_fr": "Dentifrice Colgate Max Fresh avec mini bandes anti-haleine, charbon, 150 ml, 24/CS",
     "description_en": "Colgate Max Fresh Toothpaste with Mini Breath Strips, Charcoal, 150ml, 24/CS",
     "description_fr": "",
     "unit_size": "150",
@@ -12192,7 +12192,7 @@
     ],
     "name": {
       "en": "Colgate Max Fresh Toothpaste with Mini Breath Strips, Charcoal, 150ml, 24/CS",
-      "fr": ""
+      "fr": "Dentifrice Colgate Max Fresh avec mini bandes anti-haleine, charbon, 150 ml, 24/CS"
     },
     "description": {
       "en": "Colgate Max Fresh Toothpaste with Mini Breath Strips, Charcoal, 150ml, 24/CS",
@@ -12229,7 +12229,7 @@
     "barcode": "5800031320",
     "category": "health_beauty",
     "name_en": "Colgate Max Fresh Toothpaste with Mini Breath Strips, Cool Mint, 150ml, 24/CS",
-    "name_fr": "",
+    "name_fr": "Dentifrice Colgate Max Fresh avec Mini Bandes de Respiration, Cool Mint, 150 ml, 24/CS",
     "description_en": "Colgate Max Fresh Toothpaste with Mini Breath Strips, Cool Mint, 150ml, 24/CS",
     "description_fr": "",
     "unit_size": "150",
@@ -12242,7 +12242,7 @@
     ],
     "name": {
       "en": "Colgate Max Fresh Toothpaste with Mini Breath Strips, Cool Mint, 150ml, 24/CS",
-      "fr": ""
+      "fr": "Dentifrice Colgate Max Fresh avec Mini Bandes de Respiration, Cool Mint, 150 ml, 24/CS"
     },
     "description": {
       "en": "Colgate Max Fresh Toothpaste with Mini Breath Strips, Cool Mint, 150ml, 24/CS",
@@ -12306,7 +12306,7 @@
     "name_en": "Bounty Paper Towel, 103 Sheets per Roll, 2ct, 6/cs",
     "name_fr": "",
     "description_en": "Bounty Paper Towel, 103 Sheets per Roll, 2ct, 6/cs",
-    "description_fr": "",
+    "description_fr": "Bounty Essuie-mains, 103 feuilles par rouleau, 2 ct, 6 cs",
     "unit_size": "2",
     "unit_type": "ct",
     "case_qty": 6,
@@ -12321,7 +12321,7 @@
     },
     "description": {
       "en": "Bounty Paper Towel, 103 Sheets per Roll, 2ct, 6/cs",
-      "fr": ""
+      "fr": "Bounty Essuie-mains, 103 feuilles par rouleau, 2 ct, 6 cs"
     }
   },
   {
@@ -12431,7 +12431,7 @@
     "name_en": "Cashmere Bath Tissue 2ply, 12=24 Double Rolls, 242ct, 6/cs",
     "name_fr": "",
     "description_en": "Cashmere Bath Tissue 2ply, 12=24 Double Rolls, 242ct, 6/cs",
-    "description_fr": "",
+    "description_fr": "Papier toilette Cashmere 2 plis, 12 = 24 rouleaux doubles, 242 ct, 6/cs",
     "unit_size": "242",
     "unit_type": "ct",
     "case_qty": 6,
@@ -12446,7 +12446,7 @@
     },
     "description": {
       "en": "Cashmere Bath Tissue 2ply, 12=24 Double Rolls, 242ct, 6/cs",
-      "fr": ""
+      "fr": "Papier toilette Cashmere 2 plis, 12 = 24 rouleaux doubles, 242 ct, 6/cs"
     }
   },
   {
@@ -12504,7 +12504,7 @@
     "barcode": "6132834268",
     "category": "paper",
     "name_en": "Cashmere Bath Tissue 2ply, 8=16 Double Rolls, 242ct, 9/cs",
-    "name_fr": "",
+    "name_fr": "papier toilette Cashmere 2 couches, 8 = 16 rouleaux doubles, 242ct, 9/cs",
     "description_en": "Cashmere Bath Tissue 2ply, 8=16 Double Rolls, 242ct, 9/cs",
     "description_fr": "",
     "unit_size": "242",
@@ -12517,7 +12517,7 @@
     ],
     "name": {
       "en": "Cashmere Bath Tissue 2ply, 8=16 Double Rolls, 242ct, 9/cs",
-      "fr": ""
+      "fr": "papier toilette Cashmere 2 couches, 8 = 16 rouleaux doubles, 242ct, 9/cs"
     },
     "description": {
       "en": "Cashmere Bath Tissue 2ply, 8=16 Double Rolls, 242ct, 9/cs",
@@ -12579,7 +12579,7 @@
     "barcode": "6132834431",
     "category": "paper",
     "name_en": "Cashmere Jumbo Roll 2 x 30's 202 Sheets, 2/CS",
-    "name_fr": "",
+    "name_fr": "Rouleau cachemire Jumbo 2 x 30's 202 feuilles, 2/CS",
     "description_en": "Cashmere Jumbo Roll 2 x 30's 202 Sheets, 2/CS",
     "description_fr": "",
     "unit_size": "",
@@ -12592,7 +12592,7 @@
     ],
     "name": {
       "en": "Cashmere Jumbo Roll 2 x 30's 202 Sheets, 2/CS",
-      "fr": ""
+      "fr": "Rouleau cachemire Jumbo 2 x 30's 202 feuilles, 2/CS"
     },
     "description": {
       "en": "Cashmere Jumbo Roll 2 x 30's 202 Sheets, 2/CS",
@@ -12681,7 +12681,7 @@
     "name_en": "Cottonelle Ultra Clean Toilet Tissue Mega Roll 12 x 284 Sheets, 4/CS",
     "name_fr": "",
     "description_en": "Cottonelle Ultra Clean Toilet Tissue Mega Roll 12 x 284 Sheets, 4/CS",
-    "description_fr": "",
+    "description_fr": "Cottonelle Ultra Clean Papier Toilette Mega Rouleau 12 x 284 Feuilles, 4/CS",
     "unit_size": "",
     "unit_type": "units",
     "case_qty": 4,
@@ -12696,7 +12696,7 @@
     },
     "description": {
       "en": "Cottonelle Ultra Clean Toilet Tissue Mega Roll 12 x 284 Sheets, 4/CS",
-      "fr": ""
+      "fr": "Cottonelle Ultra Clean Papier Toilette Mega Rouleau 12 x 284 Feuilles, 4/CS"
     }
   },
   {
@@ -12756,7 +12756,7 @@
     "name_en": "Cottonelle Ultra Clean Toilet Tissue Mega Roll 9 x 284 Sheets, 4 C/S",
     "name_fr": "Papier toilette Cottonelle Ultra Clean Mega Roll 9 x 284 feuilles, 4 C/S",
     "description_en": "Cottonelle Ultra Clean Toilet Tissue Mega Roll 9 x 284 Sheets, 4 C/S",
-    "description_fr": "",
+    "description_fr": "Rouleau Mega de papier toilette Cottonelle Ultra Clean 9 x 284 feuilles, 4 C/S",
     "unit_size": "",
     "unit_type": "units",
     "case_qty": 4,
@@ -12771,7 +12771,7 @@
     },
     "description": {
       "en": "Cottonelle Ultra Clean Toilet Tissue Mega Roll 9 x 284 Sheets, 4 C/S",
-      "fr": ""
+      "fr": "Rouleau Mega de papier toilette Cottonelle Ultra Clean 9 x 284 feuilles, 4 C/S"
     }
   },
   {
@@ -12804,7 +12804,7 @@
     "barcode": "3600056495",
     "category": "paper",
     "name_en": "Cottonelle Ultra Comfort Toilet Tissue Mega Roll 24 x 244 Sheets, 2/CS",
-    "name_fr": "",
+    "name_fr": "Rouleau de papier hygiénique Cottonelle Ultra Comfort Mega Roll 24 x 244 feuilles, 2/CS",
     "description_en": "Cottonelle Ultra Comfort Toilet Tissue Mega Roll 24 x 244 Sheets, 2/CS",
     "description_fr": "",
     "unit_size": "",
@@ -12817,7 +12817,7 @@
     ],
     "name": {
       "en": "Cottonelle Ultra Comfort Toilet Tissue Mega Roll 24 x 244 Sheets, 2/CS",
-      "fr": ""
+      "fr": "Rouleau de papier hygiénique Cottonelle Ultra Comfort Mega Roll 24 x 244 feuilles, 2/CS"
     },
     "description": {
       "en": "Cottonelle Ultra Comfort Toilet Tissue Mega Roll 24 x 244 Sheets, 2/CS",
@@ -12881,7 +12881,7 @@
     "name_en": "Royale Dinner Napkins, 40 3Ply Sheets, 24/cs",
     "name_fr": "",
     "description_en": "Royale Dinner Napkins, 40 3Ply Sheets, 24/cs",
-    "description_fr": "",
+    "description_fr": "Serviettes à table Royale, 40 feuilles 3 couches, 24 par caisse",
     "unit_size": "",
     "unit_type": "units",
     "case_qty": 24,
@@ -12896,7 +12896,7 @@
     },
     "description": {
       "en": "Royale Dinner Napkins, 40 3Ply Sheets, 24/cs",
-      "fr": ""
+      "fr": "Serviettes à table Royale, 40 feuilles 3 couches, 24 par caisse"
     }
   },
   {
@@ -12954,7 +12954,7 @@
     "barcode": "63435711514",
     "category": "paper",
     "name_en": "Royale Facial Tissue, 126 2Ply Sheets, 36/cs",
-    "name_fr": "",
+    "name_fr": "Tissue Royale, 126 feuilles à 2 couches, 36 par caisse",
     "description_en": "Royale Facial Tissue, 126 2Ply Sheets, 36/cs",
     "description_fr": "",
     "unit_size": "",
@@ -12967,7 +12967,7 @@
     ],
     "name": {
       "en": "Royale Facial Tissue, 126 2Ply Sheets, 36/cs",
-      "fr": ""
+      "fr": "Tissue Royale, 126 feuilles à 2 couches, 36 par caisse"
     },
     "description": {
       "en": "Royale Facial Tissue, 126 2Ply Sheets, 36/cs",
@@ -12979,7 +12979,7 @@
     "barcode": "63435710234",
     "category": "paper",
     "name_en": "Royale Facial Tissue, 154 3Ply Sheets, 24/cs",
-    "name_fr": "",
+    "name_fr": "Papier facial Royale, 154 feuilles 3‑ply, 24/carton",
     "description_en": "Royale Facial Tissue, 154 3Ply Sheets, 24/cs",
     "description_fr": "",
     "unit_size": "",
@@ -12992,7 +12992,7 @@
     ],
     "name": {
       "en": "Royale Facial Tissue, 154 3Ply Sheets, 24/cs",
-      "fr": ""
+      "fr": "Papier facial Royale, 154 feuilles 3‑ply, 24/carton"
     },
     "description": {
       "en": "Royale Facial Tissue, 154 3Ply Sheets, 24/cs",
@@ -13054,7 +13054,7 @@
     "barcode": "63435711866",
     "category": "paper",
     "name_en": "Royale Facial Tissue, 82 3Ply Sheets, 42/cs",
-    "name_fr": "",
+    "name_fr": "Tissu facial Royale, 82 feuilles à 3 couches, 42 par caisse",
     "description_en": "Royale Facial Tissue, 82 3Ply Sheets, 42/cs",
     "description_fr": "",
     "unit_size": "",
@@ -13067,7 +13067,7 @@
     ],
     "name": {
       "en": "Royale Facial Tissue, 82 3Ply Sheets, 42/cs",
-      "fr": ""
+      "fr": "Tissu facial Royale, 82 feuilles à 3 couches, 42 par caisse"
     },
     "description": {
       "en": "Royale Facial Tissue, 82 3Ply Sheets, 42/cs",
@@ -13129,7 +13129,7 @@
     "barcode": "63435730164",
     "category": "paper",
     "name_en": "Royale Napkins, 240 1Ply Sheets, 12/cs",
-    "name_fr": "",
+    "name_fr": "Nappes Royale, 240 feuilles de 1 couche, 12/boîte",
     "description_en": "Royale Napkins, 240 1Ply Sheets, 12/cs",
     "description_fr": "",
     "unit_size": "",
@@ -13142,7 +13142,7 @@
     ],
     "name": {
       "en": "Royale Napkins, 240 1Ply Sheets, 12/cs",
-      "fr": ""
+      "fr": "Nappes Royale, 240 feuilles de 1 couche, 12/boîte"
     },
     "description": {
       "en": "Royale Napkins, 240 1Ply Sheets, 12/cs",
@@ -13154,7 +13154,7 @@
     "barcode": "6343570429",
     "category": "paper",
     "name_en": "Royale Original Toilet Paper, 15 = 30 Rolls, 242 Bathroom Tissue Sheets per roll, 4/cs",
-    "name_fr": "",
+    "name_fr": "Papier toilette Royale Original, 15 = 30 rouleaux, 242 feuilles de papier toilette par rouleau, 4/cs",
     "description_en": "Royale Original Toilet Paper, 15 = 30 Rolls, 242 Bathroom Tissue Sheets per roll, 4/cs",
     "description_fr": "",
     "unit_size": "",
@@ -13167,7 +13167,7 @@
     ],
     "name": {
       "en": "Royale Original Toilet Paper, 15 = 30 Rolls, 242 Bathroom Tissue Sheets per roll, 4/cs",
-      "fr": ""
+      "fr": "Papier toilette Royale Original, 15 = 30 rouleaux, 242 feuilles de papier toilette par rouleau, 4/cs"
     },
     "description": {
       "en": "Royale Original Toilet Paper, 15 = 30 Rolls, 242 Bathroom Tissue Sheets per roll, 4/cs",
@@ -13229,7 +13229,7 @@
     "barcode": "63435704073",
     "category": "paper",
     "name_en": "Royale Toilet Paper, 4=5 Rolls/151 2Ply Sheets, 24/cs",
-    "name_fr": "",
+    "name_fr": "Papier toilette Royale, 4=5 rouleaux/151 feuilles 2-ply, 24/cs",
     "description_en": "Royale Toilet Paper, 4=5 Rolls/151 2Ply Sheets, 24/cs",
     "description_fr": "",
     "unit_size": "",
@@ -13242,7 +13242,7 @@
     ],
     "name": {
       "en": "Royale Toilet Paper, 4=5 Rolls/151 2Ply Sheets, 24/cs",
-      "fr": ""
+      "fr": "Papier toilette Royale, 4=5 rouleaux/151 feuilles 2-ply, 24/cs"
     },
     "description": {
       "en": "Royale Toilet Paper, 4=5 Rolls/151 2Ply Sheets, 24/cs",
@@ -13331,7 +13331,7 @@
     "name_en": "Scotties Facial Tissue Supreme, 3ply, 6 x 81ct, 8/cs",
     "name_fr": "Scotties Tissu facial Supreme, 3 couches, 6 x 81 pièces, 8 paquets",
     "description_en": "Scotties Facial Tissue Supreme, 3ply, 6 x 81ct, 8/cs",
-    "description_fr": "",
+    "description_fr": "Scotties Tissu facial Supreme, 3 couches, 6 × 81 cts, 8/paquets",
     "unit_size": "81",
     "unit_type": "ct",
     "case_qty": 8,
@@ -13346,7 +13346,7 @@
     },
     "description": {
       "en": "Scotties Facial Tissue Supreme, 3ply, 6 x 81ct, 8/cs",
-      "fr": ""
+      "fr": "Scotties Tissu facial Supreme, 3 couches, 6 × 81 cts, 8/paquets"
     }
   },
   {
@@ -13504,7 +13504,7 @@
     "barcode": "6132885272",
     "category": "paper",
     "name_en": "Scotties' Supreme 4 x 9's 81 Sheets, 4/CS",
-    "name_fr": "",
+    "name_fr": "Scotties Supreme 4 x 9 pouces 81 feuilles, 4/CS",
     "description_en": "Scotties' Supreme 4 x 9's 81 Sheets, 4/CS",
     "description_fr": "",
     "unit_size": "",
@@ -13517,7 +13517,7 @@
     ],
     "name": {
       "en": "Scotties' Supreme 4 x 9's 81 Sheets, 4/CS",
-      "fr": ""
+      "fr": "Scotties Supreme 4 x 9 pouces 81 feuilles, 4/CS"
     },
     "description": {
       "en": "Scotties' Supreme 4 x 9's 81 Sheets, 4/CS",
@@ -13579,7 +13579,7 @@
     "barcode": "6132853121",
     "category": "paper",
     "name_en": "SpongeTowels Ultra Choose-A-Size Giant 2 x 12's 112 Sheets, 2/CS",
-    "name_fr": "",
+    "name_fr": "SpongeTowels Ultra Choisissez votre taille Géant 2 x 12 112 feuilles, 2/CS",
     "description_en": "SpongeTowels Ultra Choose-A-Size Giant 2 x 12's 112 Sheets, 2/CS",
     "description_fr": "",
     "unit_size": "",
@@ -13592,7 +13592,7 @@
     ],
     "name": {
       "en": "SpongeTowels Ultra Choose-A-Size Giant 2 x 12's 112 Sheets, 2/CS",
-      "fr": ""
+      "fr": "SpongeTowels Ultra Choisissez votre taille Géant 2 x 12 112 feuilles, 2/CS"
     },
     "description": {
       "en": "SpongeTowels Ultra Choose-A-Size Giant 2 x 12's 112 Sheets, 2/CS",
@@ -13729,7 +13729,7 @@
     "barcode": "6132884309",
     "category": "paper",
     "name_en": "Scotties Facial Tissue Ultra Soft Cube, 1 Roll/52 Sheet 3plys, 24c/s",
-    "name_fr": "",
+    "name_fr": "Scotties Tissue facial Ultra Soft Cube, 1 rouleau / 52 feuilles, 3 couches, 24c/s",
     "description_en": "Scotties Facial Tissue Ultra Soft Cube, 1 Roll/52 Sheet 3plys, 24c/s",
     "description_fr": "",
     "unit_size": "",
@@ -13742,7 +13742,7 @@
     ],
     "name": {
       "en": "Scotties Facial Tissue Ultra Soft Cube, 1 Roll/52 Sheet 3plys, 24c/s",
-      "fr": ""
+      "fr": "Scotties Tissue facial Ultra Soft Cube, 1 rouleau / 52 feuilles, 3 couches, 24c/s"
     },
     "description": {
       "en": "Scotties Facial Tissue Ultra Soft Cube, 1 Roll/52 Sheet 3plys, 24c/s",
@@ -13829,7 +13829,7 @@
     "barcode": "6132884305",
     "category": "paper",
     "name_en": "Scotties Facial Tissue Ultra Soft with Lotion, 4 Rolls/104 Sheet 3plys, 8c/s",
-    "name_fr": "",
+    "name_fr": "Scotties Tissue Facial Ultra Doux avec Lotion, 4 rouleaux / 104 feuilles 3 couches, 8c/s",
     "description_en": "Scotties Facial Tissue Ultra Soft with Lotion, 4 Rolls/104 Sheet 3plys, 8c/s",
     "description_fr": "",
     "unit_size": "",
@@ -13842,7 +13842,7 @@
     ],
     "name": {
       "en": "Scotties Facial Tissue Ultra Soft with Lotion, 4 Rolls/104 Sheet 3plys, 8c/s",
-      "fr": ""
+      "fr": "Scotties Tissue Facial Ultra Doux avec Lotion, 4 rouleaux / 104 feuilles 3 couches, 8c/s"
     },
     "description": {
       "en": "Scotties Facial Tissue Ultra Soft with Lotion, 4 Rolls/104 Sheet 3plys, 8c/s",
@@ -13854,7 +13854,7 @@
     "barcode": "6132884301",
     "category": "paper",
     "name_en": "Scotties Facial Tissue Ultra Soft, 1 Roll/104 Sheets 3plys, 32c/s",
-    "name_fr": "",
+    "name_fr": "Scotties Tissu facial Ultra Doux, 1 rouleau / 104 feuilles 3 couches, 32c/s",
     "description_en": "Scotties Facial Tissue Ultra Soft, 1 Roll/104 Sheets 3plys, 32c/s",
     "description_fr": "",
     "unit_size": "",
@@ -13867,7 +13867,7 @@
     ],
     "name": {
       "en": "Scotties Facial Tissue Ultra Soft, 1 Roll/104 Sheets 3plys, 32c/s",
-      "fr": ""
+      "fr": "Scotties Tissu facial Ultra Doux, 1 rouleau / 104 feuilles 3 couches, 32c/s"
     },
     "description": {
       "en": "Scotties Facial Tissue Ultra Soft, 1 Roll/104 Sheets 3plys, 32c/s",
@@ -13979,7 +13979,7 @@
     "barcode": "3077222296",
     "category": "health_beauty",
     "name_en": "Ivory Bar Soap, Fragrance Free, 10 ct, 3.17 oz, 12/cs",
-    "name_fr": "",
+    "name_fr": "Savon barre ivoire, sans parfum, 10 pièces, 3,17 oz, 12/cs",
     "description_en": "Ivory Bar Soap, Fragrance Free, 10 ct, 3.17 oz, 12/cs",
     "description_fr": "",
     "unit_size": "10",
@@ -13992,7 +13992,7 @@
     ],
     "name": {
       "en": "Ivory Bar Soap, Fragrance Free, 10 ct, 3.17 oz, 12/cs",
-      "fr": ""
+      "fr": "Savon barre ivoire, sans parfum, 10 pièces, 3,17 oz, 12/cs"
     },
     "description": {
       "en": "Ivory Bar Soap, Fragrance Free, 10 ct, 3.17 oz, 12/cs",
@@ -14029,7 +14029,7 @@
     "barcode": "3574669907903",
     "category": "health_beauty",
     "name_en": "Johnson's Baby Baby Shampoo, 500 mL, 6/cs",
-    "name_fr": "",
+    "name_fr": "Shampooing bébé Johnson's, 500 mL, 6/cs",
     "description_en": "Johnson's Baby Baby Shampoo, 500 mL, 6/cs",
     "description_fr": "",
     "unit_size": "500",
@@ -14042,7 +14042,7 @@
     ],
     "name": {
       "en": "Johnson's Baby Baby Shampoo, 500 mL, 6/cs",
-      "fr": ""
+      "fr": "Shampooing bébé Johnson's, 500 mL, 6/cs"
     },
     "description": {
       "en": "Johnson's Baby Baby Shampoo, 500 mL, 6/cs",
@@ -14104,7 +14104,7 @@
     "barcode": "3700097468",
     "category": "health_beauty",
     "name_en": "Olay Fresh Outlast Body Wash - White Strawberry & Mint, 650 mL, 4/cs",
-    "name_fr": "",
+    "name_fr": "Olay Fresh Outlast Gel douche - Fraise blanche & menthe, 650 mL, 4/cs",
     "description_en": "Olay Fresh Outlast Body Wash - White Strawberry & Mint, 650 mL, 4/cs",
     "description_fr": "",
     "unit_size": "650",
@@ -14117,7 +14117,7 @@
     ],
     "name": {
       "en": "Olay Fresh Outlast Body Wash - White Strawberry & Mint, 650 mL, 4/cs",
-      "fr": ""
+      "fr": "Olay Fresh Outlast Gel douche - Fraise blanche & menthe, 650 mL, 4/cs"
     },
     "description": {
       "en": "Olay Fresh Outlast Body Wash - White Strawberry & Mint, 650 mL, 4/cs",
@@ -14229,7 +14229,7 @@
     "barcode": "3077208862",
     "category": "laundry_fabric",
     "name_en": "Febreze Odor-Fighting Fabric Refresher, Downy April Fresh, 700 mL Spray, 4/cs",
-    "name_fr": "",
+    "name_fr": "Febreze Rafraîchisseur de tissus anti-odeurs, Downy April Fresh, Spray 700 mL, 4/pcs",
     "description_en": "Febreze Odor-Fighting Fabric Refresher, Downy April Fresh, 700 mL Spray, 4/cs",
     "description_fr": "",
     "unit_size": "700",
@@ -14242,7 +14242,7 @@
     ],
     "name": {
       "en": "Febreze Odor-Fighting Fabric Refresher, Downy April Fresh, 700 mL Spray, 4/cs",
-      "fr": ""
+      "fr": "Febreze Rafraîchisseur de tissus anti-odeurs, Downy April Fresh, Spray 700 mL, 4/pcs"
     },
     "description": {
       "en": "Febreze Odor-Fighting Fabric Refresher, Downy April Fresh, 700 mL Spray, 4/cs",
@@ -14356,7 +14356,7 @@
     "name_en": "Cascade Action Pacs Platinum Plus Lemon Dishwashing Pouch 30ct, 6/cs",
     "name_fr": "Pochettes Cascade Action Pacs Platinum Plus Lemon, 30 pièces, 6/caisses",
     "description_en": "Cascade Action Pacs Platinum Plus Lemon Dishwashing Pouch 30ct, 6/cs",
-    "description_fr": "",
+    "description_fr": "Pacs Action Cascade Platinum Plus Citron, sac à vaisselle 30 pièces, 6 paquets",
     "unit_size": "30",
     "unit_type": "ct",
     "case_qty": 6,
@@ -14371,7 +14371,7 @@
     },
     "description": {
       "en": "Cascade Action Pacs Platinum Plus Lemon Dishwashing Pouch 30ct, 6/cs",
-      "fr": ""
+      "fr": "Pacs Action Cascade Platinum Plus Citron, sac à vaisselle 30 pièces, 6 paquets"
     }
   },
   {
@@ -14429,7 +14429,7 @@
     "barcode": "37000551980",
     "category": "household",
     "name_en": "Cascade Complete Fresh Scent Action Pacs Dishwasher Detergent 48ct, 6/cs",
-    "name_fr": "",
+    "name_fr": "Cascade Complete Fresh Scent Action Pacs Détergent Lave-vaisselle 48 pièces, 6 cartons",
     "description_en": "Cascade Complete Fresh Scent Action Pacs Dishwasher Detergent 48ct, 6/cs",
     "description_fr": "",
     "unit_size": "48",
@@ -14442,7 +14442,7 @@
     ],
     "name": {
       "en": "Cascade Complete Fresh Scent Action Pacs Dishwasher Detergent 48ct, 6/cs",
-      "fr": ""
+      "fr": "Cascade Complete Fresh Scent Action Pacs Détergent Lave-vaisselle 48 pièces, 6 cartons"
     },
     "description": {
       "en": "Cascade Complete Fresh Scent Action Pacs Dishwasher Detergent 48ct, 6/cs",
@@ -14531,7 +14531,7 @@
     "name_en": "Cascade Platinum Fresh Dishwasher Action Pacs 83ct, 3/cs",
     "name_fr": "",
     "description_en": "Cascade Platinum Fresh Dishwasher Action Pacs 83ct, 3/cs",
-    "description_fr": "",
+    "description_fr": "Pacs d'action lave-vaisselle Cascade Platinum Fresh 83 pièces, 3 par caisse",
     "unit_size": "83",
     "unit_type": "ct",
     "case_qty": 3,
@@ -14546,7 +14546,7 @@
     },
     "description": {
       "en": "Cascade Platinum Fresh Dishwasher Action Pacs 83ct, 3/cs",
-      "fr": ""
+      "fr": "Pacs d'action lave-vaisselle Cascade Platinum Fresh 83 pièces, 3 par caisse"
     }
   },
   {
@@ -14629,7 +14629,7 @@
     "barcode": "30772163108",
     "category": "household",
     "name_en": "Cascade Platinum Plus Fresh 10 Count Dishwasher Action Pacs 10ct, 6/cs",
-    "name_fr": "",
+    "name_fr": "Cascade Platinum Plus Fresh 10 pièces, Sachets Action lave-vaisselle 10ct, 6 par caisse",
     "description_en": "Cascade Platinum Plus Fresh 10 Count Dishwasher Action Pacs 10ct, 6/cs",
     "description_fr": "",
     "unit_size": "10",
@@ -14642,7 +14642,7 @@
     ],
     "name": {
       "en": "Cascade Platinum Plus Fresh 10 Count Dishwasher Action Pacs 10ct, 6/cs",
-      "fr": ""
+      "fr": "Cascade Platinum Plus Fresh 10 pièces, Sachets Action lave-vaisselle 10ct, 6 par caisse"
     },
     "description": {
       "en": "Cascade Platinum Plus Fresh 10 Count Dishwasher Action Pacs 10ct, 6/cs",
@@ -14679,7 +14679,7 @@
     "barcode": "30772179956",
     "category": "household",
     "name_en": "Cascade Platinum Plus Fresh Dishwasher Action Pacs 63ct, 3/cs",
-    "name_fr": "",
+    "name_fr": "Pacs d'action lave-vaisselle Cascade Platinum Plus Fresh 63 pièces, 3 par boîte",
     "description_en": "Cascade Platinum Plus Fresh Dishwasher Action Pacs 63ct, 3/cs",
     "description_fr": "Pacs d’action Cascade Platinum Plus Fresh pour lave-vaisselle, 63 pièces, 3 par boîte",
     "unit_size": "63",
@@ -14692,7 +14692,7 @@
     ],
     "name": {
       "en": "Cascade Platinum Plus Fresh Dishwasher Action Pacs 63ct, 3/cs",
-      "fr": ""
+      "fr": "Pacs d'action lave-vaisselle Cascade Platinum Plus Fresh 63 pièces, 3 par boîte"
     },
     "description": {
       "en": "Cascade Platinum Plus Fresh Dishwasher Action Pacs 63ct, 3/cs",
@@ -14754,7 +14754,7 @@
     "barcode": "30772066645",
     "category": "household",
     "name_en": "Cascade Platinum With Liquid And Powder Fresh Scent Dishwasher Detergent Pouch 26ct, 5/cs",
-    "name_fr": "",
+    "name_fr": "Cascade Platinum liquide et poudre parfum frais, sachet de détergent à lave-vaisselle 26 pièces, 5/CS",
     "description_en": "Cascade Platinum With Liquid And Powder Fresh Scent Dishwasher Detergent Pouch 26ct, 5/cs",
     "description_fr": "",
     "unit_size": "26",
@@ -14767,7 +14767,7 @@
     ],
     "name": {
       "en": "Cascade Platinum With Liquid And Powder Fresh Scent Dishwasher Detergent Pouch 26ct, 5/cs",
-      "fr": ""
+      "fr": "Cascade Platinum liquide et poudre parfum frais, sachet de détergent à lave-vaisselle 26 pièces, 5/CS"
     },
     "description": {
       "en": "Cascade Platinum With Liquid And Powder Fresh Scent Dishwasher Detergent Pouch 26ct, 5/cs",
@@ -14829,7 +14829,7 @@
     "barcode": "3077219877",
     "category": "household",
     "name_en": "Mr. Clean Multi-Surface Cleaner with Febreze Lavender Vanilla Scent, 1.2 L, 4/cs",
-    "name_fr": "",
+    "name_fr": "Nettoyant multi-surfaces Mr. Clean avec parfum lavande vanille Febreze, 1,2 L, 4 unités",
     "description_en": "Mr. Clean Multi-Surface Cleaner with Febreze Lavender Vanilla Scent, 1.2 L, 4/cs",
     "description_fr": "",
     "unit_size": "1.2",
@@ -14842,7 +14842,7 @@
     ],
     "name": {
       "en": "Mr. Clean Multi-Surface Cleaner with Febreze Lavender Vanilla Scent, 1.2 L, 4/cs",
-      "fr": ""
+      "fr": "Nettoyant multi-surfaces Mr. Clean avec parfum lavande vanille Febreze, 1,2 L, 4 unités"
     },
     "description": {
       "en": "Mr. Clean Multi-Surface Cleaner with Febreze Lavender Vanilla Scent, 1.2 L, 4/cs",
@@ -14856,7 +14856,7 @@
     "name_en": "Mr. Clean Multi-Surface Cleaner with Unstopables Fresh Scent , 1.2 L, 4/cs",
     "name_fr": "",
     "description_en": "Mr. Clean Multi-Surface Cleaner with Unstopables Fresh Scent , 1.2 L, 4/cs",
-    "description_fr": "",
+    "description_fr": "Nettoyant multi-surface Mr. Clean avec Unstopables Fresh Scent, 1,2 L, 4/cs",
     "unit_size": "1.2",
     "unit_type": "L",
     "case_qty": 4,
@@ -14871,7 +14871,7 @@
     },
     "description": {
       "en": "Mr. Clean Multi-Surface Cleaner with Unstopables Fresh Scent , 1.2 L, 4/cs",
-      "fr": ""
+      "fr": "Nettoyant multi-surface Mr. Clean avec Unstopables Fresh Scent, 1,2 L, 4/cs"
     }
   },
   {
@@ -14904,7 +14904,7 @@
     "barcode": "76308147013",
     "category": "household",
     "name_en": "Scotch-Brite Lint Roller 95 sheet 5ct, Art# 1145682",
-    "name_fr": "",
+    "name_fr": "Scotch-Brite Rouleau anti peluches 95 feuilles 5ct, Art# 1145682",
     "description_en": "Scotch-Brite Lint Roller 95 sheet 5ct, Art# 1145682",
     "description_fr": "",
     "unit_size": "5",
@@ -14917,7 +14917,7 @@
     ],
     "name": {
       "en": "Scotch-Brite Lint Roller 95 sheet 5ct, Art# 1145682",
-      "fr": ""
+      "fr": "Scotch-Brite Rouleau anti peluches 95 feuilles 5ct, Art# 1145682"
     },
     "description": {
       "en": "Scotch-Brite Lint Roller 95 sheet 5ct, Art# 1145682",
@@ -15031,7 +15031,7 @@
     "name_en": "Softsoap hand Soap Pump Milk and Honey, 221ml",
     "name_fr": "Pompe à savon Softsoap pour les mains Lait et Miel, 221 ml",
     "description_en": "Softsoap hand Soap Pump Milk and Honey, 221ml",
-    "description_fr": "",
+    "description_fr": "Savon à main Softsoap Milk and Honey, pompe, 221 ml",
     "unit_size": "221",
     "unit_type": "ml",
     "case_qty": 6,
@@ -15046,7 +15046,7 @@
     },
     "description": {
       "en": "Softsoap hand Soap Pump Milk and Honey, 221ml",
-      "fr": ""
+      "fr": "Savon à main Softsoap Milk and Honey, pompe, 221 ml"
     }
   },
   {
@@ -15056,7 +15056,7 @@
     "name_en": "Fleecy Liquid Fabric Softener, Aroma Therapy Relax, 57 Loads, 1.36 L, 6/CS",
     "name_fr": "",
     "description_en": "Fleecy Liquid Fabric Softener, Aroma Therapy Relax, 57 Loads, 1.36 L, 6/CS",
-    "description_fr": "",
+    "description_fr": "Fleecy Adoucissant liquide, Aroma Therapy Relax, 57 lavages, 1,36 L, 6/CS",
     "unit_size": "1.36",
     "unit_type": "L",
     "case_qty": 6,
@@ -15071,7 +15071,7 @@
     },
     "description": {
       "en": "Fleecy Liquid Fabric Softener, Aroma Therapy Relax, 57 Loads, 1.36 L, 6/CS",
-      "fr": ""
+      "fr": "Fleecy Adoucissant liquide, Aroma Therapy Relax, 57 lavages, 1,36 L, 6/CS"
     }
   },
   {
@@ -15101,7 +15101,6 @@
   },
   {
     "sku": "1605",
-    "_localPreview": "../static/images/products/1605.jpeg",
     "barcode": "6700000929",
     "category": "drinks",
     "name_en": "Diet Coke",
@@ -15130,7 +15129,7 @@
     "barcode": "6210000160",
     "category": "drinks",
     "name_en": "Canada Dry Club Soda, 2 ltr bottles, 8 loose",
-    "name_fr": "",
+    "name_fr": "Canada Dry Club Soda, bouteilles de 2 l., 8 en vrac",
     "description_en": "Canada Dry Club Soda, 2 ltr bottles, 8 loose",
     "description_fr": "Canada Dry Club Soda, bouteilles de 2 L, 8 en vrac",
     "unit_size": "",
@@ -15143,7 +15142,7 @@
     ],
     "name": {
       "en": "Canada Dry Club Soda, 2 ltr bottles, 8 loose",
-      "fr": ""
+      "fr": "Canada Dry Club Soda, bouteilles de 2 l., 8 en vrac"
     },
     "description": {
       "en": "Canada Dry Club Soda, 2 ltr bottles, 8 loose",
@@ -15230,7 +15229,7 @@
     "barcode": "6210000219",
     "category": "drinks",
     "name_en": "Canada Dry Ginger Ale And Raspberry Lemonade, 355 ml cans, 12 pk",
-    "name_fr": "",
+    "name_fr": "Canada Dry Ginger Ale et limonade à la framboise, canettes de 355 ml, paquet de 12",
     "description_en": "Canada Dry Ginger Ale And Raspberry Lemonade, 355 ml cans, 12 pk",
     "description_fr": "",
     "unit_size": "355",
@@ -15243,7 +15242,7 @@
     ],
     "name": {
       "en": "Canada Dry Ginger Ale And Raspberry Lemonade, 355 ml cans, 12 pk",
-      "fr": ""
+      "fr": "Canada Dry Ginger Ale et limonade à la framboise, canettes de 355 ml, paquet de 12"
     },
     "description": {
       "en": "Canada Dry Ginger Ale And Raspberry Lemonade, 355 ml cans, 12 pk",
@@ -15255,7 +15254,7 @@
     "barcode": "6210000157",
     "category": "drinks",
     "name_en": "Canada Dry Ginger Ale, 2 ltr bottles, 8 loose",
-    "name_fr": "",
+    "name_fr": "Canada Dry Ginger Ale, bouteilles de 2 L, 8 en vrac",
     "description_en": "Canada Dry Ginger Ale, 2 ltr bottles, 8 loose",
     "description_fr": "",
     "unit_size": "",
@@ -15268,7 +15267,7 @@
     ],
     "name": {
       "en": "Canada Dry Ginger Ale, 2 ltr bottles, 8 loose",
-      "fr": ""
+      "fr": "Canada Dry Ginger Ale, bouteilles de 2 L, 8 en vrac"
     },
     "description": {
       "en": "Canada Dry Ginger Ale, 2 ltr bottles, 8 loose",
@@ -15280,7 +15279,7 @@
     "barcode": "6210000229",
     "category": "drinks",
     "name_en": "Canada Dry Ginger Ale, 355 ml cans, 12 Loose",
-    "name_fr": "",
+    "name_fr": "Canada Dry Ginger Ale, canettes de 355 ml, 12 canettes en vrac",
     "description_en": "Canada Dry Ginger Ale, 355 ml cans, 12 Loose",
     "description_fr": "",
     "unit_size": "355",
@@ -15293,7 +15292,7 @@
     ],
     "name": {
       "en": "Canada Dry Ginger Ale, 355 ml cans, 12 Loose",
-      "fr": ""
+      "fr": "Canada Dry Ginger Ale, canettes de 355 ml, 12 canettes en vrac"
     },
     "description": {
       "en": "Canada Dry Ginger Ale, 355 ml cans, 12 Loose",
@@ -15357,7 +15356,7 @@
     "name_en": "Canada Dry Tonic Water Zero Sugar, 355 ml cans, 12 pk",
     "name_fr": "Canada Dry Tonic Water sans sucre, canettes de 355 ml, paquet de 12",
     "description_en": "Canada Dry Tonic Water Zero Sugar, 355 ml cans, 12 pk",
-    "description_fr": "",
+    "description_fr": "Canada Dry Tonic Water Sans Sucre, canettes de 355 ml, pack de 12",
     "unit_size": "355",
     "unit_type": "ml",
     "case_qty": 12,
@@ -15372,7 +15371,7 @@
     },
     "description": {
       "en": "Canada Dry Tonic Water Zero Sugar, 355 ml cans, 12 pk",
-      "fr": ""
+      "fr": "Canada Dry Tonic Water Sans Sucre, canettes de 355 ml, pack de 12"
     }
   },
   {
@@ -15382,7 +15381,7 @@
     "name_en": "Canada Dry Tonic Water, 355 ml cans, 12 pk",
     "name_fr": "Canada Dry Tonic Water, canettes de 355 ml, 12 paquets",
     "description_en": "Canada Dry Tonic Water, 355 ml cans, 12 pk",
-    "description_fr": "",
+    "description_fr": "Eau tonique Canada Dry, canettes de 355 ml, 12 paquets",
     "unit_size": "355",
     "unit_type": "ml",
     "case_qty": 12,
@@ -15397,7 +15396,7 @@
     },
     "description": {
       "en": "Canada Dry Tonic Water, 355 ml cans, 12 pk",
-      "fr": ""
+      "fr": "Eau tonique Canada Dry, canettes de 355 ml, 12 paquets"
     }
   },
   {
@@ -15432,7 +15431,7 @@
     "name_en": "Canada Dry Zero Sugar Ginger Ale, 2 ltr bottles, 8 loose",
     "name_fr": "Canada Dry Zero Sugar Ginger Ale, bouteilles de 2 litres, 8 en vrac",
     "description_en": "Canada Dry Zero Sugar Ginger Ale, 2 ltr bottles, 8 loose",
-    "description_fr": "",
+    "description_fr": "Canada Dry Ginger Ale sans sucre, bouteilles de 2 L, 8 pièces en vrac",
     "unit_size": "",
     "unit_type": "units",
     "case_qty": 8,
@@ -15447,7 +15446,7 @@
     },
     "description": {
       "en": "Canada Dry Zero Sugar Ginger Ale, 2 ltr bottles, 8 loose",
-      "fr": ""
+      "fr": "Canada Dry Ginger Ale sans sucre, bouteilles de 2 L, 8 pièces en vrac"
     }
   },
   {
@@ -15455,7 +15454,7 @@
     "barcode": "6210000018",
     "category": "drinks",
     "name_en": "Canada Dry Zero Sugar Ginger Ale, 355 ml cans, 12 pk",
-    "name_fr": "",
+    "name_fr": "Canada Dry Zero Sugar Ginger Ale, canettes de 355 ml, 12 paquets",
     "description_en": "Canada Dry Zero Sugar Ginger Ale, 355 ml cans, 12 pk",
     "description_fr": "Canada Dry Zero Sugar Ginger Ale, canettes de 355 ml, pack de 12",
     "unit_size": "355",
@@ -15468,7 +15467,7 @@
     ],
     "name": {
       "en": "Canada Dry Zero Sugar Ginger Ale, 355 ml cans, 12 pk",
-      "fr": ""
+      "fr": "Canada Dry Zero Sugar Ginger Ale, canettes de 355 ml, 12 paquets"
     },
     "description": {
       "en": "Canada Dry Zero Sugar Ginger Ale, 355 ml cans, 12 pk",
@@ -15530,7 +15529,7 @@
     "barcode": "6700001368",
     "category": "drinks",
     "name_en": "Coca-Cola Orange Cream, 355 ml cans, 12 pk",
-    "name_fr": "",
+    "name_fr": "Coca-Cola Orange Cream, canettes de 355 ml, 12 paquets",
     "description_en": "Coca-Cola Orange Cream, 355 ml cans, 12 pk",
     "description_fr": "Coca-Cola Orange Cream, canettes de 355 ml, paquet de 12",
     "unit_size": "355",
@@ -15543,7 +15542,7 @@
     ],
     "name": {
       "en": "Coca-Cola Orange Cream, 355 ml cans, 12 pk",
-      "fr": ""
+      "fr": "Coca-Cola Orange Cream, canettes de 355 ml, 12 paquets"
     },
     "description": {
       "en": "Coca-Cola Orange Cream, 355 ml cans, 12 pk",
@@ -15555,7 +15554,7 @@
     "barcode": "6700001366",
     "category": "drinks",
     "name_en": "Coca-Cola Zero Sugar Orange Cream, 355 ml cans, 12 pk",
-    "name_fr": "",
+    "name_fr": "Coca-Cola Zero Sugar Orange Cream, canettes de 355 ml, pack de 12",
     "description_en": "Coca-Cola Zero Sugar Orange Cream, 355 ml cans, 12 pk",
     "description_fr": "",
     "unit_size": "355",
@@ -15568,7 +15567,7 @@
     ],
     "name": {
       "en": "Coca-Cola Zero Sugar Orange Cream, 355 ml cans, 12 pk",
-      "fr": ""
+      "fr": "Coca-Cola Zero Sugar Orange Cream, canettes de 355 ml, pack de 12"
     },
     "description": {
       "en": "Coca-Cola Zero Sugar Orange Cream, 355 ml cans, 12 pk",
@@ -15582,7 +15581,7 @@
     "name_en": "Coca-Cola Zero Sugar Zero Caffeine, 355 ml cans, 12 pk",
     "name_fr": "Coca‑Cola Zero Sucre sans Caféine, canettes de 355 ml, pack de 12",
     "description_en": "Coca-Cola Zero Sugar Zero Caffeine, 355 ml cans, 12 pk",
-    "description_fr": "",
+    "description_fr": "Coca-Cola Sans Sucre Sans Caféine, canettes de 355 ml, 12 paquets",
     "unit_size": "355",
     "unit_type": "ml",
     "case_qty": 12,
@@ -15597,7 +15596,7 @@
     },
     "description": {
       "en": "Coca-Cola Zero Sugar Zero Caffeine, 355 ml cans, 12 pk",
-      "fr": ""
+      "fr": "Coca-Cola Sans Sucre Sans Caféine, canettes de 355 ml, 12 paquets"
     }
   },
   {
@@ -15655,7 +15654,7 @@
     "barcode": "6700000319",
     "category": "drinks",
     "name_en": "Coca-Cola Zero Sugar, 355 ml cans, 12 pk",
-    "name_fr": "",
+    "name_fr": "Coca-Cola Zero Sucre, canettes de 355 ml, paquet de 12",
     "description_en": "Coca-Cola Zero Sugar, 355 ml cans, 12 pk",
     "description_fr": "",
     "unit_size": "355",
@@ -15668,7 +15667,7 @@
     ],
     "name": {
       "en": "Coca-Cola Zero Sugar, 355 ml cans, 12 pk",
-      "fr": ""
+      "fr": "Coca-Cola Zero Sucre, canettes de 355 ml, paquet de 12"
     },
     "description": {
       "en": "Coca-Cola Zero Sugar, 355 ml cans, 12 pk",
@@ -15680,7 +15679,7 @@
     "barcode": "6700000427",
     "category": "drinks",
     "name_en": "Coca-Cola, 2 ltr bottles, 8 loose",
-    "name_fr": "",
+    "name_fr": "Coca-Cola, bouteilles de 2 litres, 8 en vrac",
     "description_en": "Coca-Cola, 2 ltr bottles, 8 loose",
     "description_fr": "",
     "unit_size": "",
@@ -15693,7 +15692,7 @@
     ],
     "name": {
       "en": "Coca-Cola, 2 ltr bottles, 8 loose",
-      "fr": ""
+      "fr": "Coca-Cola, bouteilles de 2 litres, 8 en vrac"
     },
     "description": {
       "en": "Coca-Cola, 2 ltr bottles, 8 loose",
@@ -15707,7 +15706,7 @@
     "name_en": "Coca-Cola, 355 ml cans, 12 Loose",
     "name_fr": "",
     "description_en": "Coca-Cola, 355 ml cans, 12 Loose",
-    "description_fr": "",
+    "description_fr": "Coca-Cola, canettes de 355 ml, 12 en vrac",
     "unit_size": "355",
     "unit_type": "ml",
     "case_qty": 12,
@@ -15722,7 +15721,7 @@
     },
     "description": {
       "en": "Coca-Cola, 355 ml cans, 12 Loose",
-      "fr": ""
+      "fr": "Coca-Cola, canettes de 355 ml, 12 en vrac"
     }
   },
   {
@@ -15757,7 +15756,7 @@
     "name_en": "Diet Canada Dry Ginger Ale, 2 ltr bottles, 8 loose",
     "name_fr": "",
     "description_en": "Diet Canada Dry Ginger Ale, 2 ltr bottles, 8 loose",
-    "description_fr": "",
+    "description_fr": "Canada Dry Ginger Ale diète, bouteilles de 2 L, 8 en vrac",
     "unit_size": "",
     "unit_type": "units",
     "case_qty": 8,
@@ -15772,7 +15771,7 @@
     },
     "description": {
       "en": "Diet Canada Dry Ginger Ale, 2 ltr bottles, 8 loose",
-      "fr": ""
+      "fr": "Canada Dry Ginger Ale diète, bouteilles de 2 L, 8 en vrac"
     }
   },
   {
@@ -15855,9 +15854,9 @@
     "barcode": "6700001164",
     "category": "drinks",
     "name_en": "Fanta Orange, 2 ltr bottles, 8 loose",
-    "name_fr": "",
+    "name_fr": "Fanta Orange, bouteilles de 2 litres, 8 en vrac",
     "description_en": "Fanta Orange, 2 ltr bottles, 8 loose",
-    "description_fr": "",
+    "description_fr": "Fanta Orange, bouteilles de 2 L, 8 en vrac",
     "unit_size": "",
     "unit_type": "units",
     "case_qty": 8,
@@ -15868,11 +15867,11 @@
     ],
     "name": {
       "en": "Fanta Orange, 2 ltr bottles, 8 loose",
-      "fr": ""
+      "fr": "Fanta Orange, bouteilles de 2 litres, 8 en vrac"
     },
     "description": {
       "en": "Fanta Orange, 2 ltr bottles, 8 loose",
-      "fr": ""
+      "fr": "Fanta Orange, bouteilles de 2 L, 8 en vrac"
     }
   },
   {
@@ -15905,7 +15904,7 @@
     "barcode": "6700001384",
     "category": "drinks",
     "name_en": "Fanta Pineapple, 2 ltr bottles, 8 Loose",
-    "name_fr": "",
+    "name_fr": "Fanta Ananas, bouteilles de 2 L, 8 en vrac",
     "description_en": "Fanta Pineapple, 2 ltr bottles, 8 Loose",
     "description_fr": "",
     "unit_size": "",
@@ -15918,7 +15917,7 @@
     ],
     "name": {
       "en": "Fanta Pineapple, 2 ltr bottles, 8 Loose",
-      "fr": ""
+      "fr": "Fanta Ananas, bouteilles de 2 L, 8 en vrac"
     },
     "description": {
       "en": "Fanta Pineapple, 2 ltr bottles, 8 Loose",
@@ -15930,7 +15929,7 @@
     "barcode": "6700001362",
     "category": "drinks",
     "name_en": "Fanta Pineapple, 355 ml cans, 12 Loose",
-    "name_fr": "",
+    "name_fr": "Fanta Ananas, canettes de 355 ml, 12 en vrac",
     "description_en": "Fanta Pineapple, 355 ml cans, 12 Loose",
     "description_fr": "Fanta ananas, canettes de 355 ml, 12 en vrac",
     "unit_size": "355",
@@ -15943,7 +15942,7 @@
     ],
     "name": {
       "en": "Fanta Pineapple, 355 ml cans, 12 Loose",
-      "fr": ""
+      "fr": "Fanta Ananas, canettes de 355 ml, 12 en vrac"
     },
     "description": {
       "en": "Fanta Pineapple, 355 ml cans, 12 Loose",
@@ -16030,7 +16029,7 @@
     "barcode": "6700000555",
     "category": "drinks",
     "name_en": "Fresca, 2 ltr bottles, 8 loose",
-    "name_fr": "",
+    "name_fr": "Fresca, 2 L bouteilles, 8 en vrac",
     "description_en": "Fresca, 2 ltr bottles, 8 loose",
     "description_fr": "",
     "unit_size": "",
@@ -16043,7 +16042,7 @@
     ],
     "name": {
       "en": "Fresca, 2 ltr bottles, 8 loose",
-      "fr": ""
+      "fr": "Fresca, 2 L bouteilles, 8 en vrac"
     },
     "description": {
       "en": "Fresca, 2 ltr bottles, 8 loose",
@@ -16082,7 +16081,7 @@
     "name_en": "Sprite + Tea 355mL 12pk",
     "name_fr": "",
     "description_en": "Sprite + Tea 355mL 12pk",
-    "description_fr": "",
+    "description_fr": "Sprite + Thé 355 mL 12 paquets",
     "unit_size": "355",
     "unit_type": "mL",
     "case_qty": 12,
@@ -16097,7 +16096,7 @@
     },
     "description": {
       "en": "Sprite + Tea 355mL 12pk",
-      "fr": ""
+      "fr": "Sprite + Thé 355 mL 12 paquets"
     }
   },
   {
@@ -16157,7 +16156,7 @@
     "name_en": "Sprite Zero Sugar + Tea, 355 ml cans, 12 pk",
     "name_fr": "Sprite Zéro Sucre + Thé, canettes de 355 ml, paquet de 12",
     "description_en": "Sprite Zero Sugar + Tea, 355 ml cans, 12 pk",
-    "description_fr": "",
+    "description_fr": "Sprite Zéro Sucre + Thé, canettes de 355 ml, 12 pk",
     "unit_size": "355",
     "unit_type": "ml",
     "case_qty": 12,
@@ -16172,7 +16171,7 @@
     },
     "description": {
       "en": "Sprite Zero Sugar + Tea, 355 ml cans, 12 pk",
-      "fr": ""
+      "fr": "Sprite Zéro Sucre + Thé, canettes de 355 ml, 12 pk"
     }
   },
   {
@@ -16180,7 +16179,7 @@
     "barcode": "6700011057",
     "category": "drinks",
     "name_en": "Sprite Zero, 2 ltr bottles, 8 loose",
-    "name_fr": "",
+    "name_fr": "Sprite Zero, bouteilles de 2 L, 8 en vrac",
     "description_en": "Sprite Zero, 2 ltr bottles, 8 loose",
     "description_fr": "",
     "unit_size": "",
@@ -16193,7 +16192,7 @@
     ],
     "name": {
       "en": "Sprite Zero, 2 ltr bottles, 8 loose",
-      "fr": ""
+      "fr": "Sprite Zero, bouteilles de 2 L, 8 en vrac"
     },
     "description": {
       "en": "Sprite Zero, 2 ltr bottles, 8 loose",
@@ -16205,7 +16204,7 @@
     "barcode": "6700000461",
     "category": "drinks",
     "name_en": "Sprite Zero, 355 ml cans, 12 pk",
-    "name_fr": "",
+    "name_fr": "Sprite Zero, canettes de 355 ml, 12 paquets",
     "description_en": "Sprite Zero, 355 ml cans, 12 pk",
     "description_fr": "",
     "unit_size": "355",
@@ -16218,7 +16217,7 @@
     ],
     "name": {
       "en": "Sprite Zero, 355 ml cans, 12 pk",
-      "fr": ""
+      "fr": "Sprite Zero, canettes de 355 ml, 12 paquets"
     },
     "description": {
       "en": "Sprite Zero, 355 ml cans, 12 pk",
@@ -16230,7 +16229,7 @@
     "barcode": "6700000506",
     "category": "drinks",
     "name_en": "Sprite, 2 ltr bottles, 8 loose",
-    "name_fr": "",
+    "name_fr": "Sprite, bouteilles de 2 litres, 8 en vrac",
     "description_en": "Sprite, 2 ltr bottles, 8 loose",
     "description_fr": "",
     "unit_size": "",
@@ -16243,7 +16242,7 @@
     ],
     "name": {
       "en": "Sprite, 2 ltr bottles, 8 loose",
-      "fr": ""
+      "fr": "Sprite, bouteilles de 2 litres, 8 en vrac"
     },
     "description": {
       "en": "Sprite, 2 ltr bottles, 8 loose",
@@ -16280,7 +16279,7 @@
     "barcode": "6700000932",
     "category": "drinks",
     "name_en": "Sprite, 355 ml cans, 12 pk",
-    "name_fr": "",
+    "name_fr": "Sprite, canettes de 355 ml, 12 paquets",
     "description_en": "Sprite, 355 ml cans, 12 pk",
     "description_fr": "",
     "unit_size": "355",
@@ -16293,7 +16292,7 @@
     ],
     "name": {
       "en": "Sprite, 355 ml cans, 12 pk",
-      "fr": ""
+      "fr": "Sprite, canettes de 355 ml, 12 paquets"
     },
     "description": {
       "en": "Sprite, 355 ml cans, 12 pk",
@@ -16307,7 +16306,7 @@
     "name_en": "Gain Liquid Detergent, Odour Defense Super Fresh Blast Scent, 2.4L, 4/cs",
     "name_fr": "Lessive liquide Gain, Protection contre les odeurs Super Fraîcheur Explosion Parfum, 2,4 L, 4/pcs",
     "description_en": "Gain Liquid Detergent, Odour Defense Super Fresh Blast Scent, 2.4L, 4/cs",
-    "description_fr": "",
+    "description_fr": "Gain Détergent Liquide, Défense contre les odeurs, Parfum Super Fraîcheur Explosion, 2,4L, 4 cs",
     "unit_size": "2.4",
     "unit_type": "L",
     "case_qty": 4,
@@ -16322,7 +16321,7 @@
     },
     "description": {
       "en": "Gain Liquid Detergent, Odour Defense Super Fresh Blast Scent, 2.4L, 4/cs",
-      "fr": ""
+      "fr": "Gain Détergent Liquide, Défense contre les odeurs, Parfum Super Fraîcheur Explosion, 2,4L, 4 cs"
     }
   },
   {
@@ -16430,7 +16429,7 @@
     "barcode": "3077209207",
     "category": "household",
     "name_en": "Gain Flings, Original Scent, with Odour Defense, 76 ct, 4/cs",
-    "name_fr": "",
+    "name_fr": "Gain Flings, Parfum original, avec protection contre les odeurs, 76 ct, 4/cs",
     "description_en": "Gain Flings, Original Scent, with Odour Defense, 76 ct, 4/cs",
     "description_fr": "",
     "unit_size": "76",
@@ -16443,7 +16442,7 @@
     ],
     "name": {
       "en": "Gain Flings, Original Scent, with Odour Defense, 76 ct, 4/cs",
-      "fr": ""
+      "fr": "Gain Flings, Parfum original, avec protection contre les odeurs, 76 ct, 4/cs"
     },
     "description": {
       "en": "Gain Flings, Original Scent, with Odour Defense, 76 ct, 4/cs",
@@ -16482,7 +16481,7 @@
     "name_en": "Gain Liquid Detergent, Moonlight Breeze Scent, 5.44L, 2/cs",
     "name_fr": "",
     "description_en": "Gain Liquid Detergent, Moonlight Breeze Scent, 5.44L, 2/cs",
-    "description_fr": "",
+    "description_fr": "Gain Détergent liquide, Arôme Brise Lunaire, 5,44 L, 2/cs",
     "unit_size": "5.44",
     "unit_type": "L",
     "case_qty": 4,
@@ -16497,7 +16496,7 @@
     },
     "description": {
       "en": "Gain Liquid Detergent, Moonlight Breeze Scent, 5.44L, 2/cs",
-      "fr": ""
+      "fr": "Gain Détergent liquide, Arôme Brise Lunaire, 5,44 L, 2/cs"
     }
   },
   {
